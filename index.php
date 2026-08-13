@@ -59,61 +59,11 @@ include 'includes/header.php';
       </div>
     </div><!-- /hero__left -->
 
-    <!-- RIGHT COLUMN — SVG Illustration (no external images, instant load) -->
+    <!-- RIGHT COLUMN — AI Banner Image (Animated) -->
     <div class="hero__right" aria-hidden="true">
-      <svg class="hero__illustration" width="540" height="440" viewBox="0 0 540 440" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="JCB excavator machinery illustration">
-        <!-- Ground -->
-        <rect x="0" y="360" width="540" height="80" fill="rgba(255,255,255,0.04)" rx="4"/>
-        <!-- Excavator body -->
-        <rect x="120" y="250" width="220" height="110" rx="12" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
-        <!-- Cab -->
-        <rect x="260" y="190" width="80" height="70" rx="8" fill="rgba(242,169,0,0.2)" stroke="rgba(242,169,0,0.4)" stroke-width="1.5"/>
-        <!-- Cab window -->
-        <rect x="272" y="202" width="56" height="38" rx="4" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <!-- Engine hood -->
-        <rect x="120" y="220" width="140" height="40" rx="8" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
-        <!-- Undercarriage track (left) -->
-        <rect x="100" y="340" width="240" height="28" rx="14" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
-        <!-- Track rollers -->
-        <circle cx="130" cy="354" r="12" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
-        <circle cx="180" cy="354" r="12" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
-        <circle cx="230" cy="354" r="12" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
-        <circle cx="310" cy="354" r="12" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
-        <!-- Boom arm -->
-        <line x1="340" y1="240" x2="420" y2="170" stroke="rgba(255,255,255,0.3)" stroke-width="14" stroke-linecap="round"/>
-        <!-- Stick arm -->
-        <line x1="420" y1="170" x2="460" y2="260" stroke="rgba(255,255,255,0.25)" stroke-width="10" stroke-linecap="round"/>
-        <!-- Bucket -->
-        <path d="M455 255 L480 280 L440 295 L420 268 Z" fill="rgba(242,169,0,0.4)" stroke="rgba(242,169,0,0.6)" stroke-width="1.5"/>
-        <!-- Bucket teeth -->
-        <line x1="445" y1="292" x2="440" y2="310" stroke="rgba(242,169,0,0.7)" stroke-width="4" stroke-linecap="round"/>
-        <line x1="460" y1="290" x2="456" y2="308" stroke="rgba(242,169,0,0.7)" stroke-width="4" stroke-linecap="round"/>
-        <line x1="475" y1="283" x2="472" y2="301" stroke="rgba(242,169,0,0.7)" stroke-width="4" stroke-linecap="round"/>
-        <!-- Hydraulic cylinder boom -->
-        <line x1="350" y1="260" x2="400" y2="200" stroke="rgba(242,169,0,0.25)" stroke-width="5" stroke-linecap="round"/>
-        <!-- Gear icon top-left (decorative) -->
-        <g transform="translate(40, 60)" opacity="0.12">
-          <path d="M30 14l2 5 5-1.5-.6 5.5 5 2-3.5 4.5 3.5 4.5-5 2 .6 5.5-5-1.5-2 5-2-5-5 1.5.6-5.5-5-2 3.5-4.5-3.5-4.5 5-2-.6-5.5 5 1.5z" fill="white"/>
-          <circle cx="30" cy="30" r="8" fill="rgba(11,77,44,1)"/>
-          <circle cx="30" cy="30" r="4" fill="white" opacity=".5"/>
-        </g>
-        <!-- Gear icon bottom right (decorative) -->
-        <g transform="translate(470, 350)" opacity="0.1">
-          <path d="M20 8l1.5 3.5 3.5-1-.4 3.8 3.5 1.5-2.5 3 2.5 3-3.5 1.5.4 3.8-3.5-1-1.5 3.5-1.5-3.5-3.5 1 .4-3.8-3.5-1.5 2.5-3-2.5-3 3.5-1.5-.4-3.8 3.5 1z" fill="white"/>
-          <circle cx="20" cy="20" r="5" fill="rgba(11,77,44,1)"/>
-        </g>
-        <!-- Part label callouts -->
-        <g opacity="0.7">
-          <rect x="58" y="145" width="90" height="24" rx="12" fill="rgba(242,169,0,0.18)" stroke="rgba(242,169,0,0.4)" stroke-width="1"/>
-          <text x="103" y="162" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="rgba(242,169,0,0.9)" font-weight="600">Hydraulics</text>
-          <line x1="148" y1="157" x2="200" y2="255" stroke="rgba(242,169,0,0.3)" stroke-width="1" stroke-dasharray="3 3"/>
-          <rect x="370" y="100" width="100" height="24" rx="12" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
-          <text x="420" y="117" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="rgba(255,255,255,0.7)" font-weight="600">Boom Arm</text>
-          <line x1="420" y1="124" x2="420" y2="170" stroke="rgba(255,255,255,0.2)" stroke-width="1" stroke-dasharray="3 3"/>
-          <rect x="430" y="295" width="90" height="24" rx="12" fill="rgba(242,169,0,0.18)" stroke="rgba(242,169,0,0.4)" stroke-width="1"/>
-          <text x="475" y="312" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="rgba(242,169,0,0.9)" font-weight="600">Bucket Teeth</text>
-        </g>
-      </svg>
+      <div class="hero__banner-wrap">
+        <img src="/assets/img/hero-banner.png" alt="Heavy earthmoving machinery at construction site" class="hero__banner-img">
+      </div>
     </div><!-- /hero__right -->
 
   </div>
