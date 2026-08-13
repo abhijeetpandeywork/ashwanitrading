@@ -1,71 +1,133 @@
-    <!-- ===== PREMIUM FOOTER ===== -->
-    <footer>
-        <div class="footer-grid">
+<?php /* Global Footer — Ashwani Trading Co. */ ?>
 
-            <!-- Brand Column -->
-            <div class="footer-col">
-                <span class="footer-brand-name">ATC</span>
-                <span class="footer-brand-tag">Est. 1960 · Jammu J&K</span>
-                <p>Ashwani Trading Co. has been the backbone of heavy machinery operations across Jammu, Kashmir &amp; Ladakh for over 60 years. We supply genuine and premium aftermarket spare parts for every earthmoving and construction machine.</p>
-                <div class="social-links">
-                    <a href="https://www.facebook.com/profile.php?id=61585148043428" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/ashwanitradingcojammu" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="https://twitter.com/Ashwanitrading" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.tradeindia.com/ashwani-trading-co-2560288/" target="_blank" aria-label="TradeIndia"><i class="fas fa-globe"></i></a>
-                </div>
-            </div>
+<!-- ===================== SITE FOOTER ===================== -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
 
-            <!-- Quick Links -->
-            <div class="footer-col">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="about.php">About Us</a></li>
-                    <li><a href="services.php">Services</a></li>
-                    <li><a href="catalog.php">Parts Catalog</a></li>
-                    <li><a href="contact.php">Contact Us</a></li>
-                </ul>
-            </div>
-
-            <!-- Contact Info -->
-            <div class="footer-col">
-                <h4>Contact Us</h4>
-                <ul>
-                    <li><i class="fas fa-phone-alt"></i> <a href="tel:+919419186209" style="color:rgba(255,255,255,0.55);">+91 9419186209</a></li>
-                    <li><i class="fas fa-phone-alt"></i> <a href="tel:+919186191331" style="color:rgba(255,255,255,0.55);">+91 9186191331</a></li>
-                    <li><i class="fas fa-phone-alt"></i> <a href="tel:+911914047110" style="color:rgba(255,255,255,0.55);">+91 191 4047110</a></li>
-                    <li><i class="fas fa-envelope"></i> <a href="mailto:ashwanitradingcojammu@gmail.com" style="color:rgba(255,255,255,0.55);">ashwanitradingcojammu@gmail.com</a></li>
-                    <li><i class="fas fa-envelope"></i> <a href="mailto:gupta.ashwanikumar@yahoo.com" style="color:rgba(255,255,255,0.55);">gupta.ashwanikumar@yahoo.com</a></li>
-                </ul>
-            </div>
-
-            <!-- Office Addresses -->
-            <div class="footer-col">
-                <h4>Our Offices</h4>
-                <ul>
-                    <li><i class="fas fa-building"></i>
-                        <span><strong style="color:rgba(255,255,255,0.8);">Main Office:</strong><br>Plot No. 112, Yard 6, Transport Nagar, Narwal, Jammu 180006</span>
-                    </li>
-                    <li><i class="fas fa-map-marker-alt"></i>
-                        <span><strong style="color:rgba(255,255,255,0.8);">Branch Office:</strong><br>Sunjwan Morh, Bye Pass Road, Narwal, Jammu 180006</span>
-                    </li>
-                </ul>
-            </div>
+      <!-- Col 1: Brand -->
+      <div class="footer-col">
+        <div class="footer-logo-wrap">
+          <svg class="logo__icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="44" height="44" rx="10" fill="rgba(255,255,255,0.1)"/>
+            <g fill="#F2A900">
+              <path d="M22 13.5l1.5 3.3 3.4-.9-.4 3.6 3.4 1.3-2.3 2.8 2.3 2.8-3.4 1.3.4 3.6-3.4-.9L22 33.5l-1.5-3.1-3.4.9.4-3.6-3.4-1.3 2.3-2.8-2.3-2.8 3.4-1.3-.4-3.6 3.4.9z"/>
+              <circle cx="22" cy="23" r="4" fill="rgba(11,77,44,0.8)"/>
+              <circle cx="22" cy="23" r="2" fill="#F2A900" opacity=".7"/>
+            </g>
+          </svg>
+          <div class="footer-logo-text logo__text">
+            <span class="logo__brand">Ashwani Trading Co.</span>
+            <span class="logo__sub">Jammu · Est. 60+ Years</span>
+          </div>
         </div>
 
-        <!-- Footer Bottom Bar -->
-        <div class="footer-bottom">
-            <span>&copy; <?php echo date('Y'); ?> Ashwani Trading Co. (ATC) · All Rights Reserved</span>
-            <span>Designed with ❤ for heavy industry professionals</span>
+        <p>Your trusted partner for earthmoving &amp; construction machinery spare parts, accessories, workshop repairs, and equipment rentals across Jammu, Kashmir &amp; Ladakh.</p>
+
+        <div class="footer-badge">
+          <i class="fas fa-award"></i> 60+ Years of Trust
         </div>
-    </footer>
 
-    <!-- ===== FLOATING WHATSAPP CTA ===== -->
-    <a href="https://wa.me/919419186209?text=Hello%20Ashwani%20Trading%20Co.%2C%20I%20need%20a%20spare%20part%20quote." class="floating-whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/ashwanitrading" target="_blank" rel="noopener" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/ashwanitrading" target="_blank" rel="noopener" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://twitter.com/ashwanitrading" target="_blank" rel="noopener" aria-label="Twitter / X">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+          <a href="https://www.tradeindia.com/ashwani-trading-co-2560288/" target="_blank" rel="noopener" aria-label="TradeIndia">
+            <i class="fas fa-building"></i>
+          </a>
+        </div>
+      </div>
 
-    <!-- ===== MAIN JAVASCRIPT ===== -->
-    <script src="assets/js/main.js"></script>
+      <!-- Col 2: Quick Links -->
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="/index.php">Home</a></li>
+          <li><a href="/about.php">About Us</a></li>
+          <li><a href="/services.php">Services</a></li>
+          <li><a href="/catalog.php">Parts Catalog</a></li>
+          <li><a href="/contact.php">Contact Us</a></li>
+        </ul>
+        <h4 style="margin-top:24px;">Services</h4>
+        <ul class="footer-links">
+          <li><a href="/services.php#spare-parts">Spare Parts</a></li>
+          <li><a href="/services.php#accessories">Accessories</a></li>
+          <li><a href="/services.php#workshop">Workshop &amp; Repairs</a></li>
+          <li><a href="/services.php#rentals">Machinery Rentals</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Contact -->
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul class="footer-contact-list">
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <span><strong style="color:rgba(255,255,255,.7);">Branch Office:</strong><br>
+            Sunjwan Morh, Bye Pass Road, Narwal, Jammu – 180006</span>
+          </li>
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <span><strong style="color:rgba(255,255,255,.7);">Main Office:</strong><br>
+            Plot No. 112, Yard 6, Transport Nagar, Narwal, Jammu – 180006</span>
+          </li>
+          <li>
+            <i class="fas fa-phone-alt"></i>
+            <div style="display:flex;flex-direction:column;gap:4px;">
+              <a href="tel:+919419186209">+91 94191 86209</a>
+              <a href="tel:+919419186331">+91 94191 86331</a>
+              <a href="tel:+919858486209">+91 98584 86209</a>
+            </div>
+          </li>
+          <li>
+            <i class="fas fa-envelope"></i>
+            <div style="display:flex;flex-direction:column;gap:4px;">
+              <a href="mailto:ashwanitradingcojammu@gmail.com">ashwanitradingcojammu@gmail.com</a>
+              <a href="mailto:ashwaniyradingco@gmail.com">ashwaniyradingco@gmail.com</a>
+            </div>
+          </li>
+          <li>
+            <i class="fab fa-whatsapp"></i>
+            <a href="https://wa.me/919419186209?text=Hi%2C%20I%20need%20spare%20parts%20information" target="_blank" rel="noopener">WhatsApp Chat</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Map -->
+      <div class="footer-col">
+        <h4>Find Us</h4>
+        <div class="map-embed" style="height:200px; margin-bottom:16px;">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3368.1!2d74.857!3d32.7266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391e842a6d6a5dc7%3A0xb123456789!2sTransport+Nagar%2C+Narwal%2C+Jammu!5e0!3m2!1sen!2sin!4v1620000000000"
+            width="100%" height="100%"
+            style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Ashwani Trading Co. Main Office Location — Transport Nagar, Narwal, Jammu">
+          </iframe>
+        </div>
+        <p style="font-size:12.5px; color:rgba(255,255,255,.45);">Transport Nagar, Narwal, Jammu – 180006</p>
+      </div>
+
+    </div><!-- /footer-grid -->
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <div class="container footer-bottom__inner">
+      <p>© <?= date('Y') ?> Ashwani Trading Co. All rights reserved.</p>
+      <p>60+ Years Serving Jammu, Kashmir &amp; Ladakh</p>
+    </div>
+  </div>
+
+</footer>
+
+<!-- ===================== JS ===================== -->
+<script src="/assets/js/main.js"></script>
 </body>
 </html>
