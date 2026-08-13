@@ -61,7 +61,7 @@ include 'includes/header.php';
 
     <!-- RIGHT COLUMN — SVG Illustration (no external images, instant load) -->
     <div class="hero__right" aria-hidden="true">
-      <svg class="hero__illustration" viewBox="0 0 540 440" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="JCB excavator machinery illustration">
+      <svg class="hero__illustration" width="540" height="440" viewBox="0 0 540 440" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="JCB excavator machinery illustration">
         <!-- Ground -->
         <rect x="0" y="360" width="540" height="80" fill="rgba(255,255,255,0.04)" rx="4"/>
         <!-- Excavator body -->

@@ -8,13 +8,11 @@
       <!-- Col 1: Brand -->
       <div class="footer-col">
         <div class="footer-logo-wrap">
-          <svg class="logo__icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <svg class="logo__icon" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <rect width="44" height="44" rx="10" fill="rgba(255,255,255,0.1)"/>
-            <g fill="#F2A900">
-              <path d="M22 13.5l1.5 3.3 3.4-.9-.4 3.6 3.4 1.3-2.3 2.8 2.3 2.8-3.4 1.3.4 3.6-3.4-.9L22 33.5l-1.5-3.1-3.4.9.4-3.6-3.4-1.3 2.3-2.8-2.3-2.8 3.4-1.3-.4-3.6 3.4.9z"/>
-              <circle cx="22" cy="23" r="4" fill="rgba(11,77,44,0.8)"/>
-              <circle cx="22" cy="23" r="2" fill="#F2A900" opacity=".7"/>
-            </g>
+            <path d="M22 13l1.8 3.9 4-.9-.5 4.3 4 1.6-2.8 3.4 2.8 3.4-4 1.6.5 4.3-4-.9L22 34l-1.8-3.8-4 .9.5-4.3-4-1.6 2.8-3.4-2.8-3.4 4-1.6-.5-4.3 4 .9z" fill="#F2A900"/>
+            <circle cx="22" cy="22" r="5" fill="rgba(11,77,44,0.8)"/>
+            <circle cx="22" cy="22" r="2.5" fill="#F2A900" opacity=".7"/>
           </svg>
           <div class="footer-logo-text logo__text">
             <span class="logo__brand">Ashwani Trading Co.</span>
