@@ -1152,8 +1152,8 @@ textarea.form-inp-v2 { resize: vertical; min-height: 120px; }
   /* Catalog */
   .catalog-grid { grid-template-columns: repeat(2,1fr); }
   
-  /* Auto-sliding horizontal scroll for homepage categories */
-  .catalog-grid--slider {
+  /* Auto-sliding horizontal scroll for homepage categories (bypassing HTML cache) */
+  #catalog-head + .catalog-grid, .catalog-grid--slider {
     display: flex !important;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -1165,8 +1165,8 @@ textarea.form-inp-v2 { resize: vertical; min-height: 120px; }
     scroll-behavior: smooth;
     scrollbar-width: none; /* Firefox */
   }
-  .catalog-grid--slider::-webkit-scrollbar { display: none; /* Chrome/Safari */ }
-  .catalog-grid--slider .cat-card {
+  #catalog-head + .catalog-grid::-webkit-scrollbar, .catalog-grid--slider::-webkit-scrollbar { display: none; /* Chrome/Safari */ }
+  #catalog-head + .catalog-grid .cat-card, .catalog-grid--slider .cat-card {
     flex: 0 0 75%;
     scroll-snap-align: start;
     min-width: 260px;
@@ -1200,7 +1200,7 @@ textarea.form-inp-v2 { resize: vertical; min-height: 120px; }
   .trust-stat { flex: 1 1 100%; border: 1px solid rgba(255,255,255,.12) !important; padding-left: 20px !important; }
 
   .services-grid { gap: 14px; }
-  .catalog-grid:not(.catalog-grid--slider) { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .catalog-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
   .cat-card { padding: 20px 14px; }
   .cat-card__icon { width: 48px; height: 48px; font-size: 20px; }
 
