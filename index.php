@@ -1,188 +1,220 @@
 <?php 
-$pageTitle = "Home | Ashwani Trading Co. — Spare Parts Experts";
+$pageTitle = "Home | Ashwani Trading Co. — Spare Parts Experts, Jammu";
 $currentPage = "home";
 include 'includes/header.php'; 
 ?>
 
 <!-- ============================================================
-     WORLD-CLASS HERO SLIDER SECTION
+     HERO SECTION — Full-Screen Background Image Slider
      ============================================================ -->
-<section class="hero-slider" id="hero">
+<section class="hero-section" id="hero">
 
-    <!-- === Slide 1: JCB Parts === -->
-    <div class="slide slide-1 active">
-        <div class="slide-grid"></div>
+    <!-- ===== BACKGROUND IMAGE SLIDES ===== -->
+    <div class="slide-container">
+
+        <div class="bg-slide active" id="slide-0">
+            <img src="https://images.unsplash.com/photo-1541625602330-2277a4c46182?w=1920&q=80&auto=format&fit=crop" alt="JCB Heavy Machinery" loading="eager">
+            <div class="slide-overlay"></div>
+        </div>
+
+        <div class="bg-slide" id="slide-1">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356db4?w=1920&q=80&auto=format&fit=crop" alt="Road Construction Equipment" loading="lazy">
+            <div class="slide-overlay"></div>
+        </div>
+
+        <div class="bg-slide" id="slide-2">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80&auto=format&fit=crop" alt="Drill Rods Mining" loading="lazy">
+            <div class="slide-overlay"></div>
+        </div>
+
     </div>
 
-    <!-- === Slide 2: Road Construction === -->
-    <div class="slide slide-2">
-        <div class="slide-grid"></div>
-    </div>
+    <!-- ===== HERO CONTENT ON TOP ===== -->
+    <div class="hero-content">
+        <div class="hero-inner">
 
-    <!-- === Slide 3: Mining & Drilling === -->
-    <div class="slide slide-3">
-        <div class="slide-grid"></div>
-    </div>
+            <!-- LEFT: Main Message -->
+            <div class="hero-left">
 
-    <!-- === Decorative SVG Gears (Psychological: Signals precision engineering) === -->
-    <svg class="hero-deco-gear" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill="white">
-        <path d="M100 10 L110 30 L130 25 L125 45 L145 50 L135 65 L150 78 L132 83 L132 103 L115 100 L108 120 L92 110 L80 128 L72 112 L52 118 L55 98 L35 90 L50 78 L40 60 L60 58 L62 38 L80 48 L92 32 Z"/>
-        <circle cx="100" cy="100" r="28" fill="white"/>
-        <circle cx="100" cy="100" r="16" fill="none" stroke="black" stroke-width="2" opacity="0.2"/>
-    </svg>
-
-    <svg class="hero-deco-bolt" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill="white">
-        <path d="M50 5 A45 45 0 1 1 49.99 5 Z" opacity="0.5"/>
-        <rect x="44" y="15" width="12" height="45" rx="6"/>
-        <polygon points="50,55 35,78 46,78 46,95 65,68 53,68"/>
-    </svg>
-
-    <!-- === Hero Content Overlay === -->
-    <div class="hero-content-wrapper">
-        <div class="hero-layout container">
-
-            <!-- LEFT: Text Content -->
-            <div class="hero-text">
+                <!-- Animated Badge -->
                 <div class="hero-badge">
-                    <span class="dot"></span>
-                    <span id="slide-badge">JCB Spare Parts Specialists</span>
+                    <span class="badge-dot"></span>
+                    <span class="badge-text" id="badge-text">JCB Spare Parts Specialists</span>
                 </div>
 
-                <h1 class="hero-main-title">
-                    <span id="slide-line1">SPARE</span><br>
-                    <span class="highlight" id="slide-line2">PARTS</span><br>
-                    <span id="slide-line3">EXPERTS</span>
+                <!-- Main Title — Dynamic per slide -->
+                <h1 class="hero-title">
+                    <span class="title-top" id="title-top">GENUINE</span>
+                    <span class="title-mid gold-glow" id="title-mid">SPARE PARTS</span>
+                    <span class="title-bot" id="title-bot">DELIVERED FAST</span>
                 </h1>
 
-                <p class="hero-subtitle" id="slide-sub">Est. 1960 · Jammu, J&K</p>
-
-                <p class="hero-description" id="slide-desc">
-                    60+ years of trust. Genuine and premium aftermarket spare parts for JCB, Road Rollers, Drill Rods, and all heavy earthmoving machinery. Serving Jammu, Kashmir &amp; Ladakh.
+                <!-- Description -->
+                <p class="hero-desc" id="hero-desc">
+                    60+ years of trust. Genuine &amp; aftermarket spare parts for JCB, Road Rollers, Drill Rods &amp; all earthmoving machinery. Serving Jammu, Kashmir &amp; Ladakh.
                 </p>
 
-                <div class="hero-actions">
-                    <a href="catalog.php" class="btn btn-primary">
+                <!-- CTA Buttons -->
+                <div class="hero-btns">
+                    <a href="catalog.php" class="btn btn-gold">
                         <i class="fas fa-th-large"></i> Browse Parts Catalog
                     </a>
-                    <a href="contact.php" class="btn btn-ghost">
-                        <i class="fas fa-headset"></i> Get Expert Help
+                    <a href="tel:+919419186209" class="btn btn-outline-white">
+                        <i class="fas fa-phone-alt"></i> Call Now
                     </a>
                 </div>
 
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <span class="stat-number">60+</span>
-                        <span class="stat-label">Years of Trust</span>
+                <!-- Trust Stats Row -->
+                <div class="hero-stats-row">
+                    <div class="hstat">
+                        <strong>60+</strong><span>Years of Trust</span>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-number">5000+</span>
-                        <span class="stat-label">Parts in Stock</span>
+                    <div class="hstat-divider"></div>
+                    <div class="hstat">
+                        <strong>5000+</strong><span>Parts in Stock</span>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-number">3</span>
-                        <span class="stat-label">Regions Served</span>
+                    <div class="hstat-divider"></div>
+                    <div class="hstat">
+                        <strong>J&K &amp; Ladakh</strong><span>Regions Served</span>
                     </div>
+                </div>
+
+            </div>
+
+            <!-- RIGHT: Glassmorphism Quote Form -->
+            <div class="hero-right">
+                <div class="glass-form-card">
+
+                    <!-- Shining top border animation -->
+                    <div class="form-shine-bar"></div>
+
+                    <div class="form-header">
+                        <div class="form-icon-wrap">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div>
+                            <h3 class="form-card-title">Get Instant Quote</h3>
+                            <p class="form-card-sub">Our experts reply within hours</p>
+                        </div>
+                    </div>
+
+                    <form class="lead-form" id="hero-lead-form">
+                        <div class="fg">
+                            <div class="input-icon-wrap">
+                                <i class="fas fa-user input-icon"></i>
+                                <input type="text" name="name" class="form-inp" placeholder="Your Full Name *" required>
+                            </div>
+                        </div>
+                        <div class="fg">
+                            <div class="input-icon-wrap">
+                                <i class="fas fa-phone-alt input-icon"></i>
+                                <input type="tel" name="phone" class="form-inp" placeholder="Phone Number *" required>
+                            </div>
+                        </div>
+                        <div class="fg">
+                            <div class="input-icon-wrap">
+                                <i class="fas fa-layer-group input-icon"></i>
+                                <select name="part_category" class="form-inp form-sel">
+                                    <option value="" disabled selected>Select Part Category</option>
+                                    <option>JCB Spare Parts</option>
+                                    <option>Road Roller Parts</option>
+                                    <option>Drill Rods &amp; Bits</option>
+                                    <option>Hydraulic Components</option>
+                                    <option>Engine &amp; Filtration</option>
+                                    <option>Undercarriage Parts</option>
+                                    <option>Other / Not Sure</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="fg">
+                            <div class="input-icon-wrap">
+                                <i class="fas fa-search input-icon"></i>
+                                <input type="text" name="part_name" class="form-inp" placeholder="Part Name / Model / Part No.">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-submit" id="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Send My Requirement
+                        </button>
+                        <p id="form-status" style="display:none; margin-top:10px; font-size:0.85rem; text-align:center;"></p>
+                    </form>
+
                 </div>
             </div>
 
-            <!-- RIGHT: Glassmorphism Lead Form -->
-            <div class="hero-form-card">
-                <p class="form-title">Request a Parts Quote</p>
-                <p class="form-subtitle">Tell us what you need — our experts respond within hours.</p>
-                <form class="lead-form" id="hero-lead-form">
-                    <div class="form-group">
-                        <input type="text" name="name" id="h-name" class="form-control" placeholder="Your Full Name *" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" name="phone" id="h-phone" class="form-control" placeholder="Phone Number *" required>
-                    </div>
-                    <div class="form-group">
-                        <select name="part_category" id="h-category" class="form-control form-select-native">
-                            <option value="" disabled selected>Select Part Category</option>
-                            <option>JCB Spare Parts</option>
-                            <option>Road Roller Parts</option>
-                            <option>Drill Rods & Bits</option>
-                            <option>Hydraulic Components</option>
-                            <option>Engine & Filtration Parts</option>
-                            <option>Undercarriage Parts</option>
-                            <option>Other / Not Sure</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="part_name" id="h-part" class="form-control" placeholder="Part Name / Model / Part No.">
-                    </div>
-                    <button type="submit" class="btn btn-primary" style="width:100%; margin-top: 6px; font-size: 1rem;">
-                        <i class="fas fa-paper-plane"></i> Send My Requirement
-                    </button>
-                    <p id="form-status" style="margin-top:12px; font-size:0.85rem; text-align:center; color: var(--gold-400); display:none;"></p>
-                </form>
-            </div>
-
         </div>
     </div>
 
-    <!-- Slider Arrows -->
-    <div class="slider-arrows">
-        <button class="slider-arrow" id="prev-slide" aria-label="Previous Slide">
-            <i class="fas fa-chevron-left"></i>
-        </button>
-        <button class="slider-arrow" id="next-slide" aria-label="Next Slide">
-            <i class="fas fa-chevron-right"></i>
-        </button>
+    <!-- ===== SLIDER CONTROLS ===== -->
+    <!-- Navigation Arrows -->
+    <button class="slide-arrow left-arrow" id="prev-slide" aria-label="Previous">
+        <i class="fas fa-chevron-left"></i>
+    </button>
+    <button class="slide-arrow right-arrow" id="next-slide" aria-label="Next">
+        <i class="fas fa-chevron-right"></i>
+    </button>
+
+    <!-- Progress Dots -->
+    <div class="slide-dots">
+        <button class="sdot active" data-s="0" aria-label="Slide 1"></button>
+        <button class="sdot" data-s="1" aria-label="Slide 2"></button>
+        <button class="sdot" data-s="2" aria-label="Slide 3"></button>
     </div>
 
-    <!-- Slider Dots -->
-    <div class="slider-controls">
-        <span class="slider-dot active" data-slide="0"></span>
-        <span class="slider-dot" data-slide="1"></span>
-        <span class="slider-dot" data-slide="2"></span>
-    </div>
+    <!-- Progress Bar (Auto-slide timer visual) -->
+    <div class="slide-progress-bar" id="progress-bar"></div>
 
-    <!-- Scroll Hint -->
-    <div class="scroll-hint">
-        <span class="scroll-line"></span>
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
         <span>Scroll</span>
-        <div class="scroll-chevrons">
-            <span></span>
-            <span></span>
+        <div class="scroll-mouse">
+            <div class="scroll-wheel"></div>
         </div>
     </div>
+
+    <!-- SVG Decorative Gear (Bottom Right) -->
+    <svg class="deco-gear" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <g fill="rgba(255,255,255,0.07)">
+            <path d="M97 5l8 18 18-5-2 19 18 7-12 15 12 15-18 7 2 19-18-5-8 18-8-18-18 5 2-19-18-7 12-15-12-15 18-7-2-19 18 5z"/>
+            <circle cx="100" cy="100" r="28"/>
+            <circle cx="100" cy="100" r="14" fill="rgba(245,179,1,0.12)"/>
+        </g>
+    </svg>
 
 </section>
 
 <!-- ============================================================
-     WHY CHOOSE US — Trust Signals
+     WHY CHOOSE US
      ============================================================ -->
 <section class="section section-bg">
     <div class="container">
         <div class="section-header">
             <span class="section-tag">Why Choose ATC</span>
             <h2 class="section-title">The Region's Most <span>Trusted</span> Parts Supplier</h2>
-            <p class="section-desc">We've powered construction projects across Jammu, Kashmir &amp; Ladakh for over six decades. Here's why contractors and fleet owners trust us.</p>
+            <p class="section-desc">60+ years powering construction across Jammu, Kashmir &amp; Ladakh. Here's why every contractor trusts us for spare parts.</p>
         </div>
         <div class="features-grid">
             <div class="feature-card">
-                <div class="icon-wrapper"><i class="fas fa-shield-check feature-icon"></i></div>
+                <div class="icon-wrapper"><i class="fas fa-shield-alt feature-icon"></i></div>
                 <h3>Genuine Quality Assured</h3>
-                <p>Every part we supply — OEM or aftermarket — is quality-checked. We do not deal in substandard components that can damage your machinery.</p>
+                <p>Every OEM or aftermarket part we sell is quality-checked. Zero compromise on components that power your equipment.</p>
                 <a href="about.php" class="card-link">Our Promise <i class="fas fa-arrow-right"></i></a>
             </div>
             <div class="feature-card">
                 <div class="icon-wrapper"><i class="fas fa-warehouse feature-icon"></i></div>
                 <h3>Massive Live Inventory</h3>
-                <p>Thousands of spare parts ready to dispatch across all machine categories. Less waiting means less downtime for your project.</p>
+                <p>Thousands of parts in stock across all categories — less waiting, less downtime, more productivity on site.</p>
                 <a href="catalog.php" class="card-link">See Catalog <i class="fas fa-arrow-right"></i></a>
             </div>
             <div class="feature-card">
                 <div class="icon-wrapper"><i class="fas fa-user-tie feature-icon"></i></div>
-                <h3>60+ Years Experience</h3>
-                <p>Our experts know every bolt, seal, and hydraulic spec. We help you identify the exact part by machine model, serial, or part number.</p>
+                <h3>Expert Identification</h3>
+                <p>Our team can find any part by model, serial number, or description. 60+ years of hands-on field experience.</p>
                 <a href="about.php" class="card-link">Our Story <i class="fas fa-arrow-right"></i></a>
             </div>
             <div class="feature-card">
                 <div class="icon-wrapper"><i class="fas fa-map-marked-alt feature-icon"></i></div>
                 <h3>Region-Wide Reach</h3>
-                <p>Extensive supply network across Jammu, Kashmir &amp; Ladakh. Wherever your project is, we reach you with the right parts, fast.</p>
+                <p>Serving Jammu, Kashmir &amp; Ladakh with a strong supply network. Your parts reach you wherever your project is.</p>
                 <a href="contact.php" class="card-link">Find Us <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
@@ -190,7 +222,7 @@ include 'includes/header.php';
 </section>
 
 <!-- ============================================================
-     SPARE PARTS CATEGORIES — Core Product Section
+     SPARE PARTS CATEGORIES
      ============================================================ -->
 <section class="section">
     <div class="container">
@@ -203,63 +235,59 @@ include 'includes/header.php';
             <div class="feature-card">
                 <div class="icon-wrapper"><i class="fas fa-hammer feature-icon"></i></div>
                 <h3>JCB Spare Parts</h3>
-                <p>Pins, bushes, bucket teeth, hydraulic pumps, seal kits, transmission parts, and more for all JCB models operating across the region.</p>
-                <a href="contact.php?req=jcb" class="card-link">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                <p>Pins, bushes, bucket teeth, hydraulic pumps, seal kits, transmission parts — all JCB models covered.</p>
+                <a href="contact.php?req=jcb" class="card-link">Get Quote <i class="fas fa-arrow-right"></i></a>
             </div>
             <div class="feature-card">
                 <div class="icon-wrapper"><i class="fas fa-truck-moving feature-icon"></i></div>
                 <h3>Road Roller Parts</h3>
-                <p>Scrapers, bearings, hydraulic motors, compaction drums, and vibration components for soil and asphalt compactors.</p>
-                <a href="contact.php?req=roadroller" class="card-link">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                <p>Scrapers, bearings, hydraulic motors, compaction drums for soil and asphalt compactors.</p>
+                <a href="contact.php?req=roadroller" class="card-link">Get Quote <i class="fas fa-arrow-right"></i></a>
             </div>
             <div class="feature-card">
                 <div class="icon-wrapper"><i class="fas fa-drafting-compass feature-icon"></i></div>
-                <h3>Drill Rods & Bits</h3>
-                <p>High-strength, wear-resistant drill rods, shank adapters, couplings, and bits engineered for extreme torque and rock conditions.</p>
-                <a href="contact.php?req=drillrods" class="card-link">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                <h3>Drill Rods &amp; Bits</h3>
+                <p>High-strength drill rods, shank adapters, couplings, and bits for extreme torque and rock conditions.</p>
+                <a href="contact.php?req=drillrods" class="card-link">Get Quote <i class="fas fa-arrow-right"></i></a>
             </div>
             <div class="feature-card">
                 <div class="icon-wrapper"><i class="fas fa-cogs feature-icon"></i></div>
                 <h3>Hydraulic Components</h3>
-                <p>Pumps, cylinders, control valves, hoses, fittings, and O-ring kits to keep your hydraulic systems running at peak performance.</p>
-                <a href="contact.php?req=hydraulics" class="card-link">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                <p>Pumps, cylinders, control valves, hoses, fittings, and O-ring kits for all hydraulic systems.</p>
+                <a href="contact.php?req=hydraulics" class="card-link">Get Quote <i class="fas fa-arrow-right"></i></a>
             </div>
             <div class="feature-card">
                 <div class="icon-wrapper"><i class="fas fa-oil-can feature-icon"></i></div>
-                <h3>Engine & Filtration</h3>
-                <p>Oil, fuel &amp; air filters, gaskets, overhaul kits, and engine components to maintain peak uptime and avoid costly failures.</p>
-                <a href="contact.php?req=engine" class="card-link">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                <h3>Engine &amp; Filtration</h3>
+                <p>Oil, fuel &amp; air filters, gaskets, overhaul kits, and engine parts to minimize machine downtime.</p>
+                <a href="contact.php?req=engine" class="card-link">Get Quote <i class="fas fa-arrow-right"></i></a>
             </div>
             <div class="feature-card">
                 <div class="icon-wrapper"><i class="fas fa-link feature-icon"></i></div>
                 <h3>Undercarriage Parts</h3>
-                <p>Track chains, rollers, idlers, sprockets, and track shoes for crawler excavators, dozers, and piling rigs.</p>
-                <a href="contact.php?req=undercarriage" class="card-link">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                <p>Track chains, rollers, idlers, sprockets, and track shoes for crawler excavators and dozers.</p>
+                <a href="contact.php?req=undercarriage" class="card-link">Get Quote <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
         <div style="text-align:center; margin-top: 50px;">
-            <a href="catalog.php" class="btn btn-outline">View Full Parts Catalog <i class="fas fa-long-arrow-alt-right"></i></a>
+            <a href="catalog.php" class="btn btn-outline">View Full Parts Catalog &nbsp;<i class="fas fa-long-arrow-alt-right"></i></a>
         </div>
     </div>
 </section>
 
 <!-- ============================================================
-     CTA BANNER — Urgency + Social Proof
+     CTA BANNER
      ============================================================ -->
-<section style="background: linear-gradient(135deg, var(--green-900) 0%, var(--green-800) 100%); padding: 80px 0; position: relative; overflow: hidden;">
-    <!-- SVG Decoration inside CTA -->
-    <svg style="position:absolute;right:-60px;top:-60px;width:350px;opacity:0.05;" viewBox="0 0 200 200" fill="white" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="100" cy="100" r="95" fill="none" stroke="white" stroke-width="3"/>
-        <circle cx="100" cy="100" r="70" fill="none" stroke="white" stroke-width="2"/>
-        <circle cx="100" cy="100" r="40" fill="white"/>
-    </svg>
-    <div class="container" style="text-align:center; position:relative; z-index:2;">
-        <span style="display:inline-block; background:rgba(245,179,1,0.15); border:1px solid rgba(245,179,1,0.3); color:var(--gold-400); padding:6px 18px; border-radius:50px; font-size:0.78rem; font-weight:800; letter-spacing:0.12em; text-transform:uppercase; margin-bottom:22px;">24/7 Parts Support</span>
-        <h2 style="color:white; font-size: clamp(2rem, 4vw, 3rem); margin-bottom:18px; letter-spacing:-0.03em;">Your Equipment Can't Afford Downtime</h2>
-        <p style="color:rgba(255,255,255,0.65); font-size:1.1rem; max-width:600px; margin:0 auto 40px; line-height:1.8;">Call us now or send your part requirement. We will get back to you with availability and pricing fast — because every hour of downtime costs money.</p>
-        <div style="display:flex; gap:20px; justify-content:center; flex-wrap:wrap;">
-            <a href="tel:+919419186209" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Call Now: +91 9419186209</a>
-            <a href="contact.php" class="btn btn-ghost"><i class="fas fa-envelope"></i> Send Requirements</a>
+<section class="cta-banner">
+    <div class="cta-inner container">
+        <div class="cta-text">
+            <span class="section-tag" style="background:rgba(245,179,1,0.15); border-color:rgba(245,179,1,0.3); color:var(--gold-400);">24/7 Parts Support</span>
+            <h2>Your Equipment Can't Afford Downtime</h2>
+            <p>Call us now or send your requirement. We respond fast — because every hour of downtime costs money.</p>
+        </div>
+        <div class="cta-actions">
+            <a href="tel:+919419186209" class="btn btn-gold"><i class="fas fa-phone-alt"></i> +91 9419186209</a>
+            <a href="contact.php" class="btn btn-outline-white-dark"><i class="fas fa-envelope"></i> Send Requirements</a>
         </div>
     </div>
 </section>

@@ -5,123 +5,163 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     // =====================================================================
-    // HERO IMAGE SLIDER
+    // HERO BACKGROUND IMAGE SLIDER
     // =====================================================================
-    const slides = document.querySelectorAll('.slide');
-    const dots   = document.querySelectorAll('.slider-dot');
-    const prevBtn = document.getElementById('prev-slide');
-    const nextBtn = document.getElementById('next-slide');
+    const bgSlides  = document.querySelectorAll('.bg-slide');
+    const dots      = document.querySelectorAll('.sdot');
+    const prevBtn   = document.getElementById('prev-slide');
+    const nextBtn   = document.getElementById('next-slide');
+    const progressBar = document.getElementById('progress-bar');
 
-    // Slide content for each panel
+    const SLIDE_DURATION = 6000; // ms per slide
+    const INTERVAL_TICK  = 60;   // progress bar update ms
+
     const slideData = [
         {
-            badge: 'JCB Spare Parts Specialists',
-            line1: 'SPARE',
-            line2: 'PARTS',
-            line3: 'EXPERTS',
-            sub:   'Est. 1960 · Jammu, J&K',
-            desc:  '60+ years of trust. Genuine and premium aftermarket spare parts for JCB, Road Rollers, Drill Rods, and all heavy earthmoving machinery. Serving Jammu, Kashmir & Ladakh.'
+            badge:  'JCB Spare Parts Specialists',
+            top:    'GENUINE',
+            mid:    'SPARE PARTS',
+            bot:    'DELIVERED FAST',
+            desc:   '60+ years of trust. Genuine & aftermarket spare parts for JCB, Road Rollers, Drill Rods & all earthmoving machinery. Serving Jammu, Kashmir & Ladakh.'
         },
         {
-            badge: 'Road Roller & Compactor Parts',
-            line1: 'MAXIMUM',
-            line2: 'UPTIME',
-            line3: 'GUARANTEED',
-            sub:   'Transport Nagar · Narwal · Jammu',
-            desc:  'Don\'t let a broken part stop your road project. We supply all compactor, roller, and paver spare parts with fast availability across the region.'
+            badge:  'Road Roller & Compactor Parts',
+            top:    'MAXIMUM',
+            mid:    'UPTIME',
+            bot:    'GUARANTEED',
+            desc:   'Don\'t let a broken part stop your road project. All compactor, roller, and paver spare parts stocked and ready to dispatch across the region.'
         },
         {
-            badge: 'Drill Rods & Mining Parts',
-            line1: 'TOUGH',
-            line2: 'PARTS',
-            line3: 'FOR TOUGH JOBS',
-            sub:   'Mining · Tunneling · Foundation Works',
-            desc:  'High-strength drill rods, shank adapters, bits, and coupling sleeves engineered for the harshest rock drilling operations in J&K and Ladakh.'
+            badge:  'Drill Rods & Mining Parts',
+            top:    'TOUGH PARTS',
+            mid:    'FOR TOUGH',
+            bot:    'JOBS',
+            desc:   'High-strength drill rods, shank adapters, bits, and couplings engineered for the harshest rock drilling operations in J&K and Ladakh.'
         }
     ];
 
-    let currentSlide = 0;
-    let sliderInterval;
+    let current   = 0;
+    let timer     = null;
+    let progress  = 0;
+    let progTimer = null;
 
-    function goToSlide(index) {
-        // Remove active from all
-        slides.forEach(s => s.classList.remove('active'));
+    function goTo(idx) {
+        // Remove active
+        bgSlides.forEach(s => s.classList.remove('active'));
         dots.forEach(d => d.classList.remove('active'));
 
-        // Set new active
-        currentSlide = (index + slides.length) % slides.length;
-        slides[currentSlide].classList.add('active');
-        dots[currentSlide].classList.add('active');
+        current = (idx + bgSlides.length) % bgSlides.length;
+        bgSlides[current].classList.add('active');
+        dots[current].classList.add('active');
 
-        // Update text content with smooth fade
-        const data = slideData[currentSlide];
-        const elements = {
-            badge: document.getElementById('slide-badge'),
-            line1: document.getElementById('slide-line1'),
-            line2: document.getElementById('slide-line2'),
-            line3: document.getElementById('slide-line3'),
-            sub:   document.getElementById('slide-sub'),
-            desc:  document.getElementById('slide-desc'),
+        // Update text
+        updateText(slideData[current]);
+
+        // Reset progress
+        resetProgress();
+    }
+
+    function updateText(data) {
+        const els = {
+            badge: document.getElementById('badge-text'),
+            top:   document.getElementById('title-top'),
+            mid:   document.getElementById('title-mid'),
+            bot:   document.getElementById('title-bot'),
+            desc:  document.getElementById('hero-desc'),
         };
 
-        Object.values(elements).forEach(el => { if (el) el.style.opacity = '0'; });
+        // Fade out
+        ['badge','top','mid','bot','desc'].forEach(k => {
+            if (els[k]) els[k].style.opacity = '0';
+        });
 
+        // Swap content then fade in
         setTimeout(() => {
-            if (elements.badge) elements.badge.textContent = data.badge;
-            if (elements.line1) elements.line1.textContent = data.line1;
-            if (elements.line2) elements.line2.textContent = data.line2;
-            if (elements.line3) elements.line3.textContent = data.line3;
-            if (elements.sub)   elements.sub.textContent   = data.sub;
-            if (elements.desc)  elements.desc.textContent  = data.desc;
-            Object.values(elements).forEach(el => {
-                if (el) { el.style.transition = 'opacity 0.5s ease'; el.style.opacity = '1'; }
+            if (els.badge) els.badge.textContent = data.badge;
+            if (els.top)   els.top.textContent   = data.top;
+            if (els.mid)   els.mid.textContent   = data.mid;
+            if (els.bot)   els.bot.textContent   = data.bot;
+            if (els.desc)  els.desc.textContent  = data.desc;
+
+            ['badge','top','mid','bot','desc'].forEach(k => {
+                if (els[k]) {
+                    els[k].style.transition = 'opacity 0.6s ease';
+                    els[k].style.opacity    = '1';
+                }
             });
-        }, 300);
+        }, 350);
     }
 
-    function startSlider() {
-        sliderInterval = setInterval(() => goToSlide(currentSlide + 1), 6000);
+    function resetProgress() {
+        progress = 0;
+        if (progressBar) progressBar.style.width = '0%';
+        clearInterval(progTimer);
+        progTimer = setInterval(() => {
+            progress += (INTERVAL_TICK / SLIDE_DURATION) * 100;
+            if (progress > 100) progress = 100;
+            if (progressBar) progressBar.style.width = progress + '%';
+        }, INTERVAL_TICK);
     }
 
-    function resetSlider() {
-        clearInterval(sliderInterval);
-        startSlider();
+    function startAuto() {
+        clearInterval(timer);
+        timer = setInterval(() => goTo(current + 1), SLIDE_DURATION);
     }
 
-    if (slides.length > 0) {
-        // Arrow controls
-        if (prevBtn) prevBtn.addEventListener('click', () => { goToSlide(currentSlide - 1); resetSlider(); });
-        if (nextBtn) nextBtn.addEventListener('click', () => { goToSlide(currentSlide + 1); resetSlider(); });
+    function restart() {
+        clearInterval(timer);
+        startAuto();
+    }
 
-        // Dot controls
+    if (bgSlides.length > 0) {
+        // Arrow buttons
+        if (prevBtn) prevBtn.addEventListener('click', () => { goTo(current - 1); restart(); });
+        if (nextBtn) nextBtn.addEventListener('click', () => { goTo(current + 1); restart(); });
+
+        // Dots
         dots.forEach(dot => {
             dot.addEventListener('click', () => {
-                goToSlide(parseInt(dot.dataset.slide));
-                resetSlider();
+                goTo(parseInt(dot.dataset.s));
+                restart();
             });
         });
 
-        // Keyboard controls
+        // Keyboard
         document.addEventListener('keydown', e => {
-            if (e.key === 'ArrowLeft')  { goToSlide(currentSlide - 1); resetSlider(); }
-            if (e.key === 'ArrowRight') { goToSlide(currentSlide + 1); resetSlider(); }
+            if (e.key === 'ArrowLeft')  { goTo(current - 1); restart(); }
+            if (e.key === 'ArrowRight') { goTo(current + 1); restart(); }
         });
 
-        startSlider();
+        // Touch swipe support
+        let touchStartX = 0;
+        const hero = document.getElementById('hero');
+        if (hero) {
+            hero.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+            hero.addEventListener('touchend', e => {
+                const diff = touchStartX - e.changedTouches[0].clientX;
+                if (Math.abs(diff) > 50) {
+                    if (diff > 0) { goTo(current + 1); restart(); }
+                    else          { goTo(current - 1); restart(); }
+                }
+            }, { passive: true });
+        }
+
+        startAuto();
+        resetProgress();
     }
 
     // =====================================================================
-    // STICKY HEADER SHADOW ON SCROLL
+    // STICKY HEADER — blur shadow on scroll
     // =====================================================================
     const header = document.getElementById('main-header');
     if (header) {
         window.addEventListener('scroll', () => {
             header.classList.toggle('scrolled', window.scrollY > 60);
-        });
+        }, { passive: true });
     }
 
     // =====================================================================
-    // MOBILE NAVIGATION TOGGLE
+    // MOBILE MENU TOGGLE
     // =====================================================================
     const mobileBtn = document.getElementById('mobile-menu-btn');
     const navMenu   = document.getElementById('nav-menu');
@@ -129,23 +169,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (mobileBtn && navMenu) {
         mobileBtn.addEventListener('click', () => {
-            navMenu.classList.toggle('open');
-            menuIcon.classList.toggle('fa-bars');
-            menuIcon.classList.toggle('fa-times');
+            const open = navMenu.classList.toggle('open');
+            if (menuIcon) {
+                menuIcon.classList.toggle('fa-bars',  !open);
+                menuIcon.classList.toggle('fa-times',  open);
+            }
         });
-
-        // Close on link click
-        navMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
+        navMenu.querySelectorAll('a').forEach(a => {
+            a.addEventListener('click', () => {
                 navMenu.classList.remove('open');
-                menuIcon.classList.add('fa-bars');
-                menuIcon.classList.remove('fa-times');
+                if (menuIcon) {
+                    menuIcon.classList.add('fa-bars');
+                    menuIcon.classList.remove('fa-times');
+                }
             });
         });
     }
 
     // =====================================================================
-    // LEAD FORM AJAX SUBMISSION
+    // LEAD FORM — AJAX Submit
     // =====================================================================
     const forms = document.querySelectorAll('.lead-form');
 
@@ -153,78 +195,82 @@ document.addEventListener('DOMContentLoaded', function () {
         form.addEventListener('submit', function (e) {
             e.preventDefault();
 
-            const btn = form.querySelector('button[type="submit"]');
-            const statusEl = form.querySelector('#form-status') || document.createElement('p');
-            const originalText = btn.innerHTML;
+            const btn = form.querySelector('#submit-btn') || form.querySelector('button[type="submit"]');
+            const statusEl = form.querySelector('#form-status');
+            const originalHTML = btn ? btn.innerHTML : '';
 
-            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-            btn.disabled = true;
-
-            const formData = new FormData(form);
-
-            // Add part name if present as requirement
-            if (!formData.get('requirement') && formData.get('part_name')) {
-                formData.append('requirement', `Category: ${formData.get('part_category') || 'Not specified'}\nPart: ${formData.get('part_name')}`);
+            if (btn) {
+                btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending…';
+                btn.disabled = true;
             }
 
-            fetch('process_lead.php', {
-                method: 'POST',
-                body: formData
-            })
-            .then(r => r.json())
-            .then(data => {
-                if (data.status === 'success') {
-                    btn.innerHTML = '<i class="fas fa-check"></i> Sent! We\'ll call you.';
-                    btn.style.background = 'linear-gradient(135deg, #22c55e, #16a34a)';
-                    statusEl.style.display = 'block';
-                    statusEl.style.color = '#4ade80';
-                    statusEl.textContent = '✓ Your requirement has been received. Our expert will contact you shortly.';
-                    form.reset();
-                } else {
-                    btn.innerHTML = originalText;
-                    btn.disabled = false;
-                    statusEl.style.display = 'block';
-                    statusEl.style.color = '#f87171';
-                    statusEl.textContent = data.message || 'Something went wrong. Please call us directly.';
-                }
-                setTimeout(() => {
-                    btn.innerHTML = originalText;
-                    btn.disabled = false;
-                    btn.style.background = '';
-                }, 5000);
-            })
-            .catch(() => {
-                btn.innerHTML = originalText;
-                btn.disabled = false;
-                statusEl.style.display = 'block';
-                statusEl.style.color = '#f87171';
-                statusEl.textContent = 'Network error. Please call +91 9419186209 directly.';
-            });
+            const fd = new FormData(form);
+
+            // Merge part_category + part_name into requirement if no requirement field
+            if (!fd.get('requirement')) {
+                const cat  = fd.get('part_category') || '';
+                const part = fd.get('part_name')     || '';
+                fd.append('requirement', `Category: ${cat}\nPart/Model: ${part}`);
+            }
+
+            fetch('process_lead.php', { method: 'POST', body: fd })
+                .then(r => r.json())
+                .then(data => {
+                    if (data.status === 'success') {
+                        if (btn) {
+                            btn.innerHTML = '<i class="fas fa-check-circle"></i> Sent! We\'ll Call You';
+                            btn.style.background = 'linear-gradient(135deg,#22c55e,#16a34a)';
+                        }
+                        if (statusEl) {
+                            statusEl.style.display = 'block';
+                            statusEl.style.color   = '#4ade80';
+                            statusEl.textContent   = '✓ Received! Our expert will contact you shortly.';
+                        }
+                        form.reset();
+                    } else {
+                        if (btn) { btn.innerHTML = originalHTML; btn.disabled = false; }
+                        if (statusEl) {
+                            statusEl.style.display = 'block';
+                            statusEl.style.color   = '#f87171';
+                            statusEl.textContent   = data.message || 'Something went wrong. Please call us directly.';
+                        }
+                    }
+                    setTimeout(() => {
+                        if (btn) { btn.innerHTML = originalHTML; btn.disabled = false; btn.style.background = ''; }
+                    }, 5000);
+                })
+                .catch(() => {
+                    if (btn) { btn.innerHTML = originalHTML; btn.disabled = false; }
+                    if (statusEl) {
+                        statusEl.style.display = 'block';
+                        statusEl.style.color   = '#f87171';
+                        statusEl.textContent   = 'Network error. Please call +91 9419186209.';
+                    }
+                });
         });
     });
 
     // =====================================================================
-    // SCROLL REVEAL ANIMATION — Cards animate in on scroll
+    // SCROLL REVEAL — Cards & Sections
     // =====================================================================
-    const revealItems = document.querySelectorAll('.feature-card, .section-header, .hero-stats');
-
-    const revealObserver = new IntersectionObserver((entries) => {
+    const revealEls = document.querySelectorAll('.feature-card, .section-header');
+    const revealObs = new IntersectionObserver((entries) => {
         entries.forEach((entry, i) => {
             if (entry.isIntersecting) {
                 setTimeout(() => {
-                    entry.target.style.opacity = '1';
+                    entry.target.style.opacity   = '1';
                     entry.target.style.transform = 'translateY(0)';
-                }, i * 80);
-                revealObserver.unobserve(entry.target);
+                }, i * 90);
+                revealObs.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.1 });
+    }, { threshold: 0.08 });
 
-    revealItems.forEach(item => {
-        item.style.opacity = '0';
-        item.style.transform = 'translateY(30px)';
-        item.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        revealObserver.observe(item);
+    revealEls.forEach(el => {
+        el.style.opacity   = '0';
+        el.style.transform = 'translateY(28px)';
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        revealObs.observe(el);
     });
 
 });
