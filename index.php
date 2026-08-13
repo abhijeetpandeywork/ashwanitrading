@@ -41,22 +41,22 @@ include 'includes/header.php';
         <h2 class="section-title">Why Buy Parts From Us?</h2>
         <div class="features-grid">
             <div class="feature-card">
-                <i class="fas fa-shield-alt feature-icon"></i>
+                <div class="icon-wrapper"><i class="fas fa-shield-alt feature-icon"></i></div>
                 <h3>Genuine Quality</h3>
                 <p>We source and supply only the highest quality aftermarket and OEM spare parts.</p>
             </div>
             <div class="feature-card">
-                <i class="fas fa-boxes feature-icon"></i>
+                <div class="icon-wrapper"><i class="fas fa-boxes feature-icon"></i></div>
                 <h3>Massive Inventory</h3>
                 <p>Thousands of parts in stock for JCB, road rollers, excavators, and more.</p>
             </div>
             <div class="feature-card">
-                <i class="fas fa-shipping-fast feature-icon"></i>
+                <div class="icon-wrapper"><i class="fas fa-shipping-fast feature-icon"></i></div>
                 <h3>Fast Availability</h3>
                 <p>Extensive network across Jammu, Kashmir & Ladakh ensures you get your parts fast.</p>
             </div>
             <div class="feature-card">
-                <i class="fas fa-tools feature-icon"></i>
+                <div class="icon-wrapper"><i class="fas fa-tools feature-icon"></i></div>
                 <h3>Expert Support</h3>
                 <p>60+ years of experience to help you find the exact part you need.</p>
             </div>
@@ -70,22 +70,22 @@ include 'includes/header.php';
         <h2 class="section-title">Our Spare Parts Inventory</h2>
         <div class="features-grid">
             <div class="feature-card">
-                <i class="fas fa-hammer feature-icon"></i>
+                <div class="icon-wrapper"><i class="fas fa-hammer feature-icon"></i></div>
                 <h3>JCB Spare Parts</h3>
                 <p>Complete range of mechanical, hydraulic, and structural parts for all JCB models.</p>
             </div>
             <div class="feature-card">
-                <i class="fas fa-truck-moving feature-icon"></i>
+                <div class="icon-wrapper"><i class="fas fa-truck-moving feature-icon"></i></div>
                 <h3>Road Roller Parts</h3>
                 <p>High-durability spares for compactors and road rollers to keep projects moving.</p>
             </div>
             <div class="feature-card">
-                <i class="fas fa-drafting-compass feature-icon"></i>
+                <div class="icon-wrapper"><i class="fas fa-drafting-compass feature-icon"></i></div>
                 <h3>Drill Rods & Tools</h3>
                 <p>Tough, wear-resistant drill rods and drilling accessories for heavy-duty applications.</p>
             </div>
             <div class="feature-card">
-                <i class="fas fa-cogs feature-icon"></i>
+                <div class="icon-wrapper"><i class="fas fa-cogs feature-icon"></i></div>
                 <h3>Engine & Hydraulic Components</h3>
                 <p>Pumps, filters, seals, and engine components for maximum machinery uptime.</p>
             </div>

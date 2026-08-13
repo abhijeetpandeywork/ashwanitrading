@@ -22,25 +22,25 @@ include 'includes/header.php';
 
         <div class="features-grid">
             <div class="feature-card" style="text-align: left; border-top: 4px solid var(--accent-color);">
-                <i class="fas fa-hammer feature-icon"></i>
+                <div class="icon-wrapper"><i class="fas fa-hammer feature-icon"></i></div>
                 <h3>JCB Spare Parts</h3>
                 <p>We are a leading supplier of aftermarket and genuine JCB spare parts. We stock transmission parts, hydraulic pumps, engine components, pins, bushes, and bucket teeth.</p>
             </div>
             
             <div class="feature-card" style="text-align: left; border-top: 4px solid var(--accent-color);">
-                <i class="fas fa-truck-moving feature-icon"></i>
+                <div class="icon-wrapper"><i class="fas fa-truck-moving feature-icon"></i></div>
                 <h3>Road Roller Parts</h3>
                 <p>Essential spare parts for road rollers and soil compactors, ensuring maximum compaction force and minimal breakdown times on your construction sites.</p>
             </div>
             
             <div class="feature-card" style="text-align: left; border-top: 4px solid var(--accent-color);">
-                <i class="fas fa-drafting-compass feature-icon"></i>
+                <div class="icon-wrapper"><i class="fas fa-drafting-compass feature-icon"></i></div>
                 <h3>Drill Rods</h3>
                 <p>High-strength, wear-resistant drill rods for rock drilling, mining, and heavy excavation. Engineered to handle extreme stress and torque.</p>
             </div>
             
             <div class="feature-card" style="text-align: left; border-top: 4px solid var(--accent-color);">
-                <i class="fas fa-cogs feature-icon"></i>
+                <div class="icon-wrapper"><i class="fas fa-cogs feature-icon"></i></div>
                 <h3>General Excavator Parts</h3>
                 <p>Filters, seals, undercarriage parts, hydraulic cylinders, and electrical components for various makes and models of earthmoving equipment.</p>
             </div>
