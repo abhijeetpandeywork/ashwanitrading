@@ -23,9 +23,11 @@ document.addEventListener('DOMContentLoaded', function () {
   const hamburgerIcon = document.getElementById('hamburger-icon');
   const mobileNav = document.getElementById('mobile-nav');
   const navCloseBtn = document.getElementById('nav-close-btn');
+  const mobileBackdrop = document.getElementById('mobile-backdrop');
 
   function openNav() {
     mobileNav.classList.add('open');
+    if(mobileBackdrop) mobileBackdrop.classList.add('open');
     mobileNav.setAttribute('aria-hidden', 'false');
     hamburgerBtn.setAttribute('aria-expanded', 'true');
     if (hamburgerIcon) {
@@ -36,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function closeNav() {
     mobileNav.classList.remove('open');
+    if(mobileBackdrop) mobileBackdrop.classList.remove('open');
     mobileNav.setAttribute('aria-hidden', 'true');
     hamburgerBtn.setAttribute('aria-expanded', 'false');
     if (hamburgerIcon) {
@@ -48,8 +51,13 @@ document.addEventListener('DOMContentLoaded', function () {
     hamburgerBtn.addEventListener('click', function () {
       mobileNav.classList.contains('open') ? closeNav() : openNav();
     });
+    if (navCloseBtn) {
+      navCloseBtn.addEventListener('click', closeNav);
+    }
+    if (mobileBackdrop) {
+      mobileBackdrop.addEventListener('click', closeNav);
+    }
   }
-  if (navCloseBtn) navCloseBtn.addEventListener('click', closeNav);
 
   // Close nav when a link is tapped
   if (mobileNav) {

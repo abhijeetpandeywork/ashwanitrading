@@ -278,18 +278,39 @@ p  { font-size: 16px; line-height: 1.7; color: var(--gray-500); }
   color: var(--charcoal);
 }
 
-/* Mobile nav overlay */
-.mobile-nav {
-  display: none;
+/* Mobile nav overlay (backdrop) */
+.mobile-nav-backdrop {
   position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: var(--green-800);
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 590;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+  backdrop-filter: blur(4px);
+}
+.mobile-nav-backdrop.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Mobile nav drawer */
+.mobile-nav {
+  position: fixed;
+  top: 0; right: -100%; bottom: 0;
+  width: 320px;
+  max-width: 100vw;
+  background: var(--green-900);
   z-index: 600;
+  display: flex;
   flex-direction: column;
   padding: 80px 32px 32px;
   gap: 4px;
+  transition: right 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+  box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+  overflow-y: auto;
 }
-.mobile-nav.open { display: flex; }
+.mobile-nav.open { right: 0; }
 .mobile-nav a {
   font-size: 22px;
   font-weight: 700;

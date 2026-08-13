@@ -29,7 +29,7 @@ $currentPage = $currentPage ?? '';
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <!-- Site CSS -->
-  <link rel="stylesheet" href="/assets/css/style.css?v=2.4">
+  <link rel="stylesheet" href="/assets/css/style.css?v=2.5">
 
   <?php if (($currentPage ?? '') === 'home'): ?>
   <!-- LocalBusiness Schema — Homepage only -->
@@ -139,6 +139,7 @@ $currentPage = $currentPage ?? '';
 </header>
 
 <!-- ===================== MOBILE NAV OVERLAY ===================== -->
+<div class="mobile-nav-backdrop" id="mobile-backdrop"></div>
 <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
   <button class="mobile-nav__close" id="nav-close-btn" aria-label="Close menu">
     <i class="fas fa-times"></i>
