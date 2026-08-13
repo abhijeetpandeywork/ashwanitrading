@@ -251,33 +251,36 @@ nav ul li a.active {
     background: #002915;
 }
 
-/* === Slide Container === */
-.slide-container {
+/* === Slide Container — Horizontal Track === */
+.slider-track-wrap {
     position: absolute;
     top: 0; left: 0;
     width: 100%;
     height: 100%;
+    overflow: hidden;
     z-index: 1;
 }
 
-/* === Each Background Slide === */
-.bg-slide {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%;
+/* The track is 300% wide to hold 3 slides side-by-side */
+.slider-track {
+    display: flex;
+    width: 300%;          /* 3 slides × 100% */
     height: 100%;
-    opacity: 0;
-    transition: opacity 1.2s ease;
-    z-index: 1;
+    transition: transform 0.9s cubic-bezier(0.77, 0, 0.175, 1); /* Smooth cinematic slide */
+    will-change: transform;
 }
 
-.bg-slide.active {
-    opacity: 1;
-    z-index: 2;
+/* Each slide = 1/3 of the track = 100% of the viewport */
+.h-slide {
+    position: relative;
+    width: 33.3333%;
+    height: 100%;
+    flex-shrink: 0;
+    overflow: hidden;
 }
 
-/* Background image fills the slide */
-.bg-slide img {
+/* Image fills the slide */
+.h-slide img {
     position: absolute;
     top: 0; left: 0;
     width: 100%;
@@ -287,35 +290,50 @@ nav ul li a.active {
     display: block;
 }
 
-/* Dark gradient overlay on each slide */
+/* Dark gradient overlay — makes text legible */
 .slide-overlay {
     position: absolute;
     top: 0; left: 0;
     width: 100%;
     height: 100%;
     background: linear-gradient(
-        105deg,
-        rgba(0, 20, 10, 0.92) 0%,
-        rgba(0, 50, 25, 0.80) 50%,
-        rgba(0, 20, 10, 0.65) 100%
+        110deg,
+        rgba(0, 18, 9, 0.92) 0%,
+        rgba(0, 50, 25, 0.78) 55%,
+        rgba(0, 20, 10, 0.60) 100%
     );
     z-index: 2;
 }
 
-/* Light sweep shine animation on overlay */
+/* Alt overlay — darker/cooler for slide 2 */
+.overlay-alt {
+    background: linear-gradient(
+        110deg,
+        rgba(10, 10, 30, 0.92) 0%,
+        rgba(0, 40, 20, 0.80) 55%,
+        rgba(5, 5, 20, 0.60) 100%
+    );
+}
+
+/* Green-toned overlay for slide 3 */
+.overlay-green {
+    background: linear-gradient(
+        110deg,
+        rgba(0, 30, 15, 0.90) 0%,
+        rgba(0, 80, 38, 0.72) 55%,
+        rgba(0, 25, 12, 0.60) 100%
+    );
+}
+
+/* Shining light sweep over each slide */
 .slide-overlay::after {
     content: '';
     position: absolute;
     top: 0; left: -120%;
     width: 70%;
     height: 100%;
-    background: linear-gradient(90deg,
-        transparent 0%,
-        rgba(255,255,255,0.035) 50%,
-        transparent 100%
-    );
-    animation: hero-shine 7s linear infinite;
-    z-index: 3;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.035), transparent);
+    animation: hero-shine 8s linear infinite;
 }
 
 @keyframes hero-shine {

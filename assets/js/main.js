@@ -5,63 +5,61 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     // =====================================================================
-    // HERO BACKGROUND IMAGE SLIDER
+    // HERO HORIZONTAL IMAGE SLIDER
+    // Uses a flex track (300% wide) that slides left via translateX
     // =====================================================================
-    const bgSlides  = document.querySelectorAll('.bg-slide');
-    const dots      = document.querySelectorAll('.sdot');
-    const prevBtn   = document.getElementById('prev-slide');
-    const nextBtn   = document.getElementById('next-slide');
+    const track       = document.getElementById('slider-track');
+    const dots        = document.querySelectorAll('.sdot');
+    const prevBtn     = document.getElementById('prev-slide');
+    const nextBtn     = document.getElementById('next-slide');
     const progressBar = document.getElementById('progress-bar');
 
-    const SLIDE_DURATION = 6000; // ms per slide
-    const INTERVAL_TICK  = 60;   // progress bar update ms
+    const TOTAL_SLIDES   = 3;
+    const SLIDE_DURATION = 6000;   // ms each slide shows
+    const TICK_MS        = 60;     // progress bar update interval
 
     const slideData = [
         {
-            badge:  'JCB Spare Parts Specialists',
-            top:    'GENUINE',
-            mid:    'SPARE PARTS',
-            bot:    'DELIVERED FAST',
-            desc:   '60+ years of trust. Genuine & aftermarket spare parts for JCB, Road Rollers, Drill Rods & all earthmoving machinery. Serving Jammu, Kashmir & Ladakh.'
+            badge: 'JCB Spare Parts Specialists',
+            top:   'GENUINE',
+            mid:   'SPARE PARTS',
+            bot:   'DELIVERED FAST',
+            desc:  '60+ years of trust. Genuine & aftermarket spare parts for JCB, Road Rollers, Drill Rods & all earthmoving machinery. Serving Jammu, Kashmir & Ladakh.'
         },
         {
-            badge:  'Road Roller & Compactor Parts',
-            top:    'MAXIMUM',
-            mid:    'UPTIME',
-            bot:    'GUARANTEED',
-            desc:   'Don\'t let a broken part stop your road project. All compactor, roller, and paver spare parts stocked and ready to dispatch across the region.'
+            badge: 'Industrial Gears & Components',
+            top:   'PRECISION',
+            mid:   'COMPONENTS',
+            bot:   'FOR EVERY MACHINE',
+            desc:  'Hydraulic pumps, seals, pins, bushes, and industrial gear components for all earthmoving and construction equipment brands across the region.'
         },
         {
-            badge:  'Drill Rods & Mining Parts',
-            top:    'TOUGH PARTS',
-            mid:    'FOR TOUGH',
-            bot:    'JOBS',
-            desc:   'High-strength drill rods, shank adapters, bits, and couplings engineered for the harshest rock drilling operations in J&K and Ladakh.'
+            badge: 'Road Roller & Compactor Parts',
+            top:   'MAXIMUM',
+            mid:   'UPTIME',
+            bot:   'GUARANTEED',
+            desc:  'All compactor, roller, and road machinery spare parts stocked and ready to dispatch across Jammu, Kashmir & Ladakh — fast.'
         }
     ];
 
     let current   = 0;
-    let timer     = null;
+    let autoTimer = null;
     let progress  = 0;
     let progTimer = null;
 
     function goTo(idx) {
-        // Remove active
-        bgSlides.forEach(s => s.classList.remove('active'));
-        dots.forEach(d => d.classList.remove('active'));
+        current = (idx + TOTAL_SLIDES) % TOTAL_SLIDES;
 
-        current = (idx + bgSlides.length) % bgSlides.length;
-        bgSlides[current].classList.add('active');
-        dots[current].classList.add('active');
+        // === HORIZONTAL SLIDE — move track by 33.33% per slide ===
+        if (track) {
+            const offset = current * (100 / TOTAL_SLIDES);
+            track.style.transform = `translateX(-${offset}%)`;
+        }
 
-        // Update text
-        updateText(slideData[current]);
+        // Update nav dots
+        dots.forEach((d, i) => d.classList.toggle('active', i === current));
 
-        // Reset progress
-        resetProgress();
-    }
-
-    function updateText(data) {
+        // Fade-swap overlay text content
         const els = {
             badge: document.getElementById('badge-text'),
             top:   document.getElementById('title-top'),
@@ -70,26 +68,30 @@ document.addEventListener('DOMContentLoaded', function () {
             desc:  document.getElementById('hero-desc'),
         };
 
-        // Fade out
-        ['badge','top','mid','bot','desc'].forEach(k => {
-            if (els[k]) els[k].style.opacity = '0';
+        // Fade out + slide down
+        Object.values(els).forEach(el => {
+            if (el) { el.style.opacity = '0'; el.style.transform = 'translateY(12px)'; }
         });
 
-        // Swap content then fade in
+        // Swap content then fade back in
         setTimeout(() => {
-            if (els.badge) els.badge.textContent = data.badge;
-            if (els.top)   els.top.textContent   = data.top;
-            if (els.mid)   els.mid.textContent   = data.mid;
-            if (els.bot)   els.bot.textContent   = data.bot;
-            if (els.desc)  els.desc.textContent  = data.desc;
+            const d = slideData[current];
+            if (els.badge) els.badge.textContent = d.badge;
+            if (els.top)   els.top.textContent   = d.top;
+            if (els.mid)   els.mid.textContent   = d.mid;
+            if (els.bot)   els.bot.textContent   = d.bot;
+            if (els.desc)  els.desc.textContent  = d.desc;
 
-            ['badge','top','mid','bot','desc'].forEach(k => {
-                if (els[k]) {
-                    els[k].style.transition = 'opacity 0.6s ease';
-                    els[k].style.opacity    = '1';
+            Object.values(els).forEach(el => {
+                if (el) {
+                    el.style.transition = 'opacity 0.55s ease, transform 0.55s ease';
+                    el.style.opacity    = '1';
+                    el.style.transform  = 'translateY(0)';
                 }
             });
-        }, 350);
+        }, 360);
+
+        resetProgress();
     }
 
     function resetProgress() {
@@ -97,53 +99,55 @@ document.addEventListener('DOMContentLoaded', function () {
         if (progressBar) progressBar.style.width = '0%';
         clearInterval(progTimer);
         progTimer = setInterval(() => {
-            progress += (INTERVAL_TICK / SLIDE_DURATION) * 100;
-            if (progress > 100) progress = 100;
-            if (progressBar) progressBar.style.width = progress + '%';
-        }, INTERVAL_TICK);
+            progress += (TICK_MS / SLIDE_DURATION) * 100;
+            if (progressBar) progressBar.style.width = Math.min(progress, 100) + '%';
+        }, TICK_MS);
     }
 
     function startAuto() {
-        clearInterval(timer);
-        timer = setInterval(() => goTo(current + 1), SLIDE_DURATION);
+        clearInterval(autoTimer);
+        autoTimer = setInterval(() => goTo(current + 1), SLIDE_DURATION);
     }
 
-    function restart() {
-        clearInterval(timer);
-        startAuto();
-    }
+    function restart() { clearInterval(autoTimer); startAuto(); }
 
-    if (bgSlides.length > 0) {
+    if (track) {
         // Arrow buttons
         if (prevBtn) prevBtn.addEventListener('click', () => { goTo(current - 1); restart(); });
         if (nextBtn) nextBtn.addEventListener('click', () => { goTo(current + 1); restart(); });
 
-        // Dots
+        // Dot navigation
         dots.forEach(dot => {
-            dot.addEventListener('click', () => {
-                goTo(parseInt(dot.dataset.s));
-                restart();
-            });
+            dot.addEventListener('click', () => { goTo(parseInt(dot.dataset.s)); restart(); });
         });
 
-        // Keyboard
+        // Keyboard navigation
         document.addEventListener('keydown', e => {
             if (e.key === 'ArrowLeft')  { goTo(current - 1); restart(); }
             if (e.key === 'ArrowRight') { goTo(current + 1); restart(); }
         });
 
-        // Touch swipe support
+        // Touch / swipe support
         let touchStartX = 0;
-        const hero = document.getElementById('hero');
-        if (hero) {
-            hero.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
-            hero.addEventListener('touchend', e => {
+        const heroEl = document.getElementById('hero');
+        if (heroEl) {
+            heroEl.addEventListener('touchstart', e => {
+                touchStartX = e.touches[0].clientX;
+            }, { passive: true });
+
+            heroEl.addEventListener('touchend', e => {
                 const diff = touchStartX - e.changedTouches[0].clientX;
                 if (Math.abs(diff) > 50) {
-                    if (diff > 0) { goTo(current + 1); restart(); }
-                    else          { goTo(current - 1); restart(); }
+                    diff > 0 ? goTo(current + 1) : goTo(current - 1);
+                    restart();
                 }
             }, { passive: true });
+        }
+
+        // Pause on hover
+        if (heroEl) {
+            heroEl.addEventListener('mouseenter', () => clearInterval(autoTimer));
+            heroEl.addEventListener('mouseleave', () => startAuto());
         }
 
         startAuto();
@@ -151,7 +155,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // =====================================================================
-    // STICKY HEADER — blur shadow on scroll
+    // STICKY HEADER — adds shadow/blur on scroll
     // =====================================================================
     const header = document.getElementById('main-header');
     if (header) {
@@ -178,10 +182,7 @@ document.addEventListener('DOMContentLoaded', function () {
         navMenu.querySelectorAll('a').forEach(a => {
             a.addEventListener('click', () => {
                 navMenu.classList.remove('open');
-                if (menuIcon) {
-                    menuIcon.classList.add('fa-bars');
-                    menuIcon.classList.remove('fa-times');
-                }
+                if (menuIcon) { menuIcon.classList.add('fa-bars'); menuIcon.classList.remove('fa-times'); }
             });
         });
     }
@@ -196,21 +197,14 @@ document.addEventListener('DOMContentLoaded', function () {
             e.preventDefault();
 
             const btn = form.querySelector('#submit-btn') || form.querySelector('button[type="submit"]');
-            const statusEl = form.querySelector('#form-status');
-            const originalHTML = btn ? btn.innerHTML : '';
+            const statusEl   = form.querySelector('#form-status');
+            const origHTML   = btn ? btn.innerHTML : '';
 
-            if (btn) {
-                btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending…';
-                btn.disabled = true;
-            }
+            if (btn) { btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending…'; btn.disabled = true; }
 
             const fd = new FormData(form);
-
-            // Merge part_category + part_name into requirement if no requirement field
             if (!fd.get('requirement')) {
-                const cat  = fd.get('part_category') || '';
-                const part = fd.get('part_name')     || '';
-                fd.append('requirement', `Category: ${cat}\nPart/Model: ${part}`);
+                fd.append('requirement', `Category: ${fd.get('part_category') || ''}\nPart: ${fd.get('part_name') || ''}`);
             }
 
             fetch('process_lead.php', { method: 'POST', body: fd })
@@ -228,19 +222,19 @@ document.addEventListener('DOMContentLoaded', function () {
                         }
                         form.reset();
                     } else {
-                        if (btn) { btn.innerHTML = originalHTML; btn.disabled = false; }
+                        if (btn) { btn.innerHTML = origHTML; btn.disabled = false; }
                         if (statusEl) {
                             statusEl.style.display = 'block';
                             statusEl.style.color   = '#f87171';
-                            statusEl.textContent   = data.message || 'Something went wrong. Please call us directly.';
+                            statusEl.textContent   = data.message || 'Error. Please call +91 9419186209.';
                         }
                     }
                     setTimeout(() => {
-                        if (btn) { btn.innerHTML = originalHTML; btn.disabled = false; btn.style.background = ''; }
+                        if (btn) { btn.innerHTML = origHTML; btn.disabled = false; btn.style.background = ''; }
                     }, 5000);
                 })
                 .catch(() => {
-                    if (btn) { btn.innerHTML = originalHTML; btn.disabled = false; }
+                    if (btn) { btn.innerHTML = origHTML; btn.disabled = false; }
                     if (statusEl) {
                         statusEl.style.display = 'block';
                         statusEl.style.color   = '#f87171';
@@ -251,7 +245,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // =====================================================================
-    // SCROLL REVEAL — Cards & Sections
+    // SCROLL REVEAL — Cards animate in on scroll
     // =====================================================================
     const revealEls = document.querySelectorAll('.feature-card, .section-header');
     const revealObs = new IntersectionObserver((entries) => {
@@ -267,8 +261,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }, { threshold: 0.08 });
 
     revealEls.forEach(el => {
-        el.style.opacity   = '0';
-        el.style.transform = 'translateY(28px)';
+        el.style.opacity    = '0';
+        el.style.transform  = 'translateY(28px)';
         el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         revealObs.observe(el);
     });
