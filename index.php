@@ -136,7 +136,7 @@ include 'includes/header.php';
      ============================================================ -->
 <section class="section section--green" id="why-atc">
   <div class="container">
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center;">
+    <div class="why-split" style="align-items:center;">
 
       <div data-reveal>
         <span class="tag tag--gold">Why ATC</span>

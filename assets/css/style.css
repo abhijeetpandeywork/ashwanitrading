@@ -708,6 +708,13 @@ p  { font-size: 16px; line-height: 1.7; color: var(--gray-500); }
 .about-split--reverse { direction: rtl; }
 .about-split--reverse > * { direction: ltr; }
 
+.why-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
 .about-points { display: flex; flex-direction: column; gap: 18px; }
 .about-point {
   display: flex; gap: 14px; align-items: flex-start;
@@ -1071,7 +1078,7 @@ textarea.form-inp-v2 { resize: vertical; min-height: 120px; }
 @media (max-width: 1024px) {
   .section { padding: 72px 0; }
   .services-grid { grid-template-columns: repeat(2,1fr); }
-  .about-split { grid-template-columns: 1fr; gap: 48px; }
+  .about-split, .why-split { grid-template-columns: 1fr; gap: 48px; }
   .about-split--reverse .svc-row__visual { order: 0; }
   .svc-row { grid-template-columns: 1fr; gap: 40px; }
   .svc-row--alt .svc-row__content { order: 0; }
