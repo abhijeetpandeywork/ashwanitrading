@@ -244,9 +244,10 @@ nav ul li a.active {
 .hero-section {
     position: relative;
     width: 100%;
-    height: 100vh;
-    min-height: 680px;
-    max-height: 1000px;
+    /* Slightly less than 100vh so stats row is fully visible above the fold */
+    height: calc(100vh - 0px);
+    min-height: 640px;
+    max-height: 960px;
     overflow: hidden;
     background: #002915;
 }
@@ -341,7 +342,7 @@ nav ul li a.active {
     100% { left: 200%; }
 }
 
-/* === Hero Content Layer === */
+/* === Hero Content Layer — pushed slightly toward top 45% === */
 .hero-content {
     position: absolute;
     top: 0; left: 0;
@@ -350,6 +351,8 @@ nav ul li a.active {
     z-index: 10;
     display: flex;
     align-items: center;
+    /* Shift content up from dead-center so stats counter is always visible */
+    padding-top: 30px;
 }
 
 .hero-inner {
@@ -358,8 +361,8 @@ nav ul li a.active {
     margin: 0 auto;
     padding: 0 24px;
     display: grid;
-    grid-template-columns: 1fr 430px;
-    gap: 60px;
+    grid-template-columns: 1fr 400px;
+    gap: 48px;
     align-items: center;
 }
 
@@ -407,24 +410,24 @@ nav ul li a.active {
     font-family: var(--font-display);
     line-height: 0.92;
     letter-spacing: 0.03em;
-    margin-bottom: 26px;
+    margin-bottom: 18px;
     text-shadow: 0 4px 24px rgba(0,0,0,0.5);
 }
 
 .hero-title .title-top {
-    font-size: clamp(2.8rem, 5vw, 5rem);
+    font-size: clamp(2rem, 3.5vw, 4rem);
     color: rgba(255,255,255,0.75);
     font-weight: 400;
 }
 
 .hero-title .title-mid {
-    font-size: clamp(4rem, 8vw, 8.5rem);
+    font-size: clamp(3.5rem, 7vw, 7.5rem);
     color: #fff;
     line-height: 0.88;
 }
 
 .hero-title .title-bot {
-    font-size: clamp(1.6rem, 3vw, 3rem);
+    font-size: clamp(1.4rem, 2.5vw, 2.6rem);
     color: rgba(255,255,255,0.6);
 }
 
@@ -437,21 +440,19 @@ nav ul li a.active {
         0 4px 24px rgba(0,0,0,0.4) !important;
 }
 
-/* Description */
 .hero-desc {
-    font-size: 1.08rem;
+    font-size: 1rem;
     color: rgba(255,255,255,0.72);
-    line-height: 1.85;
+    line-height: 1.8;
     max-width: 520px;
-    margin-bottom: 40px;
+    margin-bottom: 28px;
 }
 
-/* CTA Buttons */
 .hero-btns {
     display: flex;
-    gap: 16px;
+    gap: 14px;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin-bottom: 28px;
 }
 
 .btn-gold {
@@ -508,12 +509,11 @@ nav ul li a.active {
     transform: translateY(-3px);
 }
 
-/* Stats Row */
 .hero-stats-row {
     display: flex;
     align-items: center;
-    gap: 30px;
-    padding-top: 28px;
+    gap: 24px;
+    padding-top: 20px;
     border-top: 1px solid rgba(255,255,255,0.12);
     flex-wrap: wrap;
 }
@@ -521,12 +521,12 @@ nav ul li a.active {
 .hstat {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 3px;
 }
 
 .hstat strong {
     font-family: var(--font-display);
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #f5b301;
     text-shadow: 0 0 18px rgba(245,179,1,0.4);
     line-height: 1;
@@ -534,7 +534,7 @@ nav ul li a.active {
 }
 
 .hstat span {
-    font-size: 0.72rem;
+    font-size: 0.68rem;
     color: rgba(255,255,255,0.5);
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -543,7 +543,7 @@ nav ul li a.active {
 
 .hstat-divider {
     width: 1px;
-    height: 44px;
+    height: 36px;
     background: rgba(255,255,255,0.15);
     flex-shrink: 0;
 }
@@ -557,10 +557,11 @@ nav ul li a.active {
     backdrop-filter: blur(22px);
     -webkit-backdrop-filter: blur(22px);
     border: 1px solid rgba(255,255,255,0.18);
-    border-radius: 24px;
-    padding: 36px 32px 32px;
+    border-radius: 20px;
+    /* Compact padding so form fits in viewport */
+    padding: 26px 26px 22px;
     box-shadow:
-        0 32px 64px rgba(0,0,0,0.38),
+        0 28px 56px rgba(0,0,0,0.38),
         inset 0 1px 0 rgba(255,255,255,0.18);
     overflow: hidden;
 }
@@ -586,8 +587,8 @@ nav ul li a.active {
 .form-header {
     display: flex;
     align-items: center;
-    gap: 14px;
-    margin-bottom: 24px;
+    gap: 12px;
+    margin-bottom: 16px;
 }
 
 .form-icon-wrap {
@@ -604,20 +605,19 @@ nav ul li a.active {
 }
 
 .form-card-title {
-    font-size: 1.35rem;
+    font-size: 1.2rem;
     color: #fff;
     font-weight: 800;
-    margin-bottom: 3px;
+    margin-bottom: 2px;
 }
 
 .form-card-sub {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     color: rgba(255,255,255,0.52);
     letter-spacing: 0.02em;
 }
 
-/* Form fields */
-.fg { margin-bottom: 12px; }
+.fg { margin-bottom: 9px; }
 
 .input-icon-wrap {
     position: relative;
@@ -636,12 +636,12 @@ nav ul li a.active {
 
 .form-inp {
     width: 100%;
-    padding: 13px 16px 13px 38px;
+    padding: 11px 14px 11px 36px;
     background: rgba(255,255,255,0.08);
     border: 1px solid rgba(255,255,255,0.18);
-    border-radius: 10px;
+    border-radius: 9px;
     font-family: var(--font-body);
-    font-size: 0.9rem;
+    font-size: 0.87rem;
     color: #fff;
     transition: var(--transition);
     -webkit-appearance: none;
@@ -665,14 +665,14 @@ nav ul li a.active {
 
 .btn-submit {
     width: 100%;
-    padding: 15px;
-    margin-top: 8px;
+    padding: 13px;
+    margin-top: 6px;
     border-radius: 50px;
     background: linear-gradient(135deg, #f5b301, #c98f00);
     color: #1a1a2e;
     font-family: var(--font-body);
     font-weight: 800;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     border: none;
@@ -871,28 +871,167 @@ nav ul li a.active {
     transform: translateY(-2px);
 }
 
-/* Responsive */
+/* ==========================================================================
+   COMPREHENSIVE RESPONSIVE CSS
+   ========================================================================== */
+
+/* --- Large Desktop (1200px+) --- */
+@media (min-width: 1200px) {
+    .hero-inner { gap: 55px; }
+}
+
+/* --- Tablet Landscape / Small Desktop (1024px) --- */
 @media (max-width: 1024px) {
+    .hero-section { height: auto; min-height: 100vh; }
+
     .hero-inner {
         grid-template-columns: 1fr;
         text-align: center;
+        padding: 100px 24px 60px;
+        gap: 36px;
     }
-    .hero-title .title-top,
-    .hero-title .title-bot { font-size: clamp(2rem, 5vw, 3rem); }
-    .hero-title .title-mid { font-size: clamp(3rem, 8vw, 5.5rem); }
+
+    .hero-content { align-items: flex-start; padding-top: 0; }
+
+    .hero-title .title-top { font-size: 2.5rem; }
+    .hero-title .title-mid { font-size: 5rem; }
+    .hero-title .title-bot { font-size: 1.8rem; }
+
     .hero-btns { justify-content: center; }
     .hero-stats-row { justify-content: center; }
+    .hero-badge { justify-content: center; }
     .hero-desc { margin-left: auto; margin-right: auto; }
-    .glass-form-card { max-width: 480px; margin: 0 auto; }
+
+    .glass-form-card { max-width: 500px; margin: 0 auto; }
+
+    /* About grid */
+    .about-grid { grid-template-columns: 1fr; gap: 40px; }
+
+    /* Footer */
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+
+    /* CTA */
     .cta-inner { flex-direction: column; text-align: center; }
     .cta-actions { justify-content: center; }
+
+    /* Sections */
+    .section { padding: 80px 0; }
 }
 
+/* --- Tablet Portrait (768px) --- */
 @media (max-width: 768px) {
+    /* Top bar */
+    .top-bar-contact a:nth-child(2),
+    .top-bar-contact a:nth-child(3) { display: none; }
+    .top-bar-social { gap: 12px; }
+
+    /* Header */
+    .nav-container { height: 65px; }
+    .logo-text .logo-brand { font-size: 1.3rem; }
+    .logo-icon-svg { width: 40px; height: 40px; }
+
+    /* Mobile nav */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0; left: 0; right: 0;
+        bottom: 0;
+        background: rgba(0,20,10,0.97);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        padding: 90px 30px 30px;
+        z-index: 998;
+        gap: 8px;
+        overflow-y: auto;
+    }
+    nav ul.open { display: flex; }
+    nav ul li a {
+        font-size: 1.1rem;
+        padding: 14px 20px;
+        border-radius: 12px;
+        color: rgba(255,255,255,0.85);
+    }
+    nav ul li a.active, nav ul li a:hover {
+        background: rgba(245,179,1,0.12);
+        color: #f5b301;
+    }
+    .nav-cta-btn {
+        background: linear-gradient(135deg, #f5b301, #c98f00) !important;
+        color: #1a1a2e !important;
+        text-align: center;
+        justify-content: center;
+    }
+    .mobile-menu-btn { display: flex; align-items: center; z-index: 999; }
+
+    /* Hero */
     .slide-arrow { display: none; }
     .scroll-indicator { display: none; }
-    .hero-title .title-mid { font-size: 3.5rem; }
-    .hero-stats-row { gap: 18px; }
+    .deco-gear { width: 220px; height: 220px; bottom: -40px; right: -40px; }
+
+    .hero-inner { padding: 80px 20px 50px; }
+    .hero-title .title-top { font-size: 1.8rem; }
+    .hero-title .title-mid { font-size: 3.4rem; }
+    .hero-title .title-bot { font-size: 1.4rem; }
+    .hero-desc { font-size: 0.95rem; }
+
+    .hero-btns { flex-direction: column; align-items: center; gap: 12px; }
+    .btn-gold, .btn-outline-white { width: 100%; max-width: 320px; justify-content: center; }
+
+    .hero-stats-row { gap: 16px; }
+    .hstat strong { font-size: 1.5rem; }
+    .hstat-divider { height: 28px; }
+
+    /* Sections */
+    .section { padding: 60px 0; }
+    .section-title { font-size: 1.8rem; }
+    .features-grid { grid-template-columns: 1fr; gap: 20px; }
+    .feature-card { padding: 32px 26px; }
+
+    /* Footer */
+    .footer-grid { grid-template-columns: 1fr; gap: 36px; }
+    .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
+    footer { padding: 60px 20px 0; }
+
+    /* CTA */
+    .cta-banner { padding: 60px 0; }
+    .cta-text h2 { font-size: 1.7rem; }
+    .cta-actions { flex-direction: column; align-items: center; }
+    .btn-gold, .btn-outline-white-dark { width: 100%; max-width: 300px; justify-content: center; }
+
+    /* WhatsApp */
+    .floating-whatsapp { width: 50px; height: 50px; font-size: 1.5rem; bottom: 20px; left: 20px; }
+}
+
+/* --- Mobile Small (480px) --- */
+@media (max-width: 480px) {
+    .top-bar { display: none; } /* Hide entirely on very small screens */
+
+    .hero-inner { padding: 70px 16px 40px; }
+    .hero-title .title-top { font-size: 1.5rem; }
+    .hero-title .title-mid { font-size: 2.8rem; }
+    .hero-title .title-bot { font-size: 1.2rem; }
+    .hero-desc { font-size: 0.9rem; }
+    .hero-badge { font-size: 0.72rem; padding: 7px 14px; }
+
+    .hero-stats-row { flex-direction: row; justify-content: center; gap: 14px; }
+    .hstat-divider { display: none; }
+
+    .glass-form-card { padding: 22px 18px 18px; border-radius: 16px; }
+    .form-card-title { font-size: 1.1rem; }
+
+    .section { padding: 50px 0; }
+    .container { padding: 0 16px; }
+
+    .features-grid { gap: 16px; }
+    .feature-card { padding: 26px 20px; }
+    .icon-wrapper { width: 58px; height: 58px; border-radius: 16px; }
+    .feature-icon { font-size: 1.5rem; }
+
+    .footer-grid { gap: 28px; }
+    .footer-brand-name { font-size: 1.6rem; }
+
+    nav ul li a { font-size: 1rem; padding: 12px 16px; }
 }
 
 
