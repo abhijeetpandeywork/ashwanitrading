@@ -26,9 +26,9 @@
         <p class="footer-bio">The trusted backbone for contractors and workshop owners across Jammu, Kashmir &amp; Ladakh. Genuine parts, unmatched reliability.</p>
         
         <div class="footer-social">
-          <a href="https://www.facebook.com/ashwanitrading" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/ashwanitrading" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="https://twitter.com/ashwanitrading" target="_blank" rel="noopener" aria-label="Twitter / X"><i class="fab fa-x-twitter"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=61585148043428&mibextid=ZbWKwL" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/ashwanitradingcojammu?igsh=N3AybXQ1dmRtcmZ1" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/Ashwanitrading" target="_blank" rel="noopener" aria-label="Twitter / X"><i class="fab fa-x-twitter"></i></a>
         </div>
       </div>
 

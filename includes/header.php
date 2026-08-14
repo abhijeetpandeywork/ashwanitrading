@@ -71,8 +71,9 @@ $currentPage = $currentPage ?? '';
     "areaServed": ["Jammu", "Kashmir", "Ladakh"],
     "sameAs": [
       "https://www.tradeindia.com/ashwani-trading-co-2560288/",
-      "https://www.facebook.com/ashwanitrading",
-      "https://www.instagram.com/ashwanitrading"
+      "https://www.facebook.com/profile.php?id=61585148043428&mibextid=ZbWKwL",
+      "https://www.instagram.com/ashwanitradingcojammu?igsh=N3AybXQ1dmRtcmZ1",
+      "https://twitter.com/Ashwanitrading"
     ]
   }
   </script>
@@ -89,8 +90,9 @@ $currentPage = $currentPage ?? '';
       <a href="mailto:ashwanitradingcojammu@gmail.com"><i class="fas fa-envelope"></i>ashwanitradingcojammu@gmail.com</a>
     </div>
     <div class="top-bar__social">
-      <a href="https://www.facebook.com/ashwanitrading" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://www.instagram.com/ashwanitrading" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=61585148043428&mibextid=ZbWKwL" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/ashwanitradingcojammu?igsh=N3AybXQ1dmRtcmZ1" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com/Ashwanitrading" target="_blank" rel="noopener" aria-label="Twitter / X"><i class="fab fa-x-twitter"></i></a>
       <a href="https://www.tradeindia.com/ashwani-trading-co-2560288/" target="_blank" rel="noopener" aria-label="TradeIndia"><i class="fas fa-building"></i></a>
     </div>
   </div>
