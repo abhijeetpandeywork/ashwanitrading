@@ -14,18 +14,13 @@ include 'includes/header.php';
 
 <section class="hero" aria-label="Ashwani Trading Co. — Spare Parts and Machinery Services">
   
-  <!-- Full Screen Background Image with Animation -->
-  <div class="hero__bg">
-    <div class="hero__bg-img" style="background-image: url('/assets/img/hero-banner.png');"></div>
-    <div class="hero__bg-overlay"></div>
-  </div>
+  <!-- Removed full-screen dark background for light theme -->
 
   <div class="hero__inner">
     <!-- CONTENT -->
     <div class="hero__content">
       <div class="hero__eyebrow" data-reveal>
-        <span class="hero__eyebrow-dot"></span>
-        Trusted Since 60+ Years
+        <i class="fas fa-shield-alt"></i> Trusted Since 60+ Years
       </div>
 
       <h1 class="hero__h1" data-reveal data-reveal-delay="1">
@@ -64,6 +59,12 @@ include 'includes/header.php';
         </div>
       </div>
     </div><!-- /hero__content -->
+    
+    <!-- Right Column: Image -->
+    <div class="hero__right" data-reveal data-reveal-delay="2">
+      <img src="/assets/img/hero-banner.png" alt="Heavy Machinery Spare Parts" style="border-radius: var(--r-md); box-shadow: var(--shadow-lg);">
+    </div>
+
   </div>
 </section>
 
