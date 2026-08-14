@@ -21,7 +21,7 @@
       <!-- Col 1: Brand -->
       <div class="footer-col footer-col--brand">
         <div class="footer-logo-wrap">
-          <img src="/assets/img/WhatsApp%20Image%202026-08-12%20at%205.32.04%20PM.jpeg" alt="Ashwani Trading Co. Logo" style="max-height: 50px; width: auto; border-radius: 4px;">
+          <img src="/assets/img/WhatsApp%20Image%202026-08-12%20at%205.32.04%20PM.jpeg" alt="Ashwani Trading Co. Logo" style="max-height: 90px; width: auto; border-radius: 6px;">
         </div>
         <p class="footer-bio">The trusted backbone for contractors and workshop owners across Jammu, Kashmir &amp; Ladakh. Genuine parts, unmatched reliability.</p>
         
