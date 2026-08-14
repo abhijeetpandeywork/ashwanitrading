@@ -25,11 +25,11 @@ $currentPage = $currentPage ?? '';
   <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <!-- Site CSS -->
-  <link rel="stylesheet" href="/assets/css/style.css?v=4.0">
+  <link rel="stylesheet" href="/assets/css/style.css?v=4.1">
 
   <?php if (($currentPage ?? '') === 'home'): ?>
   <!-- LocalBusiness Schema — Homepage only -->

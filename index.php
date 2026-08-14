@@ -6,49 +6,158 @@ include 'includes/header.php';
 ?>
 
 <!-- ============================================================
-     HERO — Z-pattern layout
-     Left: Headline + CTAs + Trust strip
-     Right: SVG machinery illustration
+     HERO — 5-Slide Fullscreen Slider
      ============================================================ -->
 <main id="main-content">
 
-<section class="hero" aria-label="Ashwani Trading Co. — Spare Parts and Machinery Services">
-  
-  <!-- Full Screen Background Image with Animation -->
-  <div class="hero__bg">
-    <div class="hero__bg-img" style="background-image: url('/assets/img/hero-banner.png');"></div>
-    <div class="hero__bg-overlay"></div>
+<section class="hero hero--slider" aria-label="Ashwani Trading Co. — Spare Parts and Machinery Services" id="hero-section">
+
+  <!-- Slide Backgrounds -->
+  <div class="hero-slides" id="heroSlides">
+
+    <!-- SLIDE 1: Welcome -->
+    <div class="hero-slide active" data-slide="0" style="background-image: url('/assets/img/hero-banner.png');">
+      <div class="hero-slide__overlay"></div>
+      <div class="hero-slide__content container">
+        <span class="hero__eyebrow"><i class="fas fa-star"></i> Est. 1960 — Jammu's Most Trusted</span>
+        <h1 class="hero__h1">
+          Welcome to<br>
+          <em>Ashwani Trading Co.</em>
+        </h1>
+        <p class="hero__sub">
+          Your one-stop destination for genuine earthmoving &amp; construction machinery spare parts. Serving contractors, builders, and workshop owners with unmatched reliability since 1960.
+        </p>
+        <div class="hero__actions">
+          <a href="tel:+919419186209" class="btn btn--primary" id="hero-call-btn-1">
+            <i class="fas fa-phone-alt"></i> Call Now: +91 94191 86209
+          </a>
+          <a href="/catalog.php" class="btn btn--secondary" id="hero-catalog-btn-1">
+            <i class="fas fa-book-open"></i> Browse Catalog
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 2: Coverage Area / Location -->
+    <div class="hero-slide" data-slide="1" style="background-image: url('/assets/img/hero-banner.png');">
+      <div class="hero-slide__overlay" style="background: linear-gradient(90deg, rgba(6,40,24,0.97) 0%, rgba(6,40,24,0.75) 55%, rgba(6,40,24,0.35) 100%);"></div>
+      <div class="hero-slide__content container">
+        <span class="hero__eyebrow"><i class="fas fa-map-marker-alt"></i> Serving J&amp;K &amp; Ladakh</span>
+        <h1 class="hero__h1">
+          From Jammu to<br>
+          <em>Kashmir &amp; Ladakh.</em>
+        </h1>
+        <p class="hero__sub">
+          Strategically located at Narwal, Jammu — we supply genuine &amp; aftermarket spare parts across all three union territories. Fast delivery, stocked inventory, zero waiting time.
+        </p>
+        <div class="hero__actions">
+          <a href="/contact.php" class="btn btn--primary" id="hero-contact-btn-2">
+            <i class="fas fa-directions"></i> Find Us in Jammu
+          </a>
+          <a href="https://wa.me/919419186209?text=Hi%2C%20I%20need%20spare%20parts%20information" target="_blank" rel="noopener" class="btn btn--secondary" id="hero-wa-btn-2">
+            <i class="fab fa-whatsapp"></i> WhatsApp for Enquiry
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 3: Expertise & Experience -->
+    <div class="hero-slide" data-slide="2" style="background-image: url('/assets/img/hero-banner.png');">
+      <div class="hero-slide__overlay" style="background: linear-gradient(90deg, rgba(11,77,44,0.96) 0%, rgba(6,40,24,0.72) 55%, rgba(6,40,24,0.3) 100%);"></div>
+      <div class="hero-slide__content container">
+        <span class="hero__eyebrow"><i class="fas fa-award"></i> 60+ Years of Expertise</span>
+        <h1 class="hero__h1">
+          Three Generations.<br>
+          <em>One Legacy of Trust.</em>
+        </h1>
+        <p class="hero__sub">
+          From JCB hydraulic pumps to road roller track chains — our team identifies any part by model number or description. 60+ years of hands-on knowledge means we solve problems other suppliers can't.
+        </p>
+        <div class="hero__actions">
+          <a href="/about.php" class="btn btn--primary" id="hero-about-btn-3">
+            <i class="fas fa-history"></i> Our Story
+          </a>
+          <a href="/services.php" class="btn btn--secondary" id="hero-services-btn-3">
+            <i class="fas fa-tools"></i> Our Services
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 4: Spare Parts Catalog -->
+    <div class="hero-slide" data-slide="3" style="background-image: url('/assets/img/hero-banner.png');">
+      <div class="hero-slide__overlay" style="background: linear-gradient(90deg, rgba(6,40,24,0.97) 0%, rgba(6,40,24,0.72) 55%, rgba(6,40,24,0.3) 100%);"></div>
+      <div class="hero-slide__content container">
+        <span class="hero__eyebrow"><i class="fas fa-cogs"></i> 1000+ Parts Always Stocked</span>
+        <h1 class="hero__h1">
+          Every Part.<br>
+          <em>Every Machine.</em>
+        </h1>
+        <p class="hero__sub">
+          JCB, Caterpillar, Komatsu, L&amp;T, BEML, Volvo — we stock OEM &amp; aftermarket parts for all major brands. Undercarriage parts, hydraulic components, engine overhaul kits &amp; more, ready same day.
+        </p>
+        <div class="hero__actions">
+          <a href="/catalog.php" class="btn btn--primary" id="hero-catalog-btn-4">
+            <i class="fas fa-search"></i> Find Your Part
+          </a>
+          <a href="tel:+919419186209" class="btn btn--secondary" id="hero-call-btn-4">
+            <i class="fas fa-phone-alt"></i> +91 94191 86209
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 5: Workshop & Rentals -->
+    <div class="hero-slide" data-slide="4" style="background-image: url('/assets/img/hero-banner.png');">
+      <div class="hero-slide__overlay" style="background: linear-gradient(90deg, rgba(6,40,24,0.97) 0%, rgba(6,40,24,0.72) 55%, rgba(6,40,24,0.3) 100%);"></div>
+      <div class="hero-slide__content container">
+        <span class="hero__eyebrow"><i class="fas fa-wrench"></i> Repair &amp; Rental Solutions</span>
+        <h1 class="hero__h1">
+          Machine Down?<br>
+          <em>We Get You Back.</em>
+        </h1>
+        <p class="hero__sub">
+          Downtime costs money. Our workshop team diagnoses and repairs earthmoving machinery on-site and in-yard. Need a machine urgently? Rent from our fleet — flexible terms, all regions covered.
+        </p>
+        <div class="hero__actions">
+          <a href="/services.php#workshop" class="btn btn--primary" id="hero-workshop-btn-5">
+            <i class="fas fa-wrench"></i> Book Repair
+          </a>
+          <a href="/services.php#rentals" class="btn btn--secondary" id="hero-rental-btn-5">
+            <i class="fas fa-truck-pickup"></i> Rent Machinery
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /hero-slides -->
+
+  <!-- Slider Controls -->
+  <button class="hero-arrow hero-arrow--prev" id="heroPrev" aria-label="Previous slide">
+    <i class="fas fa-chevron-left"></i>
+  </button>
+  <button class="hero-arrow hero-arrow--next" id="heroNext" aria-label="Next slide">
+    <i class="fas fa-chevron-right"></i>
+  </button>
+
+  <!-- Slide Dots -->
+  <div class="hero-dots" id="heroDots">
+    <button class="hero-dot active" data-dot="0" aria-label="Slide 1"></button>
+    <button class="hero-dot" data-dot="1" aria-label="Slide 2"></button>
+    <button class="hero-dot" data-dot="2" aria-label="Slide 3"></button>
+    <button class="hero-dot" data-dot="3" aria-label="Slide 4"></button>
+    <button class="hero-dot" data-dot="4" aria-label="Slide 5"></button>
   </div>
 
-  <div class="hero__inner">
-    <!-- CONTENT -->
-    <div class="hero__content">
-      <div class="hero__eyebrow" data-reveal>
-        <i class="fas fa-shield-alt"></i> Trusted Since 60+ Years
-      </div>
+  <!-- Slide Progress Bar -->
+  <div class="hero-progress" id="heroProgress">
+    <div class="hero-progress__bar" id="heroProgressBar"></div>
+  </div>
 
-      <h1 class="hero__h1" data-reveal data-reveal-delay="1">
-        60+ Years of Trust.<br>
-        Powering <em>J&amp;K &amp; Ladakh.</em>
-      </h1>
-
-      <p class="hero__sub" data-reveal data-reveal-delay="2">
-        Genuine &amp; aftermarket spare parts for JCB, Road Rollers, Drill Rods &amp; all earthmoving machinery — stocked and ready. Workshop repairs. Machinery rentals. One stop, Jammu.
-      </p>
-
-      <div class="hero__actions" data-reveal data-reveal-delay="3">
-        <a href="tel:+919419186209" class="btn btn--primary" id="hero-call-btn">
-          <i class="fas fa-phone-alt"></i> Call Now: +91 94191 86209
-        </a>
-        <a href="https://wa.me/919419186209?text=Hi%2C%20I%20need%20spare%20parts%20information"
-           target="_blank" rel="noopener"
-           class="btn btn--secondary" id="hero-whatsapp-btn">
-          <i class="fab fa-whatsapp"></i> WhatsApp Us
-        </a>
-      </div>
-
-      <!-- Trust Stats — most important element, above the fold -->
-      <div class="hero__trust" data-reveal data-reveal-delay="4">
+  <!-- Trust Stats Strip (always visible at bottom) -->
+  <div class="hero__trust-strip" id="heroTrustStrip">
+    <div class="container">
+      <div class="hero__trust">
         <div class="trust-stat">
           <span class="trust-stat__number">60+</span>
           <span class="trust-stat__label">Years of Trust</span>
@@ -58,12 +167,17 @@ include 'includes/header.php';
           <span class="trust-stat__label">Regions Served</span>
         </div>
         <div class="trust-stat">
+          <span class="trust-stat__number">1000+</span>
+          <span class="trust-stat__label">Parts Stocked</span>
+        </div>
+        <div class="trust-stat">
           <span class="trust-stat__number">4</span>
           <span class="trust-stat__label">Core Services</span>
         </div>
       </div>
-    </div><!-- /hero__content -->
+    </div>
   </div>
+
 </section>
 
 
@@ -291,6 +405,99 @@ include 'includes/header.php';
 </section>
 
 </main>
+
+<!-- Hero Slider Script -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const slides = document.querySelectorAll('.hero-slide');
+  const dots = document.querySelectorAll('.hero-dot');
+  const progressBar = document.getElementById('heroProgressBar');
+  const prevBtn = document.getElementById('heroPrev');
+  const nextBtn = document.getElementById('heroNext');
+  
+  if (!slides.length) return;
+
+  let currentSlide = 0;
+  let slideInterval;
+  const slideDuration = 6000; // 6 seconds per slide
+
+  function goToSlide(index) {
+    // Handle wrap around
+    if (index < 0) index = slides.length - 1;
+    if (index >= slides.length) index = 0;
+
+    // Reset progress bar immediately
+    progressBar.style.transition = 'none';
+    progressBar.style.width = '0%';
+
+    // Handle exiting slide
+    slides[currentSlide].classList.remove('active');
+    slides[currentSlide].classList.add('exiting');
+    dots[currentSlide].classList.remove('active');
+
+    const exitingSlide = currentSlide;
+
+    // Set new current
+    currentSlide = index;
+
+    // Setup new slide
+    slides[currentSlide].classList.remove('exiting');
+    slides[currentSlide].classList.add('active');
+    dots[currentSlide].classList.add('active');
+
+    // Force reflow for progress bar animation
+    void progressBar.offsetWidth;
+
+    // Start progress bar
+    progressBar.style.transition = `width ${slideDuration}ms linear`;
+    progressBar.style.width = '100%';
+
+    // Cleanup old slide after transition
+    setTimeout(() => {
+      slides[exitingSlide].classList.remove('exiting');
+    }, 900); // matches CSS transition duration
+  }
+
+  function nextSlide() {
+    goToSlide(currentSlide + 1);
+  }
+
+  function prevSlide() {
+    goToSlide(currentSlide - 1);
+  }
+
+  function resetTimer() {
+    clearInterval(slideInterval);
+    slideInterval = setInterval(nextSlide, slideDuration);
+  }
+
+  // Event Listeners
+  nextBtn.addEventListener('click', () => {
+    nextSlide();
+    resetTimer();
+  });
+
+  prevBtn.addEventListener('click', () => {
+    prevSlide();
+    resetTimer();
+  });
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      if (currentSlide !== index) {
+        goToSlide(index);
+        resetTimer();
+      }
+    });
+  });
+
+  // Init
+  progressBar.style.transition = `width ${slideDuration}ms linear`;
+  progressBar.style.width = '100%';
+  resetTimer();
+});
+</script>
+
 
 <?php include 'includes/footer.php'; ?>
 <!-- BUSTER 123 -->
