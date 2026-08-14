@@ -16,8 +16,8 @@ include 'includes/header.php';
   <div class="hero-slides" id="heroSlides">
 
     <!-- SLIDE 1: Welcome -->
-    <div class="hero-slide active" data-slide="0" style="background-image: url('/assets/img/hero-banner.png');">
-      <div class="hero-slide__overlay"></div>
+    <div class="hero-slide active" data-slide="0" style="background: radial-gradient(circle at 30% 30%, #0B4D2C 0%, #062818 100%);">
+      <div class="hero-slide__overlay" style="background: linear-gradient(105deg, rgba(6,40,24,0.85) 0%, rgba(6,40,24,0.65) 50%, rgba(6,40,24,0.2) 100%);"></div>
       <div class="hero-slide__content container">
         <span class="hero__eyebrow"><i class="fas fa-star"></i> Est. 1960 — Jammu's Most Trusted</span>
         <h1 class="hero__h1">
@@ -39,8 +39,8 @@ include 'includes/header.php';
     </div>
 
     <!-- SLIDE 2: Coverage Area / Location -->
-    <div class="hero-slide" data-slide="1" style="background-image: url('/assets/img/hero-banner.png');">
-      <div class="hero-slide__overlay" style="background: linear-gradient(90deg, rgba(6,40,24,0.97) 0%, rgba(6,40,24,0.75) 55%, rgba(6,40,24,0.35) 100%);"></div>
+    <div class="hero-slide" data-slide="1" style="background: radial-gradient(circle at 70% 80%, #0F172A 0%, #062818 100%);">
+      <div class="hero-slide__overlay" style="background: linear-gradient(90deg, rgba(6,40,24,0.9) 0%, rgba(6,40,24,0.6) 55%, rgba(6,40,24,0.2) 100%);"></div>
       <div class="hero-slide__content container">
         <span class="hero__eyebrow"><i class="fas fa-map-marker-alt"></i> Serving J&amp;K &amp; Ladakh</span>
         <h1 class="hero__h1">
@@ -62,8 +62,8 @@ include 'includes/header.php';
     </div>
 
     <!-- SLIDE 3: Expertise & Experience -->
-    <div class="hero-slide" data-slide="2" style="background-image: url('/assets/img/hero-banner.png');">
-      <div class="hero-slide__overlay" style="background: linear-gradient(90deg, rgba(11,77,44,0.96) 0%, rgba(6,40,24,0.72) 55%, rgba(6,40,24,0.3) 100%);"></div>
+    <div class="hero-slide" data-slide="2" style="background: radial-gradient(circle at 50% 50%, #128042 0%, #062818 100%);">
+      <div class="hero-slide__overlay" style="background: linear-gradient(90deg, rgba(11,77,44,0.9) 0%, rgba(6,40,24,0.6) 55%, rgba(6,40,24,0.2) 100%);"></div>
       <div class="hero-slide__content container">
         <span class="hero__eyebrow"><i class="fas fa-award"></i> 60+ Years of Expertise</span>
         <h1 class="hero__h1">
@@ -85,8 +85,8 @@ include 'includes/header.php';
     </div>
 
     <!-- SLIDE 4: Spare Parts Catalog -->
-    <div class="hero-slide" data-slide="3" style="background-image: url('/assets/img/hero-banner.png');">
-      <div class="hero-slide__overlay" style="background: linear-gradient(90deg, rgba(6,40,24,0.97) 0%, rgba(6,40,24,0.72) 55%, rgba(6,40,24,0.3) 100%);"></div>
+    <div class="hero-slide" data-slide="3" style="background: radial-gradient(circle at 10% 90%, #062818 0%, #0F172A 100%);">
+      <div class="hero-slide__overlay" style="background: linear-gradient(90deg, rgba(6,40,24,0.9) 0%, rgba(6,40,24,0.6) 55%, rgba(6,40,24,0.2) 100%);"></div>
       <div class="hero-slide__content container">
         <span class="hero__eyebrow"><i class="fas fa-cogs"></i> 1000+ Parts Always Stocked</span>
         <h1 class="hero__h1">
@@ -108,8 +108,8 @@ include 'includes/header.php';
     </div>
 
     <!-- SLIDE 5: Workshop & Rentals -->
-    <div class="hero-slide" data-slide="4" style="background-image: url('/assets/img/hero-banner.png');">
-      <div class="hero-slide__overlay" style="background: linear-gradient(90deg, rgba(6,40,24,0.97) 0%, rgba(6,40,24,0.72) 55%, rgba(6,40,24,0.3) 100%);"></div>
+    <div class="hero-slide" data-slide="4" style="background: radial-gradient(circle at 80% 20%, #0B4D2C 0%, #062818 100%);">
+      <div class="hero-slide__overlay" style="background: linear-gradient(90deg, rgba(6,40,24,0.9) 0%, rgba(6,40,24,0.6) 55%, rgba(6,40,24,0.2) 100%);"></div>
       <div class="hero-slide__content container">
         <span class="hero__eyebrow"><i class="fas fa-wrench"></i> Repair &amp; Rental Solutions</span>
         <h1 class="hero__h1">
