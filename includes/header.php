@@ -29,7 +29,7 @@ $currentPage = $currentPage ?? '';
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <!-- Site CSS -->
-  <link rel="stylesheet" href="/assets/css/style.css?v=3.1">
+  <link rel="stylesheet" href="/assets/css/style.css?v=3.2">
 
   <?php if (($currentPage ?? '') === 'home'): ?>
   <!-- LocalBusiness Schema — Homepage only -->
@@ -79,11 +79,6 @@ $currentPage = $currentPage ?? '';
   <?php endif; ?>
 </head>
 <body>
-
-<!-- ===================== DRAFT DISCLAIMER BANNER ===================== -->
-<div style="background: #E63946; color: #FFF; padding: 12px 24px; text-align: center; font-size: 14px; font-weight: 600; letter-spacing: 0.5px;">
-  DRAFT WEBSITE: This is a structural layout preview. Content, text, and inventory are placeholders and will be replaced upon client approval.
-</div>
 
 <!-- ===================== TOP INFO BAR ===================== -->
 <div class="top-bar">
