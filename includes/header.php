@@ -29,7 +29,7 @@ $currentPage = $currentPage ?? '';
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <!-- Site CSS -->
-  <link rel="stylesheet" href="/assets/css/style.css?v=3.2">
+  <link rel="stylesheet" href="/assets/css/style.css?v=3.3">
 
   <?php if (($currentPage ?? '') === 'home'): ?>
   <!-- LocalBusiness Schema — Homepage only -->
@@ -102,10 +102,7 @@ $currentPage = $currentPage ?? '';
 
     <!-- Logo -->
     <a href="/index.php" class="logo" aria-label="Ashwani Trading Co. — Home">
-      <div class="logo__text" style="padding-left: 0;">
-        <span class="logo__brand">Ashwani Trading Co.</span>
-        <span class="logo__sub">QUALITY | TRUST | COMMITMENT</span>
-      </div>
+      <img src="/assets/img/WhatsApp%20Image%202026-08-12%20at%205.32.04%20PM.jpeg" alt="Ashwani Trading Co. Logo" style="max-height: 50px; width: auto; border-radius: 4px;">
     </a>
 
     <!-- Desktop Navigation -->
