@@ -154,30 +154,6 @@ include 'includes/header.php';
     <div class="hero-progress__bar" id="heroProgressBar"></div>
   </div>
 
-  <!-- Trust Stats Strip (always visible at bottom) -->
-  <div class="hero__trust-strip" id="heroTrustStrip">
-    <div class="container">
-      <div class="hero__trust">
-        <div class="trust-stat">
-          <span class="trust-stat__number">60+</span>
-          <span class="trust-stat__label">Years of Trust</span>
-        </div>
-        <div class="trust-stat">
-          <span class="trust-stat__number">3</span>
-          <span class="trust-stat__label">Regions Served</span>
-        </div>
-        <div class="trust-stat">
-          <span class="trust-stat__number">1000+</span>
-          <span class="trust-stat__label">Parts Stocked</span>
-        </div>
-        <div class="trust-stat">
-          <span class="trust-stat__number">4</span>
-          <span class="trust-stat__label">Core Services</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
 </section>
 
 
