@@ -29,7 +29,7 @@ $currentPage = $currentPage ?? '';
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <!-- Site CSS -->
-  <link rel="stylesheet" href="/assets/css/style.css?v=2.8">
+  <link rel="stylesheet" href="/assets/css/style.css?v=2.9">
 
   <?php if (($currentPage ?? '') === 'home'): ?>
   <!-- LocalBusiness Schema — Homepage only -->
@@ -80,6 +80,11 @@ $currentPage = $currentPage ?? '';
 </head>
 <body>
 
+<!-- ===================== DRAFT DISCLAIMER BANNER ===================== -->
+<div style="background: #E63946; color: #FFF; padding: 12px 24px; text-align: center; font-size: 14px; font-weight: 600; letter-spacing: 0.5px;">
+  DRAFT WEBSITE: This is a structural layout preview. Content, text, and inventory are placeholders and will be replaced upon client approval.
+</div>
+
 <!-- ===================== TOP INFO BAR ===================== -->
 <div class="top-bar">
   <div class="container top-bar__inner">
@@ -102,16 +107,9 @@ $currentPage = $currentPage ?? '';
 
     <!-- Logo -->
     <a href="/index.php" class="logo" aria-label="Ashwani Trading Co. — Home">
-      <!-- SVG Gear Logo Mark -->
-      <svg class="logo__icon" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <rect width="44" height="44" rx="10" fill="#0B4D2C"/>
-        <path d="M22 13l1.8 3.9 4-.9-.5 4.3 4 1.6-2.8 3.4 2.8 3.4-4 1.6.5 4.3-4-.9L22 34l-1.8-3.8-4 .9.5-4.3-4-1.6 2.8-3.4-2.8-3.4 4-1.6-.5-4.3 4 .9z" fill="#F2A900"/>
-        <circle cx="22" cy="22" r="5" fill="#0B4D2C"/>
-        <circle cx="22" cy="22" r="2.5" fill="#F2A900" opacity=".7"/>
-      </svg>
-      <div class="logo__text">
+      <div class="logo__text" style="padding-left: 0;">
         <span class="logo__brand">Ashwani Trading Co.</span>
-        <span class="logo__sub">Since 60+ Years · Jammu</span>
+        <span class="logo__sub">QUALITY | TRUST | COMMITMENT</span>
       </div>
     </a>
 
