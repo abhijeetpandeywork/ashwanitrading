@@ -269,9 +269,9 @@ include 'includes/header.php';
      ============================================================ -->
 <section class="cta-band" id="cta-final">
   <div class="container">
-    <span class="tag tag--gold" style="margin-bottom:18px; display:inline-block;" data-reveal>Don't Let Downtime Cost You</span>
-    <h2 data-reveal data-reveal-delay="1">Machine downtime stalls your site.<br>Call us. We'll get you the part.</h2>
-    <p data-reveal data-reveal-delay="2">Our team is ready to identify your part, confirm availability, and get it to you fast. One call. That's all it takes.</p>
+    <span class="tag tag--gold" style="margin-bottom:18px; display:inline-block; background:rgba(242,169,0,0.2) !important; color:#FFC93D !important; border:1px solid rgba(242,169,0,0.5) !important;" data-reveal>Don't Let Downtime Cost You</span>
+    <h2 style="color:#FFFFFF !important;" data-reveal data-reveal-delay="1">Machine downtime stalls your site.<br>Call us. We'll get you the part.</h2>
+    <p style="color:#FFFFFF !important; opacity:0.95; font-size:17px; max-width:640px; margin:0 auto 28px; line-height:1.65;" data-reveal data-reveal-delay="2">Our team is ready to identify your part, confirm availability, and get it to you fast. One call. That's all it takes.</p>
     <a href="tel:+919419186209" class="cta-band__phone" data-reveal data-reveal-delay="2">
       +91 94191 86209
     </a>
