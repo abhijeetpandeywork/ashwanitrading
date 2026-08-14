@@ -884,6 +884,74 @@ textarea.form-inp-v2 { resize: vertical; min-height: 120px; }
 }
 .map-embed iframe { width: 100%; height: 100%; display: block; border: none; }
 
+/* ===================== FINAL CTA BAND ===================== */
+.cta-band {
+  background: var(--green-900);
+  background-image: radial-gradient(circle at 50% 0%, rgba(14,97,54,0.4) 0%, transparent 70%);
+  padding: 80px 0;
+  text-align: center;
+  position: relative;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+.cta-band .tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(242,169,0,0.18);
+  border: 1px solid rgba(242,169,0,0.45);
+  color: var(--gold-light);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 8px 18px;
+  border-radius: 50px;
+}
+.cta-band h2 {
+  font-family: var(--f-head);
+  color: var(--white) !important;
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-top: 18px;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+.cta-band p {
+  color: rgba(255,255,255,0.85) !important;
+  font-size: 17px;
+  max-width: 620px;
+  margin: 0 auto 28px;
+  line-height: 1.65;
+}
+.cta-band__phone {
+  display: inline-block;
+  font-family: var(--f-head);
+  font-size: clamp(32px, 5vw, 54px);
+  font-weight: 900;
+  color: var(--gold) !important;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  margin-bottom: 36px;
+  transition: var(--t);
+  line-height: 1.1;
+}
+.cta-band__phone:hover {
+  color: var(--gold-light) !important;
+  transform: scale(1.03);
+}
+.cta-band__actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.cta-band__actions .btn {
+  font-size: 15px;
+  padding: 14px 28px;
+}
+
 /* ===================== STICKY CATALOG BAR ===================== */
 .sticky-find-bar {
   position: sticky;
