@@ -824,11 +824,49 @@ p  { font-size: 16px; line-height: 1.7; color: var(--gray-500); }
 .why-item h3 { color: var(--charcoal); font-size: 18px; font-weight: 700; margin-bottom: 8px; }
 .why-item p  { font-size: 14.5px; color: var(--gray-500); line-height: 1.6; }
 
-/* ===================== SECTION HEADER ===================== */
+/* ===================== SECTION HEADERS ===================== */
 .section-head {
   text-align: center;
   max-width: 680px;
+  margin: 0 auto 48px;
+}
+.section-head .tag {
+  display: inline-block;
+  margin-bottom: 12px;
+}
+.section-head h2 {
+  font-family: var(--f-head);
+  font-size: clamp(32px, 5vw, 42px);
+  font-weight: 800;
+  margin-bottom: 16px;
+  line-height: 1.15;
+  color: var(--green-900);
+  letter-spacing: -1px;
+}
+.section-head p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--gray-600);
+}
+
+/* Beautiful Centered Service Headings */
+.section-head--svc {
+  text-align: center;
+  max-width: 900px;
   margin: 0 auto 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-head--svc h2 {
+  font-size: clamp(36px, 5vw, 48px);
+  margin-bottom: 20px;
+}
+.section-head--svc p {
+  font-size: 18px;
+  color: var(--gray-600);
+  max-width: 800px;
+  margin: 0 auto;
 }
 .section-head--left { text-align: left; margin-left: 0; }
 
@@ -1367,6 +1405,24 @@ textarea.form-inp-v2 { resize: vertical; min-height: 120px; }
 .footer-logo-text .logo__brand { color: var(--white); }
 .footer-bio { font-size: 14.5px; color: rgba(255,255,255,.55); line-height: 1.8; margin-bottom: 24px; max-width: 380px; }
 .footer-social { display: flex; gap: 10px; }
+.hero-svc-link {
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid rgba(255,255,255,0.3);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.hero-svc-link:hover,
+.hero-svc-link.active {
+  background: rgba(242, 169, 0, 0.95);
+  color: var(--green-900);
+  border-color: rgba(242, 169, 0, 1);
+  box-shadow: 0 4px 15px rgba(242,169,0,0.4);
+}
 .footer-social a {
   width: 36px; height: 36px;
   border-radius: 50%;

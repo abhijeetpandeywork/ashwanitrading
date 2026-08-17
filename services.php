@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 $pageTitle="Services | Ashwani Trading Co.";
 $metaDesc="Earthmoving spare parts, lubricants, tools, repairs & rentals across J&K & Ladakh.";
 $currentPage="services";
@@ -184,12 +184,12 @@ function subHead($label,$icon){
     <span class="tag tag--gold" style="margin-bottom: 24px; box-shadow: 0 4px 15px rgba(242,169,0,0.3);">Five Services. One Trusted Partner.</span>
     <h1 style="font-size: clamp(40px, 6vw, 72px); margin-bottom: 24px; color: #fff; line-height: 1.05; text-shadow: 0 4px 20px rgba(0,0,0,0.8); font-weight: 800; letter-spacing: -1px;">Everything Your<br><span style="color:var(--gold);">Machines Need</span></h1>
     <p style="font-size: 20px; line-height: 1.6; opacity: 0.92; text-shadow: 0 2px 10px rgba(0,0,0,0.7); max-width: 640px; font-weight: 500;">Genuine spare parts, industrial lubricants, professional tools, expert repairs and flexible equipment rentals — serving Jammu, Kashmir &amp; Ladakh for 60+ years.</p>
-    <nav style="display:flex; gap:10px; flex-wrap:wrap; margin-top:32px;">
-      <a href="#spare-parts" style="background:rgba(255,255,255,0.15);color:#fff;padding:10px 20px;border-radius:30px;font-size:14px;font-weight:600;border:1px solid rgba(255,255,255,0.3);text-decoration:none;">01 — Spare Parts</a>
-      <a href="#lubricants"  style="background:rgba(255,255,255,0.15);color:#fff;padding:10px 20px;border-radius:30px;font-size:14px;font-weight:600;border:1px solid rgba(255,255,255,0.3);text-decoration:none;">02 — Lubricants &amp; Oils</a>
-      <a href="#tools"       style="background:rgba(255,255,255,0.15);color:#fff;padding:10px 20px;border-radius:30px;font-size:14px;font-weight:600;border:1px solid rgba(255,255,255,0.3);text-decoration:none;">03 — Tools &amp; Equipment</a>
-      <a href="#workshop"    style="background:rgba(255,255,255,0.15);color:#fff;padding:10px 20px;border-radius:30px;font-size:14px;font-weight:600;border:1px solid rgba(255,255,255,0.3);text-decoration:none;">04 — Services &amp; Repairs</a>
-      <a href="#rentals"     style="background:rgba(242,169,0,0.85);color:#062818;padding:10px 20px;border-radius:30px;font-size:14px;font-weight:700;text-decoration:none;">05 — Machinery Rentals</a>
+    <nav class="hero-svc-nav" style="display:flex; gap:10px; flex-wrap:wrap; margin-top:32px;">
+      <a href="#spare-parts" class="hero-svc-link">01 — Spare Parts</a>
+      <a href="#lubricants"  class="hero-svc-link">02 — Lubricants &amp; Oils</a>
+      <a href="#tools"       class="hero-svc-link">03 — Tools &amp; Equipment</a>
+      <a href="#workshop"    class="hero-svc-link">04 — Services &amp; Repairs</a>
+      <a href="#rentals"     class="hero-svc-link">05 — Machinery Rentals</a>
     </nav>
   </div>
 </section>
@@ -198,10 +198,10 @@ function subHead($label,$icon){
 <?php
 // SERVICE 1
 echo "<div class=\"svc-section\" id=\"spare-parts\" style=\"margin-bottom:80px;\">";
-echo "<div class=\"section-head\" style=\"text-align:left;\" data-reveal>";
+echo "<div class=\"section-head section-head--svc\" data-reveal>";
 echo "<span class=\"tag\"><i class=\"fas fa-cogs\"></i> Service 01</span>";
 echo "<h2>Spare Parts &amp; Accessories</h2>";
-echo "<p style=\"max-width:800px;color:var(--gray-500);margin:0;\">Genuine OEM and quality-checked aftermarket spare parts for every major category of earthmoving and construction equipment. Fast sourcing, verified quality, 60+ years of expert guidance.</p>";
+echo "<p>Genuine OEM and quality-checked aftermarket spare parts for every major category of earthmoving and construction equipment. Fast sourcing, verified quality, 60+ years of expert guidance.</p>";
 echo "</div><div class=\"services-grid\" style=\"margin-top:40px;\" data-reveal>";
 $d=2;
 foreach(["Excavator Spare Parts","Backhoe Loader Spare Parts","Road Roller / Compactor Spare Parts",
@@ -211,10 +211,10 @@ echo "</div></div>";
 
 // SERVICE 2
 echo "<div class=\"svc-section\" id=\"lubricants\" style=\"margin-bottom:80px;padding-top:40px;border-top:1px solid rgba(11,77,44,0.1);\">";
-echo "<div class=\"section-head\" style=\"text-align:left;\" data-reveal>";
+echo "<div class=\"section-head section-head--svc\" data-reveal>";
 echo "<span class=\"tag\"><i class=\"fas fa-oil-can\"></i> Service 02</span>";
 echo "<h2>Lubricants, Oils &amp; Fluids</h2>";
-echo "<p style=\"max-width:800px;color:var(--gray-500);margin:0;\">Quality lubrication is the most cost-effective way to extend machine life. Full range of industrial-grade oils, greases, coolants and lubrication equipment — with professional specification advice.</p>";
+echo "<p>Quality lubrication is the most cost-effective way to extend machine life. Full range of industrial-grade oils, greases, coolants and lubrication equipment — with professional specification advice.</p>";
 echo "</div><div class=\"services-grid\" style=\"margin-top:40px;\" data-reveal>";
 subHead("Oils &amp; Fluids","tint");
 $d=2;
@@ -227,10 +227,10 @@ echo "</div></div>";
 
 // SERVICE 3
 echo "<div class=\"svc-section\" id=\"tools\" style=\"margin-bottom:80px;padding-top:40px;border-top:1px solid rgba(11,77,44,0.1);\">";
-echo "<div class=\"section-head\" style=\"text-align:left;\" data-reveal>";
+echo "<div class=\"section-head section-head--svc\" data-reveal>";
 echo "<span class=\"tag\"><i class=\"fas fa-toolbox\"></i> Service 03</span>";
 echo "<h2>Tools &amp; Equipment</h2>";
-echo "<p style=\"max-width:800px;color:var(--gray-500);margin:0;\">Complete spectrum of professional tools and industrial supplies — from precision hand tools and pneumatic equipment to heavy lifting gear, safety PPE and drilling wear parts.</p>";
+echo "<p>Complete spectrum of professional tools and industrial supplies — from precision hand tools and pneumatic equipment to heavy lifting gear, safety PPE and drilling wear parts.</p>";
 echo "</div><div class=\"services-grid\" style=\"margin-top:40px;\" data-reveal>";
 $d=2;
 foreach(["Hydraulic components and Pneumatic components","BEARINGS, SEALS & INDUSTRIAL SPARES",
@@ -243,10 +243,10 @@ echo "</div></div>";
 <?php
 // SERVICE 4
 echo "<div class=\"svc-section\" id=\"workshop\" style=\"margin-bottom:80px;padding-top:40px;border-top:1px solid rgba(11,77,44,0.1);\">";
-echo "<div class=\"section-head\" style=\"text-align:left;\" data-reveal>";
+echo "<div class=\"section-head section-head--svc\" data-reveal>";
 echo "<span class=\"tag\"><i class=\"fas fa-wrench\"></i> Service 04</span>";
-echo "<h2>Services &amp; Repairs &amp; Periodic Maintenance (Workshop)</h2>";
-echo "<p style=\"max-width:800px;color:var(--gray-500);margin:0;\">Our fully equipped workshop in Narwal handles everything from a quick oil service to a complete machine overhaul. Mobile team responds to on-site emergencies across J&K and Ladakh.</p>";
+echo "<h2>Services, Repairs &amp; Maintenance</h2>";
+echo "<p>Our fully equipped workshop in Narwal handles everything from a quick oil service to a complete machine overhaul. Mobile team responds to on-site emergencies across J&K and Ladakh.</p>";
 echo "</div><div class=\"services-grid\" style=\"margin-top:40px;\" data-reveal>";
 
 subHead("Machinery Services","cog");
@@ -286,10 +286,10 @@ echo "</div></div>";
 
 // SERVICE 5
 echo "<div class=\"svc-section\" id=\"rentals\" style=\"margin-bottom:40px;padding-top:40px;border-top:1px solid rgba(11,77,44,0.1);\">";
-echo "<div class=\"section-head\" style=\"text-align:left;\" data-reveal>";
+echo "<div class=\"section-head section-head--svc\" data-reveal>";
 echo "<span class=\"tag\"><i class=\"fas fa-truck-monster\"></i> Service 05</span>";
 echo "<h2>Machinery Rentals</h2>";
-echo "<p style=\"max-width:800px;color:var(--gray-500);margin:0;\">Flexible, well-maintained equipment on short and long-term hire. All machines serviced, safety-checked and ready to work across Jammu, Kashmir &amp; Ladakh.</p>";
+echo "<p>Flexible, well-maintained equipment on short and long-term hire. All machines serviced, safety-checked and ready to work across Jammu, Kashmir &amp; Ladakh.</p>";
 echo "</div><div class=\"services-grid\" style=\"margin-top:40px;\" data-reveal>";
 $d=2;
 foreach(["EXCAVATORS","BACKHOE LOADER","HYDRA","ROAD ROLLER","PAVER",
@@ -340,6 +340,15 @@ document.addEventListener('DOMContentLoaded',()=>{
   trg.forEach(b=>b.addEventListener('click',e=>{e.preventDefault();o(b.dataset.category,b.dataset.service);}));
   cl.addEventListener('click',c);
   ov.addEventListener('click',e=>{if(e.target===ov)c();});
+
+  // Highlight active hero link
+  const links = document.querySelectorAll('.hero-svc-link');
+  links.forEach(l => {
+    l.addEventListener('click', function() {
+      links.forEach(lnk => lnk.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
 });
 </script>
 <?php include 'includes/footer.php'; ?>
