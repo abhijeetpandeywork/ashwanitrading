@@ -8,11 +8,11 @@ include 'includes/header.php';
 <main id="main-content">
 
 <!-- PAGE HERO -->
-<section class="page-hero" style="background: linear-gradient(135deg, rgba(11,77,44,0.95), rgba(11,77,44,0.85)), url('/assets/img/hero_services.jpg') center/cover; padding: 120px 0 100px; color: #fff; text-align: center; border-bottom: 5px solid var(--gold);">
-  <div class="container page-hero__inner" style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; align-items: center;">
+<section class="page-hero" style="background: linear-gradient(90deg, rgba(11,77,44,0.95) 0%, rgba(11,77,44,0.2) 100%), url('/assets/img/hero_services.jpg') center/cover; padding: 140px 0 120px; color: #fff; text-align: left; border-bottom: 5px solid var(--gold);">
+  <div class="container page-hero__inner" style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: flex-start;">
     <span class="tag tag--gold" style="margin-bottom: 24px; box-shadow: 0 4px 15px rgba(242,169,0,0.3);">Comprehensive Solutions</span>
-    <h1 style="font-size: clamp(36px, 5vw, 54px); margin-bottom: 24px; color: #fff; line-height: 1.1; text-shadow: 0 2px 10px rgba(0,0,0,0.5);">The Backbone of Heavy Industry.<br>Unbreakable Parts. Unstoppable Service.</h1>
-    <p style="font-size: 18px; line-height: 1.6; opacity: 0.9; text-shadow: 0 2px 5px rgba(0,0,0,0.5);">Spare parts, heavy accessories, workshop repairs, and machinery rentals — everything a contractor or workshop owner needs, available directly from our Jammu yard.</p>
+    <h1 style="font-size: clamp(40px, 6vw, 72px); margin-bottom: 24px; color: #fff; line-height: 1.05; text-shadow: 0 4px 20px rgba(0,0,0,0.8); font-weight: 800; letter-spacing: -1px;">Heavy Machinery<br><span style="color:var(--gold);">Parts &amp; Services</span></h1>
+    <p style="font-size: 22px; line-height: 1.5; opacity: 0.95; text-shadow: 0 2px 10px rgba(0,0,0,0.8); max-width: 600px; font-weight: 500;">Genuine spares, heavy attachments, expert workshop repairs, and equipment rentals in Jammu, Kashmir &amp; Ladakh.</p>
   </div>
 </section>
 
@@ -38,11 +38,11 @@ include 'includes/header.php';
           ['Filtration Systems', 'Premium oil, fuel, air, and hydraulic filters.', '/assets/img/parts_filtration.jpg'],
           ['Transmission Units', 'Gears, shafts, and complete transmission units.', '/assets/img/parts_transmission.jpg'],
           ['Pins & Seals', 'High-wear pins, bushes, and O-ring seal kits.', '/assets/img/parts_pins.jpg'],
-          ['Electrical Parts', 'Starters, alternators, sensors, and wiring harnesses.', 'https://images.unsplash.com/photo-1517420879524-86d64ac2f339?w=600&q=80&fit=crop'],
-          ['Excavator Tracks', 'Durable rubber and steel tracks for all terrains.', 'https://images.unsplash.com/photo-1541888062400-b60580922418?w=600&q=80&fit=crop'],
-          ['Engine Belts', 'High-tension drive belts for cooling systems.', 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80&fit=crop'],
-          ['Hydraulic Hoses', 'High-pressure flexible hoses and fittings.', 'https://images.unsplash.com/photo-1622322307393-27a9226d705c?w=600&q=80&fit=crop'],
-          ['Cabin Accessories', 'Shatter-proof glass, mirrors, and operator seats.', 'https://images.unsplash.com/photo-1587582423116-ec07293f0395?w=600&q=80&fit=crop']
+          ['Electrical Parts', 'Starters, alternators, sensors, and wiring harnesses.', '/assets/img/parts_transmission.jpg'],
+          ['Excavator Tracks', 'Durable rubber and steel tracks for all terrains.', '/assets/img/parts_undercarriage.jpg'],
+          ['Engine Belts', 'High-tension drive belts for cooling systems.', '/assets/img/parts_engine.jpg'],
+          ['Hydraulic Hoses', 'High-pressure flexible hoses and fittings.', '/assets/img/parts_pump.jpg'],
+          ['Cabin Accessories', 'Shatter-proof glass, mirrors, and operator seats.', '/assets/img/parts_jcb.jpg']
         ];
         $delay = 1;
         foreach($parts as $part): ?>
@@ -71,18 +71,18 @@ include 'includes/header.php';
       <div class="services-grid" style="margin-top:40px;" data-reveal data-reveal-delay="1">
         <?php
         $accessories = [
-          ['Bucket Attachments', 'Rock, mud, ditching, and general purpose buckets.', 'https://images.unsplash.com/photo-1584285497042-4f3da3345423?w=600&q=80&fit=crop'],
-          ['Ground Engaging Tools', 'Adapters, teeth, cutting edges, and end bits.', 'https://images.unsplash.com/photo-1579929853965-02b4d455d3c8?w=600&q=80&fit=crop'],
-          ['Ripper Shanks', 'Heavy-duty shanks and grading blades.', 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80&fit=crop'],
-          ['Quick Hitch Systems', 'Fast and secure attachment coupler systems.', 'https://images.unsplash.com/photo-1541888062400-b60580922418?w=600&q=80&fit=crop'],
-          ['Operator Safety', 'ROPS, FOPS, and cab safety bars.', 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80&fit=crop'],
-          ['Lighting Accessories', 'High-intensity LED work lights and beacons.', 'https://images.unsplash.com/photo-1533481405265-e9ce0c044abb?w=600&q=80&fit=crop'],
-          ['Protection Guards', 'Heavy-duty metal guards for vulnerable components.', 'https://images.unsplash.com/photo-1587582423116-ec07293f0395?w=600&q=80&fit=crop'],
-          ['Rock Breakers', 'Hydraulic breakers for solid rock excavation.', 'https://images.unsplash.com/photo-1541888062400-b60580922418?w=600&q=80&fit=crop'],
-          ['Auger Attachments', 'Drilling attachments for post holes and foundations.', 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80&fit=crop'],
-          ['Compaction Wheels', 'Trench compactors for solid backfill.', 'https://images.unsplash.com/photo-1579929853965-02b4d455d3c8?w=600&q=80&fit=crop'],
-          ['Heavy Duty Grapples', 'Timber and scrap handling grapples.', 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80&fit=crop'],
-          ['Pallet Forks', 'Transform your loader into a material handling unit.', 'https://images.unsplash.com/photo-1584285497042-4f3da3345423?w=600&q=80&fit=crop']
+          ['Bucket Attachments', 'Rock, mud, ditching, and general purpose buckets.', '/assets/img/parts_jcb.jpg'],
+          ['Ground Engaging Tools', 'Adapters, teeth, cutting edges, and end bits.', '/assets/img/parts_undercarriage.jpg'],
+          ['Ripper Shanks', 'Heavy-duty shanks and grading blades.', '/assets/img/parts_transmission.jpg'],
+          ['Quick Hitch Systems', 'Fast and secure attachment coupler systems.', '/assets/img/parts_pump.jpg'],
+          ['Operator Safety', 'ROPS, FOPS, and cab safety bars.', '/assets/img/parts_pins.jpg'],
+          ['Lighting Accessories', 'High-intensity LED work lights and beacons.', '/assets/img/parts_filtration.jpg'],
+          ['Protection Guards', 'Heavy-duty metal guards for vulnerable components.', '/assets/img/parts_engine.jpg'],
+          ['Rock Breakers', 'Hydraulic breakers for solid rock excavation.', '/assets/img/parts_pump.jpg'],
+          ['Auger Attachments', 'Drilling attachments for post holes and foundations.', '/assets/img/parts_transmission.jpg'],
+          ['Compaction Wheels', 'Trench compactors for solid backfill.', '/assets/img/parts_undercarriage.jpg'],
+          ['Heavy Duty Grapples', 'Timber and scrap handling grapples.', '/assets/img/parts_jcb.jpg'],
+          ['Pallet Forks', 'Transform your loader into a material handling unit.', '/assets/img/parts_pins.jpg']
         ];
         $delay = 1;
         foreach($accessories as $acc): ?>
@@ -111,18 +111,18 @@ include 'includes/header.php';
       <div class="services-grid" style="margin-top:40px;" data-reveal data-reveal-delay="1">
         <?php
         $repairs = [
-          ['Hydraulic Repairs', 'Diagnosis and overhaul of complex hydraulics.', 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&q=80&fit=crop'],
-          ['Engine Rebuilds', 'Complete engine strip-downs and rebuilds.', 'https://images.unsplash.com/photo-1622322307393-27a9226d705c?w=600&q=80&fit=crop'],
-          ['Undercarriage Replacements', 'Track chain swapping and roller replacements.', 'https://images.unsplash.com/photo-1587582423116-ec07293f0395?w=600&q=80&fit=crop'],
-          ['Transmission Service', 'Fixing slipping gears and drivetrain faults.', 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&q=80&fit=crop'],
-          ['Electrical Diagnosis', 'Resolving complex wiring and sensor issues.', 'https://images.unsplash.com/photo-1533481405265-e9ce0c044abb?w=600&q=80&fit=crop'],
-          ['Preventive Maintenance', 'Scheduled servicing to prevent breakdowns.', 'https://images.unsplash.com/photo-1584285497042-4f3da3345423?w=600&q=80&fit=crop'],
-          ['Welding & Fabrication', 'Custom metalwork and structural crack repairs.', 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80&fit=crop'],
-          ['On-site Breakdown', 'Emergency dispatch to your project location.', 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80&fit=crop'],
-          ['Oil & Fluid Analysis', 'Advanced diagnostics for engine and hydraulic fluids.', 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&q=80&fit=crop'],
-          ['Fuel System Calibration', 'Injector cleaning and fuel pump calibration.', 'https://images.unsplash.com/photo-1622322307393-27a9226d705c?w=600&q=80&fit=crop'],
-          ['Track Tensioning', 'Adjusting undercarriage tracks for optimal performance.', 'https://images.unsplash.com/photo-1587582423116-ec07293f0395?w=600&q=80&fit=crop'],
-          ['Bucket Re-lining', 'Weld-on steel plating to extend bucket lifespan.', 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80&fit=crop']
+          ['Hydraulic Repairs', 'Diagnosis and overhaul of complex hydraulics.', '/assets/img/parts_pump.jpg'],
+          ['Engine Rebuilds', 'Complete engine strip-downs and rebuilds.', '/assets/img/parts_engine.jpg'],
+          ['Undercarriage Replacements', 'Track chain swapping and roller replacements.', '/assets/img/parts_undercarriage.jpg'],
+          ['Transmission Service', 'Fixing slipping gears and drivetrain faults.', '/assets/img/parts_transmission.jpg'],
+          ['Electrical Diagnosis', 'Resolving complex wiring and sensor issues.', '/assets/img/parts_pins.jpg'],
+          ['Preventive Maintenance', 'Scheduled servicing to prevent breakdowns.', '/assets/img/parts_filtration.jpg'],
+          ['Welding & Fabrication', 'Custom metalwork and structural crack repairs.', '/assets/img/parts_jcb.jpg'],
+          ['On-site Breakdown', 'Emergency dispatch to your project location.', '/assets/img/hero_services.jpg'],
+          ['Oil & Fluid Analysis', 'Advanced diagnostics for engine and hydraulic fluids.', '/assets/img/parts_filtration.jpg'],
+          ['Fuel System Calibration', 'Injector cleaning and fuel pump calibration.', '/assets/img/parts_engine.jpg'],
+          ['Track Tensioning', 'Adjusting undercarriage tracks for optimal performance.', '/assets/img/parts_undercarriage.jpg'],
+          ['Bucket Re-lining', 'Weld-on steel plating to extend bucket lifespan.', '/assets/img/parts_transmission.jpg']
         ];
         $delay = 1;
         foreach($repairs as $rep): ?>
@@ -151,18 +151,18 @@ include 'includes/header.php';
       <div class="services-grid" style="margin-top:40px;" data-reveal data-reveal-delay="1">
         <?php
         $rentals = [
-          ['Excavators for Hire', 'Large tonnage excavators for heavy digging.', 'https://images.unsplash.com/photo-1579929853965-02b4d455d3c8?w=600&q=80&fit=crop'],
-          ['Backhoe Loaders', 'Versatile JCB loaders for multi-purpose tasks.', 'https://images.unsplash.com/photo-1584285497042-4f3da3345423?w=600&q=80&fit=crop'],
-          ['Road Rollers', 'Soil and asphalt compactors for road works.', 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80&fit=crop'],
-          ['Project Deployments', 'Long-term machinery hire for major projects.', 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80&fit=crop'],
-          ['Mini Excavators', 'Compact excavators for tight spaces and trenches.', 'https://images.unsplash.com/photo-1541888062400-b60580922418?w=600&q=80&fit=crop'],
-          ['Wheel Loaders', 'High-capacity wheel loaders for material handling.', 'https://images.unsplash.com/photo-1579929853965-02b4d455d3c8?w=600&q=80&fit=crop'],
-          ['Motor Graders', 'Precision graders for road construction leveling.', 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80&fit=crop'],
-          ['Dump Trucks', 'Heavy-duty articulated dump trucks for site transport.', 'https://images.unsplash.com/photo-1584285497042-4f3da3345423?w=600&q=80&fit=crop'],
-          ['Trenchers', 'Specialized trenching equipment for cable laying.', 'https://images.unsplash.com/photo-1541888062400-b60580922418?w=600&q=80&fit=crop'],
-          ['Soil Compactors', 'Vibratory compactors for solid foundation works.', 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80&fit=crop'],
-          ['Lighting Towers', 'Diesel-powered lighting towers for night shifts.', 'https://images.unsplash.com/photo-1533481405265-e9ce0c044abb?w=600&q=80&fit=crop'],
-          ['Generators (DG Sets)', 'Industrial diesel generators for continuous power.', 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&q=80&fit=crop']
+          ['Excavators for Hire', 'Large tonnage excavators for heavy digging.', 'https://images.unsplash.com/photo-1579929853965-02b4d455d3c8?w=600&q=80&auto=format&fit=crop'],
+          ['Backhoe Loaders', 'Versatile JCB loaders for multi-purpose tasks.', 'https://images.unsplash.com/photo-1584285497042-4f3da3345423?w=600&q=80&auto=format&fit=crop'],
+          ['Road Rollers', 'Soil and asphalt compactors for road works.', 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80&auto=format&fit=crop'],
+          ['Dump Trucks', 'Heavy-duty articulated dump trucks for site transport.', 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&q=80&auto=format&fit=crop'],
+          ['Mini Excavators', 'Compact excavators for tight spaces and trenches.', 'https://images.unsplash.com/photo-1541888062400-b60580922418?w=600&q=80&auto=format&fit=crop'],
+          ['Wheel Loaders', 'High-capacity wheel loaders for material handling.', 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80&auto=format&fit=crop'],
+          ['Motor Graders', 'Precision graders for road construction leveling.', 'https://images.unsplash.com/photo-1587582423116-ec07293f0395?w=600&q=80&auto=format&fit=crop'],
+          ['Trenchers', 'Specialized trenching equipment for cable laying.', 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&q=80&auto=format&fit=crop'],
+          ['Soil Compactors', 'Vibratory compactors for solid foundation works.', 'https://images.unsplash.com/photo-1533481405265-e9ce0c044abb?w=600&q=80&auto=format&fit=crop'],
+          ['Lighting Towers', 'Diesel-powered lighting towers for night shifts.', 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&q=80&auto=format&fit=crop'],
+          ['Generators (DG Sets)', 'Industrial diesel generators for continuous power.', 'https://images.unsplash.com/photo-1622322307393-27a9226d705c?w=600&q=80&auto=format&fit=crop'],
+          ['Project Deployments', 'Long-term machinery hire for major projects.', 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80&auto=format&fit=crop']
         ];
         $delay = 1;
         foreach($rentals as $rent): ?>
