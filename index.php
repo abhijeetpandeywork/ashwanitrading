@@ -337,27 +337,35 @@ document.addEventListener('DOMContentLoaded', () => {
     <div class="catalog-grid" style="grid-template-columns:repeat(4,1fr);" data-reveal data-reveal-delay="1">
 
       <a href="/catalog.php#undercarriage" class="cat-card">
-        <div class="cat-card__icon"><i class="fas fa-link" aria-hidden="true"></i></div>
-        <h3>Undercarriage Parts</h3>
-        <p>Track chains, rollers, idlers, sprockets</p>
+        <div class="cat-card__image"><img src="/assets/img/parts_undercarriage.jpg" alt="Undercarriage Parts" loading="lazy"></div>
+        <div class="cat-card__body">
+          <h3>Undercarriage Parts</h3>
+          <p>Track chains, rollers, idlers, sprockets</p>
+        </div>
       </a>
 
       <a href="/catalog.php#hydraulics" class="cat-card">
-        <div class="cat-card__icon"><i class="fas fa-faucet" aria-hidden="true"></i></div>
-        <h3>Hydraulic Components</h3>
-        <p>Pumps, cylinders, valves, seal kits</p>
+        <div class="cat-card__image"><img src="/assets/img/parts_pump.jpg" alt="Hydraulic Components" loading="lazy"></div>
+        <div class="cat-card__body">
+          <h3>Hydraulic Components</h3>
+          <p>Pumps, cylinders, valves, seal kits</p>
+        </div>
       </a>
 
       <a href="/catalog.php#ground-engaging" class="cat-card">
-        <div class="cat-card__icon"><i class="fas fa-hammer" aria-hidden="true"></i></div>
-        <h3>Ground Engaging Tools</h3>
-        <p>Bucket teeth, cutting edges, adaptors</p>
+        <div class="cat-card__image"><img src="/assets/img/jcb_accessories.jpg" alt="Ground Engaging Tools" loading="lazy"></div>
+        <div class="cat-card__body">
+          <h3>Ground Engaging Tools</h3>
+          <p>Bucket teeth, cutting edges, adaptors</p>
+        </div>
       </a>
 
       <a href="/catalog.php#engine" class="cat-card">
-        <div class="cat-card__icon"><i class="fas fa-oil-can" aria-hidden="true"></i></div>
-        <h3>Engine &amp; Filtration</h3>
-        <p>Filters, gaskets, overhaul kits</p>
+        <div class="cat-card__image"><img src="/assets/img/parts_engine.jpg" alt="Engine & Filtration" loading="lazy"></div>
+        <div class="cat-card__body">
+          <h3>Engine &amp; Filtration</h3>
+          <p>Filters, gaskets, overhaul kits</p>
+        </div>
       </a>
 
     </div>
