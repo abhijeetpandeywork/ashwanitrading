@@ -335,7 +335,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   const trg=document.querySelectorAll('.btn-modal-trigger');
   const cEl=document.getElementById('modalCategory'),tEl=document.getElementById('modalTitle');
   const cIn=document.getElementById('inputCategory'),iIn=document.getElementById('inputItem');
-  function o(cat,item){cEl.textContent=cat;tEl.textContent=Enquire for +item;cIn.value=cat;iIn.value=item;ov.classList.add('active');document.body.style.overflow='hidden';}
+  function o(cat,item){cEl.textContent=cat;tEl.textContent="Enquire for " + item;cIn.value=cat;iIn.value=item;ov.classList.add('active');document.body.style.overflow='hidden';}
   function c(){ov.classList.remove('active');document.body.style.overflow='';}
   trg.forEach(b=>b.addEventListener('click',e=>{e.preventDefault();o(b.dataset.category,b.dataset.service);}));
   cl.addEventListener('click',c);
