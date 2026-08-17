@@ -152,17 +152,6 @@ $currentPage = $currentPage ?? '';
   </div>
 </nav>
 
-<!-- ===================== MOBILE BOTTOM CTA BAR ===================== -->
-<!-- Fixed to bottom, always thumb-reachable — the #1 mobile conversion element -->
-<div class="mobile-cta-bar" id="mobile-cta-bar" role="complementary" aria-label="Quick contact">
-  <a href="tel:+919419186209" class="mobile-cta-bar__call" id="mobile-call-btn">
-    <i class="fas fa-phone-alt"></i> Call Now
-  </a>
-  <a href="https://wa.me/919419186209?text=Hi%2C%20I%20need%20spare%20parts%20information" 
-     target="_blank" rel="noopener" class="mobile-cta-bar__whatsapp" id="mobile-whatsapp-btn">
-    <i class="fab fa-whatsapp"></i> WhatsApp
-  </a>
-</div>
 
 <!-- ===================== FLOATING WHATSAPP (desktop) ===================== -->
 <a href="https://wa.me/919419186209?text=Hi%2C%20I%20need%20spare%20parts%20information"

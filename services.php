@@ -8,16 +8,11 @@ include 'includes/header.php';
 <main id="main-content">
 
 <!-- PAGE HERO -->
-<section class="page-hero">
-  <div class="container page-hero__inner">
-    <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="/index.php">Home</a>
-      <span class="breadcrumb__sep" aria-hidden="true">›</span>
-      <span>Services</span>
-    </nav>
-    <span class="tag tag--white">What We Offer</span>
-    <h1>Four Services.<br>One Trusted Supplier.</h1>
-    <p>Spare parts, accessories, workshop repairs, and machinery rentals — everything a contractor or workshop owner needs, from a single location in Jammu.</p>
+<section class="page-hero" style="background: linear-gradient(135deg, rgba(11,77,44,0.9), rgba(11,77,44,0.7)), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1920&auto=format&fit=crop') center/cover; padding: 120px 0 100px; color: #fff; text-align: center; border-bottom: 5px solid var(--gold);">
+  <div class="container page-hero__inner" style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; align-items: center;">
+    <span class="tag tag--gold" style="margin-bottom: 24px; box-shadow: 0 4px 15px rgba(242,169,0,0.3);">Comprehensive Solutions</span>
+    <h1 style="font-size: clamp(36px, 5vw, 54px); margin-bottom: 24px; color: #fff; line-height: 1.1; text-shadow: 0 2px 10px rgba(0,0,0,0.5);">Four Services.<br>One Trusted Partner.</h1>
+    <p style="font-size: 18px; line-height: 1.6; opacity: 0.9; text-shadow: 0 2px 5px rgba(0,0,0,0.5);">Spare parts, heavy accessories, workshop repairs, and machinery rentals — everything a contractor or workshop owner needs, available directly from our Jammu yard.</p>
   </div>
 </section>
 
@@ -36,19 +31,20 @@ include 'includes/header.php';
       <div class="services-grid" style="margin-top:40px;" data-reveal data-reveal-delay="1">
         <?php
         $parts = [
-          ['JCB & Excavator Parts', 'Genuine parts for all major earthmoving machinery.'],
-          ['Hydraulic Pumps & Cylinders', 'High-pressure pumps, motors, and hydraulic cylinders.'],
-          ['Undercarriage Parts', 'Track chains, rollers, idlers, and sprockets.'],
-          ['Engine Parts & Pistons', 'Pistons, liners, bearings, and complete overhaul kits.'],
-          ['Filtration Systems', 'Premium oil, fuel, air, and hydraulic filters.'],
-          ['Transmission & Drivetrain', 'Gears, shafts, and complete transmission units.'],
-          ['Pins, Bushes & Seals', 'High-wear pins, bushes, and O-ring seal kits.'],
-          ['Electrical Components', 'Starters, alternators, sensors, and wiring harnesses.']
+          ['JCB & Excavator Parts', 'Genuine parts for all major earthmoving machinery.', 'https://images.unsplash.com/photo-1587582423116-ec07293f0395?w=600&q=80&fit=crop'],
+          ['Hydraulic Pumps', 'High-pressure pumps, motors, and hydraulic cylinders.', 'https://images.unsplash.com/photo-1541888062400-b60580922418?w=600&q=80&fit=crop'],
+          ['Undercarriage Parts', 'Track chains, rollers, idlers, and sprockets.', 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&q=80&fit=crop'],
+          ['Engine Parts', 'Pistons, liners, bearings, and complete overhaul kits.', 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&q=80&fit=crop'],
+          ['Filtration Systems', 'Premium oil, fuel, air, and hydraulic filters.', 'https://images.unsplash.com/photo-1622322307393-27a9226d705c?w=600&q=80&fit=crop'],
+          ['Transmission Units', 'Gears, shafts, and complete transmission units.', 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80&fit=crop'],
+          ['Pins & Seals', 'High-wear pins, bushes, and O-ring seal kits.', 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80&fit=crop'],
+          ['Electrical Parts', 'Starters, alternators, sensors, and wiring harnesses.', 'https://images.unsplash.com/photo-1533481405265-e9ce0c044abb?w=600&q=80&fit=crop']
         ];
+        $delay = 1;
         foreach($parts as $part): ?>
-        <button class="service-card btn-modal-trigger" data-service="<?php echo $part[0]; ?>" data-category="Spare Parts" style="text-align:left; border:none; width:100%; cursor:pointer; padding:0;">
+        <button class="service-card btn-modal-trigger" data-service="<?php echo $part[0]; ?>" data-category="Spare Parts" style="text-align:left; border:none; width:100%; cursor:pointer; padding:0;" data-reveal data-reveal-delay="<?php echo $delay++; ?>">
           <div class="service-card__image" style="height:160px;">
-            <img src="/assets/img/jcb_spare_parts.jpg" alt="<?php echo $part[0]; ?>">
+            <img src="<?php echo $part[2]; ?>" alt="<?php echo $part[0]; ?>">
           </div>
           <div class="service-card__body" style="padding: 24px;">
             <h3 style="font-size:17px; margin-bottom:8px;"><?php echo $part[0]; ?></h3>
@@ -71,18 +67,19 @@ include 'includes/header.php';
       <div class="services-grid" style="margin-top:40px;" data-reveal data-reveal-delay="1">
         <?php
         $accessories = [
-          ['Bucket Attachments', 'Rock, mud, ditching, and general purpose buckets.'],
-          ['Ground Engaging Tools', 'Adapters, teeth, cutting edges, and end bits.'],
-          ['Ripper Shanks & Blades', 'Heavy-duty shanks and grading blades.'],
-          ['Quick Hitch Systems', 'Fast and secure attachment coupler systems.'],
-          ['Operator Safety', 'ROPS, FOPS, and cab safety bars.'],
-          ['Lighting Accessories', 'High-intensity LED work lights and beacons.'],
-          ['Protection Guards', 'Heavy-duty metal guards for vulnerable components.']
+          ['Bucket Attachments', 'Rock, mud, ditching, and general purpose buckets.', 'https://images.unsplash.com/photo-1584285497042-4f3da3345423?w=600&q=80&fit=crop'],
+          ['Ground Engaging Tools', 'Adapters, teeth, cutting edges, and end bits.', 'https://images.unsplash.com/photo-1579929853965-02b4d455d3c8?w=600&q=80&fit=crop'],
+          ['Ripper Shanks', 'Heavy-duty shanks and grading blades.', 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80&fit=crop'],
+          ['Quick Hitch Systems', 'Fast and secure attachment coupler systems.', 'https://images.unsplash.com/photo-1541888062400-b60580922418?w=600&q=80&fit=crop'],
+          ['Operator Safety', 'ROPS, FOPS, and cab safety bars.', 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80&fit=crop'],
+          ['Lighting Accessories', 'High-intensity LED work lights and beacons.', 'https://images.unsplash.com/photo-1533481405265-e9ce0c044abb?w=600&q=80&fit=crop'],
+          ['Protection Guards', 'Heavy-duty metal guards for vulnerable components.', 'https://images.unsplash.com/photo-1587582423116-ec07293f0395?w=600&q=80&fit=crop']
         ];
+        $delay = 1;
         foreach($accessories as $acc): ?>
-        <button class="service-card btn-modal-trigger" data-service="<?php echo $acc[0]; ?>" data-category="Accessories" style="text-align:left; border:none; width:100%; cursor:pointer; padding:0;">
+        <button class="service-card btn-modal-trigger" data-service="<?php echo $acc[0]; ?>" data-category="Accessories" style="text-align:left; border:none; width:100%; cursor:pointer; padding:0;" data-reveal data-reveal-delay="<?php echo $delay++; ?>">
           <div class="service-card__image" style="height:160px;">
-            <img src="/assets/img/jcb_accessories.jpg" alt="<?php echo $acc[0]; ?>">
+            <img src="<?php echo $acc[2]; ?>" alt="<?php echo $acc[0]; ?>">
           </div>
           <div class="service-card__body" style="padding: 24px;">
             <h3 style="font-size:17px; margin-bottom:8px;"><?php echo $acc[0]; ?></h3>
@@ -105,19 +102,20 @@ include 'includes/header.php';
       <div class="services-grid" style="margin-top:40px;" data-reveal data-reveal-delay="1">
         <?php
         $repairs = [
-          ['Hydraulic System Repair', 'Diagnosis and overhaul of complex hydraulics.'],
-          ['Engine Rebuilds', 'Complete engine strip-downs and rebuilds.'],
-          ['Undercarriage Replacement', 'Track chain swapping and roller replacements.'],
-          ['Transmission Repair', 'Fixing slipping gears and drivetrain faults.'],
-          ['Electrical Diagnosis', 'Resolving complex wiring and sensor issues.'],
-          ['Preventive Maintenance', 'Scheduled servicing to prevent breakdowns.'],
-          ['Welding & Fabrication', 'Custom metalwork and structural crack repairs.'],
-          ['On-site Breakdown', 'Emergency dispatch to your project location.']
+          ['Hydraulic Repairs', 'Diagnosis and overhaul of complex hydraulics.', 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&q=80&fit=crop'],
+          ['Engine Rebuilds', 'Complete engine strip-downs and rebuilds.', 'https://images.unsplash.com/photo-1622322307393-27a9226d705c?w=600&q=80&fit=crop'],
+          ['Undercarriage Replacements', 'Track chain swapping and roller replacements.', 'https://images.unsplash.com/photo-1587582423116-ec07293f0395?w=600&q=80&fit=crop'],
+          ['Transmission Service', 'Fixing slipping gears and drivetrain faults.', 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&q=80&fit=crop'],
+          ['Electrical Diagnosis', 'Resolving complex wiring and sensor issues.', 'https://images.unsplash.com/photo-1533481405265-e9ce0c044abb?w=600&q=80&fit=crop'],
+          ['Preventive Maintenance', 'Scheduled servicing to prevent breakdowns.', 'https://images.unsplash.com/photo-1584285497042-4f3da3345423?w=600&q=80&fit=crop'],
+          ['Welding & Fabrication', 'Custom metalwork and structural crack repairs.', 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80&fit=crop'],
+          ['On-site Breakdown', 'Emergency dispatch to your project location.', 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80&fit=crop']
         ];
+        $delay = 1;
         foreach($repairs as $rep): ?>
-        <button class="service-card btn-modal-trigger" data-service="<?php echo $rep[0]; ?>" data-category="Workshop & Repairs" style="text-align:left; border:none; width:100%; cursor:pointer; padding:0;">
+        <button class="service-card btn-modal-trigger" data-service="<?php echo $rep[0]; ?>" data-category="Workshop & Repairs" style="text-align:left; border:none; width:100%; cursor:pointer; padding:0;" data-reveal data-reveal-delay="<?php echo $delay++; ?>">
           <div class="service-card__image" style="height:160px;">
-            <img src="/assets/img/jcb_workshop.jpg" alt="<?php echo $rep[0]; ?>">
+            <img src="<?php echo $rep[2]; ?>" alt="<?php echo $rep[0]; ?>">
           </div>
           <div class="service-card__body" style="padding: 24px;">
             <h3 style="font-size:17px; margin-bottom:8px;"><?php echo $rep[0]; ?></h3>
@@ -140,15 +138,16 @@ include 'includes/header.php';
       <div class="services-grid" style="margin-top:40px;" data-reveal data-reveal-delay="1">
         <?php
         $rentals = [
-          ['Excavators for Hire', 'Large tonnage excavators for heavy digging.'],
-          ['Backhoe Loaders', 'Versatile JCB loaders for multi-purpose tasks.'],
-          ['Road Rollers', 'Soil and asphalt compactors for road works.'],
-          ['Project Deployments', 'Long-term machinery hire for major projects.']
+          ['Excavators for Hire', 'Large tonnage excavators for heavy digging.', 'https://images.unsplash.com/photo-1579929853965-02b4d455d3c8?w=600&q=80&fit=crop'],
+          ['Backhoe Loaders', 'Versatile JCB loaders for multi-purpose tasks.', 'https://images.unsplash.com/photo-1584285497042-4f3da3345423?w=600&q=80&fit=crop'],
+          ['Road Rollers', 'Soil and asphalt compactors for road works.', 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80&fit=crop'],
+          ['Project Deployments', 'Long-term machinery hire for major projects.', 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80&fit=crop']
         ];
+        $delay = 1;
         foreach($rentals as $rent): ?>
-        <button class="service-card btn-modal-trigger" data-service="<?php echo $rent[0]; ?>" data-category="Machinery Rentals" style="text-align:left; border:none; width:100%; cursor:pointer; padding:0;">
+        <button class="service-card btn-modal-trigger" data-service="<?php echo $rent[0]; ?>" data-category="Machinery Rentals" style="text-align:left; border:none; width:100%; cursor:pointer; padding:0;" data-reveal data-reveal-delay="<?php echo $delay++; ?>">
           <div class="service-card__image" style="height:160px;">
-            <img src="/assets/img/jcb_rentals.jpg" alt="<?php echo $rent[0]; ?>">
+            <img src="<?php echo $rent[2]; ?>" alt="<?php echo $rent[0]; ?>">
           </div>
           <div class="service-card__body" style="padding: 24px;">
             <h3 style="font-size:17px; margin-bottom:8px;"><?php echo $rent[0]; ?></h3>
