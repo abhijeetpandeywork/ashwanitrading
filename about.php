@@ -137,19 +137,19 @@ include 'includes/header.php';
 
         <div class="about-points">
           <div class="about-point">
-            <div class="about-point__icon"><i class="fas fa-map-marker-alt"></i></div>
+            <a href="https://www.google.com/maps/search/?api=1&query=Sunjwan+Morh,+Bye+Pass+Road,+Narwal,+Jammu+-+180006" target="_blank" rel="noopener" class="about-point__icon" style="color: inherit; text-decoration: none;"><i class="fas fa-map-marker-alt"></i></a>
             <div style="display:flex; flex-direction:column; gap:4px;">
               <h4>Branch Office</h4>
               <p>Sunjwan Morh, Bye Pass Road, Narwal, Jammu – 180006</p>
-              <a href="https://maps.app.goo.gl/YvS83bKDwppUnGvC9" target="_blank" rel="noopener" class="link-enquire" style="font-size:14px; font-weight:700;">Open on Map <i class="fas fa-arrow-right"></i></a>
+              <a href="https://www.google.com/maps/search/?api=1&query=Sunjwan+Morh,+Bye+Pass+Road,+Narwal,+Jammu+-+180006" target="_blank" rel="noopener" class="link-enquire" style="font-size:14px; font-weight:700;">Open on Map <i class="fas fa-arrow-right"></i></a>
             </div>
           </div>
           <div class="about-point" style="margin-top:20px;">
-            <div class="about-point__icon"><i class="fas fa-warehouse"></i></div>
+            <a href="https://www.google.com/maps/search/?api=1&query=Plot+No.+112,+Yard+6,+Transport+Nagar,+Narwal,+Jammu+-+180006" target="_blank" rel="noopener" class="about-point__icon" style="color: inherit; text-decoration: none;"><i class="fas fa-warehouse"></i></a>
             <div style="display:flex; flex-direction:column; gap:4px;">
               <h4>Main Office / Yard</h4>
               <p>Plot No. 112, Yard 6, Transport Nagar, Narwal, Jammu – 180006</p>
-              <a href="https://maps.app.goo.gl/YvS83bKDwppUnGvC9" target="_blank" rel="noopener" class="link-enquire" style="font-size:14px; font-weight:700;">Open on Map <i class="fas fa-arrow-right"></i></a>
+              <a href="https://www.google.com/maps/search/?api=1&query=Plot+No.+112,+Yard+6,+Transport+Nagar,+Narwal,+Jammu+-+180006" target="_blank" rel="noopener" class="link-enquire" style="font-size:14px; font-weight:700;">Open on Map <i class="fas fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
