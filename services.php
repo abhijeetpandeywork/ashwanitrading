@@ -8,7 +8,7 @@ include 'includes/header.php';
 <main id="main-content">
 
 <!-- PAGE HERO -->
-<section class="page-hero" style="background: linear-gradient(135deg, rgba(11,77,44,0.9), rgba(11,77,44,0.7)), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1920&auto=format&fit=crop') center/cover; padding: 120px 0 100px; color: #fff; text-align: center; border-bottom: 5px solid var(--gold);">
+<section class="page-hero" style="background: linear-gradient(135deg, rgba(11,77,44,0.95), rgba(11,77,44,0.85)), url('/assets/img/hero_services.jpg') center/cover; padding: 120px 0 100px; color: #fff; text-align: center; border-bottom: 5px solid var(--gold);">
   <div class="container page-hero__inner" style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; align-items: center;">
     <span class="tag tag--gold" style="margin-bottom: 24px; box-shadow: 0 4px 15px rgba(242,169,0,0.3);">Comprehensive Solutions</span>
     <h1 style="font-size: clamp(36px, 5vw, 54px); margin-bottom: 24px; color: #fff; line-height: 1.1; text-shadow: 0 2px 10px rgba(0,0,0,0.5);">Four Services.<br>One Trusted Partner.</h1>
@@ -31,14 +31,14 @@ include 'includes/header.php';
       <div class="services-grid" style="margin-top:40px;" data-reveal data-reveal-delay="1">
         <?php
         $parts = [
-          ['JCB & Excavator Parts', 'Genuine parts for all major earthmoving machinery.', 'https://images.unsplash.com/photo-1587582423116-ec07293f0395?w=600&q=80&fit=crop'],
-          ['Hydraulic Pumps', 'High-pressure pumps, motors, and hydraulic cylinders.', 'https://images.unsplash.com/photo-1541888062400-b60580922418?w=600&q=80&fit=crop'],
-          ['Undercarriage Parts', 'Track chains, rollers, idlers, and sprockets.', 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&q=80&fit=crop'],
-          ['Engine Parts', 'Pistons, liners, bearings, and complete overhaul kits.', 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&q=80&fit=crop'],
-          ['Filtration Systems', 'Premium oil, fuel, air, and hydraulic filters.', 'https://images.unsplash.com/photo-1622322307393-27a9226d705c?w=600&q=80&fit=crop'],
-          ['Transmission Units', 'Gears, shafts, and complete transmission units.', 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80&fit=crop'],
-          ['Pins & Seals', 'High-wear pins, bushes, and O-ring seal kits.', 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80&fit=crop'],
-          ['Electrical Parts', 'Starters, alternators, sensors, and wiring harnesses.', 'https://images.unsplash.com/photo-1533481405265-e9ce0c044abb?w=600&q=80&fit=crop']
+          ['JCB & Excavator Parts', 'Genuine parts for all major earthmoving machinery.', '/assets/img/parts_jcb.jpg'],
+          ['Hydraulic Pumps', 'High-pressure pumps, motors, and hydraulic cylinders.', '/assets/img/parts_pump.jpg'],
+          ['Undercarriage Parts', 'Track chains, rollers, idlers, and sprockets.', '/assets/img/parts_undercarriage.jpg'],
+          ['Engine Parts', 'Pistons, liners, bearings, and complete overhaul kits.', '/assets/img/parts_engine.jpg'],
+          ['Filtration Systems', 'Premium oil, fuel, air, and hydraulic filters.', '/assets/img/parts_filtration.jpg'],
+          ['Transmission Units', 'Gears, shafts, and complete transmission units.', '/assets/img/parts_transmission.jpg'],
+          ['Pins & Seals', 'High-wear pins, bushes, and O-ring seal kits.', '/assets/img/parts_pins.jpg'],
+          ['Electrical Parts', 'Starters, alternators, sensors, and wiring harnesses.', '/assets/img/parts_transmission.jpg']
         ];
         $delay = 1;
         foreach($parts as $part): ?>
