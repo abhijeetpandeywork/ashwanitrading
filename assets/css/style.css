@@ -1642,6 +1642,8 @@ textarea.form-inp-v2 { resize: vertical; min-height: 120px; }
   box-shadow: 0 0 0 4px rgba(242,169,0,0.15);
 }
 
+
+@media (max-width: 768px) {
   /* Catalog */
   .catalog-grid { grid-template-columns: repeat(2,1fr); }
   
@@ -1672,9 +1674,6 @@ textarea.form-inp-v2 { resize: vertical; min-height: 120px; }
   /* Mobile bottom bar */
   .mobile-cta-bar { display: grid; }
   .float-wa { display: none; }
-
-  /* Add bottom padding so content not hidden behind mobile bar */
-  body { padding-bottom: 60px; }
 
   /* CTA band */
   .cta-band { padding: 60px 0; }
