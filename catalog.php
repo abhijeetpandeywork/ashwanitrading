@@ -38,75 +38,99 @@ include 'includes/header.php';
     <div class="catalog-grid" data-reveal data-reveal-delay="1">
 
       <a href="/contact.php?category=undercarriage" class="cat-card" id="undercarriage">
-        <div class="cat-card__icon"><i class="fas fa-link" aria-hidden="true"></i></div>
-        <h3>Undercarriage Parts</h3>
-        <p>Track chains, rollers, top rollers, idlers, sprockets, track shoes, track bolts</p>
+        <div class="cat-card__image"><img src="/assets/img/parts_undercarriage.jpg" alt="Undercarriage Parts" loading="lazy"></div>
+        <div class="cat-card__body">
+          <h3>Undercarriage Parts</h3>
+          <p>Track chains, rollers, top rollers, idlers, sprockets, track shoes, track bolts</p>
+        </div>
       </a>
 
       <a href="/contact.php?category=hydraulics" class="cat-card" id="hydraulics">
-        <div class="cat-card__icon"><i class="fas fa-faucet" aria-hidden="true"></i></div>
-        <h3>Hydraulic Components</h3>
-        <p>Pumps, cylinders, motors, control valves, hoses, fittings, O-ring &amp; seal kits</p>
+        <div class="cat-card__image"><img src="/assets/img/parts_pump.jpg" alt="Hydraulic Components" loading="lazy"></div>
+        <div class="cat-card__body">
+          <h3>Hydraulic Components</h3>
+          <p>Pumps, cylinders, motors, control valves, hoses, fittings, O-ring &amp; seal kits</p>
+        </div>
       </a>
 
       <a href="/contact.php?category=ground-engaging" class="cat-card" id="ground-engaging">
-        <div class="cat-card__icon"><i class="fas fa-hammer" aria-hidden="true"></i></div>
-        <h3>Ground Engaging Tools</h3>
-        <p>Bucket teeth, adapters, cutting edges, end bits, shrouds, blades, ripper shanks</p>
+        <div class="cat-card__image"><img src="/assets/img/jcb_accessories.jpg" alt="Ground Engaging Tools" loading="lazy"></div>
+        <div class="cat-card__body">
+          <h3>Ground Engaging Tools</h3>
+          <p>Bucket teeth, adapters, cutting edges, end bits, shrouds, blades, ripper shanks</p>
+        </div>
       </a>
 
       <a href="/contact.php?category=engine" class="cat-card" id="engine">
-        <div class="cat-card__icon"><i class="fas fa-oil-can" aria-hidden="true"></i></div>
-        <h3>Engine &amp; Filtration</h3>
-        <p>Pistons, liners, bearings, gaskets, oil/fuel/air filters, overhaul kits</p>
+        <div class="cat-card__image"><img src="/assets/img/parts_engine.jpg" alt="Engine & Filtration" loading="lazy"></div>
+        <div class="cat-card__body">
+          <h3>Engine &amp; Filtration</h3>
+          <p>Pistons, liners, bearings, gaskets, oil/fuel/air filters, overhaul kits</p>
+        </div>
       </a>
 
       <a href="/contact.php?category=transmission" class="cat-card" id="transmission">
-        <div class="cat-card__icon"><i class="fas fa-cogs" aria-hidden="true"></i></div>
-        <h3>Transmission &amp; Drivetrain</h3>
-        <p>Gearboxes, torque converters, axles, differentials, clutch plates</p>
+        <div class="cat-card__image"><img src="/assets/img/parts_transmission.jpg" alt="Transmission & Drivetrain" loading="lazy"></div>
+        <div class="cat-card__body">
+          <h3>Transmission &amp; Drivetrain</h3>
+          <p>Gearboxes, torque converters, axles, differentials, clutch plates</p>
+        </div>
       </a>
 
       <a href="/contact.php?category=electrical" class="cat-card" id="electrical">
-        <div class="cat-card__icon"><i class="fas fa-bolt" aria-hidden="true"></i></div>
-        <h3>Electrical Components</h3>
-        <p>Starters, alternators, switches, relays, sensors, wiring harnesses</p>
+        <div class="cat-card__image"><img src="/assets/img/parts_jcb.jpg" alt="Electrical Components" loading="lazy"></div>
+        <div class="cat-card__body">
+          <h3>Electrical Components</h3>
+          <p>Starters, alternators, switches, relays, sensors, wiring harnesses</p>
+        </div>
       </a>
 
       <a href="/contact.php?category=attachments" class="cat-card" id="attachments">
-        <div class="cat-card__icon"><i class="fas fa-tools" aria-hidden="true"></i></div>
-        <h3>Attachments &amp; Buckets</h3>
-        <p>Rock, mud, and general-purpose buckets, quick hitches, coupler systems</p>
+        <div class="cat-card__image"><img src="/assets/img/jcb_spare_parts.jpg" alt="Attachments & Buckets" loading="lazy"></div>
+        <div class="cat-card__body">
+          <h3>Attachments &amp; Buckets</h3>
+          <p>Rock, mud, and general-purpose buckets, quick hitches, coupler systems</p>
+        </div>
       </a>
 
       <a href="/contact.php?category=body-structural" class="cat-card" id="body-structural">
-        <div class="cat-card__icon"><i class="fas fa-shield-alt" aria-hidden="true"></i></div>
-        <h3>Body &amp; Structural Parts</h3>
-        <p>Boom arms, dipper sticks, machine guards, panels, ROPS/FOPS structures</p>
+        <div class="cat-card__image"><img src="/assets/img/parts_pins.jpg" alt="Body & Structural Parts" loading="lazy"></div>
+        <div class="cat-card__body">
+          <h3>Body &amp; Structural Parts</h3>
+          <p>Boom arms, dipper sticks, machine guards, panels, ROPS/FOPS structures</p>
+        </div>
       </a>
 
       <a href="/contact.php?category=cooling" class="cat-card" id="cooling">
-        <div class="cat-card__icon"><i class="fas fa-thermometer-half" aria-hidden="true"></i></div>
-        <h3>Cooling System</h3>
-        <p>Radiators, water pumps, fan belts, thermostats, coolant hoses</p>
+        <div class="cat-card__image"><img src="/assets/img/parts_filtration.jpg" alt="Cooling System" loading="lazy"></div>
+        <div class="cat-card__body">
+          <h3>Cooling System</h3>
+          <p>Radiators, water pumps, fan belts, thermostats, coolant hoses</p>
+        </div>
       </a>
 
       <a href="/contact.php?category=drill-rods" class="cat-card" id="drill-rods">
-        <div class="cat-card__icon"><i class="fas fa-drafting-compass" aria-hidden="true"></i></div>
-        <h3>Drill Rods &amp; Bits</h3>
-        <p>High-strength drill rods, shank adapters, couplings, rock drill bits</p>
+        <div class="cat-card__image"><img src="/assets/img/hero_services.jpg" alt="Drill Rods & Bits" loading="lazy"></div>
+        <div class="cat-card__body">
+          <h3>Drill Rods &amp; Bits</h3>
+          <p>High-strength drill rods, shank adapters, couplings, rock drill bits</p>
+        </div>
       </a>
 
       <a href="/contact.php?category=tyres-wheels" class="cat-card" id="tyres-wheels">
-        <div class="cat-card__icon"><i class="fas fa-circle" aria-hidden="true"></i></div>
-        <h3>Tyres &amp; Wheels</h3>
-        <p>OTR tyres, wheel rims, valve stems for loaders, dozers, and compactors</p>
+        <div class="cat-card__image"><img src="/assets/img/jcb_rentals.jpg" alt="Tyres & Wheels" loading="lazy"></div>
+        <div class="cat-card__body">
+          <h3>Tyres &amp; Wheels</h3>
+          <p>OTR tyres, wheel rims, valve stems for loaders, dozers, and compactors</p>
+        </div>
       </a>
 
       <a href="/contact.php?category=other" class="cat-card" id="other-parts">
-        <div class="cat-card__icon"><i class="fas fa-question-circle" aria-hidden="true"></i></div>
-        <h3>Other / Not Listed</h3>
-        <p>Can't find your category? Call us with your machine model and part description.</p>
+        <div class="cat-card__image"><img src="/assets/img/jcb_workshop.jpg" alt="Other Parts" loading="lazy"></div>
+        <div class="cat-card__body">
+          <h3>Other / Not Listed</h3>
+          <p>Can't find your category? Call us with your machine model and part description.</p>
+        </div>
       </a>
 
     </div><!-- /catalog-grid -->
