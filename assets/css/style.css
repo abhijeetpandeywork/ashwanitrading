@@ -744,6 +744,35 @@ p  { font-size: 16px; line-height: 1.7; color: var(--gray-500); }
 .service-card p  { font-size: 14.5px; line-height: 1.65; margin-bottom: 24px; color: rgba(255,255,255,0.8); flex: 1; }
 .service-card .link-enquire { color: var(--gold); }
 
+/* Sub-section headings within a service (e.g., Machinery Services, Oil Services) */
+.svc-sub-heading {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 36px 0 12px;
+  padding-bottom: 14px;
+  border-bottom: 2px solid rgba(11,77,44,0.15);
+}
+.svc-sub-heading:first-child { margin-top: 0; }
+.svc-sub-heading__icon {
+  width: 44px; height: 44px;
+  background: var(--green-800);
+  border-radius: var(--r-sm);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--gold);
+  font-size: 18px;
+  flex-shrink: 0;
+}
+.svc-sub-heading h3 {
+  font-family: var(--f-head);
+  font-size: clamp(18px, 2vw, 22px);
+  font-weight: 700;
+  color: var(--green-800);
+  margin: 0;
+}
+
+
 /* ===================== WHY ATC ===================== */
 .why-grid {
   display: grid;
