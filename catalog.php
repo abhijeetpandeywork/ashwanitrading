@@ -147,7 +147,7 @@ include 'includes/header.php';
       <h2>How to Get Your Part</h2>
       <p>No online cart, no complicated forms. We keep it simple — just like buying a part in person, but faster.</p>
     </div>
-    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:28px;" data-reveal data-reveal-delay="1">
+    <div class="services-grid services-grid--3col" data-reveal data-reveal-delay="1">
       <div class="service-card" style="text-align:center;">
         <div class="service-card__icon" style="margin:0 auto 16px;">
           <i class="fas fa-phone-alt"></i>

@@ -157,13 +157,13 @@ include 'includes/header.php';
         title="Ashwani Trading Co. — Transport Nagar, Narwal, Jammu location map">
       </iframe>
     </div>
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:20px;" data-reveal data-reveal-delay="2">
+    <div style="display:flex; flex-wrap:wrap; gap:24px; margin-top:20px;" data-reveal data-reveal-delay="2">
       <a href="https://maps.app.goo.gl/hryFy8tTvuaeCP247" target="_blank" rel="noopener"
-         class="btn btn--outline" style="justify-content:center; padding: 18px; font-weight: 700; border-color: var(--green-700); color: var(--green-900);">
+         class="btn btn--outline" style="flex: 1 1 300px; justify-content:center; padding: 18px; font-weight: 700; border-color: var(--green-700); color: var(--green-900);">
         <i class="fas fa-directions" style="margin-right: 8px;"></i> Get Directions — Main Office
       </a>
       <a href="https://maps.app.goo.gl/ybfBnBdkF1ztLHmM6" target="_blank" rel="noopener"
-         class="btn btn--outline" style="justify-content:center; padding: 18px; font-weight: 700; border-color: var(--green-700); color: var(--green-900);">
+         class="btn btn--outline" style="flex: 1 1 300px; justify-content:center; padding: 18px; font-weight: 700; border-color: var(--green-700); color: var(--green-900);">
         <i class="fas fa-directions" style="margin-right: 8px;"></i> Get Directions — Branch Office
       </a>
     </div>

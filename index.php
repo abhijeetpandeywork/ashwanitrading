@@ -334,7 +334,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <p>Browse our most commonly enquired categories. Can't find your part? Call us — we source parts across all brands.</p>
     </div>
 
-    <div class="catalog-grid" style="grid-template-columns:repeat(4,1fr);" data-reveal data-reveal-delay="1">
+    <div class="catalog-grid" data-reveal data-reveal-delay="1">
 
       <a href="/catalog.php#undercarriage" class="cat-card">
         <div class="cat-card__image"><img src="/assets/img/parts_undercarriage.jpg" alt="Undercarriage Parts" loading="lazy"></div>
