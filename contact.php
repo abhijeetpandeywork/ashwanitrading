@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 $pageTitle   = 'Contact Us — Ashwani Trading Co. | Jammu, Kashmir & Ladakh';
 $metaDesc    = 'Contact Ashwani Trading Co. for spare parts, accessories, repairs & rentals. Call +91 94191 86209 or visit our Narwal, Jammu offices. Two locations serving J&K & Ladakh.';
 $currentPage = 'contact';
@@ -16,29 +16,30 @@ include 'includes/header.php';
 <main id="main-content">
 
 <!-- PAGE HERO -->
-<section class="page-hero">
+<section class="page-hero" style="background: linear-gradient(90deg, rgba(11,77,44,0.95) 0%, rgba(11,77,44,0.4) 100%), url('/assets/img/hero_contact.jpg') center/cover; padding: 140px 0 120px; border-bottom: 5px solid var(--gold);">
   <div class="container page-hero__inner">
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="/index.php">Home</a>
       <span class="breadcrumb__sep" aria-hidden="true">›</span>
       <span>Contact</span>
     </nav>
-    <span class="tag tag--white">Get in Touch</span>
-    <h1>Call, WhatsApp, or Visit.<br>We're Ready to Help.</h1>
-    <p>Our team at the Narwal, Jammu yard responds fast. Describe your part or service need and we'll get back to you within hours.</p>
+    <span class="tag tag--gold" style="box-shadow: 0 4px 15px rgba(242,169,0,0.3);">Get in Touch</span>
+    <h1 style="font-size: clamp(40px, 6vw, 72px); text-shadow: 0 4px 20px rgba(0,0,0,0.8); font-weight: 800; letter-spacing: -1px;">Call, WhatsApp, or Visit.<br><span style="color:var(--gold);">We're Ready to Help.</span></h1>
+    <p style="font-size: 20px; line-height: 1.6; text-shadow: 0 2px 10px rgba(0,0,0,0.7); max-width: 640px;">Our expert team at the Narwal, Jammu yard responds fast. Describe your machinery part or service requirement and we'll get back to you immediately.</p>
   </div>
 </section>
 
 
 <!-- CONTACT SECTION -->
-<section class="section section--white" id="contact-form">
+<section class="section section--white" id="contact-form" style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);">
   <div class="container">
     <div class="contact-grid">
 
       <!-- LEFT: Form -->
-      <div class="contact-form-wrap" data-reveal>
-        <h2>Send Your Requirement</h2>
-        <p>Fill in the form below and our team will call you back — usually within a few hours.</p>
+      <div class="contact-form-wrap" data-reveal style="background: var(--white); border-radius: var(--r-xl); padding: 48px; box-shadow: 0 20px 40px rgba(0,0,0,0.08); border-top: 4px solid var(--gold); position: relative; overflow: hidden;">
+        <div style="position:absolute; top:-50px; right:-50px; width:150px; height:150px; background: radial-gradient(circle, rgba(242,169,0,0.1) 0%, transparent 70%); border-radius:50%;"></div>
+        <h2 style="font-family: var(--f-head); font-size: 32px; font-weight: 800; color: var(--green-900); margin-bottom: 8px;">Send Your Requirement</h2>
+        <p style="color: var(--gray-600); font-size: 16px; margin-bottom: 32px;">Fill in the form below and our team will call you back immediately.</p>
 
         <form class="lead-form" id="contact-form-main" novalidate>
           <div class="form-group">
@@ -82,7 +83,7 @@ include 'includes/header.php';
             <textarea id="message" name="message" class="form-inp-v2" rows="4"
               placeholder="e.g. JCB 3CX hydraulic pump seal kit, or Road roller drum bearing, or Excavator bucket teeth 20J adapter…" required><?= $preReq ?></textarea>
           </div>
-          <button type="submit" class="btn--submit" id="contact-submit-btn">
+          <button type="submit" class="btn btn--primary" id="contact-submit-btn" style="width:100%; padding: 18px; font-size: 16px; font-weight: 700; display:flex; justify-content:center; gap:10px; box-shadow: 0 8px 20px rgba(11,77,44,0.2);">
             <i class="fas fa-paper-plane" aria-hidden="true"></i> Send Requirement
           </button>
           <div class="form-status" id="contact-form-status" role="alert" aria-live="polite"></div>
@@ -107,28 +108,28 @@ include 'includes/header.php';
         <!-- Contact Clusters — Proximity grouping (Gestalt) -->
         <div class="contact-info">
 
-          <div class="contact-block">
-            <h3><i class="fas fa-phone-alt" style="color:var(--green-700);margin-right:8px;"></i>Phone Numbers</h3>
-            <a href="tel:+919419186209"><i class="fas fa-chevron-right"></i>+91 94191 86209 (Primary)</a>
-            <a href="tel:+919186191331"><i class="fas fa-chevron-right"></i>+91 91861 91331</a>
-            <a href="tel:+911914047110"><i class="fas fa-chevron-right"></i>+91 19140 47110</a>
+          <div class="contact-block" style="background: var(--white); padding: 32px; border-radius: var(--r-lg); box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-left: 4px solid var(--green-700); margin-bottom: 24px; transition: transform 0.3s ease;">
+            <h3 style="font-family:var(--f-head); font-size:20px; color:var(--green-900); margin-bottom:16px;"><i class="fas fa-phone-alt" style="color:var(--gold); margin-right:12px;"></i>Phone Numbers</h3>
+            <a href="tel:+919419186209" style="display:block; color:var(--gray-600); text-decoration:none; margin-bottom:8px; font-size:16px;"><i class="fas fa-chevron-right" style="color:var(--gold); margin-right:8px; font-size:12px;"></i>+91 94191 86209 (Primary)</a>
+            <a href="tel:+919186191331" style="display:block; color:var(--gray-600); text-decoration:none; margin-bottom:8px; font-size:16px;"><i class="fas fa-chevron-right" style="color:var(--gold); margin-right:8px; font-size:12px;"></i>+91 91861 91331</a>
+            <a href="tel:+911914047110" style="display:block; color:var(--gray-600); text-decoration:none; font-size:16px;"><i class="fas fa-chevron-right" style="color:var(--gold); margin-right:8px; font-size:12px;"></i>+91 19140 47110</a>
           </div>
 
-          <div class="contact-block">
-            <h3><i class="fas fa-envelope" style="color:var(--green-700);margin-right:8px;"></i>Email</h3>
-            <a href="mailto:ashwanitradingcojammu@gmail.com"><i class="fas fa-chevron-right"></i>ashwanitradingcojammu@gmail.com</a>
-            <a href="mailto:ashwaniyradingco@gmail.com"><i class="fas fa-chevron-right"></i>ashwaniyradingco@gmail.com</a>
-            <a href="mailto:gupta.ashwanikumar@yahoo.com"><i class="fas fa-chevron-right"></i>gupta.ashwanikumar@yahoo.com</a>
+          <div class="contact-block" style="background: var(--white); padding: 32px; border-radius: var(--r-lg); box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-left: 4px solid var(--green-700); margin-bottom: 24px; transition: transform 0.3s ease;">
+            <h3 style="font-family:var(--f-head); font-size:20px; color:var(--green-900); margin-bottom:16px;"><i class="fas fa-envelope" style="color:var(--gold); margin-right:12px;"></i>Email</h3>
+            <a href="mailto:ashwanitradingcojammu@gmail.com" style="display:block; color:var(--gray-600); text-decoration:none; margin-bottom:8px; font-size:15px; word-break:break-all;"><i class="fas fa-chevron-right" style="color:var(--gold); margin-right:8px; font-size:12px;"></i>ashwanitradingcojammu@gmail.com</a>
+            <a href="mailto:ashwaniyradingco@gmail.com" style="display:block; color:var(--gray-600); text-decoration:none; margin-bottom:8px; font-size:15px; word-break:break-all;"><i class="fas fa-chevron-right" style="color:var(--gold); margin-right:8px; font-size:12px;"></i>ashwaniyradingco@gmail.com</a>
+            <a href="mailto:gupta.ashwanikumar@yahoo.com" style="display:block; color:var(--gray-600); text-decoration:none; font-size:15px; word-break:break-all;"><i class="fas fa-chevron-right" style="color:var(--gold); margin-right:8px; font-size:12px;"></i>gupta.ashwanikumar@yahoo.com</a>
           </div>
 
-          <div class="contact-block">
-            <h3><i class="fas fa-map-marker-alt" style="color:var(--green-700);margin-right:8px;"></i>Branch Office</h3>
-            <p><i class="fas fa-chevron-right"></i>Sunjwan Morh, Bye Pass Road,<br>Narwal, Jammu – 180006</p>
+          <div class="contact-block" style="background: var(--white); padding: 32px; border-radius: var(--r-lg); box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-left: 4px solid var(--green-700); margin-bottom: 24px; transition: transform 0.3s ease;">
+            <h3 style="font-family:var(--f-head); font-size:20px; color:var(--green-900); margin-bottom:16px;"><i class="fas fa-map-marker-alt" style="color:var(--gold); margin-right:12px;"></i>Branch Office</h3>
+            <p style="color:var(--gray-600); line-height:1.6; margin:0;"><i class="fas fa-chevron-right" style="color:var(--gold); margin-right:8px; font-size:12px;"></i>Sunjwan Morh, Bye Pass Road,<br>Narwal, Jammu – 180006</p>
           </div>
 
-          <div class="contact-block">
-            <h3><i class="fas fa-warehouse" style="color:var(--green-700);margin-right:8px;"></i>Main Office / Yard</h3>
-            <p><i class="fas fa-chevron-right"></i>Plot No. 112, Yard 6,<br>Transport Nagar, Narwal, Jammu – 180006</p>
+          <div class="contact-block" style="background: var(--white); padding: 32px; border-radius: var(--r-lg); box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-left: 4px solid var(--green-700); transition: transform 0.3s ease;">
+            <h3 style="font-family:var(--f-head); font-size:20px; color:var(--green-900); margin-bottom:16px;"><i class="fas fa-warehouse" style="color:var(--gold); margin-right:12px;"></i>Main Office / Yard</h3>
+            <p style="color:var(--gray-600); line-height:1.6; margin:0;"><i class="fas fa-chevron-right" style="color:var(--gold); margin-right:8px; font-size:12px;"></i>Plot No. 112, Yard 6,<br>Transport Nagar, Narwal, Jammu – 180006</p>
           </div>
 
         </div>
