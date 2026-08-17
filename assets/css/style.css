@@ -60,7 +60,7 @@
 
 /* ===================== BASE RESET ===================== */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; font-size: 16px; overflow-x: clip; }
+html { scroll-behavior: smooth; font-size: 16px; overflow-x: clip; background-color: var(--green-900); }
 body {
   font-family: var(--f-body);
   color: var(--charcoal);
