@@ -33,7 +33,7 @@ $currentPage = $currentPage ?? '';
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <!-- Site CSS -->
-  <link rel="stylesheet" href="/assets/css/style.css?v=5.1">
+  <link rel="stylesheet" href="/assets/css/style.css?v=5.2">
 
   <?php if (($currentPage ?? '') === 'home'): ?>
   <!-- LocalBusiness Schema — Homepage only -->
@@ -94,6 +94,7 @@ $currentPage = $currentPage ?? '';
       <a href="mailto:ashwanitradingcojammu@gmail.com"><i class="fas fa-envelope"></i>ashwanitradingcojammu@gmail.com</a>
     </div>
     <div class="top-bar__social">
+      <a href="https://maps.app.goo.gl/YvS83bKDwppUnGvC9" target="_blank" rel="noopener" aria-label="Google Maps Location"><i class="fas fa-map-marker-alt"></i></a>
       <a href="https://www.facebook.com/profile.php?id=61585148043428&mibextid=ZbWKwL" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
       <a href="https://www.instagram.com/ashwanitradingcojammu?igsh=N3AybXQ1dmRtcmZ1" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
       <a href="https://twitter.com/Ashwanitrading" target="_blank" rel="noopener" aria-label="Twitter / X"><i class="fab fa-x-twitter"></i></a>

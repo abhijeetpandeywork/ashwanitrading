@@ -8,16 +8,16 @@ include 'includes/header.php';
 <main id="main-content">
 
 <!-- PAGE HERO -->
-<section class="page-hero">
-  <div class="container page-hero__inner">
-    <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="/index.php">Home</a>
-      <span class="breadcrumb__sep" aria-hidden="true">›</span>
-      <span>About Us</span>
+<section class="page-hero" style="background: linear-gradient(90deg, rgba(11,77,44,0.95) 0%, rgba(11,77,44,0.3) 100%), url('/assets/img/parts_jcb.jpg') center/cover; padding: 140px 0 120px; color: #fff; text-align: left; border-bottom: 5px solid var(--gold);">
+  <div class="container page-hero__inner" style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: flex-start;">
+    <nav class="breadcrumb" aria-label="Breadcrumb" style="margin-bottom: 24px; color: rgba(255,255,255,0.7);">
+      <a href="/index.php" style="color: rgba(255,255,255,0.7);">Home</a>
+      <span class="breadcrumb__sep" aria-hidden="true" style="margin: 0 8px;">›</span>
+      <span style="color: var(--gold);">About Us</span>
     </nav>
-    <span class="tag tag--white">Our Story</span>
-    <h1>60+ Years of Trust in<br>Earthmoving &amp; Construction</h1>
-    <p>From a single spare parts counter in Jammu to serving contractors across Jammu, Kashmir &amp; Ladakh — this is the ATC story.</p>
+    <span class="tag tag--gold" style="margin-bottom: 24px; box-shadow: 0 4px 15px rgba(242,169,0,0.3);">Our Legacy</span>
+    <h1 style="font-size: clamp(40px, 6vw, 72px); margin-bottom: 24px; color: #fff; line-height: 1.05; text-shadow: 0 4px 20px rgba(0,0,0,0.8); font-weight: 800; letter-spacing: -1px;">60+ Years of Trust in<br><span style="color:var(--gold);">Heavy Machinery</span></h1>
+    <p style="font-size: 22px; line-height: 1.5; opacity: 0.95; text-shadow: 0 2px 10px rgba(0,0,0,0.8); max-width: 650px; font-weight: 500;">From a single spare parts counter in Jammu to serving contractors across Jammu, Kashmir &amp; Ladakh — this is the ATC story.</p>
   </div>
 </section>
 
@@ -138,16 +138,18 @@ include 'includes/header.php';
         <div class="about-points">
           <div class="about-point">
             <div class="about-point__icon"><i class="fas fa-map-marker-alt"></i></div>
-            <div>
+            <div style="display:flex; flex-direction:column; gap:4px;">
               <h4>Branch Office</h4>
               <p>Sunjwan Morh, Bye Pass Road, Narwal, Jammu – 180006</p>
+              <a href="https://maps.app.goo.gl/YvS83bKDwppUnGvC9" target="_blank" rel="noopener" class="link-enquire" style="font-size:14px; font-weight:700;">Open on Map <i class="fas fa-arrow-right"></i></a>
             </div>
           </div>
-          <div class="about-point">
+          <div class="about-point" style="margin-top:20px;">
             <div class="about-point__icon"><i class="fas fa-warehouse"></i></div>
-            <div>
+            <div style="display:flex; flex-direction:column; gap:4px;">
               <h4>Main Office / Yard</h4>
               <p>Plot No. 112, Yard 6, Transport Nagar, Narwal, Jammu – 180006</p>
+              <a href="https://maps.app.goo.gl/YvS83bKDwppUnGvC9" target="_blank" rel="noopener" class="link-enquire" style="font-size:14px; font-weight:700;">Open on Map <i class="fas fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -208,29 +210,45 @@ include 'includes/header.php';
       <h2>Everything You Need, Under One Roof</h2>
     </div>
     <div class="services-grid" data-reveal data-reveal-delay="1">
-      <a href="/services.php#spare-parts" class="service-card">
-        <div class="service-card__icon"><i class="fas fa-cogs"></i></div>
-        <h3>Spare Parts</h3>
-        <p>Genuine &amp; aftermarket parts for all earthmoving brands.</p>
-        <span class="link-enquire">Learn More <i class="fas fa-arrow-right"></i></span>
+      <a href="/services.php#spare-parts" class="service-card" style="text-align:center; padding:0;">
+        <div class="service-card__image" style="height:160px;">
+          <img src="/assets/img/parts_jcb.jpg" alt="Spare Parts">
+        </div>
+        <div class="service-card__body" style="padding: 24px; align-items:center;">
+          <h3 style="font-size:17px; margin-bottom:12px;">Spare Parts</h3>
+          <p style="font-size:14px; margin-bottom:20px; line-height:1.5;">Genuine &amp; aftermarket parts for all earthmoving brands.</p>
+          <span class="link-enquire" style="font-size:14px; font-weight:700;">Learn More <i class="fas fa-arrow-right"></i></span>
+        </div>
       </a>
-      <a href="/services.php#accessories" class="service-card">
-        <div class="service-card__icon"><i class="fas fa-toolbox"></i></div>
-        <h3>Accessories</h3>
-        <p>Attachments, tools, and add-ons to boost machine performance.</p>
-        <span class="link-enquire">Learn More <i class="fas fa-arrow-right"></i></span>
+      <a href="/services.php#accessories" class="service-card" style="text-align:center; padding:0;">
+        <div class="service-card__image" style="height:160px;">
+          <img src="/assets/img/parts_undercarriage.jpg" alt="Accessories">
+        </div>
+        <div class="service-card__body" style="padding: 24px; align-items:center;">
+          <h3 style="font-size:17px; margin-bottom:12px;">Accessories</h3>
+          <p style="font-size:14px; margin-bottom:20px; line-height:1.5;">Attachments, tools, and add-ons to boost machine performance.</p>
+          <span class="link-enquire" style="font-size:14px; font-weight:700;">Learn More <i class="fas fa-arrow-right"></i></span>
+        </div>
       </a>
-      <a href="/services.php#workshop" class="service-card">
-        <div class="service-card__icon"><i class="fas fa-wrench"></i></div>
-        <h3>Workshop &amp; Repairs</h3>
-        <p>Expert repairs to get your equipment back on site fast.</p>
-        <span class="link-enquire">Learn More <i class="fas fa-arrow-right"></i></span>
+      <a href="/services.php#workshop" class="service-card" style="text-align:center; padding:0;">
+        <div class="service-card__image" style="height:160px;">
+          <img src="/assets/img/parts_engine.jpg" alt="Workshop & Repairs">
+        </div>
+        <div class="service-card__body" style="padding: 24px; align-items:center;">
+          <h3 style="font-size:17px; margin-bottom:12px;">Workshop &amp; Repairs</h3>
+          <p style="font-size:14px; margin-bottom:20px; line-height:1.5;">Expert repairs to get your equipment back on site fast.</p>
+          <span class="link-enquire" style="font-size:14px; font-weight:700;">Learn More <i class="fas fa-arrow-right"></i></span>
+        </div>
       </a>
-      <a href="/services.php#rentals" class="service-card">
-        <div class="service-card__icon"><i class="fas fa-truck-monster"></i></div>
-        <h3>Machinery Rentals</h3>
-        <p>Flexible hire terms for projects of any scale.</p>
-        <span class="link-enquire">Learn More <i class="fas fa-arrow-right"></i></span>
+      <a href="/services.php#rentals" class="service-card" style="text-align:center; padding:0;">
+        <div class="service-card__image" style="height:160px;">
+          <img src="/assets/img/hero_services.jpg" alt="Machinery Rentals">
+        </div>
+        <div class="service-card__body" style="padding: 24px; align-items:center;">
+          <h3 style="font-size:17px; margin-bottom:12px;">Machinery Rentals</h3>
+          <p style="font-size:14px; margin-bottom:20px; line-height:1.5;">Flexible hire terms for projects of any scale.</p>
+          <span class="link-enquire" style="font-size:14px; font-weight:700;">Learn More <i class="fas fa-arrow-right"></i></span>
+        </div>
       </a>
     </div>
   </div>
