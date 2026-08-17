@@ -171,49 +171,49 @@ include 'includes/header.php';
 
     <div class="services-grid">
 
-      <div class="service-card" data-reveal data-reveal-delay="1">
-        <div class="service-card__icon">
-          <i class="fas fa-cogs" aria-hidden="true"></i>
+      <a href="/services.php#spare-parts" class="service-card" data-reveal data-reveal-delay="1">
+        <div class="service-card__image">
+          <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=600&auto=format&fit=crop" alt="Spare Parts for Earthmoving Machinery">
         </div>
-        <h3>Spare Parts</h3>
-        <p>Genuine &amp; aftermarket spare parts for JCB, road rollers, drill rods, and all earthmoving machinery. Verified quality, fast availability.</p>
-        <a href="/services.php#spare-parts" class="link-enquire">
-          View Details <i class="fas fa-arrow-right" aria-hidden="true"></i>
-        </a>
-      </div>
+        <div class="service-card__body">
+          <h3>Spare Parts</h3>
+          <p>Genuine &amp; aftermarket spare parts for JCB, road rollers, drill rods, and all earthmoving machinery. Verified quality, fast availability.</p>
+          <span class="link-enquire">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+        </div>
+      </a>
 
-      <div class="service-card" data-reveal data-reveal-delay="2">
-        <div class="service-card__icon">
-          <i class="fas fa-toolbox" aria-hidden="true"></i>
+      <a href="/services.php#accessories" class="service-card" data-reveal data-reveal-delay="2">
+        <div class="service-card__image">
+          <img src="https://images.unsplash.com/photo-1541888062400-b60580922418?q=80&w=600&auto=format&fit=crop" alt="Machinery Accessories">
         </div>
-        <h3>Accessories</h3>
-        <p>Machinery attachments, ground engaging tools, safety equipment, and add-on accessories to maximize equipment productivity.</p>
-        <a href="/services.php#accessories" class="link-enquire">
-          View Details <i class="fas fa-arrow-right" aria-hidden="true"></i>
-        </a>
-      </div>
+        <div class="service-card__body">
+          <h3>Accessories</h3>
+          <p>Machinery attachments, ground engaging tools, safety equipment, and add-on accessories to maximize equipment productivity.</p>
+          <span class="link-enquire">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+        </div>
+      </a>
 
-      <div class="service-card" data-reveal data-reveal-delay="3">
-        <div class="service-card__icon">
-          <i class="fas fa-wrench" aria-hidden="true"></i>
+      <a href="/services.php#workshop" class="service-card" data-reveal data-reveal-delay="3">
+        <div class="service-card__image">
+          <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=600&auto=format&fit=crop" alt="Workshop and Repairs">
         </div>
-        <h3>Workshop &amp; Repairs</h3>
-        <p>On-site and workshop repair services for earthmoving &amp; construction machinery. Minimize downtime, maximize site productivity.</p>
-        <a href="/services.php#workshop" class="link-enquire">
-          View Details <i class="fas fa-arrow-right" aria-hidden="true"></i>
-        </a>
-      </div>
+        <div class="service-card__body">
+          <h3>Workshop &amp; Repairs</h3>
+          <p>On-site and workshop repair services for earthmoving &amp; construction machinery. Minimize downtime, maximize site productivity.</p>
+          <span class="link-enquire">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+        </div>
+      </a>
 
-      <div class="service-card" data-reveal data-reveal-delay="4">
-        <div class="service-card__icon">
-          <i class="fas fa-truck-monster" aria-hidden="true"></i>
+      <a href="/services.php#rentals" class="service-card" data-reveal data-reveal-delay="4">
+        <div class="service-card__image">
+          <img src="https://images.unsplash.com/photo-1579929853965-02b4d455d3c8?q=80&w=600&auto=format&fit=crop" alt="Machinery Rentals">
         </div>
-        <h3>Machinery Rentals</h3>
-        <p>Rent earthmoving &amp; construction machinery when you need it. Flexible hire terms for contractors and project owners across the region.</p>
-        <a href="/services.php#rentals" class="link-enquire">
-          View Details <i class="fas fa-arrow-right" aria-hidden="true"></i>
-        </a>
-      </div>
+        <div class="service-card__body">
+          <h3>Machinery Rentals</h3>
+          <p>Rent earthmoving &amp; construction machinery when you need it. Flexible hire terms for contractors and project owners across the region.</p>
+          <span class="link-enquire">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+        </div>
+      </a>
 
     </div>
   </div>
