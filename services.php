@@ -151,18 +151,18 @@ include 'includes/header.php';
       <div class="services-grid" style="margin-top:40px;" data-reveal data-reveal-delay="1">
         <?php
         $rentals = [
-          ['Excavators for Hire', 'Large tonnage excavators for heavy digging.', 'https://images.unsplash.com/photo-1579929853965-02b4d455d3c8?w=600&q=80&auto=format&fit=crop'],
-          ['Backhoe Loaders', 'Versatile JCB loaders for multi-purpose tasks.', 'https://images.unsplash.com/photo-1584285497042-4f3da3345423?w=600&q=80&auto=format&fit=crop'],
-          ['Road Rollers', 'Soil and asphalt compactors for road works.', 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80&auto=format&fit=crop'],
-          ['Dump Trucks', 'Heavy-duty articulated dump trucks for site transport.', 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&q=80&auto=format&fit=crop'],
-          ['Mini Excavators', 'Compact excavators for tight spaces and trenches.', 'https://images.unsplash.com/photo-1541888062400-b60580922418?w=600&q=80&auto=format&fit=crop'],
-          ['Wheel Loaders', 'High-capacity wheel loaders for material handling.', 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80&auto=format&fit=crop'],
-          ['Motor Graders', 'Precision graders for road construction leveling.', 'https://images.unsplash.com/photo-1587582423116-ec07293f0395?w=600&q=80&auto=format&fit=crop'],
-          ['Trenchers', 'Specialized trenching equipment for cable laying.', 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&q=80&auto=format&fit=crop'],
-          ['Soil Compactors', 'Vibratory compactors for solid foundation works.', 'https://images.unsplash.com/photo-1533481405265-e9ce0c044abb?w=600&q=80&auto=format&fit=crop'],
-          ['Lighting Towers', 'Diesel-powered lighting towers for night shifts.', 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&q=80&auto=format&fit=crop'],
-          ['Generators (DG Sets)', 'Industrial diesel generators for continuous power.', 'https://images.unsplash.com/photo-1622322307393-27a9226d705c?w=600&q=80&auto=format&fit=crop'],
-          ['Project Deployments', 'Long-term machinery hire for major projects.', 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80&auto=format&fit=crop']
+          ['Excavators for Hire', 'Large tonnage excavators for heavy digging.', '/assets/img/parts_jcb.jpg'],
+          ['Backhoe Loaders', 'Versatile JCB loaders for multi-purpose tasks.', '/assets/img/hero_services.jpg'],
+          ['Road Rollers', 'Soil and asphalt compactors for road works.', '/assets/img/parts_undercarriage.jpg'],
+          ['Dump Trucks', 'Heavy-duty articulated dump trucks for site transport.', '/assets/img/parts_transmission.jpg'],
+          ['Mini Excavators', 'Compact excavators for tight spaces and trenches.', '/assets/img/parts_pump.jpg'],
+          ['Wheel Loaders', 'High-capacity wheel loaders for material handling.', '/assets/img/parts_jcb.jpg'],
+          ['Motor Graders', 'Precision graders for road construction leveling.', '/assets/img/parts_transmission.jpg'],
+          ['Trenchers', 'Specialized trenching equipment for cable laying.', '/assets/img/parts_pins.jpg'],
+          ['Soil Compactors', 'Vibratory compactors for solid foundation works.', '/assets/img/parts_undercarriage.jpg'],
+          ['Lighting Towers', 'Diesel-powered lighting towers for night shifts.', '/assets/img/parts_filtration.jpg'],
+          ['Generators (DG Sets)', 'Industrial diesel generators for continuous power.', '/assets/img/parts_engine.jpg'],
+          ['Project Deployments', 'Long-term machinery hire for major projects.', '/assets/img/hero_services.jpg']
         ];
         $delay = 1;
         foreach($rentals as $rent): ?>

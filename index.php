@@ -158,36 +158,6 @@ include 'includes/header.php';
 
 
 <!-- ============================================================
-     REGIONS WE SERVE (Moved to 3rd Section)
-     ============================================================ -->
-<section class="section section--white" id="regions" style="border-bottom: 1px solid var(--gray-100);">
-  <div class="container">
-    <div class="section-head" data-reveal>
-      <span class="tag">Our Coverage</span>
-      <h2>Serving the Entire Union Territory</h2>
-      <p>From the plains of Jammu to the valleys of Kashmir and the high altitude of Ladakh — ATC is your local parts partner.</p>
-    </div>
-    <div class="regions-strip" data-reveal data-reveal-delay="1">
-      <div class="region-item">
-        <div class="region-item__icon"><i class="fas fa-city" aria-hidden="true"></i></div>
-        <h3>Jammu</h3>
-        <p>Headquarters in Narwal, Jammu. Walk-in, call, or WhatsApp any time.</p>
-      </div>
-      <div class="region-item">
-        <div class="region-item__icon"><i class="fas fa-mountain" aria-hidden="true"></i></div>
-        <h3>Kashmir</h3>
-        <p>Supplying contractors and machinery owners across the Kashmir Valley.</p>
-      </div>
-      <div class="region-item">
-        <div class="region-item__icon"><i class="fas fa-snowflake" aria-hidden="true"></i></div>
-        <h3>Ladakh</h3>
-        <p>Parts and rentals reaching high-altitude construction projects in Ladakh.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
      WHAT WE DO — 4 service cards
      ============================================================ -->
 <section class="section section--white" id="services-overview">
@@ -261,13 +231,15 @@ include 'includes/header.php';
       <h2>Rent Heavy Equipment</h2>
       <p>Flexible hiring options for your projects. Enquire now for availability.</p>
     </div>
-    <div class="services-grid" data-reveal data-reveal-delay="1">
+    <div class="services-grid services-grid--3col" data-reveal data-reveal-delay="1">
       <?php
       $rentalsHome = [
-        ['Excavators', 'https://images.unsplash.com/photo-1579929853965-02b4d455d3c8?w=600&q=80'],
-        ['Backhoe Loaders', 'https://images.unsplash.com/photo-1584285497042-4f3da3345423?w=600&q=80'],
-        ['Road Rollers', 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80'],
-        ['Dump Trucks', 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80']
+        ['Excavators', '/assets/img/parts_jcb.jpg'],
+        ['Backhoe Loaders', '/assets/img/hero_services.jpg'],
+        ['Road Rollers', '/assets/img/parts_undercarriage.jpg'],
+        ['Dump Trucks', '/assets/img/parts_transmission.jpg'],
+        ['Mini Excavators', '/assets/img/parts_pump.jpg'],
+        ['Wheel Loaders', '/assets/img/parts_engine.jpg']
       ];
       foreach($rentalsHome as $rentHome): ?>
       <button class="service-card btn-home-rental" data-item="<?php echo $rentHome[0]; ?>" style="text-align:center; border:none; padding:0; cursor:pointer;">
@@ -385,6 +357,36 @@ document.addEventListener('DOMContentLoaded', () => {
 </section>
 
 
+
+<!-- ============================================================
+     REGIONS WE SERVE
+     ============================================================ -->
+<section class="section section--white" id="regions" style="border-bottom: 1px solid var(--gray-100);">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="tag">Our Coverage</span>
+      <h2>Serving the Entire Union Territory</h2>
+      <p>From the plains of Jammu to the valleys of Kashmir and the high altitude of Ladakh — ATC is your local parts partner.</p>
+    </div>
+    <div class="regions-strip" data-reveal data-reveal-delay="1">
+      <div class="region-item">
+        <div class="region-item__icon"><i class="fas fa-city" aria-hidden="true"></i></div>
+        <h3>Jammu</h3>
+        <p>Headquarters in Narwal, Jammu. Walk-in, call, or WhatsApp any time.</p>
+      </div>
+      <div class="region-item">
+        <div class="region-item__icon"><i class="fas fa-mountain" aria-hidden="true"></i></div>
+        <h3>Kashmir</h3>
+        <p>Supplying contractors and machinery owners across the Kashmir Valley.</p>
+      </div>
+      <div class="region-item">
+        <div class="region-item__icon"><i class="fas fa-snowflake" aria-hidden="true"></i></div>
+        <h3>Ladakh</h3>
+        <p>Parts and rentals reaching high-altitude construction projects in Ladakh.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- ============================================================
      WHY ATC — Deep Green Band (30% color)

@@ -673,8 +673,11 @@ p  { font-size: 16px; line-height: 1.7; color: var(--gray-500); }
 /* ===================== SERVICE CARDS (Glassmorphism) ===================== */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 32px;
+}
+.services-grid--3col {
+  grid-template-columns: repeat(3, 1fr);
 }
 .service-card {
   background: rgba(11,77,44,0.9);
@@ -733,8 +736,9 @@ p  { font-size: 16px; line-height: 1.7; color: var(--gray-500); }
   flex: 1;
 }
 
-.service-card h3 { font-size: 19px; font-weight: 700; margin-bottom: 12px; color: var(--charcoal); }
-.service-card p  { font-size: 14.5px; line-height: 1.65; margin-bottom: 24px; color: var(--gray-500); flex: 1; }
+.service-card h3 { font-size: 19px; font-weight: 700; margin-bottom: 12px; color: #ffffff; }
+.service-card p  { font-size: 14.5px; line-height: 1.65; margin-bottom: 24px; color: rgba(255,255,255,0.8); flex: 1; }
+.service-card .link-enquire { color: var(--gold); }
 
 /* ===================== WHY ATC ===================== */
 .why-grid {
