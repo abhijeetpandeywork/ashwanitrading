@@ -173,7 +173,7 @@ include 'includes/header.php';
 
       <a href="/services.php#spare-parts" class="service-card" data-reveal data-reveal-delay="1">
         <div class="service-card__image">
-          <img src="https://images.pexels.com/photos/209679/pexels-photo-209679.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Spare Parts for Earthmoving Machinery">
+          <img src="https://images.unsplash.com/photo-1587582423116-ec07293f0395?q=80&w=600&auto=format&fit=crop" alt="Spare Parts for Earthmoving Machinery">
         </div>
         <div class="service-card__body">
           <h3>Spare Parts</h3>
@@ -184,7 +184,7 @@ include 'includes/header.php';
 
       <a href="/services.php#accessories" class="service-card" data-reveal data-reveal-delay="2">
         <div class="service-card__image">
-          <img src="https://images.pexels.com/photos/175039/pexels-photo-175039.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Machinery Accessories">
+          <img src="https://images.unsplash.com/photo-1584285497042-4f3da3345423?q=80&w=600&auto=format&fit=crop" alt="Machinery Accessories">
         </div>
         <div class="service-card__body">
           <h3>Accessories</h3>
@@ -195,7 +195,7 @@ include 'includes/header.php';
 
       <a href="/services.php#workshop" class="service-card" data-reveal data-reveal-delay="3">
         <div class="service-card__image">
-          <img src="https://images.pexels.com/photos/1145434/pexels-photo-1145434.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Workshop and Repairs">
+          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=600&auto=format&fit=crop" alt="Workshop and Repairs">
         </div>
         <div class="service-card__body">
           <h3>Workshop &amp; Repairs</h3>
@@ -206,7 +206,7 @@ include 'includes/header.php';
 
       <a href="/services.php#rentals" class="service-card" data-reveal data-reveal-delay="4">
         <div class="service-card__image">
-          <img src="https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Machinery Rentals">
+          <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=600&auto=format&fit=crop" alt="Machinery Rentals">
         </div>
         <div class="service-card__body">
           <h3>Machinery Rentals</h3>
@@ -219,55 +219,6 @@ include 'includes/header.php';
   </div>
 </section>
 
-
-<!-- ============================================================
-     WHY ATC — Deep Green Band (30% color)
-     ============================================================ -->
-<section class="section section--green" id="why-atc">
-  <div class="container">
-    <div class="why-split" style="align-items:center;">
-
-      <div data-reveal>
-        <span class="tag tag--gold">Why ATC</span>
-        <h2 style="margin:14px 0 18px;">Why Contractors &amp; Workshop Owners Choose Us</h2>
-        <p style="margin-bottom:36px;">In a region where a delayed part means a stalled site, you need a supplier you can trust. Here's what sets ATC apart:</p>
-        <a href="/about.php" class="btn btn--white">Our Full Story</a>
-      </div>
-
-      <div class="why-grid" data-reveal data-reveal-delay="1">
-        <div class="why-item">
-          <div class="why-item__icon"><i class="fas fa-award" aria-hidden="true"></i></div>
-          <div>
-            <h3>60+ Years of Proven Trust</h3>
-            <p>Three generations of experience in earthmoving parts and machinery across Jammu, Kashmir &amp; Ladakh.</p>
-          </div>
-        </div>
-        <div class="why-item">
-          <div class="why-item__icon"><i class="fas fa-th-large" aria-hidden="true"></i></div>
-          <div>
-            <h3>Complete Solutions</h3>
-            <p>Parts, accessories, repairs, and rentals under one roof — no need to go to multiple vendors.</p>
-          </div>
-        </div>
-        <div class="why-item">
-          <div class="why-item__icon"><i class="fas fa-map-marked-alt" aria-hidden="true"></i></div>
-          <div>
-            <h3>Regional Reach</h3>
-            <p>Serving contractors, governments, and businesses across Jammu, Kashmir, and Ladakh from our Narwal yard.</p>
-          </div>
-        </div>
-        <div class="why-item">
-          <div class="why-item__icon"><i class="fas fa-headset" aria-hidden="true"></i></div>
-          <div>
-            <h3>Customer First</h3>
-            <p>Real people, real advice. Call us with a part number, model, or just a description — we'll find what you need.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
 
 
 <!-- ============================================================
@@ -350,6 +301,56 @@ include 'includes/header.php';
       </div>
     </div>
 
+  </div>
+</section>
+
+
+<!-- ============================================================
+     WHY ATC — Deep Green Band (30% color)
+     ============================================================ -->
+<section class="section section--green" id="why-atc">
+  <div class="container">
+    <div class="why-split" style="align-items:center;">
+
+      <div data-reveal>
+        <span class="tag tag--gold">Why ATC</span>
+        <h2 style="margin:14px 0 18px;">Why Contractors &amp; Workshop Owners Choose Us</h2>
+        <p style="margin-bottom:36px;">In a region where a delayed part means a stalled site, you need a supplier you can trust. Here's what sets ATC apart:</p>
+        <a href="/about.php" class="btn btn--white">Our Full Story</a>
+      </div>
+
+      <div class="why-grid" data-reveal data-reveal-delay="1">
+        <div class="why-item">
+          <div class="why-item__icon"><i class="fas fa-award" aria-hidden="true"></i></div>
+          <div>
+            <h3>60+ Years of Proven Trust</h3>
+            <p>Three generations of experience in earthmoving parts and machinery across Jammu, Kashmir &amp; Ladakh.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-item__icon"><i class="fas fa-th-large" aria-hidden="true"></i></div>
+          <div>
+            <h3>Complete Solutions</h3>
+            <p>Parts, accessories, repairs, and rentals under one roof — no need to go to multiple vendors.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-item__icon"><i class="fas fa-map-marked-alt" aria-hidden="true"></i></div>
+          <div>
+            <h3>Regional Reach</h3>
+            <p>Serving contractors, governments, and businesses across Jammu, Kashmir, and Ladakh from our Narwal yard.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-item__icon"><i class="fas fa-headset" aria-hidden="true"></i></div>
+          <div>
+            <h3>Customer First</h3>
+            <p>Real people, real advice. Call us with a part number, model, or just a description — we'll find what you need.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
 
