@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 $pageTitle   = 'Spare Parts Catalog — Earthmoving & Construction Parts | Ashwani Trading Co.';
 $metaDesc    = 'Browse spare part categories for JCB, road rollers, excavators & all earthmoving machinery. Hydraulics, undercarriage, engine, filtration & more. Enquire for price & availability.';
 $currentPage = 'catalog';
@@ -8,43 +8,28 @@ include 'includes/header.php';
 <main id="main-content">
 
 <!-- PAGE HERO -->
-<section class="page-hero">
+<section class="page-hero" style="background: linear-gradient(90deg, rgba(11,77,44,0.95) 0%, rgba(11,77,44,0.4) 100%), url('/assets/img/hero_catalog.jpg') center/cover; padding: 140px 0 120px; border-bottom: 5px solid var(--gold);">
   <div class="container page-hero__inner">
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="/index.php">Home</a>
       <span class="breadcrumb__sep" aria-hidden="true">›</span>
       <span>Parts Catalog</span>
     </nav>
-    <span class="tag tag--white">Parts Catalog</span>
-    <h1>Spare Parts for Every<br>Earthmoving Machine</h1>
-    <p>Browse our enquiry categories. We stock genuine and aftermarket parts for all major brands — JCB, road rollers, excavators, compactors, drill rigs, and more. <strong style="color:rgba(255,255,255,0.9);">This is an enquiry catalog, not a priced webshop.</strong> Call or enquire for availability and pricing.</p>
+    <span class="tag tag--gold" style="box-shadow: 0 4px 15px rgba(242,169,0,0.3);">Parts Catalog</span>
+    <h1 style="font-size: clamp(40px, 6vw, 72px); text-shadow: 0 4px 20px rgba(0,0,0,0.8); font-weight: 800; letter-spacing: -1px;">Spare Parts for Every<br><span style="color:var(--gold);">Earthmoving Machine</span></h1>
+    <p style="font-size: 20px; line-height: 1.6; text-shadow: 0 2px 10px rgba(0,0,0,0.7); max-width: 760px;">Browse our enquiry categories. We stock genuine and aftermarket parts for all major brands — JCB, road rollers, excavators, compactors, drill rigs, and more. <strong style="color:var(--gold);">This is an enquiry catalog, not a priced webshop.</strong> Call or enquire for availability and pricing.</p>
   </div>
 </section>
 
 
-<!-- STICKY "CAN'T FIND YOUR PART" BAR — critical for high purchase-intent visitors -->
-<div class="sticky-find-bar" id="sticky-find-bar" role="complementary" aria-label="Part not found assistance">
-  <div class="container sticky-find-bar__inner">
-    <p><i class="fas fa-search" aria-hidden="true"></i> Can't find your part? We source parts across all brands &amp; models.</p>
-    <div style="display:flex; gap:12px; flex-shrink:0; flex-wrap:wrap;">
-      <a href="tel:+919419186209" class="btn" style="background:var(--charcoal);color:var(--white);padding:10px 20px;font-size:13px;" id="sticky-call-btn">
-        <i class="fas fa-phone-alt"></i> Call Us
-      </a>
-      <a href="https://wa.me/919419186209?text=Hi%2C%20I%20can't%20find%20a%20spare%20part%20on%20your%20catalog.%20Can%20you%20help%3F"
-         target="_blank" rel="noopener"
-         class="btn" style="background:#25D366;color:#fff;padding:10px 20px;font-size:13px;" id="sticky-wa-btn">
-        <i class="fab fa-whatsapp"></i> WhatsApp
-      </a>
-    </div>
-  </div>
-</div>
+
 
 
 <!-- CATALOG GRID -->
 <section class="section section--white" id="catalog-main">
   <div class="container">
 
-    <div class="section-head" data-reveal>
+    <div class="section-head section-head--svc" data-reveal>
       <span class="tag">Enquiry Categories</span>
       <h2>Browse by Category</h2>
       <p>Select a category to enquire. Our team will confirm availability, pricing, and lead times within hours.</p>
