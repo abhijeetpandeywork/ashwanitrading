@@ -677,10 +677,14 @@ p  { font-size: 16px; line-height: 1.7; color: var(--gray-500); }
 .services-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 32px;
+  gap: 28px;
 }
 .services-grid--3col {
   grid-template-columns: repeat(3, 1fr);
+}
+.services-grid--5col {
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
 }
 .service-card {
   background: rgba(11,77,44,0.9);
@@ -732,17 +736,21 @@ p  { font-size: 16px; line-height: 1.7; color: var(--gray-500); }
 }
 
 .service-card__body {
-  padding: 24px 24px 32px;
+  padding: 20px 20px 28px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   flex: 1;
+  justify-content: space-between;
 }
 
-.service-card h3 { font-size: 19px; font-weight: 700; margin-bottom: 12px; color: #ffffff; }
-.service-card p  { font-size: 14.5px; line-height: 1.65; margin-bottom: 24px; color: rgba(255,255,255,0.8); flex: 1; }
-.service-card .link-enquire { color: var(--gold); }
+.service-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 10px; color: #ffffff; letter-spacing: -0.01em; }
+.service-card p  { font-size: 14px; line-height: 1.65; margin-bottom: 20px; color: rgba(255,255,255,0.78); flex: 1; }
+.service-card .link-enquire { color: var(--gold); font-size: 13.5px; font-weight: 700; display: inline-flex; align-items: center; gap: 6px; }
+
+/* Anchor offset so sticky header doesn't overlap section targets */
+.svc-section { scroll-margin-top: 100px; }
 
 /* Sub-section headings within a service (e.g., Machinery Services, Oil Services) */
 .svc-sub-heading {
@@ -1511,6 +1519,8 @@ textarea.form-inp-v2 { resize: vertical; min-height: 120px; }
 @media (max-width: 1024px) {
   .section { padding: 72px 0; }
   .services-grid { grid-template-columns: repeat(2,1fr); }
+  .services-grid--5col { grid-template-columns: repeat(3,1fr); gap: 20px; }
+  .services-grid--3col { grid-template-columns: repeat(2,1fr); }
   .about-split, .why-split { grid-template-columns: 1fr; gap: 48px; }
   .about-split--reverse .svc-row__visual { order: 0; }
   .svc-row { grid-template-columns: 1fr; gap: 40px; }
@@ -1548,6 +1558,8 @@ textarea.form-inp-v2 { resize: vertical; min-height: 120px; }
 
   /* Services grid */
   .services-grid { grid-template-columns: 1fr; }
+  .services-grid--5col { grid-template-columns: repeat(2,1fr); gap: 16px; }
+  .services-grid--3col { grid-template-columns: 1fr; }
 
   /* Why grid */
   .why-grid { grid-template-columns: 1fr; }

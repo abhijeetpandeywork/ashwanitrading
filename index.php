@@ -169,7 +169,7 @@ include 'includes/header.php';
       <p>From a single spare part to a full machine rental — genuine parts, industrial lubricants, professional tools, expert repairs, and flexible equipment hire across Jammu, Kashmir &amp; Ladakh.</p>
     </div>
 
-    <div class="services-grid">
+    <div class="services-grid services-grid--5col">
 
       <a href="/services.php#spare-parts" class="service-card" data-reveal data-reveal-delay="1">
         <div class="service-card__image">
@@ -241,24 +241,27 @@ include 'includes/header.php';
     <div class="section-head" data-reveal>
       <span class="tag">Rental Machinery</span>
       <h2>Rent Heavy Equipment</h2>
-      <p>Flexible hiring options for your projects. Enquire now for availability.</p>
+      <p>Flexible short &amp; long-term hiring options for contractors and project owners across J&amp;K &amp; Ladakh. All machines serviced and ready to work.</p>
     </div>
     <div class="services-grid services-grid--3col" data-reveal data-reveal-delay="1">
       <?php
       $rentalsHome = [
-        ['Excavators', '/assets/img/parts_jcb.jpg'],
-        ['Backhoe Loaders', '/assets/img/hero_services.jpg'],
-        ['Road Rollers', '/assets/img/parts_undercarriage.jpg'],
-        ['Dump Trucks', '/assets/img/parts_transmission.jpg'],
-        ['Mini Excavators', '/assets/img/parts_pump.jpg'],
-        ['Wheel Loaders', '/assets/img/parts_engine.jpg']
+        ['Excavators',        '/assets/img/parts_jcb.jpg'],
+        ['Backhoe Loader',    '/assets/img/parts_pump.jpg'],
+        ['Hydra',             '/assets/img/parts_pump.jpg'],
+        ['Road Roller',       '/assets/img/parts_undercarriage.jpg'],
+        ['Paver',             '/assets/img/parts_engine.jpg'],
+        ['Vibratory Roller',  '/assets/img/parts_filtration.jpg'],
+        ['Tralla / Platform', '/assets/img/parts_transmission.jpg'],
+        ['Motor Grader',      '/assets/img/parts_pins.jpg'],
+        ['Compressor',        '/assets/img/parts_jcb.jpg'],
       ];
       foreach($rentalsHome as $rentHome): ?>
       <button class="service-card btn-home-rental" data-item="<?php echo $rentHome[0]; ?>" style="text-align:center; border:none; padding:0; cursor:pointer;">
         <div class="service-card__image" style="height:160px;">
           <img src="<?php echo $rentHome[1]; ?>" alt="<?php echo $rentHome[0]; ?>">
         </div>
-        <div class="service-card__body" style="padding: 24px; align-items:center;">
+        <div class="service-card__body" style="padding:24px; align-items:center;">
           <h3 style="font-size:17px; margin-bottom:12px;"><?php echo $rentHome[0]; ?></h3>
           <span class="link-enquire" style="font-size:14px; font-weight:700;">Enquire Now <i class="fas fa-arrow-right"></i></span>
         </div>
