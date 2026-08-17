@@ -2,8 +2,12 @@
 /* Global Header — Ashwani Trading Co.
    Sticky, with persistent Call CTA in the header
    + mobile full-screen nav overlay
-   + mobile bottom bar (Call + WhatsApp) on every page
 */
+// Force server to bypass cache
+header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+header("Cache-Control: post-check=0, pre-check=0", false);
+header("Pragma: no-cache");
+
 $currentPage = $currentPage ?? '';
 ?>
 <!DOCTYPE html>
@@ -29,7 +33,7 @@ $currentPage = $currentPage ?? '';
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <!-- Site CSS -->
-  <link rel="stylesheet" href="/assets/css/style.css?v=4.1">
+  <link rel="stylesheet" href="/assets/css/style.css?v=5.0">
 
   <?php if (($currentPage ?? '') === 'home'): ?>
   <!-- LocalBusiness Schema — Homepage only -->
