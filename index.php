@@ -173,7 +173,7 @@ include 'includes/header.php';
 
       <a href="/services.php#spare-parts" class="service-card" data-reveal data-reveal-delay="1">
         <div class="service-card__image">
-          <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=600&auto=format&fit=crop" alt="Spare Parts for Earthmoving Machinery">
+          <img src="https://images.pexels.com/photos/209679/pexels-photo-209679.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Spare Parts for Earthmoving Machinery">
         </div>
         <div class="service-card__body">
           <h3>Spare Parts</h3>
@@ -184,7 +184,7 @@ include 'includes/header.php';
 
       <a href="/services.php#accessories" class="service-card" data-reveal data-reveal-delay="2">
         <div class="service-card__image">
-          <img src="https://images.unsplash.com/photo-1541888062400-b60580922418?q=80&w=600&auto=format&fit=crop" alt="Machinery Accessories">
+          <img src="https://images.pexels.com/photos/175039/pexels-photo-175039.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Machinery Accessories">
         </div>
         <div class="service-card__body">
           <h3>Accessories</h3>
@@ -195,7 +195,7 @@ include 'includes/header.php';
 
       <a href="/services.php#workshop" class="service-card" data-reveal data-reveal-delay="3">
         <div class="service-card__image">
-          <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=600&auto=format&fit=crop" alt="Workshop and Repairs">
+          <img src="https://images.pexels.com/photos/1145434/pexels-photo-1145434.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Workshop and Repairs">
         </div>
         <div class="service-card__body">
           <h3>Workshop &amp; Repairs</h3>
@@ -206,7 +206,7 @@ include 'includes/header.php';
 
       <a href="/services.php#rentals" class="service-card" data-reveal data-reveal-delay="4">
         <div class="service-card__image">
-          <img src="https://images.unsplash.com/photo-1579929853965-02b4d455d3c8?q=80&w=600&auto=format&fit=crop" alt="Machinery Rentals">
+          <img src="https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Machinery Rentals">
         </div>
         <div class="service-card__body">
           <h3>Machinery Rentals</h3>
