@@ -11,7 +11,7 @@ include 'includes/header.php';
 <section class="page-hero" style="background: linear-gradient(135deg, rgba(11,77,44,0.95), rgba(11,77,44,0.85)), url('/assets/img/hero_services.jpg') center/cover; padding: 120px 0 100px; color: #fff; text-align: center; border-bottom: 5px solid var(--gold);">
   <div class="container page-hero__inner" style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; align-items: center;">
     <span class="tag tag--gold" style="margin-bottom: 24px; box-shadow: 0 4px 15px rgba(242,169,0,0.3);">Comprehensive Solutions</span>
-    <h1 style="font-size: clamp(36px, 5vw, 54px); margin-bottom: 24px; color: #fff; line-height: 1.1; text-shadow: 0 2px 10px rgba(0,0,0,0.5);">Four Services.<br>One Trusted Partner.</h1>
+    <h1 style="font-size: clamp(36px, 5vw, 54px); margin-bottom: 24px; color: #fff; line-height: 1.1; text-shadow: 0 2px 10px rgba(0,0,0,0.5);">The Backbone of Heavy Industry.<br>Unbreakable Parts. Unstoppable Service.</h1>
     <p style="font-size: 18px; line-height: 1.6; opacity: 0.9; text-shadow: 0 2px 5px rgba(0,0,0,0.5);">Spare parts, heavy accessories, workshop repairs, and machinery rentals — everything a contractor or workshop owner needs, available directly from our Jammu yard.</p>
   </div>
 </section>
@@ -38,11 +38,15 @@ include 'includes/header.php';
           ['Filtration Systems', 'Premium oil, fuel, air, and hydraulic filters.', '/assets/img/parts_filtration.jpg'],
           ['Transmission Units', 'Gears, shafts, and complete transmission units.', '/assets/img/parts_transmission.jpg'],
           ['Pins & Seals', 'High-wear pins, bushes, and O-ring seal kits.', '/assets/img/parts_pins.jpg'],
-          ['Electrical Parts', 'Starters, alternators, sensors, and wiring harnesses.', '/assets/img/parts_transmission.jpg']
+          ['Electrical Parts', 'Starters, alternators, sensors, and wiring harnesses.', 'https://images.unsplash.com/photo-1517420879524-86d64ac2f339?w=600&q=80&fit=crop'],
+          ['Excavator Tracks', 'Durable rubber and steel tracks for all terrains.', 'https://images.unsplash.com/photo-1541888062400-b60580922418?w=600&q=80&fit=crop'],
+          ['Engine Belts', 'High-tension drive belts for cooling systems.', 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80&fit=crop'],
+          ['Hydraulic Hoses', 'High-pressure flexible hoses and fittings.', 'https://images.unsplash.com/photo-1622322307393-27a9226d705c?w=600&q=80&fit=crop'],
+          ['Cabin Accessories', 'Shatter-proof glass, mirrors, and operator seats.', 'https://images.unsplash.com/photo-1587582423116-ec07293f0395?w=600&q=80&fit=crop']
         ];
         $delay = 1;
         foreach($parts as $part): ?>
-        <button class="service-card btn-modal-trigger" data-service="<?php echo $part[0]; ?>" data-category="Spare Parts" style="text-align:left; border:none; width:100%; cursor:pointer; padding:0;" data-reveal data-reveal-delay="<?php echo $delay++; ?>">
+        <button class="service-card btn-modal-trigger" data-service="<?php echo $part[0]; ?>" data-category="Spare Parts" style="text-align:center; border:none; width:100%; cursor:pointer; padding:0;" data-reveal data-reveal-delay="<?php echo $delay++; ?>">
           <div class="service-card__image" style="height:160px;">
             <img src="<?php echo $part[2]; ?>" alt="<?php echo $part[0]; ?>">
           </div>
@@ -73,11 +77,16 @@ include 'includes/header.php';
           ['Quick Hitch Systems', 'Fast and secure attachment coupler systems.', 'https://images.unsplash.com/photo-1541888062400-b60580922418?w=600&q=80&fit=crop'],
           ['Operator Safety', 'ROPS, FOPS, and cab safety bars.', 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80&fit=crop'],
           ['Lighting Accessories', 'High-intensity LED work lights and beacons.', 'https://images.unsplash.com/photo-1533481405265-e9ce0c044abb?w=600&q=80&fit=crop'],
-          ['Protection Guards', 'Heavy-duty metal guards for vulnerable components.', 'https://images.unsplash.com/photo-1587582423116-ec07293f0395?w=600&q=80&fit=crop']
+          ['Protection Guards', 'Heavy-duty metal guards for vulnerable components.', 'https://images.unsplash.com/photo-1587582423116-ec07293f0395?w=600&q=80&fit=crop'],
+          ['Rock Breakers', 'Hydraulic breakers for solid rock excavation.', 'https://images.unsplash.com/photo-1541888062400-b60580922418?w=600&q=80&fit=crop'],
+          ['Auger Attachments', 'Drilling attachments for post holes and foundations.', 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80&fit=crop'],
+          ['Compaction Wheels', 'Trench compactors for solid backfill.', 'https://images.unsplash.com/photo-1579929853965-02b4d455d3c8?w=600&q=80&fit=crop'],
+          ['Heavy Duty Grapples', 'Timber and scrap handling grapples.', 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80&fit=crop'],
+          ['Pallet Forks', 'Transform your loader into a material handling unit.', 'https://images.unsplash.com/photo-1584285497042-4f3da3345423?w=600&q=80&fit=crop']
         ];
         $delay = 1;
         foreach($accessories as $acc): ?>
-        <button class="service-card btn-modal-trigger" data-service="<?php echo $acc[0]; ?>" data-category="Accessories" style="text-align:left; border:none; width:100%; cursor:pointer; padding:0;" data-reveal data-reveal-delay="<?php echo $delay++; ?>">
+        <button class="service-card btn-modal-trigger" data-service="<?php echo $acc[0]; ?>" data-category="Accessories" style="text-align:center; border:none; width:100%; cursor:pointer; padding:0;" data-reveal data-reveal-delay="<?php echo $delay++; ?>">
           <div class="service-card__image" style="height:160px;">
             <img src="<?php echo $acc[2]; ?>" alt="<?php echo $acc[0]; ?>">
           </div>
@@ -109,11 +118,15 @@ include 'includes/header.php';
           ['Electrical Diagnosis', 'Resolving complex wiring and sensor issues.', 'https://images.unsplash.com/photo-1533481405265-e9ce0c044abb?w=600&q=80&fit=crop'],
           ['Preventive Maintenance', 'Scheduled servicing to prevent breakdowns.', 'https://images.unsplash.com/photo-1584285497042-4f3da3345423?w=600&q=80&fit=crop'],
           ['Welding & Fabrication', 'Custom metalwork and structural crack repairs.', 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80&fit=crop'],
-          ['On-site Breakdown', 'Emergency dispatch to your project location.', 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80&fit=crop']
+          ['On-site Breakdown', 'Emergency dispatch to your project location.', 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80&fit=crop'],
+          ['Oil & Fluid Analysis', 'Advanced diagnostics for engine and hydraulic fluids.', 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&q=80&fit=crop'],
+          ['Fuel System Calibration', 'Injector cleaning and fuel pump calibration.', 'https://images.unsplash.com/photo-1622322307393-27a9226d705c?w=600&q=80&fit=crop'],
+          ['Track Tensioning', 'Adjusting undercarriage tracks for optimal performance.', 'https://images.unsplash.com/photo-1587582423116-ec07293f0395?w=600&q=80&fit=crop'],
+          ['Bucket Re-lining', 'Weld-on steel plating to extend bucket lifespan.', 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80&fit=crop']
         ];
         $delay = 1;
         foreach($repairs as $rep): ?>
-        <button class="service-card btn-modal-trigger" data-service="<?php echo $rep[0]; ?>" data-category="Workshop & Repairs" style="text-align:left; border:none; width:100%; cursor:pointer; padding:0;" data-reveal data-reveal-delay="<?php echo $delay++; ?>">
+        <button class="service-card btn-modal-trigger" data-service="<?php echo $rep[0]; ?>" data-category="Workshop & Repairs" style="text-align:center; border:none; width:100%; cursor:pointer; padding:0;" data-reveal data-reveal-delay="<?php echo $delay++; ?>">
           <div class="service-card__image" style="height:160px;">
             <img src="<?php echo $rep[2]; ?>" alt="<?php echo $rep[0]; ?>">
           </div>
@@ -141,11 +154,19 @@ include 'includes/header.php';
           ['Excavators for Hire', 'Large tonnage excavators for heavy digging.', 'https://images.unsplash.com/photo-1579929853965-02b4d455d3c8?w=600&q=80&fit=crop'],
           ['Backhoe Loaders', 'Versatile JCB loaders for multi-purpose tasks.', 'https://images.unsplash.com/photo-1584285497042-4f3da3345423?w=600&q=80&fit=crop'],
           ['Road Rollers', 'Soil and asphalt compactors for road works.', 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80&fit=crop'],
-          ['Project Deployments', 'Long-term machinery hire for major projects.', 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80&fit=crop']
+          ['Project Deployments', 'Long-term machinery hire for major projects.', 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80&fit=crop'],
+          ['Mini Excavators', 'Compact excavators for tight spaces and trenches.', 'https://images.unsplash.com/photo-1541888062400-b60580922418?w=600&q=80&fit=crop'],
+          ['Wheel Loaders', 'High-capacity wheel loaders for material handling.', 'https://images.unsplash.com/photo-1579929853965-02b4d455d3c8?w=600&q=80&fit=crop'],
+          ['Motor Graders', 'Precision graders for road construction leveling.', 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80&fit=crop'],
+          ['Dump Trucks', 'Heavy-duty articulated dump trucks for site transport.', 'https://images.unsplash.com/photo-1584285497042-4f3da3345423?w=600&q=80&fit=crop'],
+          ['Trenchers', 'Specialized trenching equipment for cable laying.', 'https://images.unsplash.com/photo-1541888062400-b60580922418?w=600&q=80&fit=crop'],
+          ['Soil Compactors', 'Vibratory compactors for solid foundation works.', 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80&fit=crop'],
+          ['Lighting Towers', 'Diesel-powered lighting towers for night shifts.', 'https://images.unsplash.com/photo-1533481405265-e9ce0c044abb?w=600&q=80&fit=crop'],
+          ['Generators (DG Sets)', 'Industrial diesel generators for continuous power.', 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&q=80&fit=crop']
         ];
         $delay = 1;
         foreach($rentals as $rent): ?>
-        <button class="service-card btn-modal-trigger" data-service="<?php echo $rent[0]; ?>" data-category="Machinery Rentals" style="text-align:left; border:none; width:100%; cursor:pointer; padding:0;" data-reveal data-reveal-delay="<?php echo $delay++; ?>">
+        <button class="service-card btn-modal-trigger" data-service="<?php echo $rent[0]; ?>" data-category="Machinery Rentals" style="text-align:center; border:none; width:100%; cursor:pointer; padding:0;" data-reveal data-reveal-delay="<?php echo $delay++; ?>">
           <div class="service-card__image" style="height:160px;">
             <img src="<?php echo $rent[2]; ?>" alt="<?php echo $rent[0]; ?>">
           </div>

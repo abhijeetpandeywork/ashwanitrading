@@ -158,6 +158,36 @@ include 'includes/header.php';
 
 
 <!-- ============================================================
+     REGIONS WE SERVE (Moved to 3rd Section)
+     ============================================================ -->
+<section class="section section--white" id="regions" style="border-bottom: 1px solid var(--gray-100);">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="tag">Our Coverage</span>
+      <h2>Serving the Entire Union Territory</h2>
+      <p>From the plains of Jammu to the valleys of Kashmir and the high altitude of Ladakh — ATC is your local parts partner.</p>
+    </div>
+    <div class="regions-strip" data-reveal data-reveal-delay="1">
+      <div class="region-item">
+        <div class="region-item__icon"><i class="fas fa-city" aria-hidden="true"></i></div>
+        <h3>Jammu</h3>
+        <p>Headquarters in Narwal, Jammu. Walk-in, call, or WhatsApp any time.</p>
+      </div>
+      <div class="region-item">
+        <div class="region-item__icon"><i class="fas fa-mountain" aria-hidden="true"></i></div>
+        <h3>Kashmir</h3>
+        <p>Supplying contractors and machinery owners across the Kashmir Valley.</p>
+      </div>
+      <div class="region-item">
+        <div class="region-item__icon"><i class="fas fa-snowflake" aria-hidden="true"></i></div>
+        <h3>Ladakh</h3>
+        <p>Parts and rentals reaching high-altitude construction projects in Ladakh.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
      WHAT WE DO — 4 service cards
      ============================================================ -->
 <section class="section section--white" id="services-overview">
@@ -222,6 +252,90 @@ include 'includes/header.php';
 
 
 <!-- ============================================================
+     RENTAL GOODS
+     ============================================================ -->
+<section class="section section--tint" id="home-rentals">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="tag">Rental Machinery</span>
+      <h2>Rent Heavy Equipment</h2>
+      <p>Flexible hiring options for your projects. Enquire now for availability.</p>
+    </div>
+    <div class="services-grid" data-reveal data-reveal-delay="1">
+      <?php
+      $rentalsHome = [
+        ['Excavators', 'https://images.unsplash.com/photo-1579929853965-02b4d455d3c8?w=600&q=80'],
+        ['Backhoe Loaders', 'https://images.unsplash.com/photo-1584285497042-4f3da3345423?w=600&q=80'],
+        ['Road Rollers', 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80'],
+        ['Dump Trucks', 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80']
+      ];
+      foreach($rentalsHome as $rentHome): ?>
+      <button class="service-card btn-home-rental" data-item="<?php echo $rentHome[0]; ?>" style="text-align:center; border:none; padding:0; cursor:pointer;">
+        <div class="service-card__image" style="height:160px;">
+          <img src="<?php echo $rentHome[1]; ?>" alt="<?php echo $rentHome[0]; ?>">
+        </div>
+        <div class="service-card__body" style="padding: 24px; align-items:center;">
+          <h3 style="font-size:17px; margin-bottom:12px;"><?php echo $rentHome[0]; ?></h3>
+          <span class="link-enquire" style="font-size:14px; font-weight:700;">Enquire Now <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </button>
+      <?php endforeach; ?>
+    </div>
+  </div>
+</section>
+
+<!-- RENTAL MODAL (HOME) -->
+<div class="lead-modal-overlay" id="homeRentalModal">
+  <div class="lead-modal">
+    <button class="lead-modal__close" id="closeHomeModal" aria-label="Close form">&times;</button>
+    <div class="lead-modal__header">
+      <span class="tag tag--gold" style="margin-bottom:12px;">Machinery Rental</span>
+      <h3 id="homeModalTitle">Enquire</h3>
+      <p>Submit your requirements and we will confirm availability.</p>
+    </div>
+    <form action="#" method="POST" class="lead-modal__form" onsubmit="event.preventDefault(); alert('Enquiry submitted!'); document.getElementById('closeHomeModal').click();">
+      <input type="hidden" name="rental_item" id="homeInputItem" value="">
+      <div class="form-group">
+        <label>Your Name *</label>
+        <input type="text" name="name" required placeholder="Enter your full name">
+      </div>
+      <div class="form-group">
+        <label>Phone Number *</label>
+        <input type="tel" name="phone" required placeholder="+91 XXXXX XXXXX">
+      </div>
+      <button type="submit" class="btn btn--primary" style="width:100%; margin-top:10px; display:flex; justify-content:center;">
+        <i class="fas fa-paper-plane" style="margin-right:8px;"></i> Submit Enquiry
+      </button>
+    </form>
+  </div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.getElementById('homeRentalModal');
+  const closeBtn = document.getElementById('closeHomeModal');
+  const triggers = document.querySelectorAll('.btn-home-rental');
+  const modalTitle = document.getElementById('homeModalTitle');
+  const inputItem = document.getElementById('homeInputItem');
+  
+  if(triggers.length > 0 && modal){
+    triggers.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const item = btn.getAttribute('data-item');
+        modalTitle.textContent = `Enquire for ${item}`;
+        inputItem.value = item;
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+    const closeModal = () => { modal.classList.remove('active'); document.body.style.overflow = ''; };
+    closeBtn.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => { if(e.target === modal) closeModal(); });
+  }
+});
+</script>
+
+<!-- ============================================================
      POPULAR PART CATEGORIES — teaser tiles
      ============================================================ -->
 <section class="section section--tint" id="categories">
@@ -270,39 +384,6 @@ include 'includes/header.php';
   </div>
 </section>
 
-
-<!-- ============================================================
-     REGIONS WE SERVE
-     ============================================================ -->
-<section class="section section--white" id="regions">
-  <div class="container">
-
-    <div class="section-head" data-reveal>
-      <span class="tag">Our Coverage</span>
-      <h2>Serving the Entire Union Territory</h2>
-      <p>From the plains of Jammu to the valleys of Kashmir and the high altitude of Ladakh — ATC is your local parts partner.</p>
-    </div>
-
-    <div class="regions-strip" data-reveal data-reveal-delay="1">
-      <div class="region-item">
-        <div class="region-item__icon"><i class="fas fa-city" aria-hidden="true"></i></div>
-        <h3>Jammu</h3>
-        <p>Headquarters in Narwal, Jammu. Walk-in, call, or WhatsApp any time.</p>
-      </div>
-      <div class="region-item">
-        <div class="region-item__icon"><i class="fas fa-mountain" aria-hidden="true"></i></div>
-        <h3>Kashmir</h3>
-        <p>Supplying contractors and machinery owners across the Kashmir Valley.</p>
-      </div>
-      <div class="region-item">
-        <div class="region-item__icon"><i class="fas fa-snowflake" aria-hidden="true"></i></div>
-        <h3>Ladakh</h3>
-        <p>Parts and rentals reaching high-altitude construction projects in Ladakh.</p>
-      </div>
-    </div>
-
-  </div>
-</section>
 
 
 <!-- ============================================================
