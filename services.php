@@ -21,190 +21,147 @@ include 'includes/header.php';
   </div>
 </section>
 
-
-<!-- SERVICES: alternating left/right, 60/40 split -->
-<section class="section section--white" id="services-detail">
+<!-- SERVICES GRIDS -->
+<section class="section section--white" id="services-detail" style="padding-top: 60px;">
   <div class="container">
 
     <!-- SERVICE 1: Spare Parts -->
-    <div class="svc-row" id="spare-parts">
-      <div class="svc-row__content" data-reveal>
-        <span class="svc-row__tag"><i class="fas fa-cogs"></i> Service 01</span>
+    <div class="svc-section" id="spare-parts" style="margin-bottom: 80px;">
+      <div class="section-head" style="text-align:left; max-width:100%; display:flex; flex-direction:column; align-items:flex-start;" data-reveal>
+        <span class="tag"><i class="fas fa-cogs"></i> Service 01</span>
         <h2>Spare Parts for Earthmoving &amp; Construction Machinery</h2>
-        <p>We stock genuine OEM and quality-checked aftermarket spare parts for a wide range of earthmoving and construction equipment brands. From hydraulic pumps to bucket teeth, if it's a part for earthmoving machinery, we likely have it — or can source it fast.</p>
-        <ul class="svc-bullets" aria-label="Spare parts categories">
-          <li>JCB, road roller, drill rod, and excavator spare parts</li>
-          <li>Hydraulic pumps, cylinders, motors, and control valves</li>
-          <li>Undercarriage parts: track chains, rollers, idlers, sprockets</li>
-          <li>Engine parts: pistons, liners, bearings, gasket kits</li>
-          <li>Filtration: oil, fuel, air, hydraulic filters</li>
-          <li>Transmission and drivetrain components</li>
-          <li>Pins, bushes, seals, and O-ring kits</li>
-          <li>Electrical components: starters, alternators, sensors</li>
-        </ul>
-        <a href="/contact.php?service=spare-parts" class="btn btn--primary">
-          <i class="fas fa-phone-alt"></i> Enquire for Parts
-        </a>
+        <p style="max-width:800px; color:var(--gray-500); margin: 0;">We stock genuine OEM and quality-checked aftermarket spare parts for a wide range of earthmoving and construction equipment brands. From hydraulic pumps to bucket teeth, if it's a part for earthmoving machinery, we likely have it — or can source it fast.</p>
       </div>
-      <div class="svc-row__visual" data-reveal data-reveal-delay="1">
-        <div class="illus-box" aria-hidden="true">
-          <svg viewBox="0 0 360 270" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Large gear -->
-            <g transform="translate(100,60)">
-              <path d="M80 20l4 9 9-2.5-1 10 9 4-6 8 6 8-9 4 1 10-9-2.5-4 9-4-9-9 2.5 1-10-9-4 6-8-6-8 9-4-1-10 9 2.5z" fill="rgba(242,169,0,0.3)" stroke="rgba(242,169,0,0.5)" stroke-width="1.5"/>
-              <circle cx="80" cy="80" r="24" fill="rgba(11,77,44,0.8)" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
-              <circle cx="80" cy="80" r="10" fill="rgba(242,169,0,0.25)"/>
-            </g>
-            <!-- Small gear -->
-            <g transform="translate(60,130)">
-              <path d="M35 10l2 4.5 4.5-1.5-.5 5.5 4.5 2-3 4 3 4-4.5 2 .5 5.5-4.5-1.5-2 4.5-2-4.5-4.5 1.5.5-5.5-4.5-2 3-4-3-4 4.5-2-.5-5.5 4.5 1.5z" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
-              <circle cx="35" cy="35" r="10" fill="rgba(11,77,44,0.6)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-            </g>
-            <!-- Parts labels -->
-            <rect x="240" y="50" width="90" height="26" rx="13" fill="rgba(242,169,0,0.15)" stroke="rgba(242,169,0,0.35)" stroke-width="1"/>
-            <text x="285" y="67" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="rgba(242,169,0,0.8)" font-weight="600">Hydraulic Pump</text>
-            <rect x="240" y="90" width="90" height="26" rx="13" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
-            <text x="285" y="107" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="rgba(255,255,255,0.65)" font-weight="600">Track Chain</text>
-            <rect x="240" y="130" width="90" height="26" rx="13" fill="rgba(242,169,0,0.15)" stroke="rgba(242,169,0,0.35)" stroke-width="1"/>
-            <text x="285" y="147" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="rgba(242,169,0,0.8)" font-weight="600">Bucket Teeth</text>
-            <rect x="240" y="170" width="90" height="26" rx="13" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
-            <text x="285" y="187" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="rgba(255,255,255,0.65)" font-weight="600">Oil Filter Kit</text>
-          </svg>
-        </div>
+
+      <div class="services-grid" style="margin-top:40px;" data-reveal data-reveal-delay="1">
+        <?php
+        $parts = [
+          ['JCB & Excavator Parts', 'Genuine parts for all major earthmoving machinery.'],
+          ['Hydraulic Pumps & Cylinders', 'High-pressure pumps, motors, and hydraulic cylinders.'],
+          ['Undercarriage Parts', 'Track chains, rollers, idlers, and sprockets.'],
+          ['Engine Parts & Pistons', 'Pistons, liners, bearings, and complete overhaul kits.'],
+          ['Filtration Systems', 'Premium oil, fuel, air, and hydraulic filters.'],
+          ['Transmission & Drivetrain', 'Gears, shafts, and complete transmission units.'],
+          ['Pins, Bushes & Seals', 'High-wear pins, bushes, and O-ring seal kits.'],
+          ['Electrical Components', 'Starters, alternators, sensors, and wiring harnesses.']
+        ];
+        foreach($parts as $part): ?>
+        <button class="service-card btn-modal-trigger" data-service="<?php echo $part[0]; ?>" data-category="Spare Parts" style="text-align:left; border:none; width:100%; cursor:pointer; padding:0;">
+          <div class="service-card__image" style="height:160px;">
+            <img src="/assets/img/jcb_spare_parts.jpg" alt="<?php echo $part[0]; ?>">
+          </div>
+          <div class="service-card__body" style="padding: 24px;">
+            <h3 style="font-size:17px; margin-bottom:8px;"><?php echo $part[0]; ?></h3>
+            <p style="font-size:14px; margin-bottom:20px; line-height:1.5;"><?php echo $part[1]; ?></p>
+            <span class="link-enquire" style="font-size:14px; font-weight:700;">Enquire Now <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </button>
+        <?php endforeach; ?>
       </div>
     </div>
 
     <!-- SERVICE 2: Accessories -->
-    <div class="svc-row svc-row--alt" id="accessories">
-      <div class="svc-row__content" data-reveal>
-        <span class="svc-row__tag"><i class="fas fa-toolbox"></i> Service 02</span>
+    <div class="svc-section" id="accessories" style="margin-bottom: 80px; padding-top:40px; border-top:1px solid rgba(11,77,44,0.1);">
+      <div class="section-head" style="text-align:left; max-width:100%; display:flex; flex-direction:column; align-items:flex-start;" data-reveal>
+        <span class="tag"><i class="fas fa-toolbox"></i> Service 02</span>
         <h2>Machinery Accessories &amp; Attachments</h2>
-        <p>Maximize the productivity and versatility of your earthmoving equipment with the right accessories. We supply attachments, ground engaging tools, and safety add-ons that keep your machinery working harder and longer on site.</p>
-        <ul class="svc-bullets" aria-label="Accessories categories">
-          <li>Bucket attachments: rock, mud, ditching, and general purpose</li>
-          <li>Ground engaging tools (GET): adapters, teeth, cutting edges, end bits</li>
-          <li>Ripper shanks, blades, and compaction feet</li>
-          <li>Quick hitch / coupler systems</li>
-          <li>Operator safety equipment: ROPS, FOPS, safety bars</li>
-          <li>Lighting and electrical accessories</li>
-          <li>Machine protection guards and panels</li>
-        </ul>
-        <a href="/contact.php?service=accessories" class="btn btn--primary">
-          <i class="fas fa-phone-alt"></i> Enquire for Accessories
-        </a>
+        <p style="max-width:800px; color:var(--gray-500); margin: 0;">Maximize the productivity and versatility of your earthmoving equipment with the right accessories. We supply attachments, ground engaging tools, and safety add-ons that keep your machinery working harder.</p>
       </div>
-      <div class="svc-row__visual" data-reveal data-reveal-delay="1">
-        <div class="illus-box" aria-hidden="true">
-          <svg viewBox="0 0 360 270" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Excavator bucket -->
-            <path d="M80 80 L240 80 L270 160 L180 200 L50 160 Z" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
-            <!-- Bucket teeth -->
-            <rect x="80" y="195" width="22" height="30" rx="3" fill="rgba(242,169,0,0.5)" stroke="rgba(242,169,0,0.7)" stroke-width="1.5"/>
-            <rect x="115" y="197" width="22" height="28" rx="3" fill="rgba(242,169,0,0.45)" stroke="rgba(242,169,0,0.65)" stroke-width="1.5"/>
-            <rect x="150" y="196" width="22" height="29" rx="3" fill="rgba(242,169,0,0.5)" stroke="rgba(242,169,0,0.7)" stroke-width="1.5"/>
-            <rect x="185" y="197" width="22" height="28" rx="3" fill="rgba(242,169,0,0.45)" stroke="rgba(242,169,0,0.65)" stroke-width="1.5"/>
-            <rect x="218" y="195" width="22" height="30" rx="3" fill="rgba(242,169,0,0.5)" stroke="rgba(242,169,0,0.7)" stroke-width="1.5"/>
-            <!-- Label -->
-            <rect x="120" y="40" width="120" height="26" rx="13" fill="rgba(242,169,0,0.15)" stroke="rgba(242,169,0,0.35)" stroke-width="1"/>
-            <text x="180" y="57" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="rgba(242,169,0,0.8)" font-weight="600">Ground Engaging Tools</text>
-            <!-- Cutting edge bottom -->
-            <rect x="50" y="158" width="220" height="8" rx="2" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
-            <text x="180" y="240" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="rgba(255,255,255,0.4)" font-weight="500">Bucket Attachment Assembly</text>
-          </svg>
-        </div>
+
+      <div class="services-grid" style="margin-top:40px;" data-reveal data-reveal-delay="1">
+        <?php
+        $accessories = [
+          ['Bucket Attachments', 'Rock, mud, ditching, and general purpose buckets.'],
+          ['Ground Engaging Tools', 'Adapters, teeth, cutting edges, and end bits.'],
+          ['Ripper Shanks & Blades', 'Heavy-duty shanks and grading blades.'],
+          ['Quick Hitch Systems', 'Fast and secure attachment coupler systems.'],
+          ['Operator Safety', 'ROPS, FOPS, and cab safety bars.'],
+          ['Lighting Accessories', 'High-intensity LED work lights and beacons.'],
+          ['Protection Guards', 'Heavy-duty metal guards for vulnerable components.']
+        ];
+        foreach($accessories as $acc): ?>
+        <button class="service-card btn-modal-trigger" data-service="<?php echo $acc[0]; ?>" data-category="Accessories" style="text-align:left; border:none; width:100%; cursor:pointer; padding:0;">
+          <div class="service-card__image" style="height:160px;">
+            <img src="/assets/img/jcb_accessories.jpg" alt="<?php echo $acc[0]; ?>">
+          </div>
+          <div class="service-card__body" style="padding: 24px;">
+            <h3 style="font-size:17px; margin-bottom:8px;"><?php echo $acc[0]; ?></h3>
+            <p style="font-size:14px; margin-bottom:20px; line-height:1.5;"><?php echo $acc[1]; ?></p>
+            <span class="link-enquire" style="font-size:14px; font-weight:700;">Enquire Now <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </button>
+        <?php endforeach; ?>
       </div>
     </div>
 
-    <!-- SERVICE 3: Workshop & Repairs -->
-    <div class="svc-row" id="workshop">
-      <div class="svc-row__content" data-reveal>
-        <span class="svc-row__tag"><i class="fas fa-wrench"></i> Service 03</span>
+    <!-- SERVICE 3: Workshop -->
+    <div class="svc-section" id="workshop" style="margin-bottom: 80px; padding-top:40px; border-top:1px solid rgba(11,77,44,0.1);">
+      <div class="section-head" style="text-align:left; max-width:100%; display:flex; flex-direction:column; align-items:flex-start;" data-reveal>
+        <span class="tag"><i class="fas fa-wrench"></i> Service 03</span>
         <h2>Workshop &amp; Repair Services</h2>
-        <p>A stalled machine is lost revenue. Our workshop team provides fast, expert repair and maintenance services for earthmoving and construction equipment — whether at our Jammu yard or on-site at your project location.</p>
-        <ul class="svc-bullets" aria-label="Workshop services">
-          <li>Hydraulic system repair and overhaul</li>
-          <li>Engine rebuilds and overhaul services</li>
-          <li>Undercarriage inspection, repair, and replacement</li>
-          <li>Transmission and drivetrain repair</li>
-          <li>Electrical fault diagnosis and repair</li>
-          <li>Preventive maintenance schedules</li>
-          <li>Welding and fabrication services</li>
-          <li>On-site breakdown support across J&amp;K &amp; Ladakh</li>
-        </ul>
-        <a href="/contact.php?service=workshop" class="btn btn--primary">
-          <i class="fas fa-phone-alt"></i> Book a Repair
-        </a>
+        <p style="max-width:800px; color:var(--gray-500); margin: 0;">A stalled machine is lost revenue. Our workshop team provides fast, expert repair and maintenance services for earthmoving and construction equipment — whether at our Jammu yard or on-site.</p>
       </div>
-      <div class="svc-row__visual" data-reveal data-reveal-delay="1">
-        <div class="illus-box" aria-hidden="true">
-          <svg viewBox="0 0 360 270" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Wrench -->
-            <g transform="translate(80,60) rotate(30, 120, 120)">
-              <rect x="90" y="30" width="24" height="120" rx="12" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
-              <circle cx="102" cy="30" r="24" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
-              <circle cx="102" cy="30" r="12" fill="rgba(11,77,44,0.8)"/>
-              <circle cx="102" cy="150" r="18" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
-            </g>
-            <!-- Hydraulic cylinder -->
-            <rect x="200" y="80" width="110" height="36" rx="18" fill="rgba(242,169,0,0.18)" stroke="rgba(242,169,0,0.38)" stroke-width="1.5"/>
-            <rect x="280" y="92" width="60" height="12" rx="6" fill="rgba(242,169,0,0.28)" stroke="rgba(242,169,0,0.45)" stroke-width="1"/>
-            <text x="255" y="102" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="rgba(242,169,0,0.7)" font-weight="600">Hydraulic Cylinder</text>
-            <!-- Tools label -->
-            <rect x="195" y="140" width="120" height="26" rx="13" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
-            <text x="255" y="157" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="rgba(255,255,255,0.6)" font-weight="600">Workshop Repair</text>
-            <!-- Checkmark badge -->
-            <circle cx="280" cy="200" r="28" fill="rgba(11,77,44,0.6)" stroke="rgba(242,169,0,0.4)" stroke-width="1.5"/>
-            <path d="M268 200 L276 210 L294 190" stroke="rgba(242,169,0,0.9)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-          </svg>
-        </div>
+
+      <div class="services-grid" style="margin-top:40px;" data-reveal data-reveal-delay="1">
+        <?php
+        $repairs = [
+          ['Hydraulic System Repair', 'Diagnosis and overhaul of complex hydraulics.'],
+          ['Engine Rebuilds', 'Complete engine strip-downs and rebuilds.'],
+          ['Undercarriage Replacement', 'Track chain swapping and roller replacements.'],
+          ['Transmission Repair', 'Fixing slipping gears and drivetrain faults.'],
+          ['Electrical Diagnosis', 'Resolving complex wiring and sensor issues.'],
+          ['Preventive Maintenance', 'Scheduled servicing to prevent breakdowns.'],
+          ['Welding & Fabrication', 'Custom metalwork and structural crack repairs.'],
+          ['On-site Breakdown', 'Emergency dispatch to your project location.']
+        ];
+        foreach($repairs as $rep): ?>
+        <button class="service-card btn-modal-trigger" data-service="<?php echo $rep[0]; ?>" data-category="Workshop & Repairs" style="text-align:left; border:none; width:100%; cursor:pointer; padding:0;">
+          <div class="service-card__image" style="height:160px;">
+            <img src="/assets/img/jcb_workshop.jpg" alt="<?php echo $rep[0]; ?>">
+          </div>
+          <div class="service-card__body" style="padding: 24px;">
+            <h3 style="font-size:17px; margin-bottom:8px;"><?php echo $rep[0]; ?></h3>
+            <p style="font-size:14px; margin-bottom:20px; line-height:1.5;"><?php echo $rep[1]; ?></p>
+            <span class="link-enquire" style="font-size:14px; font-weight:700;">Book Service <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </button>
+        <?php endforeach; ?>
       </div>
     </div>
 
-    <!-- SERVICE 4: Machinery Rentals -->
-    <div class="svc-row svc-row--alt" id="rentals">
-      <div class="svc-row__content" data-reveal>
-        <span class="svc-row__tag"><i class="fas fa-truck-monster"></i> Service 04</span>
+    <!-- SERVICE 4: Rentals -->
+    <div class="svc-section" id="rentals" style="margin-bottom: 40px; padding-top:40px; border-top:1px solid rgba(11,77,44,0.1);">
+      <div class="section-head" style="text-align:left; max-width:100%; display:flex; flex-direction:column; align-items:flex-start;" data-reveal>
+        <span class="tag"><i class="fas fa-truck-monster"></i> Service 04</span>
         <h2>Machinery Rental &amp; Hire</h2>
-        <p>When buying isn't the right option, renting gives you flexibility without the long-term capital commitment. ATC offers earthmoving and construction machinery hire for contractors, government projects, and businesses across Jammu, Kashmir &amp; Ladakh.</p>
-        <ul class="svc-bullets" aria-label="Rental services">
-          <li>Excavators and backhoe loaders for hire</li>
-          <li>Road rollers and compaction equipment</li>
-          <li>Flexible hire periods — daily, weekly, monthly</li>
-          <li>Machinery available for project-based deployment</li>
-          <li>Operator support available on request</li>
-          <li>Coverage across J&amp;K and Ladakh project sites</li>
-        </ul>
-        <a href="/contact.php?service=rentals" class="btn btn--primary">
-          <i class="fas fa-phone-alt"></i> Enquire for Rental
-        </a>
+        <p style="max-width:800px; color:var(--gray-500); margin: 0;">When buying isn't the right option, renting gives you flexibility without the long-term capital commitment. ATC offers earthmoving machinery hire across Jammu, Kashmir &amp; Ladakh.</p>
       </div>
-      <div class="svc-row__visual" data-reveal data-reveal-delay="1">
-        <div class="illus-box" aria-hidden="true">
-          <svg viewBox="0 0 360 270" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Road roller side view -->
-            <rect x="60" y="130" width="240" height="70" rx="10" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
-            <!-- Cab -->
-            <rect x="190" y="80" width="80" height="58" rx="8" fill="rgba(242,169,0,0.2)" stroke="rgba(242,169,0,0.4)" stroke-width="1.5"/>
-            <!-- Cab window -->
-            <rect x="202" y="92" width="56" height="32" rx="4" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-            <!-- Front drum (large circle) -->
-            <circle cx="130" cy="190" r="50" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
-            <circle cx="130" cy="190" r="34" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
-            <circle cx="130" cy="190" r="10" fill="rgba(242,169,0,0.25)"/>
-            <!-- Rear drum -->
-            <circle cx="290" cy="195" r="38" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
-            <circle cx="290" cy="195" r="8" fill="rgba(242,169,0,0.2)"/>
-            <!-- Label -->
-            <rect x="110" y="40" width="120" height="26" rx="13" fill="rgba(242,169,0,0.15)" stroke="rgba(242,169,0,0.35)" stroke-width="1"/>
-            <text x="170" y="57" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="rgba(242,169,0,0.8)" font-weight="600">Road Roller — For Hire</text>
-          </svg>
-        </div>
+
+      <div class="services-grid" style="margin-top:40px;" data-reveal data-reveal-delay="1">
+        <?php
+        $rentals = [
+          ['Excavators for Hire', 'Large tonnage excavators for heavy digging.'],
+          ['Backhoe Loaders', 'Versatile JCB loaders for multi-purpose tasks.'],
+          ['Road Rollers', 'Soil and asphalt compactors for road works.'],
+          ['Project Deployments', 'Long-term machinery hire for major projects.']
+        ];
+        foreach($rentals as $rent): ?>
+        <button class="service-card btn-modal-trigger" data-service="<?php echo $rent[0]; ?>" data-category="Machinery Rentals" style="text-align:left; border:none; width:100%; cursor:pointer; padding:0;">
+          <div class="service-card__image" style="height:160px;">
+            <img src="/assets/img/jcb_rentals.jpg" alt="<?php echo $rent[0]; ?>">
+          </div>
+          <div class="service-card__body" style="padding: 24px;">
+            <h3 style="font-size:17px; margin-bottom:8px;"><?php echo $rent[0]; ?></h3>
+            <p style="font-size:14px; margin-bottom:20px; line-height:1.5;"><?php echo $rent[1]; ?></p>
+            <span class="link-enquire" style="font-size:14px; font-weight:700;">Enquire Rental <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </button>
+        <?php endforeach; ?>
       </div>
     </div>
 
   </div><!-- /container -->
 </section>
-
 
 <!-- FINAL CTA -->
 <section class="cta-band">
@@ -220,5 +177,94 @@ include 'includes/header.php';
   </div>
 </section>
 
+<!-- LEAD GENERATION MODAL -->
+<div class="lead-modal-overlay" id="leadModal">
+  <div class="lead-modal">
+    <button class="lead-modal__close" id="closeModal" aria-label="Close form">&times;</button>
+    <div class="lead-modal__header">
+      <span class="tag tag--gold" id="modalCategory" style="margin-bottom:12px;">Category</span>
+      <h3 id="modalTitle">Enquire</h3>
+      <p>Fill out the form below and our team will contact you shortly.</p>
+    </div>
+    
+    <!-- Normally points to a PHP processing script, using # for UI demonstration -->
+    <form action="#" method="POST" class="lead-modal__form" onsubmit="event.preventDefault(); alert('Lead submitted successfully! Our team will contact you.'); document.getElementById('closeModal').click();">
+      <input type="hidden" name="service_category" id="inputCategory" value="">
+      <input type="hidden" name="specific_item" id="inputItem" value="">
+      
+      <div class="form-group">
+        <label>Your Name *</label>
+        <input type="text" name="name" required placeholder="Enter your full name">
+      </div>
+      <div class="form-group">
+        <label>Phone Number *</label>
+        <input type="tel" name="phone" required placeholder="+91 XXXXX XXXXX">
+      </div>
+      <div class="form-group">
+        <label>Additional Details (Optional)</label>
+        <textarea name="message" rows="3" placeholder="Machine model, part number, or specific requirement..."></textarea>
+      </div>
+      <button type="submit" class="btn btn--primary" style="width:100%; margin-top:10px; display:flex; justify-content:center;">
+        <i class="fas fa-paper-plane" style="margin-right:8px;"></i> Submit Enquiry
+      </button>
+    </form>
+  </div>
+</div>
+
 </main>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const modalOverlay = document.getElementById('leadModal');
+  const closeModalBtn = document.getElementById('closeModal');
+  const triggers = document.querySelectorAll('.btn-modal-trigger');
+  
+  // Modal UI Elements
+  const modalCategory = document.getElementById('modalCategory');
+  const modalTitle = document.getElementById('modalTitle');
+  
+  // Modal Form Inputs
+  const inputCategory = document.getElementById('inputCategory');
+  const inputItem = document.getElementById('inputItem');
+
+  function openModal(category, item) {
+    // Update UI
+    modalCategory.textContent = category;
+    modalTitle.textContent = `Enquire for ${item}`;
+    
+    // Update Hidden Inputs
+    inputCategory.value = category;
+    inputItem.value = item;
+    
+    // Show Modal
+    modalOverlay.classList.add('active');
+    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+  }
+
+  function closeModal() {
+    modalOverlay.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  // Bind clicks
+  triggers.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const category = btn.getAttribute('data-category');
+      const item = btn.getAttribute('data-service');
+      openModal(category, item);
+    });
+  });
+
+  closeModalBtn.addEventListener('click', closeModal);
+
+  // Close on outside click
+  modalOverlay.addEventListener('click', (e) => {
+    if (e.target === modalOverlay) {
+      closeModal();
+    }
+  });
+});
+</script>
+
 <?php include 'includes/footer.php'; ?>
