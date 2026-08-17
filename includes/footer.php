@@ -48,8 +48,9 @@
         <h4>Services</h4>
         <ul class="footer-links">
           <li><a href="/services.php#spare-parts">Spare Parts</a></li>
-          <li><a href="/services.php#accessories">Attachments</a></li>
-          <li><a href="/services.php#workshop">Workshop Repairs</a></li>
+          <li><a href="/services.php#lubricants">Lubricants &amp; Oils</a></li>
+          <li><a href="/services.php#tools">Tools &amp; Equipment</a></li>
+          <li><a href="/services.php#workshop">Workshop &amp; Repairs</a></li>
           <li><a href="/services.php#rentals">Machinery Rentals</a></li>
         </ul>
       </div>

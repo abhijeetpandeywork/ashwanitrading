@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 $pageTitle   = 'Ashwani Trading Co. — Spare Parts, Repairs & Rentals | Jammu, Kashmir & Ladakh';
 $metaDesc    = '60+ years supplying genuine earthmoving & construction machinery spare parts, accessories, workshop repairs and rentals in Jammu, Kashmir & Ladakh. Call now: +91 94191 86209';
 $currentPage = 'home';
@@ -158,59 +158,70 @@ include 'includes/header.php';
 
 
 <!-- ============================================================
-     WHAT WE DO — 4 service cards
+     WHAT WE DO — 5 service cards
      ============================================================ -->
 <section class="section section--white" id="services-overview">
   <div class="container">
 
     <div class="section-head" data-reveal>
       <span class="tag">What We Do</span>
-      <h2>Four Ways We Keep<br>Your Machines Running</h2>
-      <p>From a single bolt to a full machinery rental — if it's earthmoving or construction, we've got it covered across Jammu, Kashmir &amp; Ladakh.</p>
+      <h2>Five Ways We Keep<br>Your Machines Running</h2>
+      <p>From a single spare part to a full machine rental — genuine parts, industrial lubricants, professional tools, expert repairs, and flexible equipment hire across Jammu, Kashmir &amp; Ladakh.</p>
     </div>
 
     <div class="services-grid">
 
       <a href="/services.php#spare-parts" class="service-card" data-reveal data-reveal-delay="1">
         <div class="service-card__image">
-          <img src="/assets/img/jcb_spare_parts.jpg" alt="Spare Parts for Earthmoving Machinery">
+          <img src="/assets/img/jcb_spare_parts.jpg" alt="Earthmoving Machinery Spare Parts">
         </div>
         <div class="service-card__body">
           <h3>Spare Parts</h3>
-          <p>Genuine &amp; aftermarket spare parts for JCB, road rollers, drill rods, and all earthmoving machinery. Verified quality, fast availability.</p>
+          <p>Genuine &amp; aftermarket spare parts for excavators, backhoe loaders, road rollers, hot mix plants, crushers, compressors and rock drilling equipment.</p>
           <span class="link-enquire">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
         </div>
       </a>
 
-      <a href="/services.php#accessories" class="service-card" data-reveal data-reveal-delay="2">
+      <a href="/services.php#lubricants" class="service-card" data-reveal data-reveal-delay="2">
         <div class="service-card__image">
-          <img src="/assets/img/jcb_accessories.jpg" alt="Machinery Accessories">
+          <img src="/assets/img/jcb_accessories.jpg" alt="Lubricants Oils and Fluids">
         </div>
         <div class="service-card__body">
-          <h3>Accessories</h3>
-          <p>Machinery attachments, ground engaging tools, safety equipment, and add-on accessories to maximize equipment productivity.</p>
+          <h3>Lubricants &amp; Oils</h3>
+          <p>Engine oils, hydraulic oils, gear oils, rock drill oils, greases, coolants, and a full range of lubrication equipment for all heavy machinery.</p>
           <span class="link-enquire">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
         </div>
       </a>
 
-      <a href="/services.php#workshop" class="service-card" data-reveal data-reveal-delay="3">
+      <a href="/services.php#tools" class="service-card" data-reveal data-reveal-delay="3">
         <div class="service-card__image">
-          <img src="/assets/img/jcb_workshop.jpg" alt="Workshop and Repairs">
+          <img src="/assets/img/jcb_workshop.jpg" alt="Tools and Equipment">
         </div>
         <div class="service-card__body">
-          <h3>Workshop &amp; Repairs</h3>
-          <p>On-site and workshop repair services for earthmoving &amp; construction machinery. Minimize downtime, maximize site productivity.</p>
+          <h3>Tools &amp; Equipment</h3>
+          <p>Hand tools, power tools, pneumatic tools, welding equipment, hydraulic &amp; pneumatic components, bearings, fasteners, lifting gear, PPE and more.</p>
           <span class="link-enquire">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
         </div>
       </a>
 
-      <a href="/services.php#rentals" class="service-card" data-reveal data-reveal-delay="4">
+      <a href="/services.php#workshop" class="service-card" data-reveal data-reveal-delay="4">
+        <div class="service-card__image">
+          <img src="/assets/img/parts_engine.jpg" alt="Workshop Repairs and Maintenance Services">
+        </div>
+        <div class="service-card__body">
+          <h3>Services &amp; Repairs</h3>
+          <p>Engine overhauls, hydraulic repairs, transmission service, ECU diagnostics, on-site breakdown support, plant maintenance and AMC contracts.</p>
+          <span class="link-enquire">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+        </div>
+      </a>
+
+      <a href="/services.php#rentals" class="service-card" data-reveal data-reveal-delay="5">
         <div class="service-card__image">
           <img src="/assets/img/jcb_rentals.jpg" alt="Machinery Rentals">
         </div>
         <div class="service-card__body">
           <h3>Machinery Rentals</h3>
-          <p>Rent earthmoving &amp; construction machinery when you need it. Flexible hire terms for contractors and project owners across the region.</p>
+          <p>Rent excavators, backhoe loaders, hydra cranes, road rollers, pavers, vibratory rollers, motor graders and compressors — flexible terms for any project.</p>
           <span class="link-enquire">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
         </div>
       </a>
@@ -218,6 +229,7 @@ include 'includes/header.php';
     </div>
   </div>
 </section>
+
 
 
 

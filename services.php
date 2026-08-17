@@ -1,6 +1,6 @@
 ﻿<?php
-$pageTitle   = 'Services — Spare Parts, Repairs, Accessories & Rentals | Ashwani Trading Co.';
-$metaDesc    = 'ATC offers earthmoving spare parts, machinery accessories, workshop & repair services, and equipment rentals across Jammu, Kashmir & Ladakh. Call +91 94191 86209.';
+$pageTitle   = 'Services — Earthmoving Spare Parts, Lubricants, Tools, Repairs & Rentals | Ashwani Trading Co.';
+$metaDesc    = 'ATC offers earthmoving spare parts, lubricants & oils, industrial tools, expert workshop repairs, and equipment rentals across Jammu, Kashmir & Ladakh. Call +91 94191 86209.';
 $currentPage = 'services';
 include 'includes/header.php';
 ?>
@@ -10,184 +10,158 @@ include 'includes/header.php';
 <!-- PAGE HERO -->
 <section class="page-hero" style="background: linear-gradient(90deg, rgba(11,77,44,0.95) 0%, rgba(11,77,44,0.2) 100%), url('/assets/img/hero_services.jpg') center/cover; padding: 140px 0 120px; color: #fff; text-align: left; border-bottom: 5px solid var(--gold);">
   <div class="container page-hero__inner" style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: flex-start;">
-    <span class="tag tag--gold" style="margin-bottom: 24px; box-shadow: 0 4px 15px rgba(242,169,0,0.3);">Comprehensive Solutions</span>
-    <h1 style="font-size: clamp(40px, 6vw, 72px); margin-bottom: 24px; color: #fff; line-height: 1.05; text-shadow: 0 4px 20px rgba(0,0,0,0.8); font-weight: 800; letter-spacing: -1px;">Heavy Machinery<br><span style="color:var(--gold);">Parts &amp; Services</span></h1>
-    <p style="font-size: 22px; line-height: 1.5; opacity: 0.95; text-shadow: 0 2px 10px rgba(0,0,0,0.8); max-width: 600px; font-weight: 500;">Genuine spares, heavy attachments, expert workshop repairs, and equipment rentals in Jammu, Kashmir &amp; Ladakh.</p>
+    <span class="tag tag--gold" style="margin-bottom: 24px; box-shadow: 0 4px 15px rgba(242,169,0,0.3);">Five Services. One Trusted Partner.</span>
+    <h1 style="font-size: clamp(40px, 6vw, 72px); margin-bottom: 24px; color: #fff; line-height: 1.05; text-shadow: 0 4px 20px rgba(0,0,0,0.8); font-weight: 800; letter-spacing: -1px;">Everything Your<br><span style="color:var(--gold);">Machines Need</span></h1>
+    <p style="font-size: 22px; line-height: 1.5; opacity: 0.95; text-shadow: 0 2px 10px rgba(0,0,0,0.8); max-width: 640px; font-weight: 500;">From genuine spare parts and industrial lubricants to expert repairs, specialised tools, and flexible equipment rentals — all under one trusted roof in Jammu.</p>
+    <nav style="display:flex; gap:10px; flex-wrap:wrap; margin-top:32px;">
+      <a href="#spare-parts" style="background:rgba(255,255,255,0.15); color:#fff; padding:10px 20px; border-radius:30px; font-size:14px; font-weight:600; border:1px solid rgba(255,255,255,0.3); text-decoration:none;">Spare Parts</a>
+      <a href="#lubricants" style="background:rgba(255,255,255,0.15); color:#fff; padding:10px 20px; border-radius:30px; font-size:14px; font-weight:600; border:1px solid rgba(255,255,255,0.3); text-decoration:none;">Lubricants &amp; Oils</a>
+      <a href="#tools" style="background:rgba(255,255,255,0.15); color:#fff; padding:10px 20px; border-radius:30px; font-size:14px; font-weight:600; border:1px solid rgba(255,255,255,0.3); text-decoration:none;">Tools &amp; Equipment</a>
+      <a href="#workshop" style="background:rgba(255,255,255,0.15); color:#fff; padding:10px 20px; border-radius:30px; font-size:14px; font-weight:600; border:1px solid rgba(255,255,255,0.3); text-decoration:none;">Services &amp; Repairs</a>
+      <a href="#rentals" style="background:rgba(242,169,0,0.85); color:#062818; padding:10px 20px; border-radius:30px; font-size:14px; font-weight:700; text-decoration:none;">Machinery Rentals</a>
+    </nav>
   </div>
 </section>
 
-<!-- SERVICES GRIDS -->
+<!-- SERVICES DETAIL -->
 <section class="section section--white" id="services-detail" style="padding-top: 60px;">
   <div class="container">
 
-    <!-- SERVICE 1: Spare Parts -->
-    <div class="svc-section" id="spare-parts" style="margin-bottom: 80px;">
-      <div class="section-head" style="text-align:left; max-width:100%; display:flex; flex-direction:column; align-items:flex-start;" data-reveal>
-        <span class="tag"><i class="fas fa-cogs"></i> Service 01</span>
-        <h2>Spare Parts for Earthmoving &amp; Construction Machinery</h2>
-        <p style="max-width:800px; color:var(--gray-500); margin: 0;">We stock genuine OEM and quality-checked aftermarket spare parts for a wide range of earthmoving and construction equipment brands. From hydraulic pumps to bucket teeth, if it's a part for earthmoving machinery, we likely have it — or can source it fast.</p>
-      </div>
+<?php
+function renderServiceSection($id,$tagNum,$icon,$title,$desc,$category,$btnLabel,$items){
+  $border=$tagNum>1?'padding-top:40px; border-top:1px solid rgba(11,77,44,0.1);':'';
+  echo "<div class=\"svc-section\" id=\"{$id}\" style=\"margin-bottom:80px; {$border}\">";
+  echo "<div class=\"section-head\" style=\"text-align:left;max-width:100%;display:flex;flex-direction:column;align-items:flex-start;\" data-reveal>";
+  echo "<span class=\"tag\"><i class=\"fas fa-{$icon}\"></i> Service 0{$tagNum}</span>";
+  echo "<h2>{$title}</h2>";
+  echo "<p style=\"max-width:800px;color:var(--gray-500);margin:0;\">{$desc}</p>";
+  echo "</div>";
+  echo "<div class=\"services-grid\" style=\"margin-top:40px;\" data-reveal data-reveal-delay=\"1\">";
+  $d=1;
+  foreach($items as $item){
+    $name=htmlspecialchars($item[0]);$sub=htmlspecialchars($item[1]);$img=$item[2];
+    echo "<button class=\"service-card btn-modal-trigger\" data-service=\"{$name}\" data-category=\"{$category}\" style=\"text-align:center;border:none;width:100%;cursor:pointer;padding:0;\" data-reveal data-reveal-delay=\"{$d}\">";
+    echo "<div class=\"service-card__image\" style=\"height:160px;\"><img src=\"{$img}\" alt=\"{$name}\" loading=\"lazy\"></div>";
+    echo "<div class=\"service-card__body\" style=\"padding:24px;\">";
+    echo "<h3 style=\"font-size:17px;margin-bottom:8px;\">{$name}</h3>";
+    echo "<p style=\"font-size:14px;margin-bottom:20px;line-height:1.5;\">{$sub}</p>";
+    echo "<span class=\"link-enquire\" style=\"font-size:14px;font-weight:700;\">{$btnLabel} <i class=\"fas fa-arrow-right\"></i></span>";
+    echo "</div></button>";
+    $d++;
+  }
+  echo "</div></div>";
+}
 
-      <div class="services-grid" style="margin-top:40px;" data-reveal data-reveal-delay="1">
-        <?php
-        $parts = [
-          ['JCB & Excavator Parts', 'Genuine parts for all major earthmoving machinery.', '/assets/img/parts_jcb.jpg'],
-          ['Hydraulic Pumps', 'High-pressure pumps, motors, and hydraulic cylinders.', '/assets/img/parts_pump.jpg'],
-          ['Undercarriage Parts', 'Track chains, rollers, idlers, and sprockets.', '/assets/img/parts_undercarriage.jpg'],
-          ['Engine Parts', 'Pistons, liners, bearings, and complete overhaul kits.', '/assets/img/parts_engine.jpg'],
-          ['Filtration Systems', 'Premium oil, fuel, air, and hydraulic filters.', '/assets/img/parts_filtration.jpg'],
-          ['Transmission Units', 'Gears, shafts, and complete transmission units.', '/assets/img/parts_transmission.jpg'],
-          ['Pins & Seals', 'High-wear pins, bushes, and O-ring seal kits.', '/assets/img/parts_pins.jpg'],
-          ['Electrical Parts', 'Starters, alternators, sensors, and wiring harnesses.', '/assets/img/parts_transmission.jpg'],
-          ['Excavator Tracks', 'Durable rubber and steel tracks for all terrains.', '/assets/img/parts_undercarriage.jpg'],
-          ['Engine Belts', 'High-tension drive belts for cooling systems.', '/assets/img/parts_engine.jpg'],
-          ['Hydraulic Hoses', 'High-pressure flexible hoses and fittings.', '/assets/img/parts_pump.jpg'],
-          ['Cabin Accessories', 'Shatter-proof glass, mirrors, and operator seats.', '/assets/img/parts_jcb.jpg']
-        ];
-        $delay = 1;
-        foreach($parts as $part): ?>
-        <button class="service-card btn-modal-trigger" data-service="<?php echo $part[0]; ?>" data-category="Spare Parts" style="text-align:center; border:none; width:100%; cursor:pointer; padding:0;" data-reveal data-reveal-delay="<?php echo $delay++; ?>">
-          <div class="service-card__image" style="height:160px;">
-            <img src="<?php echo $part[2]; ?>" alt="<?php echo $part[0]; ?>">
-          </div>
-          <div class="service-card__body" style="padding: 24px;">
-            <h3 style="font-size:17px; margin-bottom:8px;"><?php echo $part[0]; ?></h3>
-            <p style="font-size:14px; margin-bottom:20px; line-height:1.5;"><?php echo $part[1]; ?></p>
-            <span class="link-enquire" style="font-size:14px; font-weight:700;">Enquire Now <i class="fas fa-arrow-right"></i></span>
-          </div>
-        </button>
-        <?php endforeach; ?>
-      </div>
-    </div>
+// SERVICE 1
+$spareParts=[
+  ['Excavator Spare Parts','Track links, bucket cylinders, slew rings & hydraulic components for all excavator models.','/assets/img/parts_jcb.jpg'],
+  ['Backhoe Loader Spare Parts','Engine, transmission, axle, hydraulic & electrical parts for all backhoe loader models.','/assets/img/parts_pump.jpg'],
+  ['Road Roller / Compactor Parts','Drum bearings, vibration mounts, drive belts and hydraulic components for smooth compaction.','/assets/img/parts_undercarriage.jpg'],
+  ['Asphalt Paver Spare Parts','Screed plates, auger shafts, conveyor chains and heating elements to keep your paver road-ready.','/assets/img/parts_engine.jpg'],
+  ['Hot Mix Plant Spare Parts','Drum burners, filler pumps, aggregate feeders and RAP components for uninterrupted production.','/assets/img/parts_filtration.jpg'],
+  ['Crusher & Screening Plant Parts','Jaw plates, blow bars, screen meshes, bearings and drive components for crushing operations.','/assets/img/parts_transmission.jpg'],
+  ['ROC / Rock Drilling Equipment Parts','Drill bits, shank adapters, drill rods and hammer components for rock drilling rigs.','/assets/img/parts_pins.jpg'],
+  ['Compressor Spare Parts','Pistons, rings, valves, filters and separator elements for air compressor servicing and overhaul.','/assets/img/parts_jcb.jpg'],
+];
+renderServiceSection('spare-parts',1,'cogs','Earthmoving Machinery Spare Parts &amp; Accessories',
+  'We stock genuine OEM and quality-checked aftermarket spare parts for every major category of earthmoving and construction equipment — from excavators to rock drilling rigs. Fast sourcing, verified quality, and expert guidance from a team with 60+ years in the field.',
+  'Spare Parts','Enquire Now',$spareParts);
 
-    <!-- SERVICE 2: Accessories -->
-    <div class="svc-section" id="accessories" style="margin-bottom: 80px; padding-top:40px; border-top:1px solid rgba(11,77,44,0.1);">
-      <div class="section-head" style="text-align:left; max-width:100%; display:flex; flex-direction:column; align-items:flex-start;" data-reveal>
-        <span class="tag"><i class="fas fa-toolbox"></i> Service 02</span>
-        <h2>Machinery Accessories &amp; Attachments</h2>
-        <p style="max-width:800px; color:var(--gray-500); margin: 0;">Maximize the productivity and versatility of your earthmoving equipment with the right accessories. We supply attachments, ground engaging tools, and safety add-ons that keep your machinery working harder.</p>
-      </div>
+// SERVICE 2
+$lubricants=[
+  ['Engine Oils','Premium mineral and synthetic engine oils for all makes and grades of construction machinery.','/assets/img/parts_engine.jpg'],
+  ['Hydraulic Oils','ISO-grade hydraulic oils for excavators, loaders, and all open and closed hydraulic circuits.','/assets/img/parts_pump.jpg'],
+  ['Gear & Transmission Oils','High-EP gear oils and ATF fluids for gearboxes, axles, and torque converter systems.','/assets/img/parts_transmission.jpg'],
+  ['Compressor Oils','Reciprocating and rotary screw compressor oils for long service intervals and thermal stability.','/assets/img/parts_filtration.jpg'],
+  ['Rock Drill Oils','Specialist oils formulated for extreme pressures of rock drilling and percussion equipment.','/assets/img/parts_pins.jpg'],
+  ['Greases — EP & Lithium','Extreme-pressure and lithium complex greases for pin joints, bearings and undercarriage lubrication.','/assets/img/parts_jcb.jpg'],
+  ['Coolants & Antifreeze','Ready-mixed and concentrate coolants providing freeze, boil and corrosion protection in all seasons.','/assets/img/parts_undercarriage.jpg'],
+  ['Brake Fluid','DOT-rated brake fluids for hydraulic disc and drum braking systems on heavy machinery.','/assets/img/parts_engine.jpg'],
+  ['Grease Guns & Pumps','Manual and pneumatic grease guns, barrel pumps and oil dispensers for professional lubrication.','/assets/img/parts_pump.jpg'],
+  ['Oil & Grease Dispensers','Oil transfer pumps, hand-operated dispensers and metered dispensers for precise lubrication.','/assets/img/parts_transmission.jpg'],
+  ['Grease Hoses & Couplers','High-pressure grease hoses, lock-on couplers, grease nipples and adapters.','/assets/img/parts_filtration.jpg'],
+  ['Lubrication Accessories','Grease nipple assortments, adapters, check valves and all ancillary lubrication hardware.','/assets/img/parts_pins.jpg'],
+];
+renderServiceSection('lubricants',2,'oil-can','Lubricants, Oils &amp; Fluids',
+  'Quality lubrication is the single most cost-effective way to extend machine life. We supply a full range of branded and industrial-grade oils, greases, coolants, and lubrication equipment — with professional guidance on the right specification for your machine.',
+  'Lubricants & Oils','Enquire Now',$lubricants);
 
-      <div class="services-grid" style="margin-top:40px;" data-reveal data-reveal-delay="1">
-        <?php
-        $accessories = [
-          ['Bucket Attachments', 'Rock, mud, ditching, and general purpose buckets.', '/assets/img/parts_jcb.jpg'],
-          ['Ground Engaging Tools', 'Adapters, teeth, cutting edges, and end bits.', '/assets/img/parts_undercarriage.jpg'],
-          ['Ripper Shanks', 'Heavy-duty shanks and grading blades.', '/assets/img/parts_transmission.jpg'],
-          ['Quick Hitch Systems', 'Fast and secure attachment coupler systems.', '/assets/img/parts_pump.jpg'],
-          ['Operator Safety', 'ROPS, FOPS, and cab safety bars.', '/assets/img/parts_pins.jpg'],
-          ['Lighting Accessories', 'High-intensity LED work lights and beacons.', '/assets/img/parts_filtration.jpg'],
-          ['Protection Guards', 'Heavy-duty metal guards for vulnerable components.', '/assets/img/parts_engine.jpg'],
-          ['Rock Breakers', 'Hydraulic breakers for solid rock excavation.', '/assets/img/parts_pump.jpg'],
-          ['Auger Attachments', 'Drilling attachments for post holes and foundations.', '/assets/img/parts_transmission.jpg'],
-          ['Compaction Wheels', 'Trench compactors for solid backfill.', '/assets/img/parts_undercarriage.jpg'],
-          ['Heavy Duty Grapples', 'Timber and scrap handling grapples.', '/assets/img/parts_jcb.jpg'],
-          ['Pallet Forks', 'Transform your loader into a material handling unit.', '/assets/img/parts_pins.jpg']
-        ];
-        $delay = 1;
-        foreach($accessories as $acc): ?>
-        <button class="service-card btn-modal-trigger" data-service="<?php echo $acc[0]; ?>" data-category="Accessories" style="text-align:center; border:none; width:100%; cursor:pointer; padding:0;" data-reveal data-reveal-delay="<?php echo $delay++; ?>">
-          <div class="service-card__image" style="height:160px;">
-            <img src="<?php echo $acc[2]; ?>" alt="<?php echo $acc[0]; ?>">
-          </div>
-          <div class="service-card__body" style="padding: 24px;">
-            <h3 style="font-size:17px; margin-bottom:8px;"><?php echo $acc[0]; ?></h3>
-            <p style="font-size:14px; margin-bottom:20px; line-height:1.5;"><?php echo $acc[1]; ?></p>
-            <span class="link-enquire" style="font-size:14px; font-weight:700;">Enquire Now <i class="fas fa-arrow-right"></i></span>
-          </div>
-        </button>
-        <?php endforeach; ?>
-      </div>
-    </div>
+// SERVICE 3
+$tools=[
+  ['Hydraulic & Pneumatic Components','Cylinders, valves, fittings, hoses, regulators, filters and pneumatic actuators for all systems.','/assets/img/parts_pump.jpg'],
+  ['Bearings, Seals & Industrial Spares','Precision bearings (ball, roller, taper), oil seals, O-rings and mechanical shaft seals.','/assets/img/parts_filtration.jpg'],
+  ['Nuts, Bolts & Fasteners','High-tensile bolts, lock nuts, washers, studs and all structural fasteners in metric and imperial.','/assets/img/parts_pins.jpg'],
+  ['Belts, Chains & Power Transmission','V-belts, timing belts, conveyor chains, sprockets, pulleys and couplings for all drives.','/assets/img/parts_transmission.jpg'],
+  ['Hand Tools','Spanners, sockets, ratchets, pliers, hammers, punches and professional workshop hand-tool sets.','/assets/img/parts_jcb.jpg'],
+  ['Pneumatic Tools','Air impact wrenches, air ratchets, chisels, sanders and all compressor-powered workshop tools.','/assets/img/parts_engine.jpg'],
+  ['Power Tools','Angle grinders, electric drills, jig saws, heat guns and all corded and cordless power tools.','/assets/img/parts_pump.jpg'],
+  ['Welding & Cutting Equipment','MIG/MMA welders, oxy-acetylene sets, plasma cutters, electrodes and welding safety gear.','/assets/img/parts_undercarriage.jpg'],
+  ['Lifting, Rigging & Material Handling','Chain blocks, wire rope hoists, slings, shackles, eye bolts and lifting clamps.','/assets/img/parts_transmission.jpg'],
+  ['Workshop & Skilled-Trade Equipment','Hydraulic jacks, presses, bearing pullers, tap & die sets, pipe threaders and precision tools.','/assets/img/parts_filtration.jpg'],
+  ['Safety Equipment & PPE','Helmets, safety boots, gloves, harnesses, reflective vests, ear defenders and all site PPE.','/assets/img/parts_pins.jpg'],
+  ['Electrical & Auto Electrical','Cables, terminals, fuses, relays, batteries, starter motors and all auto-electrical components.','/assets/img/parts_jcb.jpg'],
+  ['Tyres & Wheel Equipment','OTR tyres, rim hardware, valve assemblies, bead breakers and tyre pressure monitoring equipment.','/assets/img/parts_engine.jpg'],
+  ['Drilling, Cutting & Wear Tools','Rock drill bits, carbide tips, circular saw blades, abrasive wheels and ground-engaging wear parts.','/assets/img/parts_undercarriage.jpg'],
+  ['Tapes, Adhesives & Sealants','Industrial tapes, thread sealants, gasket makers, retaining compounds and anaerobic adhesives.','/assets/img/parts_pump.jpg'],
+];
+renderServiceSection('tools',3,'toolbox','Tools &amp; Equipment',
+  'A well-equipped workshop is the backbone of every productive site. We supply the complete spectrum of professional tools and industrial supplies — from precision hand tools and pneumatic equipment to heavy lifting gear, safety PPE and wear parts.',
+  'Tools & Equipment','Enquire Now',$tools);
 
-    <!-- SERVICE 3: Workshop -->
-    <div class="svc-section" id="workshop" style="margin-bottom: 80px; padding-top:40px; border-top:1px solid rgba(11,77,44,0.1);">
-      <div class="section-head" style="text-align:left; max-width:100%; display:flex; flex-direction:column; align-items:flex-start;" data-reveal>
-        <span class="tag"><i class="fas fa-wrench"></i> Service 03</span>
-        <h2>Workshop &amp; Repair Services</h2>
-        <p style="max-width:800px; color:var(--gray-500); margin: 0;">A stalled machine is lost revenue. Our workshop team provides fast, expert repair and maintenance services for earthmoving and construction equipment — whether at our Jammu yard or on-site.</p>
-      </div>
+// SERVICE 4
+$repairs=[
+  ['Engine Overhauling','Full engine strip-down, inspection, ring and liner replacement, and precision reassembly.','/assets/img/parts_engine.jpg'],
+  ['Hydraulic System Service','Pump testing, valve calibration, cylinder resealing and full hydraulic circuit diagnosis.','/assets/img/parts_pump.jpg'],
+  ['Transmission & Gearbox Repair','Slipping gear correction, clutch pack replacement and full gearbox overhaul services.','/assets/img/parts_transmission.jpg'],
+  ['Axle, Differential & Driveline','Differential rebuild, driveshaft replacement and axle seal servicing for all heavy equipment.','/assets/img/parts_undercarriage.jpg'],
+  ['Electrical & ECU Diagnostics','Sensor fault diagnosis, wiring repairs, ECU programming and full electrical system checks.','/assets/img/parts_pins.jpg'],
+  ['Fuel Injection & Fuel Systems','Injector testing, common rail repair, fuel pump calibration and tank cleaning services.','/assets/img/parts_engine.jpg'],
+  ['Cooling & Turbocharger Service','Radiator flush, thermostat replacement, intercooler inspection and turbo overhaul.','/assets/img/parts_filtration.jpg'],
+  ['Brake & Steering Systems','Brake pad replacement, caliper overhaul, steering pump repair and wheel alignment.','/assets/img/parts_pump.jpg'],
+  ['Undercarriage & Track Systems','Track tension adjustment, roller replacement, sprocket swap and track chain re-pinning.','/assets/img/parts_undercarriage.jpg'],
+  ['Hydraulic Cylinder Resealing','Piston rod polishing, barrel honing and complete reseal for all cylinders and rams.','/assets/img/parts_transmission.jpg'],
+  ['Boom, Arm & Attachment Service','Structural crack repairs, pin and bush replacement for dipper arms, booms and loader arms.','/assets/img/parts_pins.jpg'],
+  ['Welding, Fabrication & Hard-Facing','Structural welding, hard-facing of wear surfaces and custom metalwork fabrication.','/assets/img/parts_jcb.jpg'],
+  ['Engine & Hydraulic Oil Service','Scheduled oil changes with correct-grade oils and filter replacement on all machine types.','/assets/img/parts_engine.jpg'],
+  ['Axle, Gear & Transmission Oil','Axle breather cleaning, gear oil flush and transmission oil service for heavy equipment.','/assets/img/parts_transmission.jpg'],
+  ['Hot Mix Plant Maintenance','Drum burner calibration, conveyor belt tensioning and aggregate feeder servicing.','/assets/img/parts_filtration.jpg'],
+  ['Crusher & Screening Maintenance','Jaw plate reversal, screen mesh replacement, drive belt tensioning and bearing lubrication.','/assets/img/parts_undercarriage.jpg'],
+  ['Compressor & Drilling Maintenance','Valve kit replacement, piston ring service and separator element change for compressors.','/assets/img/parts_pump.jpg'],
+  ['Preventive Maintenance Plans','Scheduled servicing contracts that prevent breakdowns and reduce total ownership cost.','/assets/img/parts_engine.jpg'],
+  ['Machine Inspection & Health Check','Comprehensive pre-season and pre-purchase machine condition reports and defect listings.','/assets/img/parts_filtration.jpg'],
+  ['AMC — Annual Maintenance Contracts','Tailored annual maintenance agreements covering all scheduled and unscheduled servicing.','/assets/img/parts_pins.jpg'],
+  ['On-Site Breakdown Support','Emergency technician dispatch to your project site — minimising costly unplanned downtime.','/assets/img/parts_jcb.jpg'],
+  ['On-Site Hydraulic & Welding Repair','Mobile workshop equipped for on-site hydraulic repairs and structural welding.','/assets/img/hero_services.jpg'],
+];
+renderServiceSection('workshop',4,'wrench','Services, Repairs &amp; Periodic Maintenance',
+  'Downtime costs more than maintenance. Our fully equipped workshop in Narwal, Jammu handles everything from a quick oil service to a complete machine overhaul — while our mobile team handles on-site emergencies across J&K and Ladakh.',
+  'Services & Repairs','Book Service',$repairs);
 
-      <div class="services-grid" style="margin-top:40px;" data-reveal data-reveal-delay="1">
-        <?php
-        $repairs = [
-          ['Hydraulic Repairs', 'Diagnosis and overhaul of complex hydraulics.', '/assets/img/parts_pump.jpg'],
-          ['Engine Rebuilds', 'Complete engine strip-downs and rebuilds.', '/assets/img/parts_engine.jpg'],
-          ['Undercarriage Replacements', 'Track chain swapping and roller replacements.', '/assets/img/parts_undercarriage.jpg'],
-          ['Transmission Service', 'Fixing slipping gears and drivetrain faults.', '/assets/img/parts_transmission.jpg'],
-          ['Electrical Diagnosis', 'Resolving complex wiring and sensor issues.', '/assets/img/parts_pins.jpg'],
-          ['Preventive Maintenance', 'Scheduled servicing to prevent breakdowns.', '/assets/img/parts_filtration.jpg'],
-          ['Welding & Fabrication', 'Custom metalwork and structural crack repairs.', '/assets/img/parts_jcb.jpg'],
-          ['On-site Breakdown', 'Emergency dispatch to your project location.', '/assets/img/hero_services.jpg'],
-          ['Oil & Fluid Analysis', 'Advanced diagnostics for engine and hydraulic fluids.', '/assets/img/parts_filtration.jpg'],
-          ['Fuel System Calibration', 'Injector cleaning and fuel pump calibration.', '/assets/img/parts_engine.jpg'],
-          ['Track Tensioning', 'Adjusting undercarriage tracks for optimal performance.', '/assets/img/parts_undercarriage.jpg'],
-          ['Bucket Re-lining', 'Weld-on steel plating to extend bucket lifespan.', '/assets/img/parts_transmission.jpg']
-        ];
-        $delay = 1;
-        foreach($repairs as $rep): ?>
-        <button class="service-card btn-modal-trigger" data-service="<?php echo $rep[0]; ?>" data-category="Workshop & Repairs" style="text-align:center; border:none; width:100%; cursor:pointer; padding:0;" data-reveal data-reveal-delay="<?php echo $delay++; ?>">
-          <div class="service-card__image" style="height:160px;">
-            <img src="<?php echo $rep[2]; ?>" alt="<?php echo $rep[0]; ?>">
-          </div>
-          <div class="service-card__body" style="padding: 24px;">
-            <h3 style="font-size:17px; margin-bottom:8px;"><?php echo $rep[0]; ?></h3>
-            <p style="font-size:14px; margin-bottom:20px; line-height:1.5;"><?php echo $rep[1]; ?></p>
-            <span class="link-enquire" style="font-size:14px; font-weight:700;">Book Service <i class="fas fa-arrow-right"></i></span>
-          </div>
-        </button>
-        <?php endforeach; ?>
-      </div>
-    </div>
+// SERVICE 5
+$rentals=[
+  ['Excavators','Large-tonnage hydraulic excavators for heavy earthmoving, foundation digging and trenching works.','/assets/img/parts_jcb.jpg'],
+  ['Backhoe Loaders','Versatile JCB-style loaders for multi-purpose digging, loading and general construction tasks.','/assets/img/hero_services.jpg'],
+  ['Hydra Cranes','Hydraulic pick-and-carry cranes for material lifting, pipe laying and steel erection on site.','/assets/img/parts_pump.jpg'],
+  ['Road Rollers','Soil and asphalt compactors for road construction, embankment work and sub-base compaction.','/assets/img/parts_undercarriage.jpg'],
+  ['Pavers','Asphalt paving machines for road laying with precision screed width and temperature control.','/assets/img/parts_engine.jpg'],
+  ['Vibratory Rollers','Single-drum vibratory rollers for granular fill compaction and highway embankment construction.','/assets/img/parts_filtration.jpg'],
+  ['Tralla / Platform Trailer','Heavy-duty low-bed trailers for safe machinery transport between project sites and across regions.','/assets/img/parts_transmission.jpg'],
+  ['Motor Graders','Precision graders for road surface levelling, shoulder shaping and gravel road maintenance.','/assets/img/parts_pins.jpg'],
+  ['Compressors','High-flow diesel-powered air compressors for rock drilling, sandblasting and pneumatic tool operation.','/assets/img/parts_jcb.jpg'],
+];
+renderServiceSection('rentals',5,'truck-monster','Machinery Rentals',
+  'When capital investment is not the answer, our rental fleet gives contractors and project owners flexible, well-maintained equipment on short and long-term hire. All machines come serviced, safety-checked and ready to work.',
+  'Machinery Rentals','Enquire Rental',$rentals);
+?>
 
-    <!-- SERVICE 4: Rentals -->
-    <div class="svc-section" id="rentals" style="margin-bottom: 40px; padding-top:40px; border-top:1px solid rgba(11,77,44,0.1);">
-      <div class="section-head" style="text-align:left; max-width:100%; display:flex; flex-direction:column; align-items:flex-start;" data-reveal>
-        <span class="tag"><i class="fas fa-truck-monster"></i> Service 04</span>
-        <h2>Machinery Rental &amp; Hire</h2>
-        <p style="max-width:800px; color:var(--gray-500); margin: 0;">When buying isn't the right option, renting gives you flexibility without the long-term capital commitment. ATC offers earthmoving machinery hire across Jammu, Kashmir &amp; Ladakh.</p>
-      </div>
-
-      <div class="services-grid" style="margin-top:40px;" data-reveal data-reveal-delay="1">
-        <?php
-        $rentals = [
-          ['Excavators for Hire', 'Large tonnage excavators for heavy digging.', '/assets/img/parts_jcb.jpg'],
-          ['Backhoe Loaders', 'Versatile JCB loaders for multi-purpose tasks.', '/assets/img/hero_services.jpg'],
-          ['Road Rollers', 'Soil and asphalt compactors for road works.', '/assets/img/parts_undercarriage.jpg'],
-          ['Dump Trucks', 'Heavy-duty articulated dump trucks for site transport.', '/assets/img/parts_transmission.jpg'],
-          ['Mini Excavators', 'Compact excavators for tight spaces and trenches.', '/assets/img/parts_pump.jpg'],
-          ['Wheel Loaders', 'High-capacity wheel loaders for material handling.', '/assets/img/parts_jcb.jpg'],
-          ['Motor Graders', 'Precision graders for road construction leveling.', '/assets/img/parts_transmission.jpg'],
-          ['Trenchers', 'Specialized trenching equipment for cable laying.', '/assets/img/parts_pins.jpg'],
-          ['Soil Compactors', 'Vibratory compactors for solid foundation works.', '/assets/img/parts_undercarriage.jpg'],
-          ['Lighting Towers', 'Diesel-powered lighting towers for night shifts.', '/assets/img/parts_filtration.jpg'],
-          ['Generators (DG Sets)', 'Industrial diesel generators for continuous power.', '/assets/img/parts_engine.jpg'],
-          ['Project Deployments', 'Long-term machinery hire for major projects.', '/assets/img/hero_services.jpg']
-        ];
-        $delay = 1;
-        foreach($rentals as $rent): ?>
-        <button class="service-card btn-modal-trigger" data-service="<?php echo $rent[0]; ?>" data-category="Machinery Rentals" style="text-align:center; border:none; width:100%; cursor:pointer; padding:0;" data-reveal data-reveal-delay="<?php echo $delay++; ?>">
-          <div class="service-card__image" style="height:160px;">
-            <img src="<?php echo $rent[2]; ?>" alt="<?php echo $rent[0]; ?>">
-          </div>
-          <div class="service-card__body" style="padding: 24px;">
-            <h3 style="font-size:17px; margin-bottom:8px;"><?php echo $rent[0]; ?></h3>
-            <p style="font-size:14px; margin-bottom:20px; line-height:1.5;"><?php echo $rent[1]; ?></p>
-            <span class="link-enquire" style="font-size:14px; font-weight:700;">Enquire Rental <i class="fas fa-arrow-right"></i></span>
-          </div>
-        </button>
-        <?php endforeach; ?>
-      </div>
-    </div>
-
-  </div><!-- /container -->
+  </div>
 </section>
 
 <!-- FINAL CTA -->
 <section class="cta-band">
   <div class="container">
-    <h2 data-reveal>Not sure which service you need?</h2>
-    <p data-reveal data-reveal-delay="1">Call us and describe your situation. Our team will guide you to the right solution — fast.</p>
+    <h2 data-reveal>Not Sure Which Service You Need?</h2>
+    <p data-reveal data-reveal-delay="1">Call us and describe your situation. Our team with 60+ years of experience will guide you to the right solution — fast.</p>
     <a href="tel:+919419186209" class="cta-band__phone" data-reveal data-reveal-delay="2">+91 94191 86209</a>
     <div class="cta-band__actions" data-reveal data-reveal-delay="3">
       <a href="tel:+919419186209" class="btn btn--primary"><i class="fas fa-phone-alt"></i> Call Now</a>
@@ -206,12 +180,9 @@ include 'includes/header.php';
       <h3 id="modalTitle">Enquire</h3>
       <p>Fill out the form below and our team will contact you shortly.</p>
     </div>
-    
-    <!-- Normally points to a PHP processing script, using # for UI demonstration -->
-    <form action="#" method="POST" class="lead-modal__form" onsubmit="event.preventDefault(); alert('Lead submitted successfully! Our team will contact you.'); document.getElementById('closeModal').click();">
+    <form action="process_lead.php" method="POST" class="lead-modal__form">
       <input type="hidden" name="service_category" id="inputCategory" value="">
-      <input type="hidden" name="specific_item" id="inputItem" value="">
-      
+      <input type="hidden" name="specific_item"    id="inputItem"     value="">
       <div class="form-group">
         <label>Your Name *</label>
         <input type="text" name="name" required placeholder="Enter your full name">
@@ -224,7 +195,7 @@ include 'includes/header.php';
         <label>Additional Details (Optional)</label>
         <textarea name="message" rows="3" placeholder="Machine model, part number, or specific requirement..."></textarea>
       </div>
-      <button type="submit" class="btn btn--primary" style="width:100%; margin-top:10px; display:flex; justify-content:center;">
+      <button type="submit" class="btn btn--primary" style="width:100%;margin-top:10px;display:flex;justify-content:center;">
         <i class="fas fa-paper-plane" style="margin-right:8px;"></i> Submit Enquiry
       </button>
     </form>
@@ -235,57 +206,34 @@ include 'includes/header.php';
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-  const modalOverlay = document.getElementById('leadModal');
+  const modalOverlay  = document.getElementById('leadModal');
   const closeModalBtn = document.getElementById('closeModal');
-  const triggers = document.querySelectorAll('.btn-modal-trigger');
-  
-  // Modal UI Elements
+  const triggers      = document.querySelectorAll('.btn-modal-trigger');
   const modalCategory = document.getElementById('modalCategory');
-  const modalTitle = document.getElementById('modalTitle');
-  
-  // Modal Form Inputs
+  const modalTitle    = document.getElementById('modalTitle');
   const inputCategory = document.getElementById('inputCategory');
-  const inputItem = document.getElementById('inputItem');
-
-  function openModal(category, item) {
-    // Update UI
-    modalCategory.textContent = category;
-    modalTitle.textContent = `Enquire for ${item}`;
-    
-    // Update Hidden Inputs
-    inputCategory.value = category;
-    inputItem.value = item;
-    
-    // Show Modal
+  const inputItem     = document.getElementById('inputItem');
+  function openModal(cat,item){
+    modalCategory.textContent=cat;
+    modalTitle.textContent=`Enquire for ${item}`;
+    inputCategory.value=cat;
+    inputItem.value=item;
     modalOverlay.classList.add('active');
-    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    document.body.style.overflow='hidden';
   }
-
-  function closeModal() {
+  function closeModal(){
     modalOverlay.classList.remove('active');
-    document.body.style.overflow = '';
+    document.body.style.overflow='';
   }
-
-  // Bind clicks
-  triggers.forEach(btn => {
-    btn.addEventListener('click', (e) => {
+  triggers.forEach(btn=>{
+    btn.addEventListener('click',(e)=>{
       e.preventDefault();
-      const category = btn.getAttribute('data-category');
-      const item = btn.getAttribute('data-service');
-      openModal(category, item);
+      openModal(btn.getAttribute('data-category'),btn.getAttribute('data-service'));
     });
   });
-
-  closeModalBtn.addEventListener('click', closeModal);
-
-  // Close on outside click
-  modalOverlay.addEventListener('click', (e) => {
-    if (e.target === modalOverlay) {
-      closeModal();
-    }
-  });
+  closeModalBtn.addEventListener('click',closeModal);
+  modalOverlay.addEventListener('click',(e)=>{if(e.target===modalOverlay)closeModal();});
 });
 </script>
 
 <?php include 'includes/footer.php'; ?>
-
