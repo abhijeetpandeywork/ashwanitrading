@@ -385,19 +385,25 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
     <div class="regions-strip" data-reveal data-reveal-delay="1">
       <div class="region-item">
-        <div class="region-item__icon"><i class="fas fa-city" aria-hidden="true"></i></div>
-        <h3>Jammu</h3>
-        <p>Headquarters in Narwal, Jammu. Walk-in, call, or WhatsApp any time.</p>
+        <div class="region-item__image"><img src="/assets/img/region_jammu.jpg" alt="Jammu"></div>
+        <div class="region-item__body">
+          <h3>Jammu</h3>
+          <p>Headquarters in Narwal, Jammu. Walk-in, call, or WhatsApp any time.</p>
+        </div>
       </div>
       <div class="region-item">
-        <div class="region-item__icon"><i class="fas fa-mountain" aria-hidden="true"></i></div>
-        <h3>Kashmir</h3>
-        <p>Supplying contractors and machinery owners across the Kashmir Valley.</p>
+        <div class="region-item__image"><img src="/assets/img/region_kashmir.jpg" alt="Kashmir"></div>
+        <div class="region-item__body">
+          <h3>Kashmir</h3>
+          <p>Supplying contractors and machinery owners across the Kashmir Valley.</p>
+        </div>
       </div>
       <div class="region-item">
-        <div class="region-item__icon"><i class="fas fa-snowflake" aria-hidden="true"></i></div>
-        <h3>Ladakh</h3>
-        <p>Parts and rentals reaching high-altitude construction projects in Ladakh.</p>
+        <div class="region-item__image"><img src="/assets/img/region_ladakh.jpg" alt="Ladakh"></div>
+        <div class="region-item__body">
+          <h3>Ladakh</h3>
+          <p>Parts and rentals reaching high-altitude construction projects in Ladakh.</p>
+        </div>
       </div>
     </div>
   </div>

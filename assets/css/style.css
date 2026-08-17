@@ -948,9 +948,9 @@ p  { font-size: 16px; line-height: 1.7; color: var(--gray-500); }
 /* ===================== REGIONS STRIP ===================== */
 .regions-strip {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
-  gap: 16px;
+  gap: 20px;
   background: var(--glass-bg-card);
   backdrop-filter: var(--glass-blur);
   -webkit-backdrop-filter: var(--glass-blur);
@@ -962,30 +962,49 @@ p  { font-size: 16px; line-height: 1.7; color: var(--gray-500); }
 .region-item {
   flex: 1;
   text-align: center;
-  padding: 36px 24px;
+  background: rgba(255, 255, 255, 0.4);
   border-radius: var(--r-lg);
   transition: var(--t);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 .region-item:hover {
-  background: rgba(255, 255, 255, 0.6);
-  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.8);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
 }
-.region-item + .region-item {
-  border-left: 1px solid rgba(226, 232, 240, 0.6);
+.region-item__image {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
 }
-.region-item__icon {
-  font-size: 2.4rem;
+.region-item__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.region-item:hover .region-item__image img {
+  transform: scale(1.05);
+}
+.region-item__body {
+  padding: 24px 20px;
+  flex: 1;
+}
+.region-item h3 {
   color: var(--green-800);
-  margin-bottom: 14px;
-  display: inline-block;
-  transition: var(--t);
+  font-family: var(--f-head);
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 12px;
 }
-.region-item:hover .region-item__icon {
-  color: var(--gold-dark);
-  transform: scale(1.1);
+.region-item p {
+  color: var(--gray-600);
+  font-size: 14.5px;
+  line-height: 1.6;
+  margin: 0;
 }
-.region-item h3 { font-size: 20px; font-weight: 700; color: var(--green-800); margin-bottom: 6px; }
-.region-item p  { font-size: 14px; color: var(--gray-500); }
 
 /* ===================== CTA BAND ===================== */
 .cta-band {
