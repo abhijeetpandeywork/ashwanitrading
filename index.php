@@ -173,7 +173,7 @@ include 'includes/header.php';
 
       <a href="/services.php#spare-parts" class="service-card" data-reveal data-reveal-delay="1">
         <div class="service-card__image">
-          <img src="https://images.unsplash.com/photo-1587582423116-ec07293f0395?q=80&w=600&auto=format&fit=crop" alt="Spare Parts for Earthmoving Machinery">
+          <img src="/assets/img/jcb_spare_parts.jpg" alt="Spare Parts for Earthmoving Machinery">
         </div>
         <div class="service-card__body">
           <h3>Spare Parts</h3>
@@ -184,7 +184,7 @@ include 'includes/header.php';
 
       <a href="/services.php#accessories" class="service-card" data-reveal data-reveal-delay="2">
         <div class="service-card__image">
-          <img src="https://images.unsplash.com/photo-1584285497042-4f3da3345423?q=80&w=600&auto=format&fit=crop" alt="Machinery Accessories">
+          <img src="/assets/img/jcb_accessories.jpg" alt="Machinery Accessories">
         </div>
         <div class="service-card__body">
           <h3>Accessories</h3>
@@ -195,7 +195,7 @@ include 'includes/header.php';
 
       <a href="/services.php#workshop" class="service-card" data-reveal data-reveal-delay="3">
         <div class="service-card__image">
-          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=600&auto=format&fit=crop" alt="Workshop and Repairs">
+          <img src="/assets/img/jcb_workshop.jpg" alt="Workshop and Repairs">
         </div>
         <div class="service-card__body">
           <h3>Workshop &amp; Repairs</h3>
@@ -206,7 +206,7 @@ include 'includes/header.php';
 
       <a href="/services.php#rentals" class="service-card" data-reveal data-reveal-delay="4">
         <div class="service-card__image">
-          <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=600&auto=format&fit=crop" alt="Machinery Rentals">
+          <img src="/assets/img/jcb_rentals.jpg" alt="Machinery Rentals">
         </div>
         <div class="service-card__body">
           <h3>Machinery Rentals</h3>
