@@ -1,4 +1,4 @@
-/* ==========================================================================
+﻿/* ==========================================================================
    Ashwani Trading Co. — Main JS
    Lightweight: mobile menu, scroll-reveal, sticky header, form submit
    No heavy libraries — speed = trust for this audience
@@ -182,3 +182,4 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 });
+

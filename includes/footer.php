@@ -69,13 +69,16 @@
             <i class="fas fa-phone-alt"></i>
             <div class="footer-contact-group">
               <a href="tel:+919419186209">+91 94191 86209</a>
-              <a href="tel:+919858486209">+91 98584 86209</a>
+              <a href="tel:+919186191331">+91 91861 91331</a>
+              <a href="tel:+911914047110">+91 19140 47110</a>
             </div>
           </li>
           <li>
             <i class="fas fa-envelope"></i>
             <div class="footer-contact-group">
               <a href="mailto:ashwanitradingcojammu@gmail.com">ashwanitradingcojammu@gmail.com</a>
+              <a href="mailto:gupta.ashwanikumar@yahoo.com">gupta.ashwanikumar@yahoo.com</a>
+              <a href="mailto:ashwaniyradingco@gmail.com">ashwaniyradingco@gmail.com</a>
             </div>
           </li>
         </ul>
@@ -96,3 +99,4 @@
 <script src="/assets/js/main.js?v=2.1"></script>
 </body>
 </html>
+

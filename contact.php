@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $pageTitle   = 'Contact Us — Ashwani Trading Co. | Jammu, Kashmir & Ladakh';
 $metaDesc    = 'Contact Ashwani Trading Co. for spare parts, accessories, repairs & rentals. Call +91 94191 86209 or visit our Narwal, Jammu offices. Two locations serving J&K & Ladakh.';
 $currentPage = 'contact';
@@ -110,8 +110,8 @@ include 'includes/header.php';
           <div class="contact-block">
             <h3><i class="fas fa-phone-alt" style="color:var(--green-700);margin-right:8px;"></i>Phone Numbers</h3>
             <a href="tel:+919419186209"><i class="fas fa-chevron-right"></i>+91 94191 86209 (Primary)</a>
-            <a href="tel:+919419186331"><i class="fas fa-chevron-right"></i>+91 94191 86331</a>
-            <a href="tel:+919858486209"><i class="fas fa-chevron-right"></i>+91 98584 86209</a>
+            <a href="tel:+919186191331"><i class="fas fa-chevron-right"></i>+91 91861 91331</a>
+            <a href="tel:+911914047110"><i class="fas fa-chevron-right"></i>+91 19140 47110</a>
           </div>
 
           <div class="contact-block">
@@ -184,3 +184,4 @@ include 'includes/header.php';
 
 </main>
 <?php include 'includes/footer.php'; ?>
+

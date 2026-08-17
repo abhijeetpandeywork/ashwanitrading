@@ -44,7 +44,7 @@ $currentPage = $currentPage ?? '';
     "name": "Ashwani Trading Co.",
     "alternateName": "ATC",
     "url": "https://ashwanitrading.digitalrubix.site/",
-    "telephone": ["+919419186209", "+919419186331"],
+    "telephone": ["+919419186209", "+919186191331", "+911914047110"],
     "email": "ashwanitradingcojammu@gmail.com",
     "description": "60+ year old supplier of earthmoving and construction machinery spare parts, accessories, workshop repair services and machinery rentals in Jammu, Kashmir and Ladakh.",
     "address": [
@@ -90,7 +90,8 @@ $currentPage = $currentPage ?? '';
   <div class="container top-bar__inner">
     <div class="top-bar__contact">
       <a href="tel:+919419186209"><i class="fas fa-phone-alt"></i>+91 94191 86209</a>
-      <a href="tel:+919419186331"><i class="fas fa-phone-alt"></i>+91 94191 86331</a>
+      <a href="tel:+919186191331"><i class="fas fa-phone-alt"></i>+91 91861 91331</a>
+      <a href="tel:+911914047110"><i class="fas fa-phone-alt"></i>+91 19140 47110</a>
       <a href="mailto:ashwanitradingcojammu@gmail.com"><i class="fas fa-envelope"></i>ashwanitradingcojammu@gmail.com</a>
     </div>
     <div class="top-bar__social">
@@ -165,3 +166,4 @@ $currentPage = $currentPage ?? '';
    aria-label="Chat on WhatsApp">
   <i class="fab fa-whatsapp"></i>
 </a>
+

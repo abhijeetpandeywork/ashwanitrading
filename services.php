@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $pageTitle   = 'Services — Spare Parts, Repairs, Accessories & Rentals | Ashwani Trading Co.';
 $metaDesc    = 'ATC offers earthmoving spare parts, machinery accessories, workshop & repair services, and equipment rentals across Jammu, Kashmir & Ladakh. Call +91 94191 86209.';
 $currentPage = 'services';
@@ -288,3 +288,4 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 
 <?php include 'includes/footer.php'; ?>
+

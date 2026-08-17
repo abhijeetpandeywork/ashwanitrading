@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $pageTitle   = 'About Us — Ashwani Trading Co. | 60+ Years of Trust in Jammu, Kashmir & Ladakh';
 $metaDesc    = 'Learn about Ashwani Trading Co. (ATC) — a 60+ year old earthmoving & construction machinery specialist based in Jammu, serving contractors across J&K and Ladakh.';
 $currentPage = 'about';
@@ -268,3 +268,4 @@ include 'includes/header.php';
 
 </main>
 <?php include 'includes/footer.php'; ?>
+

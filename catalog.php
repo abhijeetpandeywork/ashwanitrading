@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $pageTitle   = 'Spare Parts Catalog — Earthmoving & Construction Parts | Ashwani Trading Co.';
 $metaDesc    = 'Browse spare part categories for JCB, road rollers, excavators & all earthmoving machinery. Hydraulics, undercarriage, engine, filtration & more. Enquire for price & availability.';
 $currentPage = 'catalog';
@@ -183,3 +183,4 @@ include 'includes/header.php';
 
 </main>
 <?php include 'includes/footer.php'; ?>
+

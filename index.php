@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $pageTitle   = 'Ashwani Trading Co. — Spare Parts, Repairs & Rentals | Jammu, Kashmir & Ladakh';
 $metaDesc    = '60+ years supplying genuine earthmoving & construction machinery spare parts, accessories, workshop repairs and rentals in Jammu, Kashmir & Ladakh. Call now: +91 94191 86209';
 $currentPage = 'home';
@@ -561,3 +561,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
 <?php include 'includes/footer.php'; ?>
 <!-- BUSTER 123 -->
+
