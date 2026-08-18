@@ -184,7 +184,57 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // Modal Logic for part clicks
+  const ov = document.getElementById('leadModal');
+  const cl = document.getElementById('closeModal');
+  const trg = document.querySelectorAll('.btn-modal-trigger');
+  const cEl = document.getElementById('modalCategory');
+  const tEl = document.getElementById('modalTitle');
+  const cIn = document.getElementById('inputCategory');
+  const iIn = document.getElementById('inputItem');
+  
+  function openModal(cat, item) {
+    cEl.textContent = cat;
+    tEl.textContent = "Enquire for " + item;
+    cIn.value = cat;
+    iIn.value = item;
+    ov.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  
+  function closeModal() {
+    ov.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+  
+  trg.forEach(btn => btn.addEventListener('click', e => {
+    e.preventDefault();
+    openModal(btn.dataset.category, btn.dataset.service);
+  }));
+  
+  if(cl) cl.addEventListener('click', closeModal);
+  if(ov) ov.addEventListener('click', e => { if (e.target === ov) closeModal(); });
 });
 </script>
+
+<div class="lead-modal-overlay" id="leadModal">
+  <div class="lead-modal">
+    <button class="lead-modal__close" id="closeModal" aria-label="Close">&times;</button>
+    <div class="lead-modal__header">
+      <span class="tag tag--gold" id="modalCategory" style="margin-bottom:12px;">Category</span>
+      <h3 id="modalTitle">Enquire</h3>
+      <p>Fill in the form and our team will contact you shortly.</p>
+    </div>
+    <form action="process_lead.php" method="POST" class="lead-modal__form">
+      <input type="hidden" name="service_category" id="inputCategory" value="">
+      <input type="hidden" name="specific_item" id="inputItem" value="">
+      <div class="form-group"><label>Your Name *</label><input type="text" name="name" required placeholder="Enter your full name"></div>
+      <div class="form-group"><label>Phone Number *</label><input type="tel" name="phone" required placeholder="+91 XXXXX XXXXX"></div>
+      <div class="form-group"><label>Additional Details</label><textarea name="message" rows="3" placeholder="Machine model, part number or specific requirement..."></textarea></div>
+      <button type="submit" class="btn btn--primary" style="width:100%;margin-top:10px;display:flex;justify-content:center;"><i class="fas fa-paper-plane" style="margin-right:8px;"></i> Submit Enquiry</button>
+    </form>
+  </div>
+</div>
 
 <?php include "includes/footer.php"; ?>
