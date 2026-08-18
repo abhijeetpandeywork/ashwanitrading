@@ -168,8 +168,9 @@ function getSub($name,&$subs){ return $subs[$name] ?? "Contact us for full detai
 function card($name,$cat,$btn,$d,&$imgs,&$subs){
   $n=htmlspecialchars($name);$s=htmlspecialchars(getSub($name,$subs));$i=getImg($name,$imgs);
   
-  if ($name === "Excavator Spare Parts") {
-    echo "<a href=\"/excavator-spare-parts.php\" class=\"service-card\" style=\"text-align:center;border:none;width:100%;cursor:pointer;padding:0;display:block;text-decoration:none;\" data-reveal data-reveal-delay=\"{$d}\">";
+  if ($name === "Excavator Spare Parts" || $name === "Backhoe Loader Spare Parts") {
+    $url = $name === "Excavator Spare Parts" ? "/excavator-spare-parts.php" : "/backhoe-loader-spare-parts.php";
+    echo "<a href=\"{$url}\" class=\"service-card\" style=\"text-align:center;border:none;width:100%;cursor:pointer;padding:0;display:block;text-decoration:none;\" data-reveal data-reveal-delay=\"{$d}\">";
     echo "<div class=\"service-card__image\" style=\"height:160px;\"><img src=\"{$i}\" alt=\"{$n}\" loading=\"lazy\"></div>";
     echo "<div class=\"service-card__body\" style=\"padding:20px;\"><h3 style=\"font-size:15px;margin-bottom:6px;color:#fff;\">{$n}</h3>";
     echo "<p style=\"font-size:13px;margin-bottom:16px;line-height:1.5;color:rgba(255,255,255,0.7);\">{$s}</p>";
