@@ -89,7 +89,7 @@ $excavator_categories = [
     </div>
   </section>
 
-  <section class="section section--tint" style="padding: 60px 0;">
+  <section class="section section--tint" style="padding: 60px 0; position: relative; z-index: 10;">
     <div class="container">
       
       <!-- Search Filter Bar -->
