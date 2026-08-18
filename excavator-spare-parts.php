@@ -110,7 +110,7 @@ $excavator_categories = [
             <div class="accordion-content-inner">
               <ul class="parts-list">
                 <?php foreach($items as $item): ?>
-                  <li class="parts-list-item btn-modal-trigger" data-service="<?= htmlspecialchars($item) ?>" data-category="<?= htmlspecialchars(preg_replace('/^\d+\.\s*/', '', $cat_name)) ?>" style="cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;">
+                  <li class="parts-list-item btn-modal-trigger" data-service="<?= htmlspecialchars($item) ?>" data-category="<?= htmlspecialchars(preg_replace('/^\d+\.\s*/', '', $cat_name)) ?>">
                     <i class="fas fa-check-circle" style="color:var(--gold); margin-right:8px; font-size:12px;"></i><?= htmlspecialchars($item) ?>
                   </li>
                 <?php endforeach; ?>

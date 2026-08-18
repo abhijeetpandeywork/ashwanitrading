@@ -1628,13 +1628,18 @@ textarea.form-inp-v2 { resize: vertical; min-height: 120px; }
 }
 .parts-list-item {
   font-size: 14px;
-  color: var(--gray-600);
+  color: #fff;
+  background: var(--green-900);
+  padding: 12px 16px;
+  border-radius: var(--r-sm);
   display: flex;
   align-items: center;
+  transition: var(--t);
+  cursor: pointer;
 }
 .parts-list-item:hover {
-  background: rgba(242,169,0,0.08);
-  color: var(--green-900);
+  background: var(--gold);
+  color: var(--charcoal);
 }
 .accordion-cta {
   border-top: 1px solid var(--gray-100);
