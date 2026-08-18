@@ -1552,10 +1552,11 @@ textarea.form-inp-v2 { resize: vertical; min-height: 120px; }
   gap: 20px;
 }
 .accordion-item {
+  position: relative;
   background: var(--white);
   border: 1px solid var(--gray-200);
   border-radius: var(--r-md);
-  overflow: hidden;
+  overflow: visible; /* Changed from hidden to allow absolute child */
   box-shadow: 0 4px 15px rgba(0,0,0,0.03);
   transition: var(--t);
 }
@@ -1570,6 +1571,7 @@ textarea.form-inp-v2 { resize: vertical; min-height: 120px; }
   align-items: center;
   cursor: pointer;
   background: var(--glass-bg-light);
+  border-radius: var(--r-md); /* Added border radius for closed state */
   transition: var(--t);
 }
 .accordion-title {
@@ -1588,17 +1590,33 @@ textarea.form-inp-v2 { resize: vertical; min-height: 120px; }
 .accordion-item.active .accordion-header {
   border-bottom: 1px solid var(--gray-200);
   background: rgba(242,169,0,0.05);
+  border-radius: var(--r-md) var(--r-md) 0 0;
 }
 .accordion-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease;
+  position: absolute;
+  top: 100%;
+  left: -1px;
+  right: -1px;
+  z-index: 100;
+  background: var(--white);
+  border: 1px solid var(--gold);
+  border-top: none;
+  border-radius: 0 0 var(--r-md) var(--r-md);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
 }
 .accordion-item.active .accordion-content {
-  max-height: 2000px; /* Arbitrary large number for CSS transition */
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 .accordion-content-inner {
   padding: 24px;
+  max-height: 400px;
+  overflow-y: auto;
 }
 .parts-list {
   list-style: none;
@@ -1613,6 +1631,10 @@ textarea.form-inp-v2 { resize: vertical; min-height: 120px; }
   color: var(--gray-600);
   display: flex;
   align-items: center;
+}
+.parts-list-item:hover {
+  background: rgba(242,169,0,0.08);
+  color: var(--green-900);
 }
 .accordion-cta {
   border-top: 1px solid var(--gray-100);
