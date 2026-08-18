@@ -167,12 +167,22 @@ function getImg($name,&$imgs){
 function getSub($name,&$subs){ return $subs[$name] ?? "Contact us for full details on this service."; }
 function card($name,$cat,$btn,$d,&$imgs,&$subs){
   $n=htmlspecialchars($name);$s=htmlspecialchars(getSub($name,$subs));$i=getImg($name,$imgs);
-  echo "<button class=\"service-card btn-modal-trigger\" data-service=\"{$n}\" data-category=\"{$cat}\" style=\"text-align:center;border:none;width:100%;cursor:pointer;padding:0;\" data-reveal data-reveal-delay=\"{$d}\">";
-  echo "<div class=\"service-card__image\" style=\"height:160px;\"><img src=\"{$i}\" alt=\"{$n}\" loading=\"lazy\"></div>";
-  echo "<div class=\"service-card__body\" style=\"padding:20px;\"><h3 style=\"font-size:15px;margin-bottom:6px;\">{$n}</h3>";
-  echo "<p style=\"font-size:13px;margin-bottom:16px;line-height:1.5;\">{$s}</p>";
-  echo "<span class=\"link-enquire\" style=\"font-size:12px;font-weight:700;\">{$btn} <i class=\"fas fa-arrow-right\"></i></span>";
-  echo "</div></button>";
+  
+  if ($name === "Excavator Spare Parts") {
+    echo "<a href=\"/excavator-spare-parts.php\" class=\"service-card\" style=\"text-align:center;border:none;width:100%;cursor:pointer;padding:0;display:block;text-decoration:none;\" data-reveal data-reveal-delay=\"{$d}\">";
+    echo "<div class=\"service-card__image\" style=\"height:160px;\"><img src=\"{$i}\" alt=\"{$n}\" loading=\"lazy\"></div>";
+    echo "<div class=\"service-card__body\" style=\"padding:20px;\"><h3 style=\"font-size:15px;margin-bottom:6px;color:var(--green-900);\">{$n}</h3>";
+    echo "<p style=\"font-size:13px;margin-bottom:16px;line-height:1.5;color:var(--gray-600);\">{$s}</p>";
+    echo "<span class=\"link-enquire\" style=\"font-size:12px;font-weight:700;color:var(--gold-dark);\">View All Parts <i class=\"fas fa-arrow-right\"></i></span>";
+    echo "</div></a>";
+  } else {
+    echo "<button class=\"service-card btn-modal-trigger\" data-service=\"{$n}\" data-category=\"{$cat}\" style=\"text-align:center;border:none;width:100%;cursor:pointer;padding:0;\" data-reveal data-reveal-delay=\"{$d}\">";
+    echo "<div class=\"service-card__image\" style=\"height:160px;\"><img src=\"{$i}\" alt=\"{$n}\" loading=\"lazy\"></div>";
+    echo "<div class=\"service-card__body\" style=\"padding:20px;\"><h3 style=\"font-size:15px;margin-bottom:6px;\">{$n}</h3>";
+    echo "<p style=\"font-size:13px;margin-bottom:16px;line-height:1.5;\">{$s}</p>";
+    echo "<span class=\"link-enquire\" style=\"font-size:12px;font-weight:700;\">{$btn} <i class=\"fas fa-arrow-right\"></i></span>";
+    echo "</div></button>";
+  }
 }
 function subHead($label,$icon){
   echo "<div class=\"svc-sub-heading\"><div class=\"svc-sub-heading__icon\"><i class=\"fas fa-{$icon}\"></i></div><h3>{$label}</h3></div>";

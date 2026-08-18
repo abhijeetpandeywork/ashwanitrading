@@ -1516,6 +1516,108 @@ textarea.form-inp-v2 { resize: vertical; min-height: 120px; }
   flex-wrap: wrap;
 }
 .footer-bottom p { font-size: 13px; color: rgba(255,255,255,.35); }
+/* ===================== PARTS ACCORDION & SEARCH ===================== */
+.parts-search-bar {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+.parts-search-icon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--gold);
+  font-size: 18px;
+}
+.parts-search-bar input {
+  width: 100%;
+  padding: 16px 20px 16px 50px;
+  border-radius: var(--r-md);
+  border: 1px solid rgba(11,77,44,0.15);
+  font-family: var(--f-body);
+  font-size: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: var(--t);
+}
+.parts-search-bar input:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 4px rgba(242,169,0,0.15);
+}
+
+.accordion-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+.accordion-item {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--r-md);
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+  transition: var(--t);
+}
+.accordion-item:hover {
+  border-color: rgba(242,169,0,0.5);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+.accordion-header {
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background: var(--glass-bg-light);
+  transition: var(--t);
+}
+.accordion-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--green-900);
+  margin: 0;
+}
+.accordion-icon {
+  color: var(--gold);
+  transition: transform 0.3s ease;
+}
+.accordion-item.active .accordion-icon {
+  transform: rotate(180deg);
+}
+.accordion-item.active .accordion-header {
+  border-bottom: 1px solid var(--gray-200);
+  background: rgba(242,169,0,0.05);
+}
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+.accordion-item.active .accordion-content {
+  max-height: 2000px; /* Arbitrary large number for CSS transition */
+}
+.accordion-content-inner {
+  padding: 24px;
+}
+.parts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+.parts-list-item {
+  font-size: 14px;
+  color: var(--gray-600);
+  display: flex;
+  align-items: center;
+}
+.accordion-cta {
+  border-top: 1px solid var(--gray-100);
+  padding-top: 20px;
+}
 
 /* ===================== PAGE HERO (inner pages) ===================== */
 .page-hero {
