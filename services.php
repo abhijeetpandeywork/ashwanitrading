@@ -165,8 +165,26 @@ function getImg($name,&$imgs){
 function getSub($name,&$subs){ return $subs[$name] ?? "Contact us for full details on this service."; }
 function card($name,$cat,$btn,$d,&$imgs,&$subs){
   $n=htmlspecialchars($name);$s=htmlspecialchars(getSub($name,$subs));$i=getImg($name,$imgs);
-  
-  if ($name === "Excavator Spare Parts" || $name === "Backhoe Loader Spare Parts" || $name === "Compressor & Compressor Spare Parts" || $name === "ROC / Rock Drilling Equipment Spare Parts") {
+  $tools_categories = [
+    "HYDRAULIC & PNEUMATIC", "BEARINGS, SEALS & INDUSTRIAL SPARES", "NUTS, BOLTS & FASTENERS",
+    "BELTS, CHAINS & POWER TRANSMISSION", "HAND TOOLS", "PNEUMATIC TOOLS", "POWER TOOLS",
+    "WELDING & CUTTING EQUIPMENT", "LIFTING, RIGGING & MATERIAL HANDLING", 
+    "WORKSHOP & SKILLED-TRADE EQUIPMENT", "TAPES, ADHESIVES & SEALANTS", "SAFETY EQUIPMENT & PPE",
+    "ELECTRICAL & AUTO ELECTRICAL", "TYRES & WHEEL EQUIPMENT", "DRILLING, CUTTING & WEAR TOOLS",
+    "PARTS SOURCING & TECHNICAL SUPPORT", "MACHINERY SALES & TRADING"
+  ];
+
+  if (in_array($name, $tools_categories)) {
+    $slug = strtolower(preg_replace('/[^a-z0-9]+/', '-', $name));
+    $url = "/product-categories.php#cat-" . $slug;
+    
+    echo "<a href=\"{$url}\" class=\"service-card\" style=\"text-align:center;border:none;width:100%;cursor:pointer;padding:0;display:block;text-decoration:none;\" data-reveal data-reveal-delay=\"{$d}\">";
+    echo "<div class=\"service-card__image\" style=\"height:160px;\"><img src=\"{$i}\" alt=\"{$n}\" loading=\"lazy\"></div>";
+    echo "<div class=\"service-card__body\" style=\"padding:20px;\"><h3 style=\"font-size:15px;margin-bottom:6px;color:#fff;\">{$n}</h3>";
+    echo "<p style=\"font-size:13px;margin-bottom:16px;line-height:1.5;color:rgba(255,255,255,0.7);\">{$s}</p>";
+    echo "<span class=\"link-enquire\" style=\"font-size:12px;font-weight:700;color:var(--gold);\">View Subcategories <i class=\"fas fa-arrow-right\"></i></span>";
+    echo "</div></a>";
+  } elseif ($name === "Excavator Spare Parts" || $name === "Backhoe Loader Spare Parts" || $name === "Compressor & Compressor Spare Parts" || $name === "ROC / Rock Drilling Equipment Spare Parts") {
     if ($name === "Excavator Spare Parts") $url = "/excavator-spare-parts.php";
     elseif ($name === "Backhoe Loader Spare Parts") $url = "/backhoe-loader-spare-parts.php";
     elseif ($name === "Compressor & Compressor Spare Parts") $url = "/compressor-spare-parts.php";
@@ -246,11 +264,12 @@ echo "<h2>Tools &amp; Equipment</h2>";
 echo "<p>Complete spectrum of professional tools and industrial supplies — from precision hand tools and pneumatic equipment to heavy lifting gear, safety PPE and drilling wear parts.</p>";
 echo "</div><div class=\"services-grid\" style=\"margin-top:40px;\" data-reveal>";
 $d=2;
-foreach(["Hydraulic components and Pneumatic components","BEARINGS, SEALS & INDUSTRIAL SPARES",
+foreach(["HYDRAULIC & PNEUMATIC","BEARINGS, SEALS & INDUSTRIAL SPARES",
   "NUTS, BOLTS & FASTENERS","BELTS, CHAINS & POWER TRANSMISSION","HAND TOOLS","PNEUMATIC TOOLS",
   "POWER TOOLS","WELDING & CUTTING EQUIPMENT","LIFTING, RIGGING & MATERIAL HANDLING",
   "WORKSHOP & SKILLED-TRADE EQUIPMENT","TAPES, ADHESIVES & SEALANTS","SAFETY EQUIPMENT & PPE",
-  "ELECTRICAL & AUTO ELECTRICAL","TYRES & WHEEL EQUIPMENT","DRILLING, CUTTING & WEAR TOOLS"] as $item){ card($item,"Tools & Equipment","Enquire Now",$d++,$imgs,$subs); }
+  "ELECTRICAL & AUTO ELECTRICAL","TYRES & WHEEL EQUIPMENT","DRILLING, CUTTING & WEAR TOOLS",
+  "PARTS SOURCING & TECHNICAL SUPPORT","MACHINERY SALES & TRADING"] as $item){ card($item,"Tools & Equipment","Enquire Now",$d++,$imgs,$subs); }
 echo "</div></div>";
 ?>
 <?php
