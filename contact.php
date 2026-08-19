@@ -83,6 +83,10 @@ include 'includes/header.php';
             <textarea id="message" name="message" class="form-inp-v2" rows="4"
               placeholder="e.g. JCB 3CX hydraulic pump seal kit, or Road roller drum bearing, or Excavator bucket teeth 20J adapter…" required><?= $preReq ?></textarea>
           </div>
+          <div class="form-group checkbox-group" style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 24px;">
+            <input type="checkbox" id="consent" name="consent" required style="margin-top: 4px; width: 18px; height: 18px; flex-shrink: 0; cursor: pointer;">
+            <label for="consent" style="font-size: 13px; color: var(--gray-600); line-height: 1.5; font-weight: 400; cursor: pointer;">I hereby consent to being contacted by Ashwani Trading Co. via phone calls, WhatsApp, or email regarding my requirement and related products or services. I acknowledge and agree to the applicable communication terms and conditions.</label>
+          </div>
           <button type="submit" class="btn btn--primary" id="contact-submit-btn" style="width:100%; padding: 18px; font-size: 16px; font-weight: 700; display:flex; justify-content:center; gap:10px; box-shadow: 0 8px 20px rgba(11,77,44,0.2);">
             <i class="fas fa-paper-plane" aria-hidden="true"></i> Send Requirement
           </button>

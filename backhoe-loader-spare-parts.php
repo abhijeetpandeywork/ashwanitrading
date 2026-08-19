@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $pageTitle = "Backhoe Loader Spare Parts | Ashwani Trading Co.";
 $metaDesc = "Complete range of backhoe loader spare parts including engine, transmission, axle, hydraulics, attachments and more. Ashwani Trading Co.";
 $currentPage = "services";
@@ -268,9 +268,14 @@ document.addEventListener('DOMContentLoaded', () => {
       <div class="form-group"><label>Your Name *</label><input type="text" name="name" required placeholder="Enter your full name"></div>
       <div class="form-group"><label>Phone Number *</label><input type="tel" name="phone" required placeholder="+91 XXXXX XXXXX"></div>
       <div class="form-group"><label>Additional Details</label><textarea name="message" rows="3" placeholder="Machine model, part number or specific requirement..."></textarea></div>
+      <div class="form-group checkbox-group" style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 24px;">
+        <input type="checkbox" id="consent_modal" name="consent" required style="margin-top: 4px; width: 18px; height: 18px; flex-shrink: 0; cursor: pointer;">
+        <label for="consent_modal" style="font-size: 13px; color: var(--gray-600); line-height: 1.5; font-weight: 400; cursor: pointer;">I hereby consent to being contacted by Ashwani Trading Co. via phone calls, WhatsApp, or email regarding my requirement and related products or services. I acknowledge and agree to the applicable communication terms and conditions.</label>
+      </div>
       <button type="submit" class="btn btn--primary" style="width:100%;margin-top:10px;display:flex;justify-content:center;"><i class="fas fa-paper-plane" style="margin-right:8px;"></i> Submit Enquiry</button>
     </form>
   </div>
 </div>
 
 <?php include "includes/footer.php"; ?>
+
