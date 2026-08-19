@@ -55,7 +55,7 @@ $subs=[
   "Hot Mix Plant Spare Parts"=>"Drum burners, filler pumps, aggregate feeders & RAP components.",
   "Crusher & Screening Plant Spare Parts"=>"Jaw plates, blow bars, screen meshes, bearings & drive components.",
   "ROC / Rock Drilling Equipment Spare Parts"=>"Drill bits, shank adapters, drill rods & hammer components.",
-  "Compressor Spare Parts"=>"Pistons, rings, valves, filters & separator elements for overhaul.",
+  "Compressor & Compressor Spare Parts"=>"Pistons, rings, valves, filters & separator elements for overhaul.",
   "Engine Oils"=>"Premium mineral & synthetic engine oils for all machinery makes and grades.",
   "Hydraulic Oils"=>"ISO-grade hydraulic oils for open & closed hydraulic systems.",
   "Gear Oils"=>"High-EP gear oils for final drives, gearboxes & differentials.",
@@ -168,8 +168,12 @@ function getSub($name,&$subs){ return $subs[$name] ?? "Contact us for full detai
 function card($name,$cat,$btn,$d,&$imgs,&$subs){
   $n=htmlspecialchars($name);$s=htmlspecialchars(getSub($name,$subs));$i=getImg($name,$imgs);
   
-  if ($name === "Excavator Spare Parts" || $name === "Backhoe Loader Spare Parts") {
-    $url = $name === "Excavator Spare Parts" ? "/excavator-spare-parts.php" : "/backhoe-loader-spare-parts.php";
+  if ($name === "Excavator Spare Parts" || $name === "Backhoe Loader Spare Parts" || $name === "Compressor & Compressor Spare Parts" || $name === "ROC / Rock Drilling Equipment Spare Parts") {
+    if ($name === "Excavator Spare Parts") $url = "/excavator-spare-parts.php";
+    elseif ($name === "Backhoe Loader Spare Parts") $url = "/backhoe-loader-spare-parts.php";
+    elseif ($name === "Compressor & Compressor Spare Parts") $url = "/compressor-spare-parts.php";
+    else $url = "/roc-drilling-spare-parts.php";
+    
     echo "<a href=\"{$url}\" class=\"service-card\" style=\"text-align:center;border:none;width:100%;cursor:pointer;padding:0;display:block;text-decoration:none;\" data-reveal data-reveal-delay=\"{$d}\">";
     echo "<div class=\"service-card__image\" style=\"height:160px;\"><img src=\"{$i}\" alt=\"{$n}\" loading=\"lazy\"></div>";
     echo "<div class=\"service-card__body\" style=\"padding:20px;\"><h3 style=\"font-size:15px;margin-bottom:6px;color:#fff;\">{$n}</h3>";
@@ -217,7 +221,7 @@ echo "</div><div class=\"services-grid\" style=\"margin-top:40px;\" data-reveal>
 $d=2;
 foreach(["Excavator Spare Parts","Backhoe Loader Spare Parts","Road Roller / Compactor Spare Parts",
   "Asphalt Paver Spare Parts","Hot Mix Plant Spare Parts","Crusher & Screening Plant Spare Parts",
-  "ROC / Rock Drilling Equipment Spare Parts","Compressor Spare Parts"] as $item){ card($item,"Spare Parts & Accessories","Enquire Now",$d++,$imgs,$subs); }
+  "ROC / Rock Drilling Equipment Spare Parts","Compressor & Compressor Spare Parts"] as $item){ card($item,"Spare Parts & Accessories","Enquire Now",$d++,$imgs,$subs); }
 echo "</div></div>";
 
 // SERVICE 2
