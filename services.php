@@ -174,9 +174,9 @@ function card($name,$cat,$btn,$d,&$imgs,&$subs){
     "PARTS SOURCING & TECHNICAL SUPPORT", "MACHINERY SALES & TRADING"
   ];
 
-  if (in_array($name, $tools_categories)) {
-    $slug = strtolower(trim(preg_replace('/[^a-z0-9]+/', '-', $name), '-'));
-    $url = "/product-categories.php#cat-" . $slug;
+  $cat_index = array_search($name, $tools_categories);
+  if ($cat_index !== false) {
+    $url = "/product-categories.php#cat-" . ($cat_index + 1);
     
     echo "<a href=\"{$url}\" class=\"service-card\" style=\"text-align:center;border:none;width:100%;cursor:pointer;padding:0;display:block;text-decoration:none;\" data-reveal data-reveal-delay=\"{$d}\">";
     echo "<div class=\"service-card__image\" style=\"height:160px;\"><img src=\"{$i}\" alt=\"{$n}\" loading=\"lazy\"></div>";

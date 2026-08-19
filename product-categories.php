@@ -91,10 +91,11 @@ $tools_categories = [
 
       <!-- Accordion Grid -->
       <div class="accordion-grid" data-reveal data-reveal-delay="1">
-        <?php foreach($tools_categories as $cat_name => $items): 
-          $slug = strtolower(trim(preg_replace('/[^a-z0-9]+/', '-', preg_replace('/^\d+\.\s*/', '', $cat_name)), '-'));
+        <?php 
+        $cat_index = 1;
+        foreach($tools_categories as $cat_name => $items): 
         ?>
-        <div class="accordion-item" id="cat-<?= $slug ?>" data-search-target>
+        <div class="accordion-item" id="cat-<?= $cat_index ?>" data-search-target>
           <div class="accordion-header">
             <h3 class="accordion-title"><?= htmlspecialchars($cat_name) ?></h3>
             <div class="accordion-icon"><i class="fas fa-chevron-down"></i></div>
@@ -116,7 +117,10 @@ $tools_categories = [
             </div>
           </div>
         </div>
-        <?php endforeach; ?>
+        <?php 
+        $cat_index++;
+        endforeach; 
+        ?>
       </div>
 
     </div>
