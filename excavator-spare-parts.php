@@ -85,7 +85,7 @@ $excavator_categories = [
     <div class="container page-hero__inner" style="position: relative; z-index: 2;">
       <span class="tag tag--gold" style="margin: 0 auto 24px; box-shadow: 0 4px 15px rgba(242,169,0,0.3);">Comprehensive Inventory</span>
       <h1 style="font-size: clamp(36px, 6vw, 64px); margin-bottom: 20px; color: #fff; text-shadow: 0 4px 20px rgba(0,0,0,0.8); font-weight: 800;">Excavator Spare Parts</h1>
-      <p style="font-size: 18px; line-height: 1.6; opacity: 0.95; text-shadow: 0 2px 10px rgba(0,0,0,0.7); max-width: 700px; margin: 0 auto;">From complete engine assemblies to essential seals and O-rings, we supply high-quality replacement parts for all major excavator brands. Search or browse our complete catalog below.</p>
+      <p style="font-size: 18px; line-height: 1.6; opacity: 0.95; text-shadow: 0 2px 10px rgba(0,0,0,0.7); max-width: 700px; margin: 0 auto;">CAT_Caterpillar | JCB | Komatsu | Hitachi | Tata Hitachi | Hyundai | Volvo | JS 200-225 |Doosan / DEVELON | Kobelco | CASE | BULL |  SANY | XCMG | Liugong | John Deere | Mahindra | Escorts | Larsen & Toubro | SDLG | Other Major Brands</p>
     </div>
   </section>
 
