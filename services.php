@@ -62,9 +62,7 @@ $subs=[
   "Transmission Oils"=>"ATF & power-shift fluids for torque converters & transmissions.",
   "Compressor Oils"=>"Reciprocating & rotary screw oils for long service intervals.",
   "Rock Drill Oils"=>"Specialist oils for extreme percussion drilling pressures.",
-  "Greases"=>"General-purpose NLGI greases for workshop & site lubrication.",
-  "EP Grease"=>"Extreme-pressure grease for heavily loaded joints & pin bores.",
-  "Lithium Grease"=>"Water-resistant lithium complex grease for bearings & chassis.",
+  "Greases - EP Greases - Lithium Greases"=>"General-purpose NLGI, Extreme-pressure & Water-resistant lithium complex greases.",
   "Coolants"=>"Ready-mixed coolants providing boil, freeze & corrosion protection.",
   "Antifreeze"=>"Concentrate antifreeze for harsh high-altitude winter conditions.",
   "Brake Fluid"=>"DOT-rated fluid for hydraulic disc & drum braking systems.",
@@ -234,7 +232,7 @@ echo "</div><div class=\"services-grid\" style=\"margin-top:40px;\" data-reveal>
 subHead("Oils &amp; Fluids","tint");
 $d=2;
 foreach(["Engine Oils","Hydraulic Oils","Gear Oils","Transmission Oils","Compressor Oils",
-  "Rock Drill Oils","Greases","EP Grease","Lithium Grease","Coolants","Antifreeze","Brake Fluid"] as $item){ card($item,"Lubricants, Oils & Fluids","Enquire Now",$d++,$imgs,$subs); }
+  "Rock Drill Oils","Greases - EP Greases - Lithium Greases","Coolants","Antifreeze","Brake Fluid"] as $item){ card($item,"Lubricants, Oils & Fluids","Enquire Now",$d++,$imgs,$subs); }
 subHead("Lubrication Equipment","toolbox");
 foreach(["Grease Guns","Grease Pumps","Oil Pumps","Oil Dispensers","Grease Hoses",
   "Grease Couplers","Grease Nipples","Grease Adopters","Other accessories"] as $item){ card($item,"Lubricants, Oils & Fluids","Enquire Now",$d++,$imgs,$subs); }
