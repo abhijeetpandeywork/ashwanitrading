@@ -175,7 +175,7 @@ function card($name,$cat,$btn,$d,&$imgs,&$subs){
   ];
 
   if (in_array($name, $tools_categories)) {
-    $slug = strtolower(preg_replace('/[^a-z0-9]+/', '-', $name));
+    $slug = strtolower(trim(preg_replace('/[^a-z0-9]+/', '-', $name), '-'));
     $url = "/product-categories.php#cat-" . $slug;
     
     echo "<a href=\"{$url}\" class=\"service-card\" style=\"text-align:center;border:none;width:100%;cursor:pointer;padding:0;display:block;text-decoration:none;\" data-reveal data-reveal-delay=\"{$d}\">";

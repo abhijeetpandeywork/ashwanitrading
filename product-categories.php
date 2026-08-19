@@ -92,7 +92,7 @@ $tools_categories = [
       <!-- Accordion Grid -->
       <div class="accordion-grid" data-reveal data-reveal-delay="1">
         <?php foreach($tools_categories as $cat_name => $items): 
-          $slug = strtolower(preg_replace('/[^a-z0-9]+/', '-', preg_replace('/^\d+\.\s*/', '', $cat_name)));
+          $slug = strtolower(trim(preg_replace('/[^a-z0-9]+/', '-', preg_replace('/^\d+\.\s*/', '', $cat_name)), '-'));
         ?>
         <div class="accordion-item" id="cat-<?= $slug ?>" data-search-target>
           <div class="accordion-header">
@@ -177,22 +177,29 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Handle Hash Auto-open
-  if (window.location.hash) {
-    const hash = window.location.hash; // e.g. #cat-hand-tools
-    const targetItem = document.querySelector(hash);
-    if (targetItem && targetItem.classList.contains('accordion-item')) {
-      targetItem.classList.add('active');
-      setTimeout(() => {
-        const offset = 120; // sticky header offset
-        const elementPosition = targetItem.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.scrollY - offset;
-        window.scrollTo({
-             top: offsetPosition,
-             behavior: "smooth"
+  function handleHash() {
+    if (window.location.hash) {
+      const hash = window.location.hash; // e.g. #cat-hand-tools
+      const targetItem = document.querySelector(hash);
+      if (targetItem && targetItem.classList.contains('accordion-item')) {
+        document.querySelectorAll('.accordion-item').forEach(item => {
+          item.classList.remove('active');
         });
-      }, 500);
+        targetItem.classList.add('active');
+        setTimeout(() => {
+          const offset = 120; // sticky header offset
+          const elementPosition = targetItem.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.scrollY - offset;
+          window.scrollTo({
+               top: offsetPosition,
+               behavior: "smooth"
+          });
+        }, 500);
+      }
     }
   }
+  handleHash();
+  window.addEventListener('hashchange', handleHash);
 
   // Modal Logic for part clicks
   const ov = document.getElementById('leadModal');
