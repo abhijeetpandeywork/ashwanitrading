@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 $pageTitle="Services | Ashwani Trading Co.";
 $metaDesc="Earthmoving spare parts, lubricants, tools, repairs & rentals across J&K & Ladakh.";
 $currentPage="services";
@@ -165,6 +165,7 @@ function getImg($name,&$imgs){
 function getSub($name,&$subs){ return $subs[$name] ?? "Contact us for full details on this service."; }
 function card($name,$cat,$btn,$d,&$imgs,&$subs){
   $n=htmlspecialchars($name);$s=htmlspecialchars(getSub($name,$subs));$i=getImg($name,$imgs);
+  $d_cycle = (($d - 1) % 4) + 1;
   $tools_categories = [
     "HYDRAULIC & PNEUMATIC", "BEARINGS, SEALS & INDUSTRIAL SPARES", "NUTS, BOLTS & FASTENERS",
     "BELTS, CHAINS & POWER TRANSMISSION", "HAND TOOLS", "PNEUMATIC TOOLS", "POWER TOOLS",
@@ -178,7 +179,7 @@ function card($name,$cat,$btn,$d,&$imgs,&$subs){
   if ($cat_index !== false) {
     $url = "/product-categories.php#cat-" . ($cat_index + 1);
     
-    echo "<a href=\"{$url}\" class=\"service-card\" style=\"text-align:center;border:none;width:100%;cursor:pointer;padding:0;display:block;text-decoration:none;\" data-reveal data-reveal-delay=\"{$d}\">";
+    echo "<a href=\"{$url}\" class=\"service-card\" style=\"text-align:center;border:none;width:100%;cursor:pointer;padding:0;display:block;text-decoration:none;\" data-reveal data-reveal-delay=\"{$d_cycle}\">";
     echo "<div class=\"service-card__image\" style=\"height:160px;\"><img src=\"{$i}\" alt=\"{$n}\" loading=\"lazy\"></div>";
     echo "<div class=\"service-card__body\" style=\"padding:20px;\"><h3 style=\"font-size:15px;margin-bottom:6px;color:#fff;\">{$n}</h3>";
     echo "<p style=\"font-size:13px;margin-bottom:16px;line-height:1.5;color:rgba(255,255,255,0.7);\">{$s}</p>";
@@ -197,7 +198,7 @@ function card($name,$cat,$btn,$d,&$imgs,&$subs){
     echo "<span class=\"link-enquire\" style=\"font-size:12px;font-weight:700;color:var(--gold);\">View All Parts <i class=\"fas fa-arrow-right\"></i></span>";
     echo "</div></a>";
   } else {
-    echo "<button class=\"service-card btn-modal-trigger\" data-service=\"{$n}\" data-category=\"{$cat}\" style=\"text-align:center;border:none;width:100%;cursor:pointer;padding:0;\" data-reveal data-reveal-delay=\"{$d}\">";
+    echo "<button class=\"service-card btn-modal-trigger\" data-service=\"{$n}\" data-category=\"{$cat}\" style=\"text-align:center;border:none;width:100%;cursor:pointer;padding:0;\" data-reveal data-reveal-delay=\"{$d_cycle}\">";
     echo "<div class=\"service-card__image\" style=\"height:160px;\"><img src=\"{$i}\" alt=\"{$n}\" loading=\"lazy\"></div>";
     echo "<div class=\"service-card__body\" style=\"padding:20px;\"><h3 style=\"font-size:15px;margin-bottom:6px;\">{$n}</h3>";
     echo "<p style=\"font-size:13px;margin-bottom:16px;line-height:1.5;\">{$s}</p>";
@@ -233,7 +234,7 @@ echo "<div class=\"section-head section-head--svc\" data-reveal>";
 echo "<span class=\"tag\"><i class=\"fas fa-cogs\"></i> Service 01</span>";
 echo "<h2>Spare Parts &amp; Accessories</h2>";
 echo "<p>Genuine OEM and quality-checked aftermarket spare parts for every major category of earthmoving and construction equipment. Fast sourcing, verified quality, 60+ years of expert guidance.</p>";
-echo "</div><div class=\"services-grid\" style=\"margin-top:40px;\" data-reveal>";
+echo "</div><div class=\"services-grid\" style=\"margin-top:40px;\">";
 $d=2;
 foreach(["Excavator Spare Parts","Backhoe Loader Spare Parts","Road Roller / Compactor Spare Parts",
   "Asphalt Paver Spare Parts","Hot Mix Plant Spare Parts","Crusher & Screening Plant Spare Parts",
@@ -246,7 +247,7 @@ echo "<div class=\"section-head section-head--svc\" data-reveal>";
 echo "<span class=\"tag\"><i class=\"fas fa-oil-can\"></i> Service 02</span>";
 echo "<h2>Lubricants, Oils &amp; Fluids</h2>";
 echo "<p>Quality lubrication is the most cost-effective way to extend machine life. Full range of industrial-grade oils, greases, coolants and lubrication equipment â€” with professional specification advice.</p>";
-echo "</div><div class=\"services-grid\" style=\"margin-top:40px;\" data-reveal>";
+echo "</div><div class=\"services-grid\" style=\"margin-top:40px;\">";
 subHead("Oils &amp; Fluids","tint");
 $d=2;
 foreach(["Engine Oils","Hydraulic Oils","Gear Oils","Transmission Oils","Compressor Oils",
@@ -262,7 +263,7 @@ echo "<div class=\"section-head section-head--svc\" data-reveal>";
 echo "<span class=\"tag\"><i class=\"fas fa-toolbox\"></i> Service 03</span>";
 echo "<h2>Tools &amp; Equipment</h2>";
 echo "<p>Complete spectrum of professional tools and industrial supplies â€” from precision hand tools and pneumatic equipment to heavy lifting gear, safety PPE and drilling wear parts.</p>";
-echo "</div><div class=\"services-grid\" style=\"margin-top:40px;\" data-reveal>";
+echo "</div><div class=\"services-grid\" style=\"margin-top:40px;\">";
 $d=2;
 foreach(["HYDRAULIC & PNEUMATIC","BEARINGS, SEALS & INDUSTRIAL SPARES",
   "NUTS, BOLTS & FASTENERS","BELTS, CHAINS & POWER TRANSMISSION","HAND TOOLS","PNEUMATIC TOOLS",
@@ -279,7 +280,7 @@ echo "<div class=\"section-head section-head--svc\" data-reveal>";
 echo "<span class=\"tag\"><i class=\"fas fa-wrench\"></i> Service 04</span>";
 echo "<h2>Services, Repairs &amp; Maintenance</h2>";
 echo "<p>Our fully equipped workshop in Narwal handles everything from a quick oil service to a complete machine overhaul. Mobile team responds to on-site emergencies across J&K and Ladakh.</p>";
-echo "</div><div class=\"services-grid\" style=\"margin-top:40px;\" data-reveal>";
+echo "</div><div class=\"services-grid\" style=\"margin-top:40px;\">";
 
 subHead("Machinery Services","cog");
 $d=2;
@@ -322,7 +323,7 @@ echo "<div class=\"section-head section-head--svc\" data-reveal>";
 echo "<span class=\"tag\"><i class=\"fas fa-truck-monster\"></i> Service 05</span>";
 echo "<h2>Machinery Rentals</h2>";
 echo "<p>Flexible, well-maintained equipment on short and long-term hire. All machines serviced, safety-checked and ready to work across Jammu, Kashmir &amp; Ladakh.</p>";
-echo "</div><div class=\"services-grid\" style=\"margin-top:40px;\" data-reveal>";
+echo "</div><div class=\"services-grid\" style=\"margin-top:40px;\">";
 $d=2;
 foreach(["EXCAVATORS","BACKHOE LOADER","HYDRA","ROAD ROLLER","PAVER",
   "VIBERATOR RULER","TRALLA/ PLATFORM","MOTOR GRADER","COMPRESSOR"] as $item){ card($item,"Machinery Rentals","Enquire Rental",$d++,$imgs,$subs); }
