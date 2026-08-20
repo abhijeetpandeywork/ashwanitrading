@@ -177,7 +177,7 @@ include 'includes/header.php';
         </div>
         <div class="service-card__body">
           <h3>Spare Parts</h3>
-          <p>Genuine &amp; aftermarket spare parts for excavators, backhoe loaders, road rollers, hot mix plants, crushers, compressors and rock drilling equipment.</p>
+          <p>Genuine &amp; aftermarket spare parts for excavators, backhoe loaders, road rollers, hot mix plants, crushers, compressors and rock drilling equipment. Includes parts available for retail as well as for wholesale.</p>
           <span class="link-enquire">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
         </div>
       </a>

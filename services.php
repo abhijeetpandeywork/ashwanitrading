@@ -123,7 +123,10 @@ $subs=[
   "Axel Oil Service"=>"Axle diff oil drain, flush & refill to OEM specification.",
   "Transmission Oil Service"=>"Transmission oil change, filter replacement & clutch-pack check.",
   "Gear oil Service"=>"Gearbox oil drain, breather clean & refill to correct grade.",
-  "others"=>"Specialised fluid services — contact us for your specific requirement.",
+  "Others / All other types of oil service"=>"Specialised fluid services —  contact us for your specific requirement.",
+  "Motor Oil Service"=>"Complete motor oil replacement and maintenance.",
+  "Paver Maintenance and Overall Service"=>"Comprehensive paver maintenance, tuning, and overall servicing.",
+  "Electricals & Auto Electricals (incl. Electric Scooter)"=>"Full range of electrical and auto electrical spare parts, including components for electric scooters.",
   "Hot Mix Plant Maintenance"=>"Drum burner calibration, conveyor tensioning & aggregate feeder service.",
   "Crusher Maintenance"=>"Jaw plate reversal, drive belt tensioning & bearing lubrication.",
   "Screening Plant Maintenance"=>"Screen mesh replacement, vibrator shaft service & deck cleaning.",
@@ -151,8 +154,8 @@ function getImg($name,&$imgs){
   return $imgs[$name] ?? null;
 }
 function getSub($name,&$subs){ return $subs[$name] ?? "Contact us for full details on this service."; }
-function card($name,$cat,$btn,$d,&$imgs,&$subs){
-  $n=htmlspecialchars($name);$s=htmlspecialchars(getSub($name,$subs));$i=getImg($name,$imgs);
+function card($name,$cat,$btn,$d,&$imgs,&$subs,$suffix=""){
+  $n=htmlspecialchars($name . $suffix);$s=htmlspecialchars(getSub($name,$subs));$i=getImg($name,$imgs);
   $d_cycle = (($d - 1) % 4) + 1;
   $tools_categories = [
     "HYDRAULIC & PNEUMATIC", "BEARINGS, SEALS & INDUSTRIAL SPARES", "NUTS, BOLTS & FASTENERS",
@@ -233,7 +236,8 @@ echo "</div><div class=\"services-grid\" style=\"margin-top:40px;\">";
 $d=2;
 foreach(["Excavator Spare Parts","Backhoe Loader Spare Parts","Road Roller / Compactor Spare Parts",
   "Asphalt Paver Spare Parts","Hot Mix Plant Spare Parts","Crusher & Screening Plant Spare Parts",
-  "ROC / Rock Drilling Equipment Spare Parts","Compressor & Compressor Spare Parts"] as $item){ card($item,"Spare Parts & Accessories","Enquire Now",$d++,$imgs,$subs); }
+  "ROC / Rock Drilling Equipment Spare Parts","Compressor & Compressor Spare Parts",
+  "Electricals & Auto Electricals (incl. Electric Scooter)"] as $item){ card($item,"Spare Parts & Accessories","Enquire Now",$d++,$imgs,$subs); }
 echo "</div></div>";
 
 // SERVICE 2
@@ -281,7 +285,7 @@ subHead("Machinery Services","cog");
 $d=2;
 foreach(["Engine Services & Overhauling","Hydraulic System Services","Transmission & Gearbox Services",
   "Axle, Differential & Driveline Services","Electrical & Electronic Services",
-  "Computer Diagnostics & ECU Services","Fuel Injection & Fuel System Services",
+  "Fuel Injection & Fuel System Services",
   "Cooling System & Radiator Services","Air Intake & Turbocharger Services",
   "Brake System Services","Steering System Services","Undercarriage & Track System Services",
   "Final Drive & Travel Motor Services","Swing / Slew System Services",
@@ -297,15 +301,11 @@ foreach(["Engine Services & Overhauling","Hydraulic System Services","Transmissi
   "Pre-Purchase Machine Inspection","Machine Reconditioning & Refurbishment",
   "Complete Machine Overhauling","Spare Parts Supply & Replacement",
   "Genuine / OEM / Aftermarket Parts Services","Attachment Installation & Modification",
-  "AMC / Annual Maintenance Contracts"] as $item){ card($item,"Services & Repairs","Book Service",$d++,$imgs,$subs); }
+  "AMC / Annual Maintenance Contracts", "Paver Maintenance and Overall Service"] as $item){ card($item,"Services & Repairs","Book Service",$d++,$imgs,$subs, " - Opening & Fitting & Repairing Services"); }
 
 subHead("Oil Services","oil-can");
-foreach(["Hydraulic Oil Service","Engine Oil Service","Axel Oil Service",
-  "Transmission Oil Service","Gear oil Service","others"] as $item){ card($item,"Oil Services","Book Service",$d++,$imgs,$subs); }
-
-subHead("Transmission Repair &amp; Plant Services","industry");
-foreach(["Hot Mix Plant Maintenance","Crusher Maintenance","Screening Plant Maintenance",
-  "Paver Maintenance","Compressor Maintenance","Drilling Equipment Maintenance"] as $item){ card($item,"Plant Services","Book Service",$d++,$imgs,$subs); }
+foreach(["Hydraulic Oil Service","Engine Oil Service","Motor Oil Service","Axel Oil Service",
+  "Transmission Oil Service","Gear oil Service","Others / All other types of oil service"] as $item){ card($item,"Oil Services","Book Service",$d++,$imgs,$subs); }
 
 subHead("On-Site Services","truck");
 foreach(["On-Site Inspection","On-Site Breakdown Support","On-Site Hydraulic Repair",
