@@ -201,7 +201,7 @@ foreach(["Grease Guns","Grease Pumps","Oil Pumps","Oil Dispensers","Grease Hoses
     </div>
     <div class="services-grid services-grid--3col" data-reveal data-reveal-delay="1">
       <div class="service-card" style="text-align:center;">
-        <div class="service-card__icon" style="margin:0 auto 16px;">
+        <div class="service-card__icon" style="margin:0 auto 16px; font-size:40px; color:var(--gold); display:inline-block; line-height:1; background:transparent; width:auto; height:auto;">
           <i class="fas fa-phone-alt fa-flip-horizontal"></i>
         </div>
         <h3 style="font-size:28px; color:var(--gold-dark); font-family:var(--f-head); margin-bottom:8px;">01</h3>
@@ -209,7 +209,7 @@ foreach(["Grease Guns","Grease Pumps","Oil Pumps","Oil Dispensers","Grease Hoses
         <p>Tell us your machine model, part name, or part number. Our team will identify it instantly.</p>
       </div>
       <div class="service-card" style="text-align:center;">
-        <div class="service-card__icon" style="margin:0 auto 16px;">
+        <div class="service-card__icon" style="margin:0 auto 16px; font-size:40px; color:var(--gold); display:inline-block; line-height:1; background:transparent; width:auto; height:auto;">
           <i class="fas fa-check-circle"></i>
         </div>
         <h3 style="font-size:28px; color:var(--gold-dark); font-family:var(--f-head); margin-bottom:8px;">02</h3>
@@ -217,7 +217,7 @@ foreach(["Grease Guns","Grease Pumps","Oil Pumps","Oil Dispensers","Grease Hoses
         <p>We check our live stock and give you pricing and lead time — usually within hours.</p>
       </div>
       <div class="service-card" style="text-align:center;">
-        <div class="service-card__icon" style="margin:0 auto 16px;">
+        <div class="service-card__icon" style="margin:0 auto 16px; font-size:40px; color:var(--gold); display:inline-block; line-height:1; background:transparent; width:auto; height:auto;">
           <i class="fas fa-truck"></i>
         </div>
         <h3 style="font-size:28px; color:var(--gold-dark); font-family:var(--f-head); margin-bottom:8px;">03</h3>
