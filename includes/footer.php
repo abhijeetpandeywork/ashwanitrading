@@ -1,4 +1,4 @@
-<?php /* Global Footer "” Ashwani Trading Co. */ ?>
+<?php /* Global Footer — Ashwani Trading Co. v3.0 2026-08-20 logo fix */ ?>
 
 <!-- ===================== SITE FOOTER ===================== -->
 <footer class="site-footer" role="contentinfo">
@@ -21,7 +21,7 @@
       <!-- Col 1: Brand -->
       <div class="footer-col footer-col--brand">
         <div class="footer-logo-wrap">
-          <img src="/assets/img/logo.jpg" alt="Ashwani Trading Co. Logo" style="max-height: 120px; width: 120px; object-fit: cover; border-radius: 16px; border: 3px solid rgba(255,255,255,0.1); box-shadow: var(--shadow-md);">
+          <img src="/assets/img/logo.jpg?v=3" alt="Ashwani Trading Co. Logo" style="max-height: 120px; width: 120px; object-fit: cover; border-radius: 16px; border: 3px solid rgba(255,255,255,0.1); box-shadow: var(--shadow-md);">
         </div>
         <p class="footer-bio">The trusted backbone for contractors and workshop owners across Jammu, Kashmir &amp; Ladakh. Genuine parts, unmatched reliability.</p>
         
@@ -100,5 +100,6 @@
 <script src="/assets/js/main.js?v=2.1"></script>
 </body>
 </html>
+
 
 
