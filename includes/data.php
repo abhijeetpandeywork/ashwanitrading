@@ -195,7 +195,7 @@ function card($name,$cat,$btn,$d,&$imgs,&$subs,$suffix=""){
     echo $imgHtml;
     echo "<div class=\"service-card__body\" style=\"padding:20px;\"><h3 style=\"font-size:15px;margin-bottom:6px;\">{$n}</h3>";
     echo "<p style=\"font-size:13px;margin-bottom:16px;line-height:1.5;\">{$s}</p>";
-    echo "<span class=\"link-enquire\" style=\"font-size:12px;font-weight:700;\">{$btn} <i class=\"fas fa-arrow-right\"></i></span>";
+    echo "<span class=\"link-enquire\" style=\"color:var(--gold); font-size:14px; font-weight:700;\">{$btn} <i class=\"fas fa-arrow-right\"></i></span>";
     echo "</div></button>";
   }
 }

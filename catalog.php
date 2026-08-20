@@ -45,7 +45,7 @@ include 'includes/header.php';
           <h3>All kind of engaging tools Undercarriage Parts</h3>
           <p>Track chains, rollers, top rollers, idlers, sprockets, track shoes, track bolts</p>
         
-          <span class="btn btn-primary" style="margin-top: 15px; display: inline-block; font-size: 14px; padding: 8px 20px;">Enquiry Now</span>
+          <span style="color:var(--gold); font-weight:700; display:inline-block; margin-top:15px; font-size:14px;">Enquire Now <i class="fas fa-arrow-right"></i></span>
         </div>
       </button>
 
@@ -55,7 +55,7 @@ include 'includes/header.php';
           <h3>All kind of engaging tools Hydraulic Components</h3>
           <p>Pumps, cylinders, motors, control valves, hoses, fittings, O-ring &amp; seal kits</p>
         
-          <span class="btn btn-primary" style="margin-top: 15px; display: inline-block; font-size: 14px; padding: 8px 20px;">Enquiry Now</span>
+          <span style="color:var(--gold); font-weight:700; display:inline-block; margin-top:15px; font-size:14px;">Enquire Now <i class="fas fa-arrow-right"></i></span>
         </div>
       </button>
 
@@ -65,7 +65,7 @@ include 'includes/header.php';
           <h3>All kind of engaging tools Ground Engaging Tools</h3>
           <p>Bucket teeth, adapters, cutting edges, end bits, shrouds, blades, ripper shanks. Includes side cutter set &amp; bucket tooth set.</p>
         
-          <span class="btn btn-primary" style="margin-top: 15px; display: inline-block; font-size: 14px; padding: 8px 20px;">Enquiry Now</span>
+          <span style="color:var(--gold); font-weight:700; display:inline-block; margin-top:15px; font-size:14px;">Enquire Now <i class="fas fa-arrow-right"></i></span>
         </div>
       </button>
 
@@ -75,7 +75,7 @@ include 'includes/header.php';
           <h3>All kind of engaging tools Engine &amp; Filtration</h3>
           <p>Pistons, liners, bearings, gaskets, oil/fuel/air filters, overhaul kits</p>
         
-          <span class="btn btn-primary" style="margin-top: 15px; display: inline-block; font-size: 14px; padding: 8px 20px;">Enquiry Now</span>
+          <span style="color:var(--gold); font-weight:700; display:inline-block; margin-top:15px; font-size:14px;">Enquire Now <i class="fas fa-arrow-right"></i></span>
         </div>
       </button>
 
@@ -85,7 +85,7 @@ include 'includes/header.php';
           <h3>All kind of engaging tools Transmission &amp; Drivetrain</h3>
           <p>Gearboxes, torque converters, axles, differentials, clutch plates</p>
         
-          <span class="btn btn-primary" style="margin-top: 15px; display: inline-block; font-size: 14px; padding: 8px 20px;">Enquiry Now</span>
+          <span style="color:var(--gold); font-weight:700; display:inline-block; margin-top:15px; font-size:14px;">Enquire Now <i class="fas fa-arrow-right"></i></span>
         </div>
       </button>
 
@@ -95,7 +95,7 @@ include 'includes/header.php';
           <h3>All kind of engaging tools Electrical Components</h3>
           <p>Starters, alternators, switches, relays, sensors, wiring harnesses</p>
         
-          <span class="btn btn-primary" style="margin-top: 15px; display: inline-block; font-size: 14px; padding: 8px 20px;">Enquiry Now</span>
+          <span style="color:var(--gold); font-weight:700; display:inline-block; margin-top:15px; font-size:14px;">Enquire Now <i class="fas fa-arrow-right"></i></span>
         </div>
       </button>
 
@@ -105,7 +105,7 @@ include 'includes/header.php';
           <h3>All kind of engaging tools Attachments &amp; Buckets</h3>
           <p>Comprehensive range of attachments and buckets in all sizes, including heavy-duty options with hard-facing for extreme durability.</p>
         
-          <span class="btn btn-primary" style="margin-top: 15px; display: inline-block; font-size: 14px; padding: 8px 20px;">Enquiry Now</span>
+          <span style="color:var(--gold); font-weight:700; display:inline-block; margin-top:15px; font-size:14px;">Enquire Now <i class="fas fa-arrow-right"></i></span>
         </div>
       </button>
 
@@ -115,7 +115,7 @@ include 'includes/header.php';
           <h3>All kind of engaging tools Body &amp; Structural Parts</h3>
           <p>Boom arms, dipper sticks, machine guards, panels, ROPS/FOPS structures</p>
         
-          <span class="btn btn-primary" style="margin-top: 15px; display: inline-block; font-size: 14px; padding: 8px 20px;">Enquiry Now</span>
+          <span style="color:var(--gold); font-weight:700; display:inline-block; margin-top:15px; font-size:14px;">Enquire Now <i class="fas fa-arrow-right"></i></span>
         </div>
       </button>
 
@@ -125,7 +125,7 @@ include 'includes/header.php';
           <h3>All kind of engaging tools Cooling System</h3>
           <p>Radiators, water pumps, fan belts, thermostats, coolant hoses</p>
         
-          <span class="btn btn-primary" style="margin-top: 15px; display: inline-block; font-size: 14px; padding: 8px 20px;">Enquiry Now</span>
+          <span style="color:var(--gold); font-weight:700; display:inline-block; margin-top:15px; font-size:14px;">Enquire Now <i class="fas fa-arrow-right"></i></span>
         </div>
       </button>
 
@@ -135,7 +135,7 @@ include 'includes/header.php';
           <h3>All kind of engaging tools Drill Rods &amp; Bits</h3>
           <p>High-strength drill rods, shank adapters, couplings, rock drill bits</p>
         
-          <span class="btn btn-primary" style="margin-top: 15px; display: inline-block; font-size: 14px; padding: 8px 20px;">Enquiry Now</span>
+          <span style="color:var(--gold); font-weight:700; display:inline-block; margin-top:15px; font-size:14px;">Enquire Now <i class="fas fa-arrow-right"></i></span>
         </div>
       </button>
 
@@ -145,7 +145,7 @@ include 'includes/header.php';
           <h3>All kind of engaging tools Tyres &amp; Wheels</h3>
           <p>OTR tyres, wheel rims, valve stems for loaders, dozers, and compactors</p>
         
-          <span class="btn btn-primary" style="margin-top: 15px; display: inline-block; font-size: 14px; padding: 8px 20px;">Enquiry Now</span>
+          <span style="color:var(--gold); font-weight:700; display:inline-block; margin-top:15px; font-size:14px;">Enquire Now <i class="fas fa-arrow-right"></i></span>
         </div>
       </button>
 
@@ -155,7 +155,7 @@ include 'includes/header.php';
           <h3>All kind of engaging tools Other / Not Listed</h3>
           <p>Can't find your category? Call us with your machine model and part description.</p>
         
-          <span class="btn btn-primary" style="margin-top: 15px; display: inline-block; font-size: 14px; padding: 8px 20px;">Enquiry Now</span>
+          <span style="color:var(--gold); font-weight:700; display:inline-block; margin-top:15px; font-size:14px;">Enquire Now <i class="fas fa-arrow-right"></i></span>
         </div>
       </button>
 
