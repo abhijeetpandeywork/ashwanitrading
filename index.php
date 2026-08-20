@@ -184,7 +184,7 @@ include 'includes/header.php';
 
       <a href="/services.php#lubricants" class="service-card" data-reveal data-reveal-delay="2">
         <div class="service-card__image">
-          <img src="/assets/img/new_ground_engaging.jpg" alt="Lubricants Oils and Fluids" loading="lazy">
+          <img src="/assets/img/jcb_accessories.webp" alt="Lubricants Oils and Fluids" loading="lazy">
         </div>
         <div class="service-card__body">
           <h3>Lubricants &amp; Oils</h3>
@@ -247,9 +247,9 @@ include 'includes/header.php';
       <?php
       $rentalsHome = [
         ['Excavators',        '/assets/img/parts_jcb.webp'],
-        ['Backhoe Loader',    '/assets/img/new_hydraulics.jpg'],
-        ['Hydra',             '/assets/img/new_hydraulics.jpg'],
-        ['Road Roller',       '/assets/img/new_undercarriage.jpg'],
+        ['Backhoe Loader',    '/assets/img/parts_pump.webp'],
+        ['Hydra',             '/assets/img/parts_pump.webp'],
+        ['Road Roller',       '/assets/img/parts_undercarriage.webp'],
         ['Paver',             '/assets/img/parts_engine.webp'],
         ['Vibratory Roller',  '/assets/img/parts_filtration.webp'],
         ['Tralla / Platform', '/assets/img/parts_transmission.webp'],
