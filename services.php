@@ -1,50 +1,39 @@
-﻿<?php
+<?php
 $pageTitle="Services | Ashwani Trading Co.";
 $metaDesc="Earthmoving spare parts, lubricants, tools, repairs & rentals across J&K & Ladakh.";
 $currentPage="services";
 include "includes/header.php";
 
 $imgs=[
-  "Excavator"=>"/assets/img/parts_jcb.webp","Backhoe"=>"/assets/img/parts_pump.webp",
-  "Road"=>"/assets/img/parts_undercarriage.webp","Asphalt"=>"/assets/img/parts_engine.webp",
-  "Hot Mix"=>"/assets/img/parts_filtration.webp","Crusher"=>"/assets/img/parts_transmission.webp",
-  "ROC"=>"/assets/img/parts_pins.webp","Compressor"=>"/assets/img/parts_jcb.webp",
-  "Screening"=>"/assets/img/parts_undercarriage.webp","Paver"=>"/assets/img/parts_engine.webp",
-  "Engine"=>"/assets/img/parts_engine.webp","Hydraulic"=>"/assets/img/parts_pump.webp",
-  "Gear"=>"/assets/img/parts_transmission.webp","Transmission"=>"/assets/img/parts_transmission.webp",
-  "Rock Drill"=>"/assets/img/parts_pins.webp","Grease"=>"/assets/img/parts_filtration.webp",
-  "EP"=>"/assets/img/parts_filtration.webp","Lithium"=>"/assets/img/parts_filtration.webp",
-  "Coolant"=>"/assets/img/parts_undercarriage.webp","Antifreeze"=>"/assets/img/parts_undercarriage.webp",
-  "Brake"=>"/assets/img/parts_engine.webp","Oil Pump"=>"/assets/img/parts_pump.webp",
-  "Oil Disp"=>"/assets/img/parts_pump.webp","Hose"=>"/assets/img/parts_filtration.webp",
-  "Coupler"=>"/assets/img/parts_filtration.webp","Nipple"=>"/assets/img/parts_pins.webp",
-  "Adopter"=>"/assets/img/parts_pins.webp","Other"=>"/assets/img/parts_jcb.webp",
-  "Bearing"=>"/assets/img/parts_filtration.webp","Nut"=>"/assets/img/parts_pins.webp",
-  "Belt"=>"/assets/img/parts_transmission.webp","HAND"=>"/assets/img/parts_jcb.webp",
-  "PNEUMATIC"=>"/assets/img/parts_engine.webp","POWER"=>"/assets/img/parts_pump.webp",
-  "Welding"=>"/assets/img/parts_undercarriage.webp","Lifting"=>"/assets/img/parts_transmission.webp",
-  "Workshop"=>"/assets/img/parts_filtration.webp","Tape"=>"/assets/img/parts_pins.webp",
-  "Safety"=>"/assets/img/parts_jcb.webp","Electrical"=>"/assets/img/parts_engine.webp",
-  "Tyre"=>"/assets/img/parts_undercarriage.webp","Drilling"=>"/assets/img/parts_pump.webp",
-  "Swing"=>"/assets/img/parts_transmission.webp","Boom"=>"/assets/img/parts_pins.webp",
-  "Bucket"=>"/assets/img/parts_jcb.webp","Cylinder"=>"/assets/img/parts_pump.webp",
-  "Valve"=>"/assets/img/parts_engine.webp","Chassis"=>"/assets/img/parts_filtration.webp",
-  "Pin"=>"/assets/img/parts_pins.webp","Cabin"=>"/assets/img/parts_jcb.webp",
-  "Air"=>"/assets/img/parts_engine.webp","Final"=>"/assets/img/parts_transmission.webp",
-  "Fuel"=>"/assets/img/parts_engine.webp","Axle"=>"/assets/img/parts_undercarriage.webp",
-  "Axel"=>"/assets/img/parts_undercarriage.webp","Lubrication"=>"/assets/img/parts_filtration.webp",
-  "Preventive"=>"/assets/img/parts_engine.webp","Periodic"=>"/assets/img/parts_transmission.webp",
-  "Breakdown"=>"/assets/img/parts_jcb.webp","On-Site"=>"/assets/img/hero_services.webp",
-  "Machine"=>"/assets/img/parts_filtration.webp","Pre-Purchase"=>"/assets/img/parts_engine.webp",
-  "Reconditioning"=>"/assets/img/parts_pump.webp","Complete"=>"/assets/img/parts_jcb.webp",
-  "Spare Parts Supply"=>"/assets/img/parts_pins.webp","Genuine"=>"/assets/img/parts_transmission.webp",
-  "Attachment"=>"/assets/img/parts_undercarriage.webp","AMC"=>"/assets/img/parts_filtration.webp",
-  "Emergency"=>"/assets/img/hero_services.webp","Steering"=>"/assets/img/parts_pump.webp",
-  "Undercarriage"=>"/assets/img/parts_undercarriage.webp",
-  "EXCAVATOR"=>"/assets/img/parts_jcb.webp","BACKHOE"=>"/assets/img/parts_pump.webp",
-  "HYDRA"=>"/assets/img/parts_pump.webp","ROAD ROLLER"=>"/assets/img/parts_undercarriage.webp",
-  "PAVER"=>"/assets/img/parts_engine.webp","VIBER"=>"/assets/img/parts_filtration.webp",
-  "TRALLA"=>"/assets/img/parts_transmission.webp","MOTOR"=>"/assets/img/parts_pins.webp",
+  "Excavator Spare Parts"=>"/assets/img/excavator_spare_parts.jpg",
+  "Backhoe Loader Spare Parts"=>"/assets/img/backhoe_spare_parts.jpg",
+  "Road Roller / Compactor Spare Parts"=>"/assets/img/road_roller_spare_parts.jpg",
+  "Asphalt Paver Spare Parts"=>"/assets/img/asphalt_paver_spare_parts.jpg",
+  "Hot Mix Plant Spare Parts"=>"/assets/img/hot_mix_plant_spare_parts.jpg",
+  "Crusher & Screening Plant Spare Parts"=>"/assets/img/crusher_spare_parts.jpg",
+  "ROC / Rock Drilling Equipment Spare Parts"=>"/assets/img/roc_drilling_spare_parts.jpg",
+  "Compressor & Compressor Spare Parts"=>"/assets/img/compressor_spare_parts.jpg",
+  "Engine Oils"=>"/assets/img/engine_oil.jpg",
+  "Hydraulic Oils"=>"/assets/img/hydraulic_oil.jpg",
+  "Transmission Oils"=>"/assets/img/transmission_oil.jpg",
+  "Gear Oils"=>"/assets/img/gear_oil.jpg",
+  "Axel Oil Service"=>"/assets/img/axle_oil.jpg",
+  "Engine Services & Overhauling"=>"/assets/img/parts_engine.webp",
+  "Hydraulic System Services"=>"/assets/img/parts_pump.webp",
+  "Transmission & Gearbox Services"=>"/assets/img/parts_transmission.webp",
+  "Undercarriage & Track System Services"=>"/assets/img/parts_undercarriage.webp",
+  "Pin, Bush & Linkage Services"=>"/assets/img/parts_pins.webp",
+  "Lubrication, Oil & Filter Services"=>"/assets/img/parts_filtration.webp",
+  "EXCAVATORS"=>"/assets/img/hero_excavator_parts.webp",
+  "BACKHOE LOADER"=>"/assets/img/hero_backhoe_parts.webp",
+  "COMPRESSOR"=>"/assets/img/hero_compressor_parts.webp",
+  "HYDRA"=>"/assets/img/jcb_rentals.webp",
+  "WORKSHOP & SKILLED-TRADE EQUIPMENT"=>"/assets/img/jcb_workshop.webp",
+  "On-Site / Field Service"=>"/assets/img/hero_services.webp",
+  "HAND TOOLS"=>"/assets/img/hero_tools_equip.webp",
+  "Spare Parts Supply & Replacement"=>"/assets/img/jcb_spare_parts.webp",
+  "Attachment Installation & Modification"=>"/assets/img/jcb_accessories.webp",
+  "MACHINERY SALES & TRADING"=>"/assets/img/hero_catalog.webp"
 ];
 
 $subs=[
@@ -159,8 +148,7 @@ $subs=[
 ];
 
 function getImg($name,&$imgs){
-  foreach($imgs as $k=>$v){ if(stripos($name,$k)!==false) return $v; }
-  return "/assets/img/parts_jcb.webp";
+  return $imgs[$name] ?? null;
 }
 function getSub($name,&$subs){ return $subs[$name] ?? "Contact us for full details on this service."; }
 function card($name,$cat,$btn,$d,&$imgs,&$subs){
@@ -175,12 +163,19 @@ function card($name,$cat,$btn,$d,&$imgs,&$subs){
     "PARTS SOURCING & TECHNICAL SUPPORT", "MACHINERY SALES & TRADING"
   ];
 
+  $imgHtml = "";
+  if ($i) {
+      $imgHtml = "<div class=\"service-card__image\" style=\"height:160px;\"><img src=\"{$i}\" alt=\"{$n}\" loading=\"lazy\"></div>";
+  } else {
+      $imgHtml = "<div class=\"service-card__image\" style=\"height:160px; display:flex; flex-direction:column; align-items:center; justify-content:center; background:rgba(255,255,255,0.02); color:rgba(255,255,255,0.3); border-bottom:1px solid rgba(255,255,255,0.05);\"><i class=\"fas fa-image\" style=\"font-size:32px; margin-bottom:10px;\"></i><span style=\"font-size:11px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase;\">Image Coming Soon</span></div>";
+  }
+
   $cat_index = array_search($name, $tools_categories);
   if ($cat_index !== false) {
     $url = "/product-categories.php#cat-" . ($cat_index + 1);
     
     echo "<a href=\"{$url}\" class=\"service-card\" style=\"text-align:center;border:none;width:100%;cursor:pointer;padding:0;display:block;text-decoration:none;\" data-reveal data-reveal-delay=\"{$d_cycle}\">";
-    echo "<div class=\"service-card__image\" style=\"height:160px;\"><img src=\"{$i}\" alt=\"{$n}\" loading=\"lazy\"></div>";
+    echo $imgHtml;
     echo "<div class=\"service-card__body\" style=\"padding:20px;\"><h3 style=\"font-size:15px;margin-bottom:6px;color:#fff;\">{$n}</h3>";
     echo "<p style=\"font-size:13px;margin-bottom:16px;line-height:1.5;color:rgba(255,255,255,0.7);\">{$s}</p>";
     echo "<span class=\"link-enquire\" style=\"font-size:12px;font-weight:700;color:var(--gold);\">View Subcategories <i class=\"fas fa-arrow-right\"></i></span>";
@@ -192,14 +187,14 @@ function card($name,$cat,$btn,$d,&$imgs,&$subs){
     else $url = "/roc-drilling-spare-parts.php";
     
     echo "<a href=\"{$url}\" class=\"service-card\" style=\"text-align:center;border:none;width:100%;cursor:pointer;padding:0;display:block;text-decoration:none;\" data-reveal data-reveal-delay=\"{$d}\">";
-    echo "<div class=\"service-card__image\" style=\"height:160px;\"><img src=\"{$i}\" alt=\"{$n}\" loading=\"lazy\"></div>";
+    echo $imgHtml;
     echo "<div class=\"service-card__body\" style=\"padding:20px;\"><h3 style=\"font-size:15px;margin-bottom:6px;color:#fff;\">{$n}</h3>";
     echo "<p style=\"font-size:13px;margin-bottom:16px;line-height:1.5;color:rgba(255,255,255,0.7);\">{$s}</p>";
     echo "<span class=\"link-enquire\" style=\"font-size:12px;font-weight:700;color:var(--gold);\">View All Parts <i class=\"fas fa-arrow-right\"></i></span>";
     echo "</div></a>";
   } else {
     echo "<button class=\"service-card btn-modal-trigger\" data-service=\"{$n}\" data-category=\"{$cat}\" style=\"text-align:center;border:none;width:100%;cursor:pointer;padding:0;\" data-reveal data-reveal-delay=\"{$d_cycle}\">";
-    echo "<div class=\"service-card__image\" style=\"height:160px;\"><img src=\"{$i}\" alt=\"{$n}\" loading=\"lazy\"></div>";
+    echo $imgHtml;
     echo "<div class=\"service-card__body\" style=\"padding:20px;\"><h3 style=\"font-size:15px;margin-bottom:6px;\">{$n}</h3>";
     echo "<p style=\"font-size:13px;margin-bottom:16px;line-height:1.5;\">{$s}</p>";
     echo "<span class=\"link-enquire\" style=\"font-size:12px;font-weight:700;\">{$btn} <i class=\"fas fa-arrow-right\"></i></span>";
