@@ -1,5 +1,6 @@
 <?php /* v3-logo-fix */ ?>
 <?php
+include "includes/data.php";
 $pageTitle   = 'Spare Parts Catalog — Earthmoving & Construction Parts | Ashwani Trading Co.';
 $metaDesc    = 'Browse spare part categories for JCB, road rollers, excavators & all earthmoving machinery. Hydraulics, undercarriage, engine, filtration & more. Enquire for price & availability.';
 $currentPage = 'catalog';
@@ -38,104 +39,130 @@ include 'includes/header.php';
 
     <div class="catalog-grid" data-reveal data-reveal-delay="1">
 
-      <a href="/contact.php?category=undercarriage" class="cat-card" id="undercarriage">
+      <button class="cat-card btn-modal-trigger" data-service="All kind of engaging tools undercarriage" data-category="undercarriage" id="undercarriage" style="text-align:left;border:none;width:100%;cursor:pointer;padding:0;background:transparent;">
         <div class="cat-card__image"><img src="/assets/img/parts_undercarriage.webp" alt="Undercarriage Parts" loading="lazy"></div>
         <div class="cat-card__body">
-          <h3>Undercarriage Parts</h3>
+          <h3>All kind of engaging tools Undercarriage Parts</h3>
           <p>Track chains, rollers, top rollers, idlers, sprockets, track shoes, track bolts</p>
         </div>
-      </a>
+      </button>
 
-      <a href="/contact.php?category=hydraulics" class="cat-card" id="hydraulics">
+      <button class="cat-card btn-modal-trigger" data-service="All kind of engaging tools hydraulics" data-category="hydraulics" id="hydraulics" style="text-align:left;border:none;width:100%;cursor:pointer;padding:0;background:transparent;">
         <div class="cat-card__image"><img src="/assets/img/parts_pump.webp" alt="Hydraulic Components" loading="lazy"></div>
         <div class="cat-card__body">
-          <h3>Hydraulic Components</h3>
+          <h3>All kind of engaging tools Hydraulic Components</h3>
           <p>Pumps, cylinders, motors, control valves, hoses, fittings, O-ring &amp; seal kits</p>
         </div>
-      </a>
+      </button>
 
-      <a href="/contact.php?category=ground-engaging" class="cat-card" id="ground-engaging">
+      <button class="cat-card btn-modal-trigger" data-service="All kind of engaging tools ground-engaging" data-category="ground-engaging" id="ground-engaging" style="text-align:left;border:none;width:100%;cursor:pointer;padding:0;background:transparent;">
         <div class="cat-card__image"><img src="/assets/img/jcb_accessories.webp" alt="Ground Engaging Tools" loading="lazy"></div>
         <div class="cat-card__body">
-          <h3>Ground Engaging Tools</h3>
-          <p>Bucket teeth, adapters, cutting edges, end bits, shrouds, blades, ripper shanks</p>
+          <h3>All kind of engaging tools Ground Engaging Tools</h3>
+          <p>Bucket teeth, adapters, cutting edges, end bits, shrouds, blades, ripper shanks. Includes side cutter set &amp; bucket tooth set.</p>
         </div>
-      </a>
+      </button>
 
-      <a href="/contact.php?category=engine" class="cat-card" id="engine">
+      <button class="cat-card btn-modal-trigger" data-service="All kind of engaging tools engine" data-category="engine" id="engine" style="text-align:left;border:none;width:100%;cursor:pointer;padding:0;background:transparent;">
         <div class="cat-card__image"><img src="/assets/img/parts_engine.webp" alt="Engine & Filtration" loading="lazy"></div>
         <div class="cat-card__body">
-          <h3>Engine &amp; Filtration</h3>
+          <h3>All kind of engaging tools Engine &amp; Filtration</h3>
           <p>Pistons, liners, bearings, gaskets, oil/fuel/air filters, overhaul kits</p>
         </div>
-      </a>
+      </button>
 
-      <a href="/contact.php?category=transmission" class="cat-card" id="transmission">
+      <button class="cat-card btn-modal-trigger" data-service="All kind of engaging tools transmission" data-category="transmission" id="transmission" style="text-align:left;border:none;width:100%;cursor:pointer;padding:0;background:transparent;">
         <div class="cat-card__image"><img src="/assets/img/parts_transmission.webp" alt="Transmission & Drivetrain" loading="lazy"></div>
         <div class="cat-card__body">
-          <h3>Transmission &amp; Drivetrain</h3>
+          <h3>All kind of engaging tools Transmission &amp; Drivetrain</h3>
           <p>Gearboxes, torque converters, axles, differentials, clutch plates</p>
         </div>
-      </a>
+      </button>
 
-      <a href="/contact.php?category=electrical" class="cat-card" id="electrical">
+      <button class="cat-card btn-modal-trigger" data-service="All kind of engaging tools electrical" data-category="electrical" id="electrical" style="text-align:left;border:none;width:100%;cursor:pointer;padding:0;background:transparent;">
         <div class="cat-card__image"><img src="/assets/img/parts_jcb.webp" alt="Electrical Components" loading="lazy"></div>
         <div class="cat-card__body">
-          <h3>Electrical Components</h3>
+          <h3>All kind of engaging tools Electrical Components</h3>
           <p>Starters, alternators, switches, relays, sensors, wiring harnesses</p>
         </div>
-      </a>
+      </button>
 
-      <a href="/contact.php?category=attachments" class="cat-card" id="attachments">
+      <button class="cat-card btn-modal-trigger" data-service="All kind of engaging tools attachments" data-category="attachments" id="attachments" style="text-align:left;border:none;width:100%;cursor:pointer;padding:0;background:transparent;">
         <div class="cat-card__image"><img src="/assets/img/jcb_spare_parts.webp" alt="Attachments & Buckets" loading="lazy"></div>
         <div class="cat-card__body">
-          <h3>Attachments &amp; Buckets</h3>
-          <p>Rock, mud, and general-purpose buckets, quick hitches, coupler systems</p>
+          <h3>All kind of engaging tools Attachments &amp; Buckets</h3>
+          <p>Comprehensive range of attachments and buckets in all sizes, including heavy-duty options with hard-facing for extreme durability.</p>
         </div>
-      </a>
+      </button>
 
-      <a href="/contact.php?category=body-structural" class="cat-card" id="body-structural">
+      <button class="cat-card btn-modal-trigger" data-service="All kind of engaging tools body-structural" data-category="body-structural" id="body-structural" style="text-align:left;border:none;width:100%;cursor:pointer;padding:0;background:transparent;">
         <div class="cat-card__image"><img src="/assets/img/parts_pins.webp" alt="Body & Structural Parts" loading="lazy"></div>
         <div class="cat-card__body">
-          <h3>Body &amp; Structural Parts</h3>
+          <h3>All kind of engaging tools Body &amp; Structural Parts</h3>
           <p>Boom arms, dipper sticks, machine guards, panels, ROPS/FOPS structures</p>
         </div>
-      </a>
+      </button>
 
-      <a href="/contact.php?category=cooling" class="cat-card" id="cooling">
+      <button class="cat-card btn-modal-trigger" data-service="All kind of engaging tools cooling" data-category="cooling" id="cooling" style="text-align:left;border:none;width:100%;cursor:pointer;padding:0;background:transparent;">
         <div class="cat-card__image"><img src="/assets/img/parts_filtration.webp" alt="Cooling System" loading="lazy"></div>
         <div class="cat-card__body">
-          <h3>Cooling System</h3>
+          <h3>All kind of engaging tools Cooling System</h3>
           <p>Radiators, water pumps, fan belts, thermostats, coolant hoses</p>
         </div>
-      </a>
+      </button>
 
-      <a href="/contact.php?category=drill-rods" class="cat-card" id="drill-rods">
+      <button class="cat-card btn-modal-trigger" data-service="All kind of engaging tools drill-rods" data-category="drill-rods" id="drill-rods" style="text-align:left;border:none;width:100%;cursor:pointer;padding:0;background:transparent;">
         <div class="cat-card__image"><img src="/assets/img/hero_services.webp" alt="Drill Rods & Bits" loading="lazy"></div>
         <div class="cat-card__body">
-          <h3>Drill Rods &amp; Bits</h3>
+          <h3>All kind of engaging tools Drill Rods &amp; Bits</h3>
           <p>High-strength drill rods, shank adapters, couplings, rock drill bits</p>
         </div>
-      </a>
+      </button>
 
-      <a href="/contact.php?category=tyres-wheels" class="cat-card" id="tyres-wheels">
+      <button class="cat-card btn-modal-trigger" data-service="All kind of engaging tools tyres-wheels" data-category="tyres-wheels" id="tyres-wheels" style="text-align:left;border:none;width:100%;cursor:pointer;padding:0;background:transparent;">
         <div class="cat-card__image"><img src="/assets/img/jcb_rentals.webp" alt="Tyres & Wheels" loading="lazy"></div>
         <div class="cat-card__body">
-          <h3>Tyres &amp; Wheels</h3>
+          <h3>All kind of engaging tools Tyres &amp; Wheels</h3>
           <p>OTR tyres, wheel rims, valve stems for loaders, dozers, and compactors</p>
         </div>
-      </a>
+      </button>
 
-      <a href="/contact.php?category=other" class="cat-card" id="other-parts">
+      <button class="cat-card btn-modal-trigger" data-service="All kind of engaging tools other-parts" data-category="other" id="other-parts" style="text-align:left;border:none;width:100%;cursor:pointer;padding:0;background:transparent;">
         <div class="cat-card__image"><img src="/assets/img/jcb_workshop.webp" alt="Other Parts" loading="lazy"></div>
         <div class="cat-card__body">
-          <h3>Other / Not Listed</h3>
+          <h3>All kind of engaging tools Other / Not Listed</h3>
           <p>Can't find your category? Call us with your machine model and part description.</p>
         </div>
-      </a>
+      </button>
 
     </div><!-- /catalog-grid -->
 
+  </div>
+</section>
+
+
+
+<!-- ============================================================
+     LUBRICANTS, OILS & FLUIDS
+     ============================================================ -->
+<section class="section section--white" id="lubricants" style="padding-top:0;">
+  <div class="container">
+    <div class="section-head section-head--svc" data-reveal>
+      <span class="tag"><i class="fas fa-oil-can"></i> Service 02</span>
+      <h2>Lubricants, Oils & Fluids</h2>
+      <p>Quality lubrication is the most cost-effective way to extend machine life. Full range of industrial-grade oils, greases, coolants and lubrication equipment —  with professional specification advice.</p>
+    </div>
+    <div class="services-grid" style="margin-top:40px;">
+<?php
+subHead("Oils &amp; Fluids","tint");
+$d=2;
+foreach(["Engine Oils","Hydraulic Oils","Gear Oils","Transmission Oils","Compressor Oils",
+  "Rock Drill Oils","Greases - EP Greases - Lithium Greases","Coolants","Antifreeze","Brake Fluid"] as $item){ card($item,"Lubricants, Oils & Fluids","Enquire Now",$d++,$imgs,$subs); }
+subHead("Lubrication Equipment","toolbox");
+foreach(["Grease Guns","Grease Pumps","Oil Pumps","Oil Dispensers","Grease Hoses",
+  "Grease Couplers","Grease Nipples","Grease Adopters","Other accessories"] as $item){ card($item,"Lubricants, Oils & Fluids","Enquire Now",$d++,$imgs,$subs); }
+?>
+    </div>
   </div>
 </section>
 
@@ -190,6 +217,43 @@ include 'includes/header.php';
     </div>
   </div>
 </section>
+
+
+<div class="lead-modal-overlay" id="leadModal">
+  <div class="lead-modal">
+    <button class="lead-modal__close" id="closeModal" aria-label="Close">&times;</button>
+    <div class="lead-modal__header">
+      <span class="tag tag--gold" id="modalCategory" style="margin-bottom:12px;">Category</span>
+      <h3 id="modalTitle">Enquire</h3>
+      <p>Fill in the form and our team will contact you shortly.</p>
+    </div>
+    <form action="process_lead.php" method="POST" class="lead-modal__form">
+      <input type="hidden" name="service_category" id="inputCategory" value="">
+      <input type="hidden" name="specific_item" id="inputItem" value="">
+      <div class="form-group"><label>Your Name *</label><input type="text" name="name" required placeholder="Enter your full name"></div>
+      <div class="form-group"><label>Phone Number *</label><input type="tel" name="phone" required placeholder="+91 XXXXX XXXXX"></div>
+      <div class="form-group"><label>Additional Details</label><textarea name="message" rows="3" placeholder="Machine model, part number or specific requirement..."></textarea></div>
+      <div class="form-group checkbox-group" style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 24px;">
+        <input type="checkbox" id="consent_modal" name="consent" required style="margin-top: 4px; width: 18px; height: 18px; flex-shrink: 0; cursor: pointer;">
+        <label for="consent_modal" style="font-size: 13px; color: var(--gray-600); line-height: 1.5; font-weight: 400; cursor: pointer;">I hereby consent to being contacted by Ashwani Trading Co. via phone calls, WhatsApp, or email regarding my requirement and related products or services. I acknowledge and agree to the applicable communication terms and conditions.</label>
+      </div>
+      <button type="submit" class="btn btn--primary" style="width:100%;margin-top:10px;display:flex;justify-content:center;"><i class="fas fa-paper-plane" style="margin-right:8px;"></i> Submit Enquiry</button>
+    </form>
+  </div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+  const ov=document.getElementById('leadModal'),cl=document.getElementById('closeModal');
+  const trg=document.querySelectorAll('.btn-modal-trigger');
+  const cEl=document.getElementById('modalCategory'),tEl=document.getElementById('modalTitle');
+  const cIn=document.getElementById('inputCategory'),iIn=document.getElementById('inputItem');
+  function o(cat,item){cEl.textContent=cat;tEl.textContent="Enquire for " + item;cIn.value=cat;iIn.value=item;ov.classList.add('active');document.body.style.overflow='hidden';}
+  function c(){ov.classList.remove('active');document.body.style.overflow='';}
+  trg.forEach(b=>b.addEventListener('click',e=>{e.preventDefault();o(b.dataset.category,b.dataset.service);}));
+  cl.addEventListener('click',c);
+  ov.addEventListener('click',e=>{if(e.target===ov)c();});
+});
+</script>
 
 </main>
 <?php include 'includes/footer.php'; ?>
