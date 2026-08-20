@@ -184,7 +184,7 @@ include 'includes/header.php';
 
       <a href="/services.php#lubricants" class="service-card" data-reveal data-reveal-delay="2">
         <div class="service-card__image">
-          <img src="/assets/img/jcb_accessories.webp" alt="Lubricants Oils and Fluids" loading="lazy">
+          <img src="/assets/img/new_ground_engaging.jpg" alt="Lubricants Oils and Fluids" loading="lazy">
         </div>
         <div class="service-card__body">
           <h3>Lubricants &amp; Oils</h3>
@@ -247,9 +247,9 @@ include 'includes/header.php';
       <?php
       $rentalsHome = [
         ['Excavators',        '/assets/img/parts_jcb.webp'],
-        ['Backhoe Loader',    '/assets/img/parts_pump.webp'],
-        ['Hydra',             '/assets/img/parts_pump.webp'],
-        ['Road Roller',       '/assets/img/parts_undercarriage.webp'],
+        ['Backhoe Loader',    '/assets/img/new_hydraulics.jpg'],
+        ['Hydra',             '/assets/img/new_hydraulics.jpg'],
+        ['Road Roller',       '/assets/img/new_undercarriage.jpg'],
         ['Paver',             '/assets/img/parts_engine.webp'],
         ['Vibratory Roller',  '/assets/img/parts_filtration.webp'],
         ['Tralla / Platform', '/assets/img/parts_transmission.webp'],
@@ -337,7 +337,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <div class="catalog-grid" data-reveal data-reveal-delay="1">
 
       <a href="/catalog.php#undercarriage" class="cat-card">
-        <div class="cat-card__image"><img src="/assets/img/parts_undercarriage.webp" alt="Undercarriage Parts" loading="lazy"></div>
+        <div class="cat-card__image"><img src="/assets/img/new_undercarriage.jpg" alt="Undercarriage Parts" loading="lazy"></div>
         <div class="cat-card__body">
           <h3>Undercarriage Parts</h3>
           <p>Track chains, rollers, idlers, sprockets</p>
@@ -345,7 +345,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </a>
 
       <a href="/catalog.php#hydraulics" class="cat-card">
-        <div class="cat-card__image"><img src="/assets/img/parts_pump.webp" alt="Hydraulic Components" loading="lazy"></div>
+        <div class="cat-card__image"><img src="/assets/img/new_hydraulics.jpg" alt="Hydraulic Components" loading="lazy"></div>
         <div class="cat-card__body">
           <h3>Hydraulic Components</h3>
           <p>Pumps, cylinders, valves, seal kits</p>
@@ -353,7 +353,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </a>
 
       <a href="/catalog.php#ground-engaging" class="cat-card">
-        <div class="cat-card__image"><img src="/assets/img/jcb_accessories.webp" alt="Ground Engaging Tools" loading="lazy"></div>
+        <div class="cat-card__image"><img src="/assets/img/new_ground_engaging.jpg" alt="Ground Engaging Tools" loading="lazy"></div>
         <div class="cat-card__body">
           <h3>Ground Engaging Tools</h3>
           <p>Bucket teeth, cutting edges, adaptors</p>

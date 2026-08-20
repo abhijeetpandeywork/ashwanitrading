@@ -40,7 +40,7 @@ include 'includes/header.php';
     <div class="catalog-grid" data-reveal data-reveal-delay="1">
 
       <button class="cat-card btn-modal-trigger" data-service="All kind of engaging tools undercarriage" data-category="undercarriage" id="undercarriage" style="border:none;width:100%;cursor:pointer;padding:0;font-family:inherit;text-align:center;">
-        <div class="cat-card__image"><img src="/assets/img/parts_undercarriage.webp" alt="Undercarriage Parts" loading="lazy"></div>
+        <div class="cat-card__image"><img src="/assets/img/new_undercarriage.jpg" alt="Undercarriage Parts" loading="lazy"></div>
         <div class="cat-card__body">
           <h3>All kind of engaging tools Undercarriage Parts</h3>
           <p>Track chains, rollers, top rollers, idlers, sprockets, track shoes, track bolts</p>
@@ -48,7 +48,7 @@ include 'includes/header.php';
       </button>
 
       <button class="cat-card btn-modal-trigger" data-service="All kind of engaging tools hydraulics" data-category="hydraulics" id="hydraulics" style="border:none;width:100%;cursor:pointer;padding:0;font-family:inherit;text-align:center;">
-        <div class="cat-card__image"><img src="/assets/img/parts_pump.webp" alt="Hydraulic Components" loading="lazy"></div>
+        <div class="cat-card__image"><img src="/assets/img/new_hydraulics.jpg" alt="Hydraulic Components" loading="lazy"></div>
         <div class="cat-card__body">
           <h3>All kind of engaging tools Hydraulic Components</h3>
           <p>Pumps, cylinders, motors, control valves, hoses, fittings, O-ring &amp; seal kits</p>
@@ -56,7 +56,7 @@ include 'includes/header.php';
       </button>
 
       <button class="cat-card btn-modal-trigger" data-service="All kind of engaging tools ground-engaging" data-category="ground-engaging" id="ground-engaging" style="border:none;width:100%;cursor:pointer;padding:0;font-family:inherit;text-align:center;">
-        <div class="cat-card__image"><img src="/assets/img/jcb_accessories.webp" alt="Ground Engaging Tools" loading="lazy"></div>
+        <div class="cat-card__image"><img src="/assets/img/new_ground_engaging.jpg" alt="Ground Engaging Tools" loading="lazy"></div>
         <div class="cat-card__body">
           <h3>All kind of engaging tools Ground Engaging Tools</h3>
           <p>Bucket teeth, adapters, cutting edges, end bits, shrouds, blades, ripper shanks. Includes side cutter set &amp; bucket tooth set.</p>
