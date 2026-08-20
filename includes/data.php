@@ -14,9 +14,9 @@ $imgs=[
   "Gear Oils"=>"/assets/img/gear_oil.jpg",
   "Axel Oil Service"=>"/assets/img/axle_oil.jpg",
   "Engine Services & Overhauling"=>"/assets/img/parts_engine.webp",
-  "Hydraulic System Services"=>"/assets/img/new_hydraulics.jpg",
+  "Hydraulic System Services"=>"/assets/img/parts_pump.webp",
   "Transmission & Gearbox Services"=>"/assets/img/parts_transmission.webp",
-  "Undercarriage & Track System Services"=>"/assets/img/new_undercarriage.jpg",
+  "Undercarriage & Track System Services"=>"/assets/img/parts_undercarriage.webp",
   "Pin, Bush & Linkage Services"=>"/assets/img/parts_pins.webp",
   "Lubrication, Oil & Filter Services"=>"/assets/img/parts_filtration.webp",
   "EXCAVATORS"=>"/assets/img/hero_excavator_parts.webp",
@@ -27,7 +27,7 @@ $imgs=[
   "On-Site / Field Service"=>"/assets/img/hero_services.webp",
   "HAND TOOLS"=>"/assets/img/hero_tools_equip.webp",
   "Spare Parts Supply & Replacement"=>"/assets/img/jcb_spare_parts.webp",
-  "Attachment Installation & Modification"=>"/assets/img/new_ground_engaging.jpg",
+  "Attachment Installation & Modification"=>"/assets/img/jcb_accessories.webp",
   "MACHINERY SALES & TRADING"=>"/assets/img/hero_catalog.webp"
 ];
 
