@@ -12,15 +12,19 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Copy files via SSH
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: 147.93.23.184
-          username: u406313474
-          password: ${{ secrets.HOSTINGER_PASSWORD }}
-          port: 65002
-          source: ".,!.git,!.github,!gh_cli,!gh.zip,!curl_output.html,!pipeline.txt,!live_site_screenshot.png"
-          target: "domains/ashwanitrading.digitalrubix.site/public_html"
-          strip_components: 0
-          rm: false
-          overwrite: true
+      - name: Setup SSH and Deploy
+        env:
+          SSH_PASSWORD: ${{ secrets.HOSTINGER_PASSWORD }}
+        run: |
+          sudo apt-get install -y sshpass rsync
+          sshpass -p "$SSH_PASSWORD" rsync -avz --delete \
+            --exclude='.git' \
+            --exclude='.github' \
+            --exclude='gh_cli' \
+            --exclude='gh.zip' \
+            --exclude='curl_output.html' \
+            --exclude='pipeline.txt' \
+            --exclude='live_site_screenshot.png' \
+            -e "ssh -o StrictHostKeyChecking=no -p 65002" \
+            ./ \
+            u406313474@147.93.23.184:domains/ashwanitrading.digitalrubix.site/public_html/
