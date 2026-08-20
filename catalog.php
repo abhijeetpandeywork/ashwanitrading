@@ -1,5 +1,6 @@
-﻿<?php
-$pageTitle   = 'Spare Parts Catalog â€” Earthmoving & Construction Parts | Ashwani Trading Co.';
+<?php /* v3-logo-fix */ ?>
+<?php
+$pageTitle   = 'Spare Parts Catalog — Earthmoving & Construction Parts | Ashwani Trading Co.';
 $metaDesc    = 'Browse spare part categories for JCB, road rollers, excavators & all earthmoving machinery. Hydraulics, undercarriage, engine, filtration & more. Enquire for price & availability.';
 $currentPage = 'catalog';
 include 'includes/header.php';
@@ -12,12 +13,12 @@ include 'includes/header.php';
   <div class="container page-hero__inner">
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="/index.php">Home</a>
-      <span class="breadcrumb__sep" aria-hidden="true">â€º</span>
+      <span class="breadcrumb__sep" aria-hidden="true">›</span>
       <span>Parts Catalog</span>
     </nav>
     <span class="tag tag--gold" style="box-shadow: 0 4px 15px rgba(242,169,0,0.3);">Parts Catalog</span>
     <h1 style="font-size: clamp(40px, 6vw, 72px); text-shadow: 0 4px 20px rgba(0,0,0,0.8); font-weight: 800; letter-spacing: -1px;">Spare Parts for Every<br><span style="color:var(--gold);">Earthmoving Machine</span></h1>
-    <p style="font-size: 20px; line-height: 1.6; text-shadow: 0 2px 10px rgba(0,0,0,0.7); max-width: 760px;">Browse our enquiry categories. We stock genuine and aftermarket parts for all major brands â€” JCB, road rollers, excavators, compactors, drill rigs, and more. <strong style="color:var(--gold);">This is an enquiry catalog, not a priced webshop.</strong> Call or enquire for availability and pricing.</p>
+    <p style="font-size: 20px; line-height: 1.6; text-shadow: 0 2px 10px rgba(0,0,0,0.7); max-width: 760px;">Browse our enquiry categories. We stock genuine and aftermarket parts for all major brands — JCB, road rollers, excavators, compactors, drill rigs, and more. <strong style="color:var(--gold);">This is an enquiry catalog, not a priced webshop.</strong> Call or enquire for availability and pricing.</p>
   </div>
 </section>
 
@@ -145,7 +146,7 @@ include 'includes/header.php';
     <div class="section-head" data-reveal>
       <span class="tag">How It Works</span>
       <h2>How to Get Your Part</h2>
-      <p>No online cart, no complicated forms. We keep it simple â€” just like buying a part in person, but faster.</p>
+      <p>No online cart, no complicated forms. We keep it simple — just like buying a part in person, but faster.</p>
     </div>
     <div class="services-grid services-grid--3col" data-reveal data-reveal-delay="1">
       <div class="service-card" style="text-align:center;">
@@ -162,7 +163,7 @@ include 'includes/header.php';
         </div>
         <h3 style="font-size:28px; color:var(--gold-dark); font-family:var(--f-head); margin-bottom:8px;">02</h3>
         <h3>Confirm Availability</h3>
-        <p>We check our live stock and give you pricing and lead time â€” usually within hours.</p>
+        <p>We check our live stock and give you pricing and lead time — usually within hours.</p>
       </div>
       <div class="service-card" style="text-align:center;">
         <div class="service-card__icon" style="margin:0 auto 16px;">
@@ -192,5 +193,6 @@ include 'includes/header.php';
 
 </main>
 <?php include 'includes/footer.php'; ?>
+
 
 

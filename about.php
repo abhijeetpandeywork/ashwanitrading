@@ -1,6 +1,7 @@
-ï»¿<?php
-$pageTitle   = 'About Us â€” Ashwani Trading Co. | 60+ Years of Trust in Jammu, Kashmir & Ladakh';
-$metaDesc    = 'Learn about Ashwani Trading Co. (ATC) â€” a 60+ year old earthmoving & construction machinery specialist based in Jammu, serving contractors across J&K and Ladakh.';
+<?php /* v3-logo-fix */ ?>
+<?php
+$pageTitle   = 'About Us — Ashwani Trading Co. | 60+ Years of Trust in Jammu, Kashmir & Ladakh';
+$metaDesc    = 'Learn about Ashwani Trading Co. (ATC) — a 60+ year old earthmoving & construction machinery specialist based in Jammu, serving contractors across J&K and Ladakh.';
 $currentPage = 'about';
 include 'includes/header.php';
 ?>
@@ -12,12 +13,12 @@ include 'includes/header.php';
   <div class="container page-hero__inner" style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: flex-start;">
     <nav class="breadcrumb" aria-label="Breadcrumb" style="margin-bottom: 24px; color: rgba(255,255,255,0.7);">
       <a href="/index.php" style="color: rgba(255,255,255,0.7);">Home</a>
-      <span class="breadcrumb__sep" aria-hidden="true" style="margin: 0 8px;">â€º</span>
+      <span class="breadcrumb__sep" aria-hidden="true" style="margin: 0 8px;">›</span>
       <span style="color: var(--gold);">About Us</span>
     </nav>
     <span class="tag tag--gold" style="margin-bottom: 24px; box-shadow: 0 4px 15px rgba(242,169,0,0.3);">Our Legacy</span>
     <h1 style="font-size: clamp(40px, 6vw, 72px); margin-bottom: 24px; color: #fff; line-height: 1.05; text-shadow: 0 4px 20px rgba(0,0,0,0.8); font-weight: 800; letter-spacing: -1px;">60+ Years of Trust in<br><span style="color:var(--gold);">Heavy Machinery</span></h1>
-    <p style="font-size: 22px; line-height: 1.5; opacity: 0.95; text-shadow: 0 2px 10px rgba(0,0,0,0.8); max-width: 650px; font-weight: 500;">From a single spare parts counter in Jammu to serving contractors across Jammu, Kashmir &amp; Ladakh â€” this is the ATC story.</p>
+    <p style="font-size: 22px; line-height: 1.5; opacity: 0.95; text-shadow: 0 2px 10px rgba(0,0,0,0.8); max-width: 650px; font-weight: 500;">From a single spare parts counter in Jammu to serving contractors across Jammu, Kashmir &amp; Ladakh — this is the ATC story.</p>
   </div>
 </section>
 
@@ -30,7 +31,7 @@ include 'includes/header.php';
       <div data-reveal>
         <span class="tag">Our Business</span>
         <h2 style="margin:14px 0 18px;">A Complete Solution for Earthmoving &amp; Construction</h2>
-        <p style="margin-bottom:20px;">Ashwani Trading Co. (ATC) has been the backbone of earthmoving and construction machinery supply in the Jammu region for over 60 years. What started as a spare parts operation has grown into a complete service offering â€” covering genuine and aftermarket parts, machinery accessories, workshop repairs, and equipment rentals.</p>
+        <p style="margin-bottom:20px;">Ashwani Trading Co. (ATC) has been the backbone of earthmoving and construction machinery supply in the Jammu region for over 60 years. What started as a spare parts operation has grown into a complete service offering — covering genuine and aftermarket parts, machinery accessories, workshop repairs, and equipment rentals.</p>
         <p style="margin-bottom:32px;">Whether you're a contractor managing a highway project in Ladakh, a quarry operator in Kashmir, or a workshop owner in Jammu, ATC has the parts and expertise to keep your machines running.</p>
         <div class="about-points">
           <div class="about-point">
@@ -90,11 +91,11 @@ include 'includes/header.php';
 </section>
 
 
-<!-- MID-PAGE CTA â€” not buried at the bottom -->
+<!-- MID-PAGE CTA — not buried at the bottom -->
 <section class="cta-band" style="padding:56px 0;">
   <div class="container" style="text-align:center;">
     <h2 data-reveal>Need a part or a machine? Let's talk.</h2>
-    <p data-reveal data-reveal-delay="1" style="margin-bottom:28px;">Call or WhatsApp our team right now. We respond fast â€” because downtime costs money.</p>
+    <p data-reveal data-reveal-delay="1" style="margin-bottom:28px;">Call or WhatsApp our team right now. We respond fast — because downtime costs money.</p>
     <div class="cta-band__actions" data-reveal data-reveal-delay="2">
       <a href="tel:+919419186209" class="btn btn--primary"><i class="fas fa-phone-alt"></i> +91 94191 86209</a>
       <a href="https://wa.me/919419186209" target="_blank" rel="noopener" class="btn btn--secondary"><i class="fab fa-whatsapp"></i> WhatsApp</a>
@@ -133,21 +134,21 @@ include 'includes/header.php';
         <span class="tag">Regional Reach</span>
         <h2 style="margin:14px 0 18px;">Serving Jammu, Kashmir &amp; Ladakh</h2>
         <p style="margin-bottom:20px;">Our two offices in Narwal, Jammu form the hub of a supply network that reaches contractors, highway builders, quarry operators, and machinery owners across the full stretch of Jammu, Kashmir &amp; Ladakh.</p>
-        <p style="margin-bottom:28px;">High-altitude, remote, and demanding â€” the projects across J&amp;K and Ladakh need a supplier who understands urgency. ATC has been that supplier for over 60 years.</p>
+        <p style="margin-bottom:28px;">High-altitude, remote, and demanding — the projects across J&amp;K and Ladakh need a supplier who understands urgency. ATC has been that supplier for over 60 years.</p>
 
         <div class="about-points">
           <div class="about-point">
             <a href="https://maps.app.goo.gl/YvS83bKDwppUnGvC9" target="_blank" rel="noopener" class="about-point__icon" style="color: inherit; text-decoration: none;"><i class="fas fa-map-marker-alt"></i></a>
             <div style="display:flex; flex-direction:column; gap:4px; justify-content:center;">
               <h4>Branch Office</h4>
-              <p>Sunjwan Morh, Bye Pass Road, Narwal, Jammu â€“ 180006</p>
+              <p>Sunjwan Morh, Bye Pass Road, Narwal, Jammu – 180006</p>
             </div>
           </div>
           <div class="about-point" style="margin-top:20px;">
             <a href="https://maps.app.goo.gl/YvS83bKDwppUnGvC9" target="_blank" rel="noopener" class="about-point__icon" style="color: inherit; text-decoration: none;"><i class="fas fa-warehouse"></i></a>
             <div style="display:flex; flex-direction:column; gap:4px; justify-content:center;">
               <h4>Main Office / Yard</h4>
-              <p>Plot No. 112, Yard 6, Transport Nagar, Narwal, Jammu â€“ 180006</p>
+              <p>Plot No. 112, Yard 6, Transport Nagar, Narwal, Jammu – 180006</p>
             </div>
           </div>
         </div>
@@ -185,14 +186,14 @@ include 'includes/header.php';
         <div class="why-item__icon"><i class="fas fa-bolt"></i></div>
         <div>
           <h3>Speed When It Counts</h3>
-          <p>Downtime costs money. We prioritize fast identification, confirmation, and supply â€” so your site doesn't stop.</p>
+          <p>Downtime costs money. We prioritize fast identification, confirmation, and supply — so your site doesn't stop.</p>
         </div>
       </div>
       <div class="why-item">
         <div class="why-item__icon"><i class="fas fa-handshake"></i></div>
         <div>
           <h3>Long-Term Relationships</h3>
-          <p>Our customers come back â€” some for decades. We build trust, not just transactions. Your success is our reputation.</p>
+          <p>Our customers come back — some for decades. We build trust, not just transactions. Your success is our reputation.</p>
         </div>
       </div>
     </div>
@@ -268,5 +269,6 @@ include 'includes/header.php';
 
 </main>
 <?php include 'includes/footer.php'; ?>
+
 
 

@@ -1,5 +1,6 @@
-﻿<?php
-$pageTitle   = 'Contact Us â€” Ashwani Trading Co. | Jammu, Kashmir & Ladakh';
+<?php /* v3-logo-fix */ ?>
+<?php
+$pageTitle   = 'Contact Us — Ashwani Trading Co. | Jammu, Kashmir & Ladakh';
 $metaDesc    = 'Contact Ashwani Trading Co. for spare parts, accessories, repairs & rentals. Call +91 94191 86209 or visit our Narwal, Jammu offices. Two locations serving J&K & Ladakh.';
 $currentPage = 'contact';
 
@@ -8,7 +9,7 @@ $preService  = htmlspecialchars($_GET['service']  ?? '');
 $preCategory = htmlspecialchars($_GET['category'] ?? '');
 $preReq = '';
 if ($preService)  $preReq = 'Service enquiry: ' . $preService;
-if ($preCategory) $preReq = 'Parts enquiry â€” Category: ' . $preCategory;
+if ($preCategory) $preReq = 'Parts enquiry — Category: ' . $preCategory;
 
 include 'includes/header.php';
 ?>
@@ -20,7 +21,7 @@ include 'includes/header.php';
   <div class="container page-hero__inner">
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="/index.php">Home</a>
-      <span class="breadcrumb__sep" aria-hidden="true">â€º</span>
+      <span class="breadcrumb__sep" aria-hidden="true">›</span>
       <span>Contact</span>
     </nav>
     <span class="tag tag--gold" style="box-shadow: 0 4px 15px rgba(242,169,0,0.3);">Get in Touch</span>
@@ -57,7 +58,7 @@ include 'includes/header.php';
           <div class="form-group">
             <label for="service">Service / Category</label>
             <select id="service" name="part_category" class="form-inp-v2">
-              <option value="">â€” Select a service or category â€”</option>
+              <option value="">— Select a service or category —</option>
               <optgroup label="Parts Enquiry">
                 <option value="Undercarriage Parts"  <?= $preCategory==='undercarriage'    ?'selected':'' ?>>Undercarriage Parts</option>
                 <option value="Hydraulic Components" <?= $preCategory==='hydraulics'       ?'selected':'' ?>>Hydraulic Components</option>
@@ -81,7 +82,7 @@ include 'includes/header.php';
           <div class="form-group">
             <label for="message">Part / Machine Details <span style="color:#b91c1c;">*</span></label>
             <textarea id="message" name="message" class="form-inp-v2" rows="4"
-              placeholder="e.g. JCB 3CX hydraulic pump seal kit, or Road roller drum bearing, or Excavator bucket teeth 20J adapterâ€¦" required><?= $preReq ?></textarea>
+              placeholder="e.g. JCB 3CX hydraulic pump seal kit, or Road roller drum bearing, or Excavator bucket teeth 20J adapter…" required><?= $preReq ?></textarea>
           </div>
           <div class="form-group checkbox-group" style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 24px;">
             <input type="checkbox" id="consent" name="consent" required style="margin-top: 4px; width: 18px; height: 18px; flex-shrink: 0; cursor: pointer;">
@@ -109,7 +110,7 @@ include 'includes/header.php';
           </a>
         </div>
 
-        <!-- Contact Clusters â€” Proximity grouping (Gestalt) -->
+        <!-- Contact Clusters — Proximity grouping (Gestalt) -->
         <div class="contact-info">
 
           <div class="contact-block" style="background: var(--white); padding: 32px; border-radius: var(--r-lg); box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-left: 4px solid var(--green-700); margin-bottom: 24px; transition: transform 0.3s ease;">
@@ -128,12 +129,12 @@ include 'includes/header.php';
 
           <div class="contact-block" style="background: var(--white); padding: 32px; border-radius: var(--r-lg); box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-left: 4px solid var(--green-700); margin-bottom: 24px; transition: transform 0.3s ease;">
             <h3 style="font-family:var(--f-head); font-size:20px; color:var(--green-900); margin-bottom:16px;"><i class="fas fa-map-marker-alt" style="color:var(--gold); margin-right:12px;"></i>Branch Office</h3>
-            <p style="color:var(--gray-600); line-height:1.6; margin:0;"><i class="fas fa-chevron-right" style="color:var(--gold); margin-right:8px; font-size:12px;"></i>Sunjwan Morh, Bye Pass Road,<br>Narwal, Jammu â€“ 180006</p>
+            <p style="color:var(--gray-600); line-height:1.6; margin:0;"><i class="fas fa-chevron-right" style="color:var(--gold); margin-right:8px; font-size:12px;"></i>Sunjwan Morh, Bye Pass Road,<br>Narwal, Jammu – 180006</p>
           </div>
 
           <div class="contact-block" style="background: var(--white); padding: 32px; border-radius: var(--r-lg); box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-left: 4px solid var(--green-700); transition: transform 0.3s ease;">
             <h3 style="font-family:var(--f-head); font-size:20px; color:var(--green-900); margin-bottom:16px;"><i class="fas fa-warehouse" style="color:var(--gold); margin-right:12px;"></i>Main Office / Yard</h3>
-            <p style="color:var(--gray-600); line-height:1.6; margin:0;"><i class="fas fa-chevron-right" style="color:var(--gold); margin-right:8px; font-size:12px;"></i>Plot No. 112, Yard 6,<br>Transport Nagar, Narwal, Jammu â€“ 180006</p>
+            <p style="color:var(--gray-600); line-height:1.6; margin:0;"><i class="fas fa-chevron-right" style="color:var(--gold); margin-right:8px; font-size:12px;"></i>Plot No. 112, Yard 6,<br>Transport Nagar, Narwal, Jammu – 180006</p>
           </div>
 
         </div>
@@ -149,8 +150,8 @@ include 'includes/header.php';
   <div class="container">
     <div class="section-head" data-reveal style="margin-bottom:32px;">
       <span class="tag">Find Us</span>
-      <h2>Our Offices â€” Narwal, Jammu</h2>
-      <p>Both our offices are located in Narwal, Jammu â€” walk in any time during business hours, or call ahead.</p>
+      <h2>Our Offices — Narwal, Jammu</h2>
+      <p>Both our offices are located in Narwal, Jammu — walk in any time during business hours, or call ahead.</p>
     </div>
     <div class="map-embed" style="height:400px;" data-reveal data-reveal-delay="1">
       <iframe
@@ -158,17 +159,17 @@ include 'includes/header.php';
         width="100%" height="100%"
         style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
-        title="Ashwani Trading Co. â€” Transport Nagar, Narwal, Jammu location map">
+        title="Ashwani Trading Co. — Transport Nagar, Narwal, Jammu location map">
       </iframe>
     </div>
     <div style="display:flex; flex-wrap:wrap; gap:24px; margin-top:20px;" data-reveal data-reveal-delay="2">
       <a href="https://maps.app.goo.gl/hryFy8tTvuaeCP247" target="_blank" rel="noopener"
          class="btn btn--outline" style="flex: 1 1 300px; justify-content:center; padding: 18px; font-weight: 700; border-color: var(--green-700); color: var(--green-900);">
-        <i class="fas fa-directions" style="margin-right: 8px;"></i> Get Directions â€” Main Office
+        <i class="fas fa-directions" style="margin-right: 8px;"></i> Get Directions — Main Office
       </a>
       <a href="https://maps.app.goo.gl/ybfBnBdkF1ztLHmM6" target="_blank" rel="noopener"
          class="btn btn--outline" style="flex: 1 1 300px; justify-content:center; padding: 18px; font-weight: 700; border-color: var(--green-700); color: var(--green-900);">
-        <i class="fas fa-directions" style="margin-right: 8px;"></i> Get Directions â€” Branch Office
+        <i class="fas fa-directions" style="margin-right: 8px;"></i> Get Directions — Branch Office
       </a>
     </div>
   </div>
@@ -189,5 +190,6 @@ include 'includes/header.php';
 
 </main>
 <?php include 'includes/footer.php'; ?>
+
 
 
