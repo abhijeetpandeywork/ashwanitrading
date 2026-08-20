@@ -1,5 +1,5 @@
 <?php
-/* Global Header — Ashwani Trading Co.
+/* Global Header â€” Ashwani Trading Co.
    Sticky, with persistent Call CTA in the header
    + mobile full-screen nav overlay
 */
@@ -11,8 +11,8 @@ $currentPage = $currentPage ?? '';
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?= htmlspecialchars($pageTitle ?? 'Ashwani Trading Co. — Spare Parts, Services & Rentals, Jammu') ?></title>
-  <meta name="description" content="<?= htmlspecialchars($metaDesc ?? 'Ashwani Trading Co. (ATC) — 60+ years supplying genuine earthmoving & construction machinery spare parts, accessories, workshop repairs and rentals in Jammu, Kashmir & Ladakh.') ?>">
+  <title><?= htmlspecialchars($pageTitle ?? 'Ashwani Trading Co. â€” Spare Parts, Services & Rentals, Jammu') ?></title>
+  <meta name="description" content="<?= htmlspecialchars($metaDesc ?? 'Ashwani Trading Co. (ATC) â€” 60+ years supplying genuine earthmoving & construction machinery spare parts, accessories, workshop repairs and rentals in Jammu, Kashmir & Ladakh.') ?>">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://ashwanitrading.digitalrubix.site/">
 
@@ -23,15 +23,28 @@ $currentPage = $currentPage ?? '';
   <meta property="og:url"         content="https://ashwanitrading.digitalrubix.site/">
 
   <!-- Fonts & Icons -->
+  <!-- DNS prefetch for CDN domains -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+
+  <!-- Preconnect for fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <link rel="stylesheet" href="/assets/css/style.css?v=2.2">
+  <!-- NON-BLOCKING: Google Fonts loaded asynchronously (does NOT block page render) -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700&display=swap"></noscript>
+
+  <!-- NON-BLOCKING: Font Awesome loaded asynchronously -->
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
+
+  <!-- Site CSS (blocking but local — fast) -->
+  <link rel="stylesheet" href="/assets/css/style.css?v=2.3">
 
   <?php if (($currentPage ?? '') === 'home'): ?>
-  <!-- LocalBusiness Schema — Homepage only -->
+  <!-- LocalBusiness Schema â€” Homepage only -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -104,8 +117,8 @@ $currentPage = $currentPage ?? '';
   <div class="container header__inner">
 
     <!-- Logo -->
-    <a href="/index.php" class="logo" aria-label="Ashwani Trading Co. — Home" style="position: relative; width: 110px; height: 72px; display: block;">
-      <img src="/assets/img/WhatsApp%20Image%202026-08-12%20at%205.32.04%20PM.jpeg" alt="Ashwani Trading Co. Logo" style="position: absolute; top: 6px; left: 0; width: 110px; height: 110px; object-fit: cover; border-radius: 16px; border: 4px solid var(--white); box-shadow: 0 6px 12px rgba(0,0,0,0.15); z-index: 1000; background: var(--white);">
+    <a href="/index.php" class="logo" aria-label="Ashwani Trading Co. â€” Home" style="position: relative; width: 110px; height: 72px; display: block;">
+      <img src="/assets/img/WhatsApp%20Image%202026-08-12%20at%205.32.04%20PM.webp" alt="Ashwani Trading Co. Logo" style="position: absolute; top: 6px; left: 0; width: 110px; height: 110px; object-fit: cover; border-radius: 16px; border: 4px solid var(--white); box-shadow: 0 6px 12px rgba(0,0,0,0.15); z-index: 1000; background: var(--white);">
     </a>
 
     <!-- Desktop Navigation -->
@@ -161,4 +174,5 @@ $currentPage = $currentPage ?? '';
    aria-label="Chat on WhatsApp">
   <i class="fab fa-whatsapp"></i>
 </a>
+
 

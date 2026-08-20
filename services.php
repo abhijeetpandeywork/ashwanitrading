@@ -1,50 +1,50 @@
-<?php
+﻿<?php
 $pageTitle="Services | Ashwani Trading Co.";
 $metaDesc="Earthmoving spare parts, lubricants, tools, repairs & rentals across J&K & Ladakh.";
 $currentPage="services";
 include "includes/header.php";
 
 $imgs=[
-  "Excavator"=>"/assets/img/parts_jcb.jpg","Backhoe"=>"/assets/img/parts_pump.jpg",
-  "Road"=>"/assets/img/parts_undercarriage.jpg","Asphalt"=>"/assets/img/parts_engine.jpg",
-  "Hot Mix"=>"/assets/img/parts_filtration.jpg","Crusher"=>"/assets/img/parts_transmission.jpg",
-  "ROC"=>"/assets/img/parts_pins.jpg","Compressor"=>"/assets/img/parts_jcb.jpg",
-  "Screening"=>"/assets/img/parts_undercarriage.jpg","Paver"=>"/assets/img/parts_engine.jpg",
-  "Engine"=>"/assets/img/parts_engine.jpg","Hydraulic"=>"/assets/img/parts_pump.jpg",
-  "Gear"=>"/assets/img/parts_transmission.jpg","Transmission"=>"/assets/img/parts_transmission.jpg",
-  "Rock Drill"=>"/assets/img/parts_pins.jpg","Grease"=>"/assets/img/parts_filtration.jpg",
-  "EP"=>"/assets/img/parts_filtration.jpg","Lithium"=>"/assets/img/parts_filtration.jpg",
-  "Coolant"=>"/assets/img/parts_undercarriage.jpg","Antifreeze"=>"/assets/img/parts_undercarriage.jpg",
-  "Brake"=>"/assets/img/parts_engine.jpg","Oil Pump"=>"/assets/img/parts_pump.jpg",
-  "Oil Disp"=>"/assets/img/parts_pump.jpg","Hose"=>"/assets/img/parts_filtration.jpg",
-  "Coupler"=>"/assets/img/parts_filtration.jpg","Nipple"=>"/assets/img/parts_pins.jpg",
-  "Adopter"=>"/assets/img/parts_pins.jpg","Other"=>"/assets/img/parts_jcb.jpg",
-  "Bearing"=>"/assets/img/parts_filtration.jpg","Nut"=>"/assets/img/parts_pins.jpg",
-  "Belt"=>"/assets/img/parts_transmission.jpg","HAND"=>"/assets/img/parts_jcb.jpg",
-  "PNEUMATIC"=>"/assets/img/parts_engine.jpg","POWER"=>"/assets/img/parts_pump.jpg",
-  "Welding"=>"/assets/img/parts_undercarriage.jpg","Lifting"=>"/assets/img/parts_transmission.jpg",
-  "Workshop"=>"/assets/img/parts_filtration.jpg","Tape"=>"/assets/img/parts_pins.jpg",
-  "Safety"=>"/assets/img/parts_jcb.jpg","Electrical"=>"/assets/img/parts_engine.jpg",
-  "Tyre"=>"/assets/img/parts_undercarriage.jpg","Drilling"=>"/assets/img/parts_pump.jpg",
-  "Swing"=>"/assets/img/parts_transmission.jpg","Boom"=>"/assets/img/parts_pins.jpg",
-  "Bucket"=>"/assets/img/parts_jcb.jpg","Cylinder"=>"/assets/img/parts_pump.jpg",
-  "Valve"=>"/assets/img/parts_engine.jpg","Chassis"=>"/assets/img/parts_filtration.jpg",
-  "Pin"=>"/assets/img/parts_pins.jpg","Cabin"=>"/assets/img/parts_jcb.jpg",
-  "Air"=>"/assets/img/parts_engine.jpg","Final"=>"/assets/img/parts_transmission.jpg",
-  "Fuel"=>"/assets/img/parts_engine.jpg","Axle"=>"/assets/img/parts_undercarriage.jpg",
-  "Axel"=>"/assets/img/parts_undercarriage.jpg","Lubrication"=>"/assets/img/parts_filtration.jpg",
-  "Preventive"=>"/assets/img/parts_engine.jpg","Periodic"=>"/assets/img/parts_transmission.jpg",
-  "Breakdown"=>"/assets/img/parts_jcb.jpg","On-Site"=>"/assets/img/hero_services.jpg",
-  "Machine"=>"/assets/img/parts_filtration.jpg","Pre-Purchase"=>"/assets/img/parts_engine.jpg",
-  "Reconditioning"=>"/assets/img/parts_pump.jpg","Complete"=>"/assets/img/parts_jcb.jpg",
-  "Spare Parts Supply"=>"/assets/img/parts_pins.jpg","Genuine"=>"/assets/img/parts_transmission.jpg",
-  "Attachment"=>"/assets/img/parts_undercarriage.jpg","AMC"=>"/assets/img/parts_filtration.jpg",
-  "Emergency"=>"/assets/img/hero_services.jpg","Steering"=>"/assets/img/parts_pump.jpg",
-  "Undercarriage"=>"/assets/img/parts_undercarriage.jpg",
-  "EXCAVATOR"=>"/assets/img/parts_jcb.jpg","BACKHOE"=>"/assets/img/parts_pump.jpg",
-  "HYDRA"=>"/assets/img/parts_pump.jpg","ROAD ROLLER"=>"/assets/img/parts_undercarriage.jpg",
-  "PAVER"=>"/assets/img/parts_engine.jpg","VIBER"=>"/assets/img/parts_filtration.jpg",
-  "TRALLA"=>"/assets/img/parts_transmission.jpg","MOTOR"=>"/assets/img/parts_pins.jpg",
+  "Excavator"=>"/assets/img/parts_jcb.webp","Backhoe"=>"/assets/img/parts_pump.webp",
+  "Road"=>"/assets/img/parts_undercarriage.webp","Asphalt"=>"/assets/img/parts_engine.webp",
+  "Hot Mix"=>"/assets/img/parts_filtration.webp","Crusher"=>"/assets/img/parts_transmission.webp",
+  "ROC"=>"/assets/img/parts_pins.webp","Compressor"=>"/assets/img/parts_jcb.webp",
+  "Screening"=>"/assets/img/parts_undercarriage.webp","Paver"=>"/assets/img/parts_engine.webp",
+  "Engine"=>"/assets/img/parts_engine.webp","Hydraulic"=>"/assets/img/parts_pump.webp",
+  "Gear"=>"/assets/img/parts_transmission.webp","Transmission"=>"/assets/img/parts_transmission.webp",
+  "Rock Drill"=>"/assets/img/parts_pins.webp","Grease"=>"/assets/img/parts_filtration.webp",
+  "EP"=>"/assets/img/parts_filtration.webp","Lithium"=>"/assets/img/parts_filtration.webp",
+  "Coolant"=>"/assets/img/parts_undercarriage.webp","Antifreeze"=>"/assets/img/parts_undercarriage.webp",
+  "Brake"=>"/assets/img/parts_engine.webp","Oil Pump"=>"/assets/img/parts_pump.webp",
+  "Oil Disp"=>"/assets/img/parts_pump.webp","Hose"=>"/assets/img/parts_filtration.webp",
+  "Coupler"=>"/assets/img/parts_filtration.webp","Nipple"=>"/assets/img/parts_pins.webp",
+  "Adopter"=>"/assets/img/parts_pins.webp","Other"=>"/assets/img/parts_jcb.webp",
+  "Bearing"=>"/assets/img/parts_filtration.webp","Nut"=>"/assets/img/parts_pins.webp",
+  "Belt"=>"/assets/img/parts_transmission.webp","HAND"=>"/assets/img/parts_jcb.webp",
+  "PNEUMATIC"=>"/assets/img/parts_engine.webp","POWER"=>"/assets/img/parts_pump.webp",
+  "Welding"=>"/assets/img/parts_undercarriage.webp","Lifting"=>"/assets/img/parts_transmission.webp",
+  "Workshop"=>"/assets/img/parts_filtration.webp","Tape"=>"/assets/img/parts_pins.webp",
+  "Safety"=>"/assets/img/parts_jcb.webp","Electrical"=>"/assets/img/parts_engine.webp",
+  "Tyre"=>"/assets/img/parts_undercarriage.webp","Drilling"=>"/assets/img/parts_pump.webp",
+  "Swing"=>"/assets/img/parts_transmission.webp","Boom"=>"/assets/img/parts_pins.webp",
+  "Bucket"=>"/assets/img/parts_jcb.webp","Cylinder"=>"/assets/img/parts_pump.webp",
+  "Valve"=>"/assets/img/parts_engine.webp","Chassis"=>"/assets/img/parts_filtration.webp",
+  "Pin"=>"/assets/img/parts_pins.webp","Cabin"=>"/assets/img/parts_jcb.webp",
+  "Air"=>"/assets/img/parts_engine.webp","Final"=>"/assets/img/parts_transmission.webp",
+  "Fuel"=>"/assets/img/parts_engine.webp","Axle"=>"/assets/img/parts_undercarriage.webp",
+  "Axel"=>"/assets/img/parts_undercarriage.webp","Lubrication"=>"/assets/img/parts_filtration.webp",
+  "Preventive"=>"/assets/img/parts_engine.webp","Periodic"=>"/assets/img/parts_transmission.webp",
+  "Breakdown"=>"/assets/img/parts_jcb.webp","On-Site"=>"/assets/img/hero_services.webp",
+  "Machine"=>"/assets/img/parts_filtration.webp","Pre-Purchase"=>"/assets/img/parts_engine.webp",
+  "Reconditioning"=>"/assets/img/parts_pump.webp","Complete"=>"/assets/img/parts_jcb.webp",
+  "Spare Parts Supply"=>"/assets/img/parts_pins.webp","Genuine"=>"/assets/img/parts_transmission.webp",
+  "Attachment"=>"/assets/img/parts_undercarriage.webp","AMC"=>"/assets/img/parts_filtration.webp",
+  "Emergency"=>"/assets/img/hero_services.webp","Steering"=>"/assets/img/parts_pump.webp",
+  "Undercarriage"=>"/assets/img/parts_undercarriage.webp",
+  "EXCAVATOR"=>"/assets/img/parts_jcb.webp","BACKHOE"=>"/assets/img/parts_pump.webp",
+  "HYDRA"=>"/assets/img/parts_pump.webp","ROAD ROLLER"=>"/assets/img/parts_undercarriage.webp",
+  "PAVER"=>"/assets/img/parts_engine.webp","VIBER"=>"/assets/img/parts_filtration.webp",
+  "TRALLA"=>"/assets/img/parts_transmission.webp","MOTOR"=>"/assets/img/parts_pins.webp",
 ];
 
 $subs=[
@@ -81,7 +81,7 @@ $subs=[
   "BELTS, CHAINS & POWER TRANSMISSION"=>"V-belts, timing belts, chains, sprockets, pulleys & couplings.",
   "HAND TOOLS"=>"Spanners, sockets, ratchets, pliers, hammers & professional sets.",
   "PNEUMATIC TOOLS"=>"Air impact wrenches, ratchets, chisels, sanders & compressor tools.",
-  "POWER TOOLS"=>"Angle grinders, drills, jig saws, heat guns â€” corded & cordless.",
+  "POWER TOOLS"=>"Angle grinders, drills, jig saws, heat guns Ã¢â‚¬â€ corded & cordless.",
   "WELDING & CUTTING EQUIPMENT"=>"MIG/MMA welders, plasma cutters, oxy-acetylene sets & consumables.",
   "LIFTING, RIGGING & MATERIAL HANDLING"=>"Chain blocks, wire hoists, slings, shackles & rated lifting clamps.",
   "WORKSHOP & SKILLED-TRADE EQUIPMENT"=>"Hydraulic jacks, presses, pullers, tap & die sets & precision tools.",
@@ -134,7 +134,7 @@ $subs=[
   "Axel Oil Service"=>"Axle diff oil drain, flush & refill to OEM specification.",
   "Transmission Oil Service"=>"Transmission oil change, filter replacement & clutch-pack check.",
   "Gear oil Service"=>"Gearbox oil drain, breather clean & refill to correct grade.",
-  "others"=>"Specialised fluid services â€” contact us for your specific requirement.",
+  "others"=>"Specialised fluid services Ã¢â‚¬â€ contact us for your specific requirement.",
   "Hot Mix Plant Maintenance"=>"Drum burner calibration, conveyor tensioning & aggregate feeder service.",
   "Crusher Maintenance"=>"Jaw plate reversal, drive belt tensioning & bearing lubrication.",
   "Screening Plant Maintenance"=>"Screen mesh replacement, vibrator shaft service & deck cleaning.",
@@ -143,7 +143,7 @@ $subs=[
   "Drilling Equipment Maintenance"=>"Rock drill service, drill rod inspection & feed mechanism overhaul.",
   "On-Site Inspection"=>"Detailed on-location inspection of machine systems & safety status.",
   "On-Site Breakdown Support"=>"Emergency technician & spares dispatched to your project site fast.",
-  "On-Site Hydraulic Repair"=>"Mobile hydraulic repair â€” hose replacement, seal kits & pump work.",
+  "On-Site Hydraulic Repair"=>"Mobile hydraulic repair Ã¢â‚¬â€ hose replacement, seal kits & pump work.",
   "On-Site Welding"=>"Field welding unit for structural crack repair & fabrication work.",
   "On-Site Maintenance"=>"Scheduled preventive maintenance at your project location.",
   "Emergency Technical Support"=>"24-hour technical helpline & priority callout for critical breakdowns.",
@@ -160,7 +160,7 @@ $subs=[
 
 function getImg($name,&$imgs){
   foreach($imgs as $k=>$v){ if(stripos($name,$k)!==false) return $v; }
-  return "/assets/img/parts_jcb.jpg";
+  return "/assets/img/parts_jcb.webp";
 }
 function getSub($name,&$subs){ return $subs[$name] ?? "Contact us for full details on this service."; }
 function card($name,$cat,$btn,$d,&$imgs,&$subs){
@@ -211,17 +211,17 @@ function subHead($label,$icon){
 }
 ?>
 <main id="main-content">
-<section class="page-hero" style="background: linear-gradient(90deg, rgba(11,77,44,0.95) 0%, rgba(11,77,44,0.2) 100%), url('/assets/img/hero_services.jpg') center/cover; padding: 140px 0 120px; color: #fff; text-align: left; border-bottom: 5px solid var(--gold);">
+<section class="page-hero" style="background: linear-gradient(90deg, rgba(11,77,44,0.95) 0%, rgba(11,77,44,0.2) 100%), url('/assets/img/hero_services.webp') center/cover; padding: 140px 0 120px; color: #fff; text-align: left; border-bottom: 5px solid var(--gold);">
   <div class="container page-hero__inner" style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: flex-start;">
     <span class="tag tag--gold" style="margin-bottom: 24px; box-shadow: 0 4px 15px rgba(242,169,0,0.3);">Five Services. One Trusted Partner.</span>
     <h1 style="font-size: clamp(40px, 6vw, 72px); margin-bottom: 24px; color: #fff; line-height: 1.05; text-shadow: 0 4px 20px rgba(0,0,0,0.8); font-weight: 800; letter-spacing: -1px;">Everything Your<br><span style="color:var(--gold);">Machines Need</span></h1>
-    <p style="font-size: 20px; line-height: 1.6; opacity: 0.92; text-shadow: 0 2px 10px rgba(0,0,0,0.7); max-width: 640px; font-weight: 500;">Genuine spare parts, industrial lubricants, professional tools, expert repairs and flexible equipment rentals â€” serving Jammu, Kashmir &amp; Ladakh for 60+ years.</p>
+    <p style="font-size: 20px; line-height: 1.6; opacity: 0.92; text-shadow: 0 2px 10px rgba(0,0,0,0.7); max-width: 640px; font-weight: 500;">Genuine spare parts, industrial lubricants, professional tools, expert repairs and flexible equipment rentals Ã¢â‚¬â€ serving Jammu, Kashmir &amp; Ladakh for 60+ years.</p>
     <nav class="hero-svc-nav" style="display:flex; gap:10px; flex-wrap:wrap; margin-top:32px;">
-      <a href="#spare-parts" class="hero-svc-link">01 â€” Spare Parts</a>
-      <a href="#lubricants"  class="hero-svc-link">02 â€” Lubricants &amp; Oils</a>
-      <a href="#tools"       class="hero-svc-link">03 â€” Tools &amp; Equipment</a>
-      <a href="#workshop"    class="hero-svc-link">04 â€” Services &amp; Repairs</a>
-      <a href="#rentals"     class="hero-svc-link">05 â€” Machinery Rentals</a>
+      <a href="#spare-parts" class="hero-svc-link">01 Ã¢â‚¬â€ Spare Parts</a>
+      <a href="#lubricants"  class="hero-svc-link">02 Ã¢â‚¬â€ Lubricants &amp; Oils</a>
+      <a href="#tools"       class="hero-svc-link">03 Ã¢â‚¬â€ Tools &amp; Equipment</a>
+      <a href="#workshop"    class="hero-svc-link">04 Ã¢â‚¬â€ Services &amp; Repairs</a>
+      <a href="#rentals"     class="hero-svc-link">05 Ã¢â‚¬â€ Machinery Rentals</a>
     </nav>
   </div>
 </section>
@@ -246,7 +246,7 @@ echo "<div class=\"svc-section\" id=\"lubricants\" style=\"margin-bottom:80px;pa
 echo "<div class=\"section-head section-head--svc\" data-reveal>";
 echo "<span class=\"tag\"><i class=\"fas fa-oil-can\"></i> Service 02</span>";
 echo "<h2>Lubricants, Oils &amp; Fluids</h2>";
-echo "<p>Quality lubrication is the most cost-effective way to extend machine life. Full range of industrial-grade oils, greases, coolants and lubrication equipment â€” with professional specification advice.</p>";
+echo "<p>Quality lubrication is the most cost-effective way to extend machine life. Full range of industrial-grade oils, greases, coolants and lubrication equipment Ã¢â‚¬â€ with professional specification advice.</p>";
 echo "</div><div class=\"services-grid\" style=\"margin-top:40px;\">";
 subHead("Oils &amp; Fluids","tint");
 $d=2;
@@ -262,7 +262,7 @@ echo "<div class=\"svc-section\" id=\"tools\" style=\"margin-bottom:80px;padding
 echo "<div class=\"section-head section-head--svc\" data-reveal>";
 echo "<span class=\"tag\"><i class=\"fas fa-toolbox\"></i> Service 03</span>";
 echo "<h2>Tools &amp; Equipment</h2>";
-echo "<p>Complete spectrum of professional tools and industrial supplies â€” from precision hand tools and pneumatic equipment to heavy lifting gear, safety PPE and drilling wear parts.</p>";
+echo "<p>Complete spectrum of professional tools and industrial supplies Ã¢â‚¬â€ from precision hand tools and pneumatic equipment to heavy lifting gear, safety PPE and drilling wear parts.</p>";
 echo "</div><div class=\"services-grid\" style=\"margin-top:40px;\">";
 $d=2;
 foreach(["HYDRAULIC & PNEUMATIC","BEARINGS, SEALS & INDUSTRIAL SPARES",
@@ -334,7 +334,7 @@ echo "</div></div>";
 <section class="cta-band">
   <div class="container">
     <h2 data-reveal>Not Sure Which Service You Need?</h2>
-    <p data-reveal data-reveal-delay="1">Call us and describe your situation. Our 60+ year expert team will guide you to the right solution â€” fast.</p>
+    <p data-reveal data-reveal-delay="1">Call us and describe your situation. Our 60+ year expert team will guide you to the right solution Ã¢â‚¬â€ fast.</p>
     <a href="tel:+919419186209" class="cta-band__phone" data-reveal data-reveal-delay="2">+91 94191 86209</a>
     <div class="cta-band__actions" data-reveal data-reveal-delay="3">
       <a href="tel:+919419186209" class="btn btn--primary"><i class="fas fa-phone-alt"></i> Call Now</a>
@@ -389,4 +389,5 @@ document.addEventListener('DOMContentLoaded',()=>{
 });
 </script>
 <?php include 'includes/footer.php'; ?>
+
 

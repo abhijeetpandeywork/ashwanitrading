@@ -72,7 +72,7 @@ $tools_categories = [
 
 ?>
 <main id="main-content">
-  <section class="page-hero" style="background: linear-gradient(90deg, rgba(11,77,44,0.95) 0%, rgba(11,77,44,0.4) 100%), url('/assets/img/hero_tools_equip.jpg') center/cover; padding: 120px 0 100px; color: #fff; text-align: center; border-bottom: 5px solid var(--gold);">
+  <section class="page-hero" style="background: linear-gradient(90deg, rgba(11,77,44,0.95) 0%, rgba(11,77,44,0.4) 100%), url('/assets/img/hero_tools_equip.webp') center/cover; padding: 120px 0 100px; color: #fff; text-align: center; border-bottom: 5px solid var(--gold);">
     <div class="container page-hero__inner" style="position: relative; z-index: 2;">
       <span class="tag tag--gold" style="margin: 0 auto 24px; box-shadow: 0 4px 15px rgba(242,169,0,0.3);">All Product Categories</span>
       <h1 style="font-size: clamp(36px, 6vw, 64px); margin-bottom: 20px; color: #fff; text-shadow: 0 4px 20px rgba(0,0,0,0.8); font-weight: 800;">Tools, Equipment & Industrial Spares</h1>
@@ -264,4 +264,5 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 
 <?php include "includes/footer.php"; ?>
+
 

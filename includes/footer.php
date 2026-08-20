@@ -1,4 +1,4 @@
-<?php /* Global Footer — Ashwani Trading Co. */ ?>
+﻿<?php /* Global Footer â€” Ashwani Trading Co. */ ?>
 
 <!-- ===================== SITE FOOTER ===================== -->
 <footer class="site-footer" role="contentinfo">
@@ -21,7 +21,7 @@
       <!-- Col 1: Brand -->
       <div class="footer-col footer-col--brand">
         <div class="footer-logo-wrap">
-          <img src="/assets/img/WhatsApp%20Image%202026-08-12%20at%205.32.04%20PM.jpeg" alt="Ashwani Trading Co. Logo" style="max-height: 120px; width: 120px; object-fit: cover; border-radius: 16px; border: 3px solid rgba(255,255,255,0.1); box-shadow: var(--shadow-md);">
+          <img src="/assets/img/WhatsApp%20Image%202026-08-12%20at%205.32.04%20PM.webp" alt="Ashwani Trading Co. Logo" style="max-height: 120px; width: 120px; object-fit: cover; border-radius: 16px; border: 3px solid rgba(255,255,255,0.1); box-shadow: var(--shadow-md);">
         </div>
         <p class="footer-bio">The trusted backbone for contractors and workshop owners across Jammu, Kashmir &amp; Ladakh. Genuine parts, unmatched reliability.</p>
         
@@ -63,7 +63,7 @@
             <i class="fas fa-map-marker-alt"></i>
             <div>
               <span class="footer-label">Main Office</span>
-              Plot No. 112, Yard 6, Transport Nagar, Narwal, Jammu – 180006
+              Plot No. 112, Yard 6, Transport Nagar, Narwal, Jammu â€“ 180006
             </div>
           </li>
           <li>
@@ -89,7 +89,7 @@
   <!-- Bottom Bar -->
   <div class="footer-bottom">
     <div class="container footer-bottom__inner">
-      <p>© <?= date('Y') ?> Ashwani Trading Co. All rights reserved.</p>
+      <p>Â© <?= date('Y') ?> Ashwani Trading Co. All rights reserved.</p>
       <p>60+ Years Serving Jammu, Kashmir &amp; Ladakh</p>
     </div>
   </div>
@@ -100,4 +100,5 @@
 <script src="/assets/js/main.js?v=2.1"></script>
 </body>
 </html>
+
 

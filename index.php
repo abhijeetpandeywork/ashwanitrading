@@ -173,7 +173,7 @@ include 'includes/header.php';
 
       <a href="/services.php#spare-parts" class="service-card" data-reveal data-reveal-delay="1">
         <div class="service-card__image">
-          <img src="/assets/img/jcb_spare_parts.jpg" alt="Earthmoving Machinery Spare Parts" loading="lazy">
+          <img src="/assets/img/jcb_spare_parts.webp" alt="Earthmoving Machinery Spare Parts" loading="lazy">
         </div>
         <div class="service-card__body">
           <h3>Spare Parts</h3>
@@ -184,7 +184,7 @@ include 'includes/header.php';
 
       <a href="/services.php#lubricants" class="service-card" data-reveal data-reveal-delay="2">
         <div class="service-card__image">
-          <img src="/assets/img/jcb_accessories.jpg" alt="Lubricants Oils and Fluids" loading="lazy">
+          <img src="/assets/img/jcb_accessories.webp" alt="Lubricants Oils and Fluids" loading="lazy">
         </div>
         <div class="service-card__body">
           <h3>Lubricants &amp; Oils</h3>
@@ -195,7 +195,7 @@ include 'includes/header.php';
 
       <a href="/services.php#tools" class="service-card" data-reveal data-reveal-delay="3">
         <div class="service-card__image">
-          <img src="/assets/img/jcb_workshop.jpg" alt="Tools and Equipment" loading="lazy">
+          <img src="/assets/img/jcb_workshop.webp" alt="Tools and Equipment" loading="lazy">
         </div>
         <div class="service-card__body">
           <h3>Tools &amp; Equipment</h3>
@@ -206,7 +206,7 @@ include 'includes/header.php';
 
       <a href="/services.php#workshop" class="service-card" data-reveal data-reveal-delay="4">
         <div class="service-card__image">
-          <img src="/assets/img/parts_engine.jpg" alt="Workshop Repairs and Maintenance Services" loading="lazy">
+          <img src="/assets/img/parts_engine.webp" alt="Workshop Repairs and Maintenance Services" loading="lazy">
         </div>
         <div class="service-card__body">
           <h3>Services &amp; Repairs</h3>
@@ -217,7 +217,7 @@ include 'includes/header.php';
 
       <a href="/services.php#rentals" class="service-card" data-reveal data-reveal-delay="5">
         <div class="service-card__image">
-          <img src="/assets/img/jcb_rentals.jpg" alt="Machinery Rentals" loading="lazy">
+          <img src="/assets/img/jcb_rentals.webp" alt="Machinery Rentals" loading="lazy">
         </div>
         <div class="service-card__body">
           <h3>Machinery Rentals</h3>
@@ -246,15 +246,15 @@ include 'includes/header.php';
     <div class="services-grid services-grid--3col" data-reveal data-reveal-delay="1">
       <?php
       $rentalsHome = [
-        ['Excavators',        '/assets/img/parts_jcb.jpg'],
-        ['Backhoe Loader',    '/assets/img/parts_pump.jpg'],
-        ['Hydra',             '/assets/img/parts_pump.jpg'],
-        ['Road Roller',       '/assets/img/parts_undercarriage.jpg'],
-        ['Paver',             '/assets/img/parts_engine.jpg'],
-        ['Vibratory Roller',  '/assets/img/parts_filtration.jpg'],
-        ['Tralla / Platform', '/assets/img/parts_transmission.jpg'],
-        ['Motor Grader',      '/assets/img/parts_pins.jpg'],
-        ['Compressor',        '/assets/img/parts_jcb.jpg'],
+        ['Excavators',        '/assets/img/parts_jcb.webp'],
+        ['Backhoe Loader',    '/assets/img/parts_pump.webp'],
+        ['Hydra',             '/assets/img/parts_pump.webp'],
+        ['Road Roller',       '/assets/img/parts_undercarriage.webp'],
+        ['Paver',             '/assets/img/parts_engine.webp'],
+        ['Vibratory Roller',  '/assets/img/parts_filtration.webp'],
+        ['Tralla / Platform', '/assets/img/parts_transmission.webp'],
+        ['Motor Grader',      '/assets/img/parts_pins.webp'],
+        ['Compressor',        '/assets/img/parts_jcb.webp'],
       ];
       foreach($rentalsHome as $rentHome): ?>
       <button class="service-card btn-home-rental" data-item="<?php echo $rentHome[0]; ?>" style="text-align:center; border:none; padding:0; cursor:pointer;">
@@ -337,7 +337,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <div class="catalog-grid" data-reveal data-reveal-delay="1">
 
       <a href="/catalog.php#undercarriage" class="cat-card">
-        <div class="cat-card__image"><img src="/assets/img/parts_undercarriage.jpg" alt="Undercarriage Parts" loading="lazy"></div>
+        <div class="cat-card__image"><img src="/assets/img/parts_undercarriage.webp" alt="Undercarriage Parts" loading="lazy"></div>
         <div class="cat-card__body">
           <h3>Undercarriage Parts</h3>
           <p>Track chains, rollers, idlers, sprockets</p>
@@ -345,7 +345,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </a>
 
       <a href="/catalog.php#hydraulics" class="cat-card">
-        <div class="cat-card__image"><img src="/assets/img/parts_pump.jpg" alt="Hydraulic Components" loading="lazy"></div>
+        <div class="cat-card__image"><img src="/assets/img/parts_pump.webp" alt="Hydraulic Components" loading="lazy"></div>
         <div class="cat-card__body">
           <h3>Hydraulic Components</h3>
           <p>Pumps, cylinders, valves, seal kits</p>
@@ -353,7 +353,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </a>
 
       <a href="/catalog.php#ground-engaging" class="cat-card">
-        <div class="cat-card__image"><img src="/assets/img/jcb_accessories.jpg" alt="Ground Engaging Tools" loading="lazy"></div>
+        <div class="cat-card__image"><img src="/assets/img/jcb_accessories.webp" alt="Ground Engaging Tools" loading="lazy"></div>
         <div class="cat-card__body">
           <h3>Ground Engaging Tools</h3>
           <p>Bucket teeth, cutting edges, adaptors</p>
@@ -361,7 +361,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </a>
 
       <a href="/catalog.php#engine" class="cat-card">
-        <div class="cat-card__image"><img src="/assets/img/parts_engine.jpg" alt="Engine & Filtration" loading="lazy"></div>
+        <div class="cat-card__image"><img src="/assets/img/parts_engine.webp" alt="Engine & Filtration" loading="lazy"></div>
         <div class="cat-card__body">
           <h3>Engine &amp; Filtration</h3>
           <p>Filters, gaskets, overhaul kits</p>
@@ -393,21 +393,21 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
     <div class="regions-strip" data-reveal data-reveal-delay="1">
       <div class="region-item">
-        <div class="region-item__image"><img src="/assets/img/region_jammu.jpg" alt="Jammu" loading="lazy"></div>
+        <div class="region-item__image"><img src="/assets/img/region_jammu.webp" alt="Jammu" loading="lazy"></div>
         <div class="region-item__body">
           <h3>Jammu</h3>
           <p>Headquarters in Narwal, Jammu. Walk-in, call, or WhatsApp any time.</p>
         </div>
       </div>
       <div class="region-item">
-        <div class="region-item__image"><img src="/assets/img/region_kashmir.jpg" alt="Kashmir" loading="lazy"></div>
+        <div class="region-item__image"><img src="/assets/img/region_kashmir.webp" alt="Kashmir" loading="lazy"></div>
         <div class="region-item__body">
           <h3>Kashmir</h3>
           <p>Supplying contractors and machinery owners across the Kashmir Valley.</p>
         </div>
       </div>
       <div class="region-item">
-        <div class="region-item__image"><img src="/assets/img/region_ladakh.jpg" alt="Ladakh" loading="lazy"></div>
+        <div class="region-item__image"><img src="/assets/img/region_ladakh.webp" alt="Ladakh" loading="lazy"></div>
         <div class="region-item__body">
           <h3>Ladakh</h3>
           <p>Parts and rentals reaching high-altitude construction projects in Ladakh.</p>
@@ -590,5 +590,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 <?php include 'includes/footer.php'; ?>
 <!-- BUSTER 123 -->
+
 
 

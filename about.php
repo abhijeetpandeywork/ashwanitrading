@@ -8,7 +8,7 @@ include 'includes/header.php';
 <main id="main-content">
 
 <!-- PAGE HERO -->
-<section class="page-hero" style="background: linear-gradient(90deg, rgba(11,77,44,0.95) 0%, rgba(11,77,44,0.3) 100%), url('/assets/img/parts_jcb.jpg') center/cover; padding: 140px 0 120px; color: #fff; text-align: left; border-bottom: 5px solid var(--gold);">
+<section class="page-hero" style="background: linear-gradient(90deg, rgba(11,77,44,0.95) 0%, rgba(11,77,44,0.3) 100%), url('/assets/img/parts_jcb.webp') center/cover; padding: 140px 0 120px; color: #fff; text-align: left; border-bottom: 5px solid var(--gold);">
   <div class="container page-hero__inner" style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: flex-start;">
     <nav class="breadcrumb" aria-label="Breadcrumb" style="margin-bottom: 24px; color: rgba(255,255,255,0.7);">
       <a href="/index.php" style="color: rgba(255,255,255,0.7);">Home</a>
@@ -210,7 +210,7 @@ include 'includes/header.php';
     <div class="services-grid" data-reveal data-reveal-delay="1">
       <a href="/services.php#spare-parts" class="service-card" style="text-align:center; padding:0;">
         <div class="service-card__image" style="height:160px;">
-          <img src="/assets/img/parts_jcb.jpg" alt="Spare Parts">
+          <img src="/assets/img/parts_jcb.webp" alt="Spare Parts">
         </div>
         <div class="service-card__body" style="padding: 24px; align-items:center;">
           <h3 style="font-size:17px; margin-bottom:12px;">Spare Parts</h3>
@@ -220,7 +220,7 @@ include 'includes/header.php';
       </a>
       <a href="/services.php#accessories" class="service-card" style="text-align:center; padding:0;">
         <div class="service-card__image" style="height:160px;">
-          <img src="/assets/img/parts_undercarriage.jpg" alt="Accessories">
+          <img src="/assets/img/parts_undercarriage.webp" alt="Accessories">
         </div>
         <div class="service-card__body" style="padding: 24px; align-items:center;">
           <h3 style="font-size:17px; margin-bottom:12px;">Accessories</h3>
@@ -230,7 +230,7 @@ include 'includes/header.php';
       </a>
       <a href="/services.php#workshop" class="service-card" style="text-align:center; padding:0;">
         <div class="service-card__image" style="height:160px;">
-          <img src="/assets/img/parts_engine.jpg" alt="Workshop & Repairs">
+          <img src="/assets/img/parts_engine.webp" alt="Workshop & Repairs">
         </div>
         <div class="service-card__body" style="padding: 24px; align-items:center;">
           <h3 style="font-size:17px; margin-bottom:12px;">Workshop &amp; Repairs</h3>
@@ -240,7 +240,7 @@ include 'includes/header.php';
       </a>
       <a href="/services.php#rentals" class="service-card" style="text-align:center; padding:0;">
         <div class="service-card__image" style="height:160px;">
-          <img src="/assets/img/hero_services.jpg" alt="Machinery Rentals">
+          <img src="/assets/img/hero_services.webp" alt="Machinery Rentals">
         </div>
         <div class="service-card__body" style="padding: 24px; align-items:center;">
           <h3 style="font-size:17px; margin-bottom:12px;">Machinery Rentals</h3>
@@ -268,4 +268,5 @@ include 'includes/header.php';
 
 </main>
 <?php include 'includes/footer.php'; ?>
+
 
