@@ -19,5 +19,8 @@ jobs:
           username: u406313474
           password: ${{ secrets.HOSTINGER_PASSWORD }}
           port: 65002
-          source: "."
+          source: ".,!.git,!.github,!gh_cli,!gh.zip,!curl_output.html,!pipeline.txt,!live_site_screenshot.png"
           target: "domains/ashwanitrading.digitalrubix.site/public_html"
+          strip_components: 0
+          rm: false
+          overwrite: true
