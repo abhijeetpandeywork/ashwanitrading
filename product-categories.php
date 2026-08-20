@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 $pageTitle = "Tools, Equipment & Industrial Spares | Ashwani Trading Co.";
 $metaDesc = "Complete range of tools, equipment, bearings, pneumatics, hydraulics, lifting gear, and workshop supplies. Ashwani Trading Co.";
 $currentPage = "services";
@@ -132,7 +132,7 @@ $tools_categories = [
       <h2 style="color: #fff; font-size: 36px; margin-bottom: 24px;">Can't Find What You're Looking For?</h2>
       <p style="color: rgba(255,255,255,0.8); font-size: 18px; margin-bottom: 32px; max-width: 600px; margin-left: auto; margin-right: auto;">Our database includes thousands of parts. Give us a call or send a WhatsApp message with your requirement.</p>
       <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-        <a href="tel:+919419186209" class="btn btn--primary"><i class="fas fa-phone-alt"></i> Call +91 94191 86209</a>
+        <a href="tel:+919419186209" class="btn btn--primary"><i class="fas fa-phone-alt fa-flip-horizontal"></i> Call +91 94191 86209</a>
         <a href="https://wa.me/919419186209" class="btn" style="background: #25D366; color: #fff; border: 1px solid #25D366;"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
       </div>
     </div>

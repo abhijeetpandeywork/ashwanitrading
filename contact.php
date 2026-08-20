@@ -101,7 +101,7 @@ include 'includes/header.php';
         <!-- Quick Call Actions -->
         <div style="display:flex; flex-direction:column; gap:12px; margin-bottom:36px;">
           <a href="tel:+919419186209" class="btn btn--primary" style="justify-content:center; font-size:16px; padding:18px;" id="contact-call-btn">
-            <i class="fas fa-phone-alt"></i> Call: +91 94191 86209
+            <i class="fas fa-phone-alt fa-flip-horizontal"></i> Call: +91 94191 86209
           </a>
           <a href="https://wa.me/919419186209?text=Hi%2C%20I%20need%20spare%20parts%20help"
              target="_blank" rel="noopener"
@@ -114,7 +114,7 @@ include 'includes/header.php';
         <div class="contact-info">
 
           <div class="contact-block" style="background: var(--white); padding: 32px; border-radius: var(--r-lg); box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-left: 4px solid var(--green-700); margin-bottom: 24px; transition: transform 0.3s ease;">
-            <h3 style="font-family:var(--f-head); font-size:20px; color:var(--green-900); margin-bottom:16px;"><i class="fas fa-phone-alt" style="color:var(--gold); margin-right:12px;"></i>Phone Numbers</h3>
+            <h3 style="font-family:var(--f-head); font-size:20px; color:var(--green-900); margin-bottom:16px;"><i class="fas fa-phone-alt fa-flip-horizontal" style="color:var(--gold); margin-right:12px;"></i>Phone Numbers</h3>
             <a href="tel:+919419186209" style="display:block; color:var(--gray-600); text-decoration:none; margin-bottom:8px; font-size:16px;"><i class="fas fa-chevron-right" style="color:var(--gold); margin-right:8px; font-size:12px;"></i>+91 94191 86209 (Primary)</a>
             <a href="tel:+919186191331" style="display:block; color:var(--gray-600); text-decoration:none; margin-bottom:8px; font-size:16px;"><i class="fas fa-chevron-right" style="color:var(--gold); margin-right:8px; font-size:12px;"></i>+91 91861 91331</a>
             <a href="tel:+911914047110" style="display:block; color:var(--gray-600); text-decoration:none; font-size:16px;"><i class="fas fa-chevron-right" style="color:var(--gold); margin-right:8px; font-size:12px;"></i>+91 19140 47110</a>
@@ -182,7 +182,7 @@ include 'includes/header.php';
     <h2 data-reveal>Your part is waiting. Call now.</h2>
     <a href="tel:+919419186209" class="cta-band__phone" data-reveal data-reveal-delay="1">+91 94191 86209</a>
     <div class="cta-band__actions" data-reveal data-reveal-delay="2">
-      <a href="tel:+919419186209" class="btn btn--primary"><i class="fas fa-phone-alt"></i> Call Now</a>
+      <a href="tel:+919419186209" class="btn btn--primary"><i class="fas fa-phone-alt fa-flip-horizontal"></i> Call Now</a>
       <a href="https://wa.me/919419186209" target="_blank" rel="noopener" class="btn btn--secondary"><i class="fab fa-whatsapp"></i> WhatsApp</a>
     </div>
   </div>

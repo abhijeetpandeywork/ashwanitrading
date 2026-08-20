@@ -29,7 +29,7 @@ include 'includes/header.php';
         </p>
         <div class="hero__actions">
           <a href="tel:+919419186209" class="btn btn--primary" id="hero-call-btn-1">
-            <i class="fas fa-phone-alt"></i> Call Now: +91 94191 86209
+            <i class="fas fa-phone-alt fa-flip-horizontal"></i> Call Now: +91 94191 86209
           </a>
           <a href="/catalog.php" class="btn btn--secondary" id="hero-catalog-btn-1">
             <i class="fas fa-book-open"></i> Browse Catalog
@@ -101,7 +101,7 @@ include 'includes/header.php';
             <i class="fas fa-search"></i> Find Your Part
           </a>
           <a href="tel:+919419186209" class="btn btn--secondary" id="hero-call-btn-4">
-            <i class="fas fa-phone-alt"></i> +91 94191 86209
+            <i class="fas fa-phone-alt fa-flip-horizontal"></i> +91 94191 86209
           </a>
         </div>
       </div>
@@ -480,7 +480,7 @@ document.addEventListener('DOMContentLoaded', () => {
     </a>
     <div class="cta-band__actions" data-reveal data-reveal-delay="3">
       <a href="tel:+919419186209" class="btn btn--primary" id="cta-call-btn">
-        <i class="fas fa-phone-alt"></i> Call Now
+        <i class="fas fa-phone-alt fa-flip-horizontal"></i> Call Now
       </a>
       <a href="https://wa.me/919419186209?text=Hi%2C%20I%20need%20spare%20parts%20information"
          target="_blank" rel="noopener" class="btn btn--secondary" id="cta-whatsapp-btn">

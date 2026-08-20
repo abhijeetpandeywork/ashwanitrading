@@ -151,7 +151,7 @@ include 'includes/header.php';
     <div class="services-grid services-grid--3col" data-reveal data-reveal-delay="1">
       <div class="service-card" style="text-align:center;">
         <div class="service-card__icon" style="margin:0 auto 16px;">
-          <i class="fas fa-phone-alt"></i>
+          <i class="fas fa-phone-alt fa-flip-horizontal"></i>
         </div>
         <h3 style="font-size:28px; color:var(--gold-dark); font-family:var(--f-head); margin-bottom:8px;">01</h3>
         <h3>Call or WhatsApp</h3>
@@ -185,7 +185,7 @@ include 'includes/header.php';
     <p data-reveal data-reveal-delay="1">Don't wait. Call us right now with your part requirement and we'll get back to you fast.</p>
     <a href="tel:+919419186209" class="cta-band__phone" data-reveal data-reveal-delay="2">+91 94191 86209</a>
     <div class="cta-band__actions" data-reveal data-reveal-delay="3">
-      <a href="tel:+919419186209" class="btn btn--primary"><i class="fas fa-phone-alt"></i> Call Now</a>
+      <a href="tel:+919419186209" class="btn btn--primary"><i class="fas fa-phone-alt fa-flip-horizontal"></i> Call Now</a>
       <a href="https://wa.me/919419186209" target="_blank" rel="noopener" class="btn btn--secondary"><i class="fab fa-whatsapp"></i> WhatsApp</a>
     </div>
   </div>

@@ -11,7 +11,7 @@
       </div>
       <div class="footer-cta__actions">
         <a href="tel:+919419186209" class="btn btn--primary" style="background:var(--gold); color:var(--charcoal);">
-          <i class="fas fa-phone-alt"></i> Call +91 94191 86209
+          <i class="fas fa-phone-alt fa-flip-horizontal"></i> Call +91 94191 86209
         </a>
       </div>
     </div>
@@ -67,7 +67,7 @@
             </div>
           </li>
           <li>
-            <i class="fas fa-phone-alt"></i>
+            <i class="fas fa-phone-alt fa-flip-horizontal"></i>
             <div class="footer-contact-group">
               <a href="tel:+919419186209">+91 94191 86209</a>
               <a href="tel:+919186191331">+91 91861 91331</a>

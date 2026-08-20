@@ -97,7 +97,7 @@ include 'includes/header.php';
     <h2 data-reveal>Need a part or a machine? Let's talk.</h2>
     <p data-reveal data-reveal-delay="1" style="margin-bottom:28px;">Call or WhatsApp our team right now. We respond fast — because downtime costs money.</p>
     <div class="cta-band__actions" data-reveal data-reveal-delay="2">
-      <a href="tel:+919419186209" class="btn btn--primary"><i class="fas fa-phone-alt"></i> +91 94191 86209</a>
+      <a href="tel:+919419186209" class="btn btn--primary"><i class="fas fa-phone-alt fa-flip-horizontal"></i> +91 94191 86209</a>
       <a href="https://wa.me/919419186209" target="_blank" rel="noopener" class="btn btn--secondary"><i class="fab fa-whatsapp"></i> WhatsApp</a>
     </div>
   </div>
@@ -261,7 +261,7 @@ include 'includes/header.php';
     <p data-reveal data-reveal-delay="1">Call, WhatsApp, or visit our Narwal yard. We're ready to help.</p>
     <a href="tel:+919419186209" class="cta-band__phone" data-reveal data-reveal-delay="2">+91 94191 86209</a>
     <div class="cta-band__actions" data-reveal data-reveal-delay="3">
-      <a href="tel:+919419186209" class="btn btn--primary"><i class="fas fa-phone-alt"></i> Call Now</a>
+      <a href="tel:+919419186209" class="btn btn--primary"><i class="fas fa-phone-alt fa-flip-horizontal"></i> Call Now</a>
       <a href="/contact.php" class="btn btn--white"><i class="fas fa-envelope"></i> Send Enquiry</a>
     </div>
   </div>

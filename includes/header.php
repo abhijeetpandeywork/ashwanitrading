@@ -98,9 +98,9 @@ $currentPage = $currentPage ?? '';
 <div class="top-bar">
   <div class="container top-bar__inner">
     <div class="top-bar__contact">
-      <a href="tel:+919419186209"><i class="fas fa-phone-alt"></i>+91 94191 86209</a>
-      <a href="tel:+919186191331"><i class="fas fa-phone-alt"></i>+91 91861 91331</a>
-      <a href="tel:+911914047110"><i class="fas fa-phone-alt"></i>+91 19140 47110</a>
+      <a href="tel:+919419186209"><i class="fas fa-phone-alt fa-flip-horizontal"></i>+91 94191 86209</a>
+      <a href="tel:+919186191331"><i class="fas fa-phone-alt fa-flip-horizontal"></i>+91 91861 91331</a>
+      <a href="tel:+911914047110"><i class="fas fa-phone-alt fa-flip-horizontal"></i>+91 19140 47110</a>
       <a href="mailto:ashwanitradingcojammu@gmail.com"><i class="fas fa-envelope"></i>ashwanitradingcojammu@gmail.com</a>
     </div>
     <div class="top-bar__social">
@@ -134,7 +134,7 @@ $currentPage = $currentPage ?? '';
     <!-- Header CTA -->
     <div class="header__cta">
       <a href="tel:+919419186209" class="btn btn--primary" id="header-call-btn">
-        <i class="fas fa-phone-alt"></i> Call Now
+        <i class="fas fa-phone-alt fa-flip-horizontal"></i> Call Now
       </a>
       <!-- Hamburger (mobile only) -->
       <button class="hamburger" id="hamburger-btn" aria-label="Open menu" aria-expanded="false">
@@ -158,7 +158,7 @@ $currentPage = $currentPage ?? '';
   <a href="/contact.php" class="<?= $currentPage==='contact' ?'active':'' ?>">Contact</a>
   <div style="margin-top:24px; display:flex; flex-direction:column; gap:12px;">
     <a href="tel:+919419186209" class="btn btn--primary" style="justify-content:center;">
-      <i class="fas fa-phone-alt"></i> +91 94191 86209
+      <i class="fas fa-phone-alt fa-flip-horizontal"></i> +91 94191 86209
     </a>
     <a href="https://wa.me/919419186209?text=Hi%2C%20I%20need%20spare%20parts%20information" target="_blank"
        class="btn" style="background:#25D366;color:#fff;justify-content:center;">
