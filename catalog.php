@@ -39,7 +39,7 @@ include 'includes/header.php';
 
     <div class="catalog-grid" data-reveal data-reveal-delay="1">
 
-      <button class="cat-card btn-modal-trigger" data-service="All kind of engaging tools undercarriage" data-category="undercarriage" id="undercarriage" style="text-align:left;border:none;width:100%;cursor:pointer;padding:0;background:transparent;">
+      <button class="cat-card btn-modal-trigger" data-service="All kind of engaging tools undercarriage" data-category="undercarriage" id="undercarriage" style="border:none;width:100%;cursor:pointer;padding:0;font-family:inherit;text-align:center;">
         <div class="cat-card__image"><img src="/assets/img/parts_undercarriage.webp" alt="Undercarriage Parts" loading="lazy"></div>
         <div class="cat-card__body">
           <h3>All kind of engaging tools Undercarriage Parts</h3>
@@ -47,7 +47,7 @@ include 'includes/header.php';
         </div>
       </button>
 
-      <button class="cat-card btn-modal-trigger" data-service="All kind of engaging tools hydraulics" data-category="hydraulics" id="hydraulics" style="text-align:left;border:none;width:100%;cursor:pointer;padding:0;background:transparent;">
+      <button class="cat-card btn-modal-trigger" data-service="All kind of engaging tools hydraulics" data-category="hydraulics" id="hydraulics" style="border:none;width:100%;cursor:pointer;padding:0;font-family:inherit;text-align:center;">
         <div class="cat-card__image"><img src="/assets/img/parts_pump.webp" alt="Hydraulic Components" loading="lazy"></div>
         <div class="cat-card__body">
           <h3>All kind of engaging tools Hydraulic Components</h3>
@@ -55,7 +55,7 @@ include 'includes/header.php';
         </div>
       </button>
 
-      <button class="cat-card btn-modal-trigger" data-service="All kind of engaging tools ground-engaging" data-category="ground-engaging" id="ground-engaging" style="text-align:left;border:none;width:100%;cursor:pointer;padding:0;background:transparent;">
+      <button class="cat-card btn-modal-trigger" data-service="All kind of engaging tools ground-engaging" data-category="ground-engaging" id="ground-engaging" style="border:none;width:100%;cursor:pointer;padding:0;font-family:inherit;text-align:center;">
         <div class="cat-card__image"><img src="/assets/img/jcb_accessories.webp" alt="Ground Engaging Tools" loading="lazy"></div>
         <div class="cat-card__body">
           <h3>All kind of engaging tools Ground Engaging Tools</h3>
@@ -63,7 +63,7 @@ include 'includes/header.php';
         </div>
       </button>
 
-      <button class="cat-card btn-modal-trigger" data-service="All kind of engaging tools engine" data-category="engine" id="engine" style="text-align:left;border:none;width:100%;cursor:pointer;padding:0;background:transparent;">
+      <button class="cat-card btn-modal-trigger" data-service="All kind of engaging tools engine" data-category="engine" id="engine" style="border:none;width:100%;cursor:pointer;padding:0;font-family:inherit;text-align:center;">
         <div class="cat-card__image"><img src="/assets/img/parts_engine.webp" alt="Engine & Filtration" loading="lazy"></div>
         <div class="cat-card__body">
           <h3>All kind of engaging tools Engine &amp; Filtration</h3>
@@ -71,7 +71,7 @@ include 'includes/header.php';
         </div>
       </button>
 
-      <button class="cat-card btn-modal-trigger" data-service="All kind of engaging tools transmission" data-category="transmission" id="transmission" style="text-align:left;border:none;width:100%;cursor:pointer;padding:0;background:transparent;">
+      <button class="cat-card btn-modal-trigger" data-service="All kind of engaging tools transmission" data-category="transmission" id="transmission" style="border:none;width:100%;cursor:pointer;padding:0;font-family:inherit;text-align:center;">
         <div class="cat-card__image"><img src="/assets/img/parts_transmission.webp" alt="Transmission & Drivetrain" loading="lazy"></div>
         <div class="cat-card__body">
           <h3>All kind of engaging tools Transmission &amp; Drivetrain</h3>
@@ -79,7 +79,7 @@ include 'includes/header.php';
         </div>
       </button>
 
-      <button class="cat-card btn-modal-trigger" data-service="All kind of engaging tools electrical" data-category="electrical" id="electrical" style="text-align:left;border:none;width:100%;cursor:pointer;padding:0;background:transparent;">
+      <button class="cat-card btn-modal-trigger" data-service="All kind of engaging tools electrical" data-category="electrical" id="electrical" style="border:none;width:100%;cursor:pointer;padding:0;font-family:inherit;text-align:center;">
         <div class="cat-card__image"><img src="/assets/img/parts_jcb.webp" alt="Electrical Components" loading="lazy"></div>
         <div class="cat-card__body">
           <h3>All kind of engaging tools Electrical Components</h3>
@@ -87,7 +87,7 @@ include 'includes/header.php';
         </div>
       </button>
 
-      <button class="cat-card btn-modal-trigger" data-service="All kind of engaging tools attachments" data-category="attachments" id="attachments" style="text-align:left;border:none;width:100%;cursor:pointer;padding:0;background:transparent;">
+      <button class="cat-card btn-modal-trigger" data-service="All kind of engaging tools attachments" data-category="attachments" id="attachments" style="border:none;width:100%;cursor:pointer;padding:0;font-family:inherit;text-align:center;">
         <div class="cat-card__image"><img src="/assets/img/jcb_spare_parts.webp" alt="Attachments & Buckets" loading="lazy"></div>
         <div class="cat-card__body">
           <h3>All kind of engaging tools Attachments &amp; Buckets</h3>
@@ -95,7 +95,7 @@ include 'includes/header.php';
         </div>
       </button>
 
-      <button class="cat-card btn-modal-trigger" data-service="All kind of engaging tools body-structural" data-category="body-structural" id="body-structural" style="text-align:left;border:none;width:100%;cursor:pointer;padding:0;background:transparent;">
+      <button class="cat-card btn-modal-trigger" data-service="All kind of engaging tools body-structural" data-category="body-structural" id="body-structural" style="border:none;width:100%;cursor:pointer;padding:0;font-family:inherit;text-align:center;">
         <div class="cat-card__image"><img src="/assets/img/parts_pins.webp" alt="Body & Structural Parts" loading="lazy"></div>
         <div class="cat-card__body">
           <h3>All kind of engaging tools Body &amp; Structural Parts</h3>
@@ -103,7 +103,7 @@ include 'includes/header.php';
         </div>
       </button>
 
-      <button class="cat-card btn-modal-trigger" data-service="All kind of engaging tools cooling" data-category="cooling" id="cooling" style="text-align:left;border:none;width:100%;cursor:pointer;padding:0;background:transparent;">
+      <button class="cat-card btn-modal-trigger" data-service="All kind of engaging tools cooling" data-category="cooling" id="cooling" style="border:none;width:100%;cursor:pointer;padding:0;font-family:inherit;text-align:center;">
         <div class="cat-card__image"><img src="/assets/img/parts_filtration.webp" alt="Cooling System" loading="lazy"></div>
         <div class="cat-card__body">
           <h3>All kind of engaging tools Cooling System</h3>
@@ -111,7 +111,7 @@ include 'includes/header.php';
         </div>
       </button>
 
-      <button class="cat-card btn-modal-trigger" data-service="All kind of engaging tools drill-rods" data-category="drill-rods" id="drill-rods" style="text-align:left;border:none;width:100%;cursor:pointer;padding:0;background:transparent;">
+      <button class="cat-card btn-modal-trigger" data-service="All kind of engaging tools drill-rods" data-category="drill-rods" id="drill-rods" style="border:none;width:100%;cursor:pointer;padding:0;font-family:inherit;text-align:center;">
         <div class="cat-card__image"><img src="/assets/img/hero_services.webp" alt="Drill Rods & Bits" loading="lazy"></div>
         <div class="cat-card__body">
           <h3>All kind of engaging tools Drill Rods &amp; Bits</h3>
@@ -119,7 +119,7 @@ include 'includes/header.php';
         </div>
       </button>
 
-      <button class="cat-card btn-modal-trigger" data-service="All kind of engaging tools tyres-wheels" data-category="tyres-wheels" id="tyres-wheels" style="text-align:left;border:none;width:100%;cursor:pointer;padding:0;background:transparent;">
+      <button class="cat-card btn-modal-trigger" data-service="All kind of engaging tools tyres-wheels" data-category="tyres-wheels" id="tyres-wheels" style="border:none;width:100%;cursor:pointer;padding:0;font-family:inherit;text-align:center;">
         <div class="cat-card__image"><img src="/assets/img/jcb_rentals.webp" alt="Tyres & Wheels" loading="lazy"></div>
         <div class="cat-card__body">
           <h3>All kind of engaging tools Tyres &amp; Wheels</h3>
@@ -127,7 +127,7 @@ include 'includes/header.php';
         </div>
       </button>
 
-      <button class="cat-card btn-modal-trigger" data-service="All kind of engaging tools other-parts" data-category="other" id="other-parts" style="text-align:left;border:none;width:100%;cursor:pointer;padding:0;background:transparent;">
+      <button class="cat-card btn-modal-trigger" data-service="All kind of engaging tools other-parts" data-category="other" id="other-parts" style="border:none;width:100%;cursor:pointer;padding:0;font-family:inherit;text-align:center;">
         <div class="cat-card__image"><img src="/assets/img/jcb_workshop.webp" alt="Other Parts" loading="lazy"></div>
         <div class="cat-card__body">
           <h3>All kind of engaging tools Other / Not Listed</h3>
