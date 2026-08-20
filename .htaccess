@@ -69,5 +69,5 @@
 
 # --- Keep LiteSpeed Cache (Hostinger uses LiteSpeed) ---
 <IfModule LiteSpeed>
-  CacheEnable public /
+  CacheDisable public /
 </IfModule>
