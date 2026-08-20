@@ -1,16 +1,16 @@
 ﻿<?php
-$pageTitle   = 'Ashwani Trading Co. â€” Spare Parts, Repairs & Rentals | Jammu, Kashmir & Ladakh';
+$pageTitle   = 'Ashwani Trading Co. "” Spare Parts, Repairs & Rentals | Jammu, Kashmir & Ladakh';
 $metaDesc    = '60+ years supplying genuine earthmoving & construction machinery spare parts, accessories, workshop repairs and rentals in Jammu, Kashmir & Ladakh. Call now: +91 94191 86209';
 $currentPage = 'home';
 include 'includes/header.php';
 ?>
 
 <!-- ============================================================
-     HERO â€” 5-Slide Fullscreen Slider
+     HERO "” 5-Slide Fullscreen Slider
      ============================================================ -->
 <main id="main-content">
 
-<section class="hero hero--slider" aria-label="Ashwani Trading Co. â€” Spare Parts and Machinery Services" id="hero-section">
+<section class="hero hero--slider" aria-label="Ashwani Trading Co. "” Spare Parts and Machinery Services" id="hero-section">
 
   <!-- Slide Backgrounds -->
   <div class="hero-slides" id="heroSlides">
@@ -19,7 +19,7 @@ include 'includes/header.php';
     <div class="hero-slide active" data-slide="0" style="background: radial-gradient(circle at 30% 30%, #0B4D2C 0%, #062818 100%);">
       <div class="hero-slide__overlay" style="background: linear-gradient(105deg, rgba(6,40,24,0.85) 0%, rgba(6,40,24,0.65) 50%, rgba(6,40,24,0.2) 100%);"></div>
       <div class="hero-slide__content container">
-        <span class="hero__eyebrow"><i class="fas fa-star"></i> Est. 1960 â€” Jammu's Most Trusted</span>
+        <span class="hero__eyebrow"><i class="fas fa-star"></i> Est. 1960 "” Jammu's Most Trusted</span>
         <h1 class="hero__h1">
           Welcome to<br>
           <em>Ashwani Trading Co.</em>
@@ -48,7 +48,7 @@ include 'includes/header.php';
           <em>Kashmir &amp; Ladakh.</em>
         </h1>
         <p class="hero__sub">
-          Strategically located at Narwal, Jammu â€” we supply genuine &amp; aftermarket spare parts across all three union territories. Fast delivery, stocked inventory, zero waiting time.
+          Strategically located at Narwal, Jammu "” we supply genuine &amp; aftermarket spare parts across all three union territories. Fast delivery, stocked inventory, zero waiting time.
         </p>
         <div class="hero__actions">
           <a href="/contact.php" class="btn btn--primary" id="hero-contact-btn-2">
@@ -71,7 +71,7 @@ include 'includes/header.php';
           <em>One Legacy of Trust.</em>
         </h1>
         <p class="hero__sub">
-          From JCB hydraulic pumps to road roller track chains â€” our team identifies any part by model number or description. 60+ years of hands-on knowledge means we solve problems other suppliers can't.
+          From JCB hydraulic pumps to road roller track chains "” our team identifies any part by model number or description. 60+ years of hands-on knowledge means we solve problems other suppliers can't.
         </p>
         <div class="hero__actions">
           <a href="/about.php" class="btn btn--primary" id="hero-about-btn-3">
@@ -94,7 +94,7 @@ include 'includes/header.php';
           <em>Every Machine.</em>
         </h1>
         <p class="hero__sub">
-          JCB, Caterpillar, Komatsu, L&amp;T, BEML, Volvo â€” we stock OEM &amp; aftermarket parts for all major brands. Undercarriage parts, hydraulic components, engine overhaul kits &amp; more, ready same day.
+          JCB, Caterpillar, Komatsu, L&amp;T, BEML, Volvo "” we stock OEM &amp; aftermarket parts for all major brands. Undercarriage parts, hydraulic components, engine overhaul kits &amp; more, ready same day.
         </p>
         <div class="hero__actions">
           <a href="/catalog.php" class="btn btn--primary" id="hero-catalog-btn-4">
@@ -117,7 +117,7 @@ include 'includes/header.php';
           <em>We Get You Back.</em>
         </h1>
         <p class="hero__sub">
-          Downtime costs money. Our workshop team diagnoses and repairs earthmoving machinery on-site and in-yard. Need a machine urgently? Rent from our fleet â€” flexible terms, all regions covered.
+          Downtime costs money. Our workshop team diagnoses and repairs earthmoving machinery on-site and in-yard. Need a machine urgently? Rent from our fleet "” flexible terms, all regions covered.
         </p>
         <div class="hero__actions">
           <a href="/services.php#workshop" class="btn btn--primary" id="hero-workshop-btn-5">
@@ -158,7 +158,7 @@ include 'includes/header.php';
 
 
 <!-- ============================================================
-     WHAT WE DO â€” 5 service cards
+     WHAT WE DO "” 5 service cards
      ============================================================ -->
 <section class="section section--white" id="services-overview">
   <div class="container">
@@ -166,7 +166,7 @@ include 'includes/header.php';
     <div class="section-head" data-reveal>
       <span class="tag">What We Do</span>
       <h2>Five Ways We Keep<br>Your Machines Running</h2>
-      <p>From a single spare part to a full machine rental â€” genuine parts, industrial lubricants, professional tools, expert repairs, and flexible equipment hire across Jammu, Kashmir &amp; Ladakh.</p>
+      <p>From a single spare part to a full machine rental "” genuine parts, industrial lubricants, professional tools, expert repairs, and flexible equipment hire across Jammu, Kashmir &amp; Ladakh.</p>
     </div>
 
     <div class="services-grid services-grid--5col">
@@ -221,7 +221,7 @@ include 'includes/header.php';
         </div>
         <div class="service-card__body">
           <h3>Machinery Rentals</h3>
-          <p>Rent excavators, backhoe loaders, hydra cranes, road rollers, pavers, vibratory rollers, motor graders and compressors â€” flexible terms for any project.</p>
+          <p>Rent excavators, backhoe loaders, hydra cranes, road rollers, pavers, vibratory rollers, motor graders and compressors "” flexible terms for any project.</p>
           <span class="link-enquire">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
         </div>
       </a>
@@ -323,7 +323,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 
 <!-- ============================================================
-     POPULAR PART CATEGORIES â€” teaser tiles
+     POPULAR PART CATEGORIES "” teaser tiles
      ============================================================ -->
 <section class="section section--tint" id="categories">
   <div class="container">
@@ -331,7 +331,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <div class="section-head" data-reveal>
       <span class="tag">Parts Catalog</span>
       <h2>Popular Spare Part Categories</h2>
-      <p>Browse our most commonly enquired categories. Can't find your part? Call us â€” we source parts across all brands.</p>
+      <p>Browse our most commonly enquired categories. Can't find your part? Call us "” we source parts across all brands.</p>
     </div>
 
     <div class="catalog-grid" data-reveal data-reveal-delay="1">
@@ -389,7 +389,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <div class="section-head" data-reveal>
       <span class="tag">Our Coverage</span>
       <h2>Serving the Entire Union Territory</h2>
-      <p>From the plains of Jammu to the valleys of Kashmir and the high altitude of Ladakh â€” ATC is your local parts partner.</p>
+      <p>From the plains of Jammu to the valleys of Kashmir and the high altitude of Ladakh "” ATC is your local parts partner.</p>
     </div>
     <div class="regions-strip" data-reveal data-reveal-delay="1">
       <div class="region-item">
@@ -418,7 +418,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </section>
 
 <!-- ============================================================
-     WHY ATC â€” Deep Green Band (30% color)
+     WHY ATC "” Deep Green Band (30% color)
      ============================================================ -->
 <section class="section section--green" id="why-atc">
   <div class="container">
@@ -443,7 +443,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="why-item__icon"><i class="fas fa-th-large" aria-hidden="true"></i></div>
           <div>
             <h3>Complete Solutions</h3>
-            <p>Parts, accessories, repairs, and rentals under one roof â€” no need to go to multiple vendors.</p>
+            <p>Parts, accessories, repairs, and rentals under one roof "” no need to go to multiple vendors.</p>
           </div>
         </div>
         <div class="why-item">
@@ -457,7 +457,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="why-item__icon"><i class="fas fa-headset" aria-hidden="true"></i></div>
           <div>
             <h3>Customer First</h3>
-            <p>Real people, real advice. Call us with a part number, model, or just a description â€” we'll find what you need.</p>
+            <p>Real people, real advice. Call us with a part number, model, or just a description "” we'll find what you need.</p>
           </div>
         </div>
       </div>
@@ -468,7 +468,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 <!-- ============================================================
-     FINAL CTA BAND â€” Loss aversion framing
+     FINAL CTA BAND "” Loss aversion framing
      ============================================================ -->
 <section class="cta-band" id="cta-final">
   <div class="container">

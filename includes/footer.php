@@ -1,4 +1,4 @@
-﻿<?php /* Global Footer â€” Ashwani Trading Co. */ ?>
+﻿<?php /* Global Footer "” Ashwani Trading Co. */ ?>
 
 <!-- ===================== SITE FOOTER ===================== -->
 <footer class="site-footer" role="contentinfo">
@@ -63,7 +63,7 @@
             <i class="fas fa-map-marker-alt"></i>
             <div>
               <span class="footer-label">Main Office</span>
-              Plot No. 112, Yard 6, Transport Nagar, Narwal, Jammu â€“ 180006
+              Plot No. 112, Yard 6, Transport Nagar, Narwal, Jammu "“ 180006
             </div>
           </li>
           <li>
@@ -89,7 +89,7 @@
   <!-- Bottom Bar -->
   <div class="footer-bottom">
     <div class="container footer-bottom__inner">
-      <p>Â© <?= date('Y') ?> Ashwani Trading Co. All rights reserved.</p>
+      <p>© <?= date('Y') ?> Ashwani Trading Co. All rights reserved.</p>
       <p>60+ Years Serving Jammu, Kashmir &amp; Ladakh</p>
     </div>
   </div>

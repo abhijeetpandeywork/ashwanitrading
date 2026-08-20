@@ -1,9 +1,9 @@
 <?php
-/* Global Header â€” Ashwani Trading Co.
+/* Global Header — Ashwani Trading Co.
    Sticky, with persistent Call CTA in the header
    + mobile full-screen nav overlay
 */
-
+header('Content-Type: text/html; charset=UTF-8');
 $currentPage = $currentPage ?? '';
 ?>
 <!DOCTYPE html>
@@ -11,8 +11,8 @@ $currentPage = $currentPage ?? '';
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?= htmlspecialchars($pageTitle ?? 'Ashwani Trading Co. â€” Spare Parts, Services & Rentals, Jammu') ?></title>
-  <meta name="description" content="<?= htmlspecialchars($metaDesc ?? 'Ashwani Trading Co. (ATC) â€” 60+ years supplying genuine earthmoving & construction machinery spare parts, accessories, workshop repairs and rentals in Jammu, Kashmir & Ladakh.') ?>">
+  <title><?= htmlspecialchars($pageTitle ?? 'Ashwani Trading Co. "” Spare Parts, Services & Rentals, Jammu') ?></title>
+  <meta name="description" content="<?= htmlspecialchars($metaDesc ?? 'Ashwani Trading Co. (ATC) "” 60+ years supplying genuine earthmoving & construction machinery spare parts, accessories, workshop repairs and rentals in Jammu, Kashmir & Ladakh.') ?>">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://ashwanitrading.digitalrubix.site/">
 
@@ -44,7 +44,7 @@ $currentPage = $currentPage ?? '';
   <link rel="stylesheet" href="/assets/css/style.css?v=2.3">
 
   <?php if (($currentPage ?? '') === 'home'): ?>
-  <!-- LocalBusiness Schema â€” Homepage only -->
+  <!-- LocalBusiness Schema "” Homepage only -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -117,7 +117,7 @@ $currentPage = $currentPage ?? '';
   <div class="container header__inner">
 
     <!-- Logo -->
-    <a href="/index.php" class="logo" aria-label="Ashwani Trading Co. â€” Home" style="position: relative; width: 110px; height: 72px; display: block;">
+    <a href="/index.php" class="logo" aria-label="Ashwani Trading Co. "” Home" style="position: relative; width: 110px; height: 72px; display: block;">
       <img src="/assets/img/WhatsApp%20Image%202026-08-12%20at%205.32.04%20PM.webp" alt="Ashwani Trading Co. Logo" style="position: absolute; top: 6px; left: 0; width: 110px; height: 110px; object-fit: cover; border-radius: 16px; border: 4px solid var(--white); box-shadow: 0 6px 12px rgba(0,0,0,0.15); z-index: 1000; background: var(--white);">
     </a>
 
