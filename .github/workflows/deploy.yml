@@ -27,4 +27,4 @@ jobs:
             --exclude='live_site_screenshot.png' \
             -e "ssh -o StrictHostKeyChecking=no -p 65002" \
             ./ \
-            u406313474@147.93.23.184:domains/ashwanitrading.digitalrubix.site/public_html/
+            u406313474@ashwanitrading.digitalrubix.site:domains/ashwanitrading.digitalrubix.site/public_html/
