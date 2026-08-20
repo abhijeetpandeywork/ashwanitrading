@@ -117,7 +117,7 @@ $currentPage = $currentPage ?? '';
   <div class="container header__inner">
 
     <!-- Logo -->
-    <a href="/index.php" class="logo" aria-label="Ashwani Trading Co. "” Home" style="position: relative; width: 110px; height: 72px; display: block;">
+    <a href="/index.php" class="logo" aria-label="Ashwani Trading Co. — Home" style="position: relative; width: 110px; height: 72px; display: block;">
       <img src="/assets/img/logo.jpg" alt="Ashwani Trading Co. Logo" style="position: absolute; top: 6px; left: 0; width: 110px; height: 110px; object-fit: cover; border-radius: 16px; border: 4px solid var(--white); box-shadow: 0 6px 12px rgba(0,0,0,0.15); z-index: 1000; background: var(--white);">
     </a>
 
