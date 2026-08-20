@@ -81,7 +81,7 @@ $subs=[
   "BELTS, CHAINS & POWER TRANSMISSION"=>"V-belts, timing belts, chains, sprockets, pulleys & couplings.",
   "HAND TOOLS"=>"Spanners, sockets, ratchets, pliers, hammers & professional sets.",
   "PNEUMATIC TOOLS"=>"Air impact wrenches, ratchets, chisels, sanders & compressor tools.",
-  "POWER TOOLS"=>"Angle grinders, drills, jig saws, heat guns Ã¢â‚¬â€ corded & cordless.",
+  "POWER TOOLS"=>"Angle grinders, drills, jig saws, heat guns — corded & cordless.",
   "WELDING & CUTTING EQUIPMENT"=>"MIG/MMA welders, plasma cutters, oxy-acetylene sets & consumables.",
   "LIFTING, RIGGING & MATERIAL HANDLING"=>"Chain blocks, wire hoists, slings, shackles & rated lifting clamps.",
   "WORKSHOP & SKILLED-TRADE EQUIPMENT"=>"Hydraulic jacks, presses, pullers, tap & die sets & precision tools.",
@@ -134,7 +134,7 @@ $subs=[
   "Axel Oil Service"=>"Axle diff oil drain, flush & refill to OEM specification.",
   "Transmission Oil Service"=>"Transmission oil change, filter replacement & clutch-pack check.",
   "Gear oil Service"=>"Gearbox oil drain, breather clean & refill to correct grade.",
-  "others"=>"Specialised fluid services Ã¢â‚¬â€ contact us for your specific requirement.",
+  "others"=>"Specialised fluid services — contact us for your specific requirement.",
   "Hot Mix Plant Maintenance"=>"Drum burner calibration, conveyor tensioning & aggregate feeder service.",
   "Crusher Maintenance"=>"Jaw plate reversal, drive belt tensioning & bearing lubrication.",
   "Screening Plant Maintenance"=>"Screen mesh replacement, vibrator shaft service & deck cleaning.",
@@ -143,7 +143,7 @@ $subs=[
   "Drilling Equipment Maintenance"=>"Rock drill service, drill rod inspection & feed mechanism overhaul.",
   "On-Site Inspection"=>"Detailed on-location inspection of machine systems & safety status.",
   "On-Site Breakdown Support"=>"Emergency technician & spares dispatched to your project site fast.",
-  "On-Site Hydraulic Repair"=>"Mobile hydraulic repair Ã¢â‚¬â€ hose replacement, seal kits & pump work.",
+  "On-Site Hydraulic Repair"=>"Mobile hydraulic repair — hose replacement, seal kits & pump work.",
   "On-Site Welding"=>"Field welding unit for structural crack repair & fabrication work.",
   "On-Site Maintenance"=>"Scheduled preventive maintenance at your project location.",
   "Emergency Technical Support"=>"24-hour technical helpline & priority callout for critical breakdowns.",
@@ -215,13 +215,13 @@ function subHead($label,$icon){
   <div class="container page-hero__inner" style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: flex-start;">
     <span class="tag tag--gold" style="margin-bottom: 24px; box-shadow: 0 4px 15px rgba(242,169,0,0.3);">Five Services. One Trusted Partner.</span>
     <h1 style="font-size: clamp(40px, 6vw, 72px); margin-bottom: 24px; color: #fff; line-height: 1.05; text-shadow: 0 4px 20px rgba(0,0,0,0.8); font-weight: 800; letter-spacing: -1px;">Everything Your<br><span style="color:var(--gold);">Machines Need</span></h1>
-    <p style="font-size: 20px; line-height: 1.6; opacity: 0.92; text-shadow: 0 2px 10px rgba(0,0,0,0.7); max-width: 640px; font-weight: 500;">Genuine spare parts, industrial lubricants, professional tools, expert repairs and flexible equipment rentals Ã¢â‚¬â€ serving Jammu, Kashmir &amp; Ladakh for 60+ years.</p>
+    <p style="font-size: 20px; line-height: 1.6; opacity: 0.92; text-shadow: 0 2px 10px rgba(0,0,0,0.7); max-width: 640px; font-weight: 500;">Genuine spare parts, industrial lubricants, professional tools, expert repairs and flexible equipment rentals — serving Jammu, Kashmir &amp; Ladakh for 60+ years.</p>
     <nav class="hero-svc-nav" style="display:flex; gap:10px; flex-wrap:wrap; margin-top:32px;">
-      <a href="#spare-parts" class="hero-svc-link">01 Ã¢â‚¬â€ Spare Parts</a>
-      <a href="#lubricants"  class="hero-svc-link">02 Ã¢â‚¬â€ Lubricants &amp; Oils</a>
-      <a href="#tools"       class="hero-svc-link">03 Ã¢â‚¬â€ Tools &amp; Equipment</a>
-      <a href="#workshop"    class="hero-svc-link">04 Ã¢â‚¬â€ Services &amp; Repairs</a>
-      <a href="#rentals"     class="hero-svc-link">05 Ã¢â‚¬â€ Machinery Rentals</a>
+      <a href="#spare-parts" class="hero-svc-link">01 — Spare Parts</a>
+      <a href="#lubricants"  class="hero-svc-link">02 — Lubricants &amp; Oils</a>
+      <a href="#tools"       class="hero-svc-link">03 — Tools &amp; Equipment</a>
+      <a href="#workshop"    class="hero-svc-link">04 — Services &amp; Repairs</a>
+      <a href="#rentals"     class="hero-svc-link">05 — Machinery Rentals</a>
     </nav>
   </div>
 </section>
@@ -246,7 +246,7 @@ echo "<div class=\"svc-section\" id=\"lubricants\" style=\"margin-bottom:80px;pa
 echo "<div class=\"section-head section-head--svc\" data-reveal>";
 echo "<span class=\"tag\"><i class=\"fas fa-oil-can\"></i> Service 02</span>";
 echo "<h2>Lubricants, Oils &amp; Fluids</h2>";
-echo "<p>Quality lubrication is the most cost-effective way to extend machine life. Full range of industrial-grade oils, greases, coolants and lubrication equipment Ã¢â‚¬â€ with professional specification advice.</p>";
+echo "<p>Quality lubrication is the most cost-effective way to extend machine life. Full range of industrial-grade oils, greases, coolants and lubrication equipment — with professional specification advice.</p>";
 echo "</div><div class=\"services-grid\" style=\"margin-top:40px;\">";
 subHead("Oils &amp; Fluids","tint");
 $d=2;
@@ -262,7 +262,7 @@ echo "<div class=\"svc-section\" id=\"tools\" style=\"margin-bottom:80px;padding
 echo "<div class=\"section-head section-head--svc\" data-reveal>";
 echo "<span class=\"tag\"><i class=\"fas fa-toolbox\"></i> Service 03</span>";
 echo "<h2>Tools &amp; Equipment</h2>";
-echo "<p>Complete spectrum of professional tools and industrial supplies Ã¢â‚¬â€ from precision hand tools and pneumatic equipment to heavy lifting gear, safety PPE and drilling wear parts.</p>";
+echo "<p>Complete spectrum of professional tools and industrial supplies — from precision hand tools and pneumatic equipment to heavy lifting gear, safety PPE and drilling wear parts.</p>";
 echo "</div><div class=\"services-grid\" style=\"margin-top:40px;\">";
 $d=2;
 foreach(["HYDRAULIC & PNEUMATIC","BEARINGS, SEALS & INDUSTRIAL SPARES",
@@ -334,7 +334,7 @@ echo "</div></div>";
 <section class="cta-band">
   <div class="container">
     <h2 data-reveal>Not Sure Which Service You Need?</h2>
-    <p data-reveal data-reveal-delay="1">Call us and describe your situation. Our 60+ year expert team will guide you to the right solution Ã¢â‚¬â€ fast.</p>
+    <p data-reveal data-reveal-delay="1">Call us and describe your situation. Our 60+ year expert team will guide you to the right solution — fast.</p>
     <a href="tel:+919419186209" class="cta-band__phone" data-reveal data-reveal-delay="2">+91 94191 86209</a>
     <div class="cta-band__actions" data-reveal data-reveal-delay="3">
       <a href="tel:+919419186209" class="btn btn--primary"><i class="fas fa-phone-alt"></i> Call Now</a>
