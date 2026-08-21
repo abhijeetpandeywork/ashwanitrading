@@ -251,10 +251,10 @@ include 'includes/header.php';
         ['Hydra',             '/assets/img/rent_hydra.jpg'],
         ['Road Roller',       '/assets/img/rent_roller.jpg'],
         ['Paver',             '/assets/img/rent_paver.jpg'],
-        ['Vibratory Roller',  '/assets/img/parts_filtration.webp'],
-        ['Tralla / Platform', '/assets/img/parts_transmission.webp'],
-        ['Motor Grader',      '/assets/img/parts_pins.webp'],
-        ['Compressor',        '/assets/img/parts_jcb.webp'],
+        ['Vibratory Roller',  '/assets/img/rent_vib_roller.png'],
+        ['Tralla / Platform', '/assets/img/rent_tralla.jpg'],
+        ['Motor Grader',      '/assets/img/rent_grader.jpg'],
+        ['Compressor',        '/assets/img/rent_compressor.jpg'],
       ];
       foreach($rentalsHome as $rentHome): ?>
       <button class="service-card btn-home-rental" data-item="<?php echo $rentHome[0]; ?>" style="text-align:center; border:none; padding:0; cursor:pointer;">
