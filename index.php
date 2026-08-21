@@ -361,7 +361,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </a>
 
       <a href="/catalog.php#engine" class="cat-card">
-        <div class="cat-card__image"><img src="/assets/img/parts_engine.webp" alt="Engine & Filtration" loading="lazy"></div>
+        <div class="cat-card__image"><img src="/assets/img/new_engine_filter.jpg" alt="Engine & Filtration" loading="lazy"></div>
         <div class="cat-card__body">
           <h3>Engine &amp; Filtration</h3>
           <p>Filters, gaskets, overhaul kits</p>
