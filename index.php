@@ -184,7 +184,7 @@ include 'includes/header.php';
 
       <a href="/services.php#lubricants" class="service-card" data-reveal data-reveal-delay="2">
         <div class="service-card__image">
-          <img src="/assets/img/jcb_accessories.webp" alt="Lubricants Oils and Fluids" loading="lazy">
+          <img src="/assets/img/new_lubricants_oils.jpg" alt="Lubricants Oils and Fluids" loading="lazy">
         </div>
         <div class="service-card__body">
           <h3>Lubricants &amp; Oils</h3>
@@ -195,7 +195,7 @@ include 'includes/header.php';
 
       <a href="/services.php#tools" class="service-card" data-reveal data-reveal-delay="3">
         <div class="service-card__image">
-          <img src="/assets/img/jcb_workshop.webp" alt="Tools and Equipment" loading="lazy">
+          <img src="/assets/img/new_tools_equipment.jpg" alt="Tools and Equipment" loading="lazy">
         </div>
         <div class="service-card__body">
           <h3>Tools &amp; Equipment</h3>
@@ -206,7 +206,7 @@ include 'includes/header.php';
 
       <a href="/services.php#workshop" class="service-card" data-reveal data-reveal-delay="4">
         <div class="service-card__image">
-          <img src="/assets/img/parts_engine.webp" alt="Workshop Repairs and Maintenance Services" loading="lazy">
+          <img src="/assets/img/new_services_repairs.jpg" alt="Workshop Repairs and Maintenance Services" loading="lazy">
         </div>
         <div class="service-card__body">
           <h3>Services &amp; Repairs</h3>
