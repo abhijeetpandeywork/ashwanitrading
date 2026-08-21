@@ -246,11 +246,11 @@ include 'includes/header.php';
     <div class="services-grid services-grid--3col" data-reveal data-reveal-delay="1">
       <?php
       $rentalsHome = [
-        ['Excavators',        '/assets/img/parts_jcb.webp'],
-        ['Backhoe Loader',    '/assets/img/parts_pump.webp'],
-        ['Hydra',             '/assets/img/parts_pump.webp'],
-        ['Road Roller',       '/assets/img/parts_undercarriage.webp'],
-        ['Paver',             '/assets/img/parts_engine.webp'],
+        ['Excavators',        '/assets/img/rent_excavator.jpg'],
+        ['Backhoe Loader',    '/assets/img/rent_backhoe.jpg'],
+        ['Hydra',             '/assets/img/rent_hydra.jpg'],
+        ['Road Roller',       '/assets/img/rent_roller.jpg'],
+        ['Paver',             '/assets/img/rent_paver.jpg'],
         ['Vibratory Roller',  '/assets/img/parts_filtration.webp'],
         ['Tralla / Platform', '/assets/img/parts_transmission.webp'],
         ['Motor Grader',      '/assets/img/parts_pins.webp'],
